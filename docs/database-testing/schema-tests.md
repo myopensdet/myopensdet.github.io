@@ -132,23 +132,6 @@ Add `order_status_history` to `EXPECTED`. Look at the `CREATE TABLE` in `sql/sch
 
     `old_status` may be empty (`True`): the column has no `NOT NULL` in `sql/schema.sql`.
 
-## Quick check
-
-1. Where do you copy the expected schema from?
-
-    ??? question "Answer"
-        From the migration or the data model, never from the database itself.
-
-2. What does `('text', True)` mean in the failure?
-
-    ??? question "Answer"
-        The column is text and may be empty (nullable).
-
-3. Why one test per table?
-
-    ??? question "Answer"
-        So a failure names the table, and one difference doesn't hide the others.
-
 ## References
 
 - [PostgreSQL: The information schema](https://www.postgresql.org/docs/17/information-schema.html)

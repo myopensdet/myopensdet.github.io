@@ -105,23 +105,6 @@ Call `https://httpbin.org/get` with `params={"name": "Test & Co", "tag": ["a", "
 ??? success "Solution"
     The URL ends with `?name=Test+%26+Co&tag=a&tag=b`. The `&` inside the value became `%26` (and spaces became `+`), so it isn't read as a new parameter. The list became the same name twice, `tag=a&tag=b`, which is how many APIs read lists in a query. The server read it all back correctly: `{'name': 'Test & Co', 'tag': ['a', 'b']}`.
 
-## Quick check
-
-1. When does an API use a path parameter?
-
-    ??? question "Answer"
-        Usually to name one thing, like `/booking/42`.
-
-2. Why use `params=` instead of building the query yourself?
-
-    ??? question "Answer"
-        It encodes each value, so spaces, `&`, `#` and non-English text arrive correctly.
-
-3. What should happen when you ask for another user's booking?
-
-    ??? question "Answer"
-        403 or 404. Never their data.
-
 ## References
 
 - [Requests: Passing parameters in URLs](https://requests.readthedocs.io/en/latest/user/quickstart/#passing-parameters-in-urls)

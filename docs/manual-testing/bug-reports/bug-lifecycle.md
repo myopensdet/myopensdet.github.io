@@ -123,23 +123,6 @@ You are checking a fixed bug: "Refund on day 30 is refused". On the new build, d
 
     The usual way: file a new bug, "Refund on day 29 is refused after the day-30 fix", link it to the first one, and mark it at least major. Some teams prefer to reopen the first bug because the fix caused it. Either is fine, as long as the link is there and nobody closes it as "verified" without a note.
 
-## Quick check
-
-1. What does "Fixed" mean, and what does "Verified" mean?
-
-    ??? question "Answer"
-        Fixed: the developer believes it's fixed. Verified: someone checked the fix on a real build.
-
-2. While checking a fix, you find a different problem. Reopen or new bug?
-
-    ??? question "Answer"
-        A new bug, linked to the first one.
-
-3. Why ask for an automated test before closing a bug?
-
-    ??? question "Answer"
-        So the bug can't come back quietly. The test fails if it ever does.
-
 ## References
 
 - [ISTQB Glossary: defect management](https://glossary.istqb.org/)

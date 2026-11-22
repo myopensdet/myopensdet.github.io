@@ -126,23 +126,6 @@ A team gets these speed results for their search page, from 1,000 requests: aver
 
     Next, find out which searches are slow. Often it is a pattern: very long search words, searches with many results, or the first search after a quiet period. Once you know the pattern, you can write a test for exactly that case.
 
-## Quick check
-
-1. What is the difference between functional and non-functional testing?
-
-    ??? question "Answer"
-        Functional testing checks what the app does. Non-functional testing checks how well it does it: speed, ease of use, devices, and staying up.
-
-2. Why is the 95th percentile more useful than the average?
-
-    ??? question "Answer"
-        It shows what your slowest 1 in 20 users get. An average can look good while many users have a bad time.
-
-3. What is the cheapest usability test?
-
-    ??? question "Answer"
-        Give someone a real task on the page, and watch where they get stuck, without helping.
-
 ## References
 
 - [Nielsen Norman Group: 10 Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)

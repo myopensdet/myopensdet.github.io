@@ -97,23 +97,6 @@ Map the story "Members get 5% off". Write the rules, two examples per rule, and 
 
     The 25.65 example is the same rule as in the [data-driven testing](../data-driven/index.md) template.
 
-## Quick check
-
-1. Who comes to a Three Amigos session?
-
-    ??? question "Answer"
-        A product owner, a developer and a tester.
-
-2. What does a red card mean?
-
-    ??? question "Answer"
-        A question nobody in the room can answer yet.
-
-3. When does the product owner review the scenarios?
-
-    ??? question "Answer"
-        Before the feature is built.
-
 ## References
 
 - [Matt Wynne: Introducing Example Mapping](https://cucumber.io/blog/bdd/example-mapping-introduction/)

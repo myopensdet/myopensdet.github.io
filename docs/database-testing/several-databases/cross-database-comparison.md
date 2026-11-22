@@ -133,23 +133,6 @@ Add a check that every target has exactly the same columns as the source, for ev
 
     `columns()` works the same on SQL and MongoDB, because it's part of the base client.
 
-## Quick check
-
-1. In what order are the three checks, and why?
-
-    ??? question "Answer"
-        Counts, then checksums, then values: cheapest first, most detail last, and only when needed.
-
-2. Why mustn't the normalizer round values?
-
-    ??? question "Answer"
-        It would make real money differences disappear.
-
-3. What does "every row missing and extra" usually mean?
-
-    ??? question "Answer"
-        The keys don't match between the two sides.
-
 ## References
 
 - [Python: hashlib](https://docs.python.org/3/library/hashlib.html)

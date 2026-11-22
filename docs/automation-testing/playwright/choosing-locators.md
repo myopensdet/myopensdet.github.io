@@ -144,23 +144,6 @@ Write a check that the card of **Clean Tests** shows `Price: 31.00`, using `Book
 
     `book("Clean Tests")` narrows to one card, so `get_by_text("Price:")` finds exactly one element.
 
-## Quick check
-
-1. In what order do you choose locators?
-
-    ??? question "Answer"
-        Role and name, label, text, test id, then CSS or XPath as a last resort.
-
-2. Every row has a **Remove** button. How do you click the one for **SQL in a Week**?
-
-    ??? question "Answer"
-        Find the row by its text, then the button inside it: `rows.filter(has_text="SQL in a Week").get_by_role("button", name="Remove")`.
-
-3. Why is `nth(1)` risky?
-
-    ??? question "Answer"
-        It picks by position. When the order changes, the test acts on a different element, and may still pass.
-
 ## References
 
 - [Playwright: Locators](https://playwright.dev/python/docs/locators)

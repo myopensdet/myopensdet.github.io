@@ -45,14 +45,12 @@ Real tests need setup: a logged-in user, test data in a database, a browser. Wit
         """A new, empty cart for each test."""
         return Cart()
 
-
     @pytest.fixture
     def cart_with_items(cart):
         """A cart with two notebooks and a pen: 10.00 in total."""
         cart.add("Pocket notebook", 425, quantity=2)
         cart.add("Pen", 150)
         return cart
-
 
     @pytest.fixture
     def order_store():
@@ -139,29 +137,11 @@ Write a fixture `cart_with_welcome5` that uses `cart`, adds an item worth 2500, 
         cart.apply_coupon("WELCOME5")
         return cart
 
-
     def test_welcome5_takes_five_off(cart_with_welcome5):
         assert cart_with_welcome5.total() == 2000
     ```
 
     Put the fixture in `tests/conftest.py` if other files will need it, or in the test file if only that file does.
-
-## Quick check
-
-1. How does a test ask for a fixture?
-
-    ??? question "Answer"
-        By naming it as an argument of the test function.
-
-2. When does the code after `yield` run?
-
-    ??? question "Answer"
-        After the test finishes, even if it failed.
-
-3. Why keep a cart fixture at function scope?
-
-    ??? question "Answer"
-        Tests change it. A fresh one per test means no test can affect another.
 
 ## References
 

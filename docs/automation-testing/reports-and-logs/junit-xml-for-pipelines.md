@@ -141,23 +141,6 @@ Name the template's suite `shop-tests`, and add the captured logs to each test c
 
     The file then starts with `<testsuite name="shop-tests"`, and each test case has a `<system-out>` with `Captured Log`.
 
-## Quick check
-
-1. Who reads JUnit XML: people or tools?
-
-    ??? question "Answer"
-        Tools: CI systems turn it into test tabs and failure lists.
-
-2. How does an xfail test appear in JUnit XML?
-
-    ??? question "Answer"
-        As `<skipped type="pytest.xfail">`, with the reason.
-
-3. What two things about your computer does the file contain?
-
-    ??? question "Answer"
-        Its name (`hostname`) and its time zone (in `timestamp`).
-
 ## References
 
 - [pytest: Creating JUnitXML format files](https://docs.pytest.org/en/stable/how-to/output.html#creating-junitxml-format-files)

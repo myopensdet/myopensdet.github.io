@@ -139,18 +139,6 @@ Scenario: Wrong coupon
 
     In the template's `coupons.feature`, the `Background` adds the books first. The new last line also checks the rule that matters: the total didn't change.
 
-## Quick check
-
-1. What goes in `Given`, `When` and `Then`?
-
-    ??? question "Answer"
-        The starting state, the one action, and the check.
-
-2. Why write "I apply the coupon" instead of "I click Apply coupon"?
-
-    ??? question "Answer"
-        It describes the behaviour, works for the API and the page, and doesn't break when the page changes.
-
 ## References
 
 - [Cucumber: Gherkin reference](https://cucumber.io/docs/gherkin/reference/)

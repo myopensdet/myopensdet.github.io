@@ -118,23 +118,6 @@ Pick one step from the table. For the task "test product reviews in the shop", w
 
     The drawing makes a good question pop out: does the shop check the orders database, so only people who bought the product can review it? You would not think to ask that without the second database in the picture.
 
-## Quick check
-
-1. Why try the feature by hand (step 4) before writing the plan (step 6)?
-
-    ??? question "Answer"
-        One real result keeps the plan honest. You find out how the feature really works before you decide what to test.
-
-2. What is the difference between a happy path and a negative test?
-
-    ??? question "Answer"
-        A happy path uses the feature the normal way with good data. A negative test uses bad input that the app should refuse.
-
-3. Which step protects you from building the wrong tests for a week?
-
-    ??? question "Answer"
-        Step 6: sharing a one-page plan before you build. Your lead can correct a wrong idea in minutes.
-
 ## References
 
 - [ISTQB Glossary](https://glossary.istqb.org/): smoke test, negative testing and other terms

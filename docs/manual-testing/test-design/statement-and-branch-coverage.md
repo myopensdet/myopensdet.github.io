@@ -208,23 +208,6 @@ Your only test is `can_return(10, opened=True) is True`. What does statement cov
 
     Then add the edges, because coverage won't ask for them: day 14 and 15 for opened, day 30 and 31 for not opened. That is [boundary values](boundary-values.md) doing the work coverage can't.
 
-## Quick check
-
-1. What is the difference between statement and branch coverage?
-
-    ??? question "Answer"
-        Statement coverage checks every line ran. Branch coverage also checks every way out of each `if` was taken, including the "skip it" way.
-
-2. In this lesson, what did 100% statement coverage hide?
-
-    ??? question "Answer"
-        A crash for every customer who isn't a member, because no test took the "not a member" branch.
-
-3. What is a better coverage rule than "100%"?
-
-    ??? question "Answer"
-        New and changed code is covered, and total coverage doesn't go down.
-
 ## References
 
 - [coverage.py documentation](https://coverage.readthedocs.io/): running, reports, and the `.coveragerc` settings

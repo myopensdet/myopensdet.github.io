@@ -88,23 +88,6 @@ Your company copies orders from PostgreSQL to MySQL every night for the finance 
     - Money rounded (float instead of decimal): compare values with a checksum.
     - Rows doubled (the job ran twice): compare row counts, and look for duplicate ids.
 
-## Quick check
-
-1. Why isn't a matching row count enough?
-
-    ??? question "Answer"
-        Values can change while the count stays the same, like names cut short.
-
-2. What's a source of truth?
-
-    ??? question "Answer"
-        The one database everyone agrees is right for that data. The others are compared against it.
-
-3. Why one test suite instead of one per database?
-
-    ??? question "Answer"
-        Separate suites drift apart, and then you're comparing tests, not data.
-
 ## References
 
 - [PostgreSQL documentation](https://www.postgresql.org/docs/17/index.html)

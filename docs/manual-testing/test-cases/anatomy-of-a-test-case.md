@@ -147,23 +147,6 @@ Rewrite this case so anyone can run it: "Login test. Enter wrong password a few 
 
     Notice how "a few times" became 3. If you don't know the real number, that's a question for the product owner, not a guess.
 
-## Quick check
-
-1. What is the most important part of a test case?
-
-    ??? question "Answer"
-        The expected result: exactly what should happen, and what must not.
-
-2. Why put the requirement ID in the Covers field?
-
-    ??? question "Answer"
-        So you can check that every requirement has a test, and see which rule failed when a test fails.
-
-3. A case has 18 steps. What should you do?
-
-    ??? question "Answer"
-        It is probably checking several things. Split it into smaller cases, each with one check.
-
 ## References
 
 - [ISTQB Glossary: test case, precondition, expected result](https://glossary.istqb.org/)

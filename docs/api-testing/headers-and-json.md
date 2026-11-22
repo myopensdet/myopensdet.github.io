@@ -92,23 +92,6 @@ Send `{"price": 4.25, "tags": ["paper"]}` to `https://httpbin.org/anything`, onc
 ??? success "Solution"
     With `json=`, the server gets `{'price': 4.25, 'tags': ['paper']}`: a number and a list. With `data=`, the form has `{'price': '4.25', 'tags': 'paper'}`: everything is text, and the list became one value. Forms can't carry nested data. That's why JSON APIs use JSON.
 
-## Quick check
-
-1. What does `json=` set for you?
-
-    ??? question "Answer"
-        The JSON text in the body, and the header `Content-Type: application/json`.
-
-2. When would you use `data=`?
-
-    ??? question "Answer"
-        When the API expects a form, `application/x-www-form-urlencoded`, like some login endpoints.
-
-3. Which headers must never appear in logs?
-
-    ??? question "Answer"
-        Ones holding secrets: `Authorization`, `Cookie`, and API key headers.
-
 ## References
 
 - [MDN: HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers)

@@ -10,95 +10,70 @@ summary: "One plain sentence: what this lesson teaches."
 ---
 
 <!-- Lesson page (Style guide 7.2). One new idea per page.
-     Every command shows what you type AND what you should see. -->
+     No "What you will learn" list and no quiz: the sections below do that job. -->
 
 # LESSON TITLE
 
-<!-- 1. One-sentence summary. -->
+<!-- Two to four sentences: what the idea is, in plain words, and why a tester meets it. -->
 
 !!! note "Before you start"
-    <!-- Prerequisites as links, plus a two-line recap so this page stands on its own. -->
-    You should know [the previous lesson](index.md).
+    <!-- Prerequisites as links, and where the example file is. -->
+    You need Python 3.13 and [the previous lesson](index.md). The example file is `examples/EXAMPLE.py`.
 
-## What you will learn
+## Why testers need this
 
-<!-- Three to five outcomes. -->
+<!-- A real work situation with real test data (made-up IDs, fake users).
+     Say what goes wrong without this idea. Never an invented personal story. -->
 
-- Outcome one
-- Outcome two
-- Outcome three
+## How it works
 
-## Why this matters at work
+<!-- A short explanation, then one Mermaid diagram (3 columns at most, or top to
+     bottom, so it reads on a phone), then a one-line caption in italics. -->
 
-<!-- A real work situation, never an invented personal story. -->
+```mermaid
+flowchart TD
+    A["Input"] --> B["What happens"] --> C["Result"]
+```
 
-## The idea in plain words
+*Caption: what the diagram shows.*
 
-!!! info "In plain words"
-    <!-- Everyday comparison first, then the real thing. -->
-
-<!-- A diagram of the idea. -->
-
-## Step by step
-
-<!-- Exactly what to type, then what you should see after each step. -->
-
-1. Do this:
-
-    ```bash
-    $ command to type
-    ```
-
-    You should see:
-
-    ```text
-    expected output
-    ```
-
-## The template
+## The code
 
 <!-- Code is pulled from modules/ (never copy-pasted), so the site always shows
-     the tested version. Replace the paths below. -->
+     the tested version. The output below must be from a real run; the topic
+     test checks that it matches. -->
 
-=== "Code"
+```python title="examples/EXAMPLE.py"
+--8<-- "_new_topic_template/modules/templates/example_template.py"
+```
 
-    ```python
-    --8<-- "_new_topic_template/modules/templates/example_template.py"
-    ```
+```bash
+python EXAMPLE.py
+```
 
-=== "How to run"
+```text
+real output
+```
 
-    ```bash
-    $ .venv/bin/python -m pytest modules/<section>/<topic>/tests -v
-    ```
+## Line by line
 
-=== "Expected output"
+<!-- Explain the lines a beginner would stop at. Group them by part of the script. -->
 
-    ```text
-    1 passed
-    ```
+## How it is used in a real QA project
 
-!!! warning "Common mistakes"
-    <!-- The errors people really hit, and how to avoid them. -->
+<!-- Where this shows up at work, with links to the lessons that go further. -->
 
-!!! failure "If you see this error"
-    <!-- The real error text, then the fix. -->
+## Your task
 
-## Try it yourself
-
-<!-- An exercise on the reader's own app or the topic's demo. -->
+<!-- A small exercise with a test, on realistic data. Say how to check it. -->
 
 ??? success "Solution"
-    <!-- Folded by default. -->
+    <!-- Folded by default. Explain the one or two tricky lines. -->
 
-## Quick check
+## When it goes wrong
 
-<!-- Three questions. Answers folded. -->
-
-1. Question one?
-
-    ??? question "Answer"
-        Answer.
+<!-- Real error messages, reproduced on the stated version. For each one:
+     the message in a text block, what it means, and the fix. -->
 
 ## References
 

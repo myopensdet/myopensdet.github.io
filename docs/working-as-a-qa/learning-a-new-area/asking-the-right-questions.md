@@ -133,23 +133,6 @@ Your lead says: "Please test the invoice download in the shop." Using the checkl
     - Does an invoice count as personal data under our company's rules?
     - What does done mean: tests, a bug report, or both?
 
-## Quick check
-
-1. What should you do before asking your lead anything?
-
-    ??? question "Answer"
-        Answer what you can yourself, from the ticket, the docs and the code.
-
-2. Why write down who answered and when?
-
-    ??? question "Answer"
-        If an answer changes later, you can show why you planned the way you did.
-
-3. Which question often turns into your first high risk?
-
-    ??? question "Answer"
-        "What worries you most about this feature?"
-
 ## References
 
 - [ISTQB Glossary](https://glossary.istqb.org/): test basis, test scope and risk

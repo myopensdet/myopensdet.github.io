@@ -138,23 +138,6 @@ Read this job ad task list. Is it mostly developer, QA or SDET work?
 ??? success "Solution"
     SDET. It has manual work (explore, report, review stories) and test code for the whole system (API tests, CI, keeping them stable). A QA job would not ask for Python test code. A developer job would talk about building features.
 
-## Quick check
-
-1. What is a unit test?
-
-    ??? question "Answer"
-        A test that checks one small piece of code on its own, like one function.
-
-2. The developer's unit test passed. Why does the SDET still test checkout through the API?
-
-    ??? question "Answer"
-        A correct function can still be used the wrong way. API tests check that the parts work together, the way a user uses them.
-
-3. A job is called "QA Engineer" but the tasks say "build Playwright tests in Python". Which role is it really?
-
-    ??? question "Answer"
-        SDET work. The tasks matter more than the title.
-
 ## References
 
 - [ISTQB Glossary](https://glossary.istqb.org/): unit testing (component testing), test automation

@@ -113,23 +113,6 @@ Your team is adding an "upload a profile photo" feature. Using the web form and 
 
     The last line is from the API checklist, and it is the one most often forgotten. It is also the most serious if it fails.
 
-## Quick check
-
-1. How is a checklist item different from a test case?
-
-    ??? question "Answer"
-        A test case says exactly what to do and expect. A checklist item says what to check, and works across many features.
-
-2. What should you do with an item that doesn't apply?
-
-    ??? question "Answer"
-        Mark it "n/a" with a short reason, so readers know it was thought about.
-
-3. When should you add a line to a checklist?
-
-    ??? question "Answer"
-        After a bug reaches users that a checklist line would have caught.
-
 ## References
 
 - [Atul Gawande, *The Checklist Manifesto*](https://atulgawande.com/book/the-checklist-manifesto/): why checklists work for experts

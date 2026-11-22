@@ -120,18 +120,6 @@ After `DELETE /orders/{id}`, the order's events disappear too (the table uses `O
 
     `place_order` already waits for the event, so no `wait_for` is needed here. The delete happens in the same request, so there's nothing late to wait for afterwards.
 
-## Quick check
-
-1. Why not `time.sleep(2)`?
-
-    ??? question "Answer"
-        It's slow when the app is fast, and too short when the app is slow.
-
-2. What does a good timeout failure say?
-
-    ??? question "Answer"
-        What it waited for, and for how long.
-
 ## References
 
 - [Python: time.monotonic](https://docs.python.org/3/library/time.html#time.monotonic)

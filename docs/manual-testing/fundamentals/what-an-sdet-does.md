@@ -153,23 +153,6 @@ The business changes the rule: "Orders of $75.00 or more ship free." What do you
 
     A failing test first, then the fix, then a passing test: now you know the test really checks the new rule. Rename the test to `test_free_shipping_from_75_dollars` too, so its name stays true.
 
-## Quick check
-
-1. What does SDET stand for?
-
-    ??? question "Answer"
-        Software Development Engineer in Test.
-
-2. Why is an automated test useful if a person could check the same thing by hand?
-
-    ??? question "Answer"
-        It runs in a fraction of a second, every time the code changes, and it never forgets or gets bored.
-
-3. Does an SDET stop testing by hand?
-
-    ??? question "Answer"
-        No. New features are explored by hand first. Automation checks the things that must keep working.
-
 ## References
 
 - [ISTQB Glossary](https://glossary.istqb.org/): test automation, test case and other terms

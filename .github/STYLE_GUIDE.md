@@ -27,21 +27,21 @@ Each playbook also has a **"How an experienced SDET thinks about this"** box, a 
 
 ### 7.2 Lesson page template (top to bottom)
 
-1. Title and a one-sentence summary.
-2. Info bar: level, reading time, tags.
-3. **"Before you start"** box: prerequisites as links, plus a short recap so the page stands on its own.
-4. **"What you will learn":** three to five outcomes.
-5. **"Why this matters at work":** a real situation.
-6. The concept in plain words, starting with an everyday comparison and a diagram.
-7. Step-by-step walkthrough: exactly what to type, and a screenshot or expected output after each step.
-7a. **"When it goes wrong"** (added 2026-11-16): the common ways this step fails at work, and what to do about each one.
-8. The template: code tabs (code · how to run · expected output), pulled from `modules/`.
-9. **"Common mistakes"** box.
-10. **"If you see this error"** box: the real error text and the fix.
-11. **"Try it yourself":** an exercise on the reader's own app or the topic's demo, with the solution in a collapsed block.
-12. **Quick check:** three questions.
-13. **References:** every source used, plus the tool version the page was written for and the date the links were last checked.
-14. Footer: previous / next, "Edit this page on GitHub", comments, feedback widget, author line.
+Updated 2026-11-22. The Python lessons follow it; older lessons move to it as they are rewritten. The starting file is `_new_topic_template/docs/lesson.md`.
+
+1. Title, and two to four plain sentences: what the idea is and why a tester meets it.
+2. **"Before you start"** box: prerequisites as links, the tool version, and the example file.
+3. **"Why testers need this":** a real work situation with realistic (fake) test data, and what goes wrong without the idea.
+4. **"How it works":** a short explanation and at least one diagram, with a one-line caption. Diagrams must read on a phone: three columns at most, or top to bottom.
+5. **"The code":** pulled from `modules/`, with the command to run it and the real output. The topic test checks the output on the page.
+6. **"Line by line":** the lines a beginner would stop at, grouped by part.
+7. **"How it is used in a real QA project":** where it shows up at work, with links onwards.
+8. **"Your task":** an exercise with a test, and the solution in a collapsed block.
+9. **"When it goes wrong":** real error messages, reproduced on the stated version, each with its meaning and fix.
+10. **References:** every source used, plus the tool version and the date the links were checked.
+11. Footer: previous / next, "Edit this page on GitHub", feedback widget, author line.
+
+No quizzes or "Quick check" sections, and no "What you will learn" list: they repeat the page. Define a term once, link it to the Glossary, and don't repeat the definition.
 
 ### 7.3 Teaching method
 

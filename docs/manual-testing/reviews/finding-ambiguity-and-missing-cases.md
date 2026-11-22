@@ -139,23 +139,6 @@ Find the vague words and two missing cases in this criterion: "Search should ret
 
     Missing cases: an empty search, a search with no results, and a very long search text.
 
-## Quick check
-
-1. What is the difference between ambiguity and a missing case?
-
-    ??? question "Answer"
-        Ambiguity is a word with more than one meaning. A missing case is something nobody wrote down at all.
-
-2. Can the scanner find missing cases?
-
-    ??? question "Answer"
-        No. It only finds words. Missing cases need a person asking questions like "what happens when it goes wrong?"
-
-3. What should replace "fast" in a requirement?
-
-    ??? question "Answer"
-        A number with a unit, like "within 2 working days" or "within 2 seconds".
-
 ## References
 
 - [ISTQB Glossary: ambiguity, requirement](https://glossary.istqb.org/)

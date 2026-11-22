@@ -193,23 +193,6 @@ The shop adds a new rule: "Quantity must be 1 to 10." The check sits in `Cart.ad
 
     The example already has the API test: `test_quantity_above_10_is_refused`. A good habit: test the details low, and check once at a higher level that the rule reaches the user.
 
-## Quick check
-
-1. Seven unit tests passed, but the cart total was wrong. Which level caught it?
-
-    ??? question "Answer"
-        Integration. The functions were right, but the cart combined them the wrong way.
-
-2. Why are API tests a sweet spot for many teams?
-
-    ??? question "Answer"
-        They check what users really get from the app, and they are still fast, because there is no browser.
-
-3. When should you write a UI test?
-
-    ??? question "Answer"
-        When the thing you check can only be seen in a browser, like a button, a layout, or a page that needs JavaScript.
-
 ## References
 
 - [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html): unit, integration, contract, UI and end-to-end tests, explained in depth

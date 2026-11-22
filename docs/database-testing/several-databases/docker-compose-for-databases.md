@@ -135,23 +135,6 @@ How would you check, from the output above, that no database is open to other co
 ??? success "Solution"
     In `docker compose ps`, every port begins with `127.0.0.1:`. A port that shows `0.0.0.0:` or no address is open to the network.
 
-## Quick check
-
-1. What does `127.0.0.1:` in front of a port do?
-
-    ??? question "Answer"
-        It opens the port to your own computer only.
-
-2. Why pin the image with `@sha256:`?
-
-    ??? question "Answer"
-        So it's exactly the same image every time, on every computer.
-
-3. Why `docker compose down -v` after changing a password?
-
-    ??? question "Answer"
-        The database sets the password only on its first start, with empty data. `-v` deletes the data, so it starts fresh.
-
 ## References
 
 - [Docker Compose file reference](https://docs.docker.com/reference/compose-file/)

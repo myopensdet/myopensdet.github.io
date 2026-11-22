@@ -126,23 +126,6 @@ Write a test in `tests/test_cart.py` that checks a negative price is refused wit
 
     `python -m pytest -k negative -v` should show one test, passed.
 
-## Quick check
-
-1. What do the `>` and `E` lines in a failure mean?
-
-    ??? question "Answer"
-        `>` is the line that failed. `E` shows the error, with the real values.
-
-2. Why add `match=` to `pytest.raises`?
-
-    ??? question "Answer"
-        So the test passes only for the right error message, not any error of that type.
-
-3. How do you run only the tests with "refused" in their name?
-
-    ??? question "Answer"
-        `python -m pytest -k refused`.
-
 ## References
 
 - [pytest: How to write and report assertions](https://docs.pytest.org/en/stable/how-to/assert.html)

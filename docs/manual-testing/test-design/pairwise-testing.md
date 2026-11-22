@@ -132,23 +132,6 @@ A mobile app must be tested on: phone (Android, iPhone), screen (small, large), 
 
     Then add the most common real setup, for example "iPhone, small screen, 4G, member", if it is not already in the list.
 
-## Quick check
-
-1. What does pairwise testing promise?
-
-    ??? question "Answer"
-        Every pair of values, from any two settings, appears together in at least one test.
-
-2. Why are pairs usually enough?
-
-    ??? question "Answer"
-        Research by NIST found that most software failures are caused by one or two settings lining up. Fewer need three or more.
-
-3. When should you test every combination instead?
-
-    ??? question "Answer"
-        For a small, high-risk area where three or more settings can interact, like payments or safety.
-
 ## References
 
 - [NIST: Automated Combinatorial Testing for Software](https://csrc.nist.gov/projects/automated-combinatorial-testing-for-software): the research behind pairwise testing

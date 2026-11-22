@@ -166,23 +166,6 @@ A password must be "at least 8 and at most 64 characters". A shop gives free shi
 
     Free shipping has only one edge, because there is no upper limit. Some testers also add $50.01, to be safe.
 
-## Quick check
-
-1. Why do bugs gather at edges?
-
-    ??? question "Answer"
-        Because the edge is where a tiny slip in the code, like `<` instead of `<=`, changes the result. Values in the middle aren't affected.
-
-2. What are the two-value boundary values for the range 3 to 20?
-
-    ??? question "Answer"
-        2, 3, 20 and 21.
-
-3. In step 5, why did the group tests pass with the bug in the code?
-
-    ??? question "Answer"
-        None of them used age 18. They tested 10, 30 and 150, which the bug didn't change.
-
 ## References
 
 - [ISTQB Glossary: boundary value analysis](https://glossary.istqb.org/)

@@ -149,23 +149,6 @@ Rewrite this report: "Checkout is slow. Please fix ASAP!!!"
 
     "ASAP!!!" became a severity with a reason, and "slow" became a number compared with the story's limit.
 
-## Quick check
-
-1. What three things should a good title say?
-
-    ??? question "Answer"
-        What is wrong, where, and when.
-
-2. Why is a comparison ("José works, আরশাদ doesn't") so useful?
-
-    ??? question "Answer"
-        It shows the smallest change that makes the bug appear, which points straight at the cause.
-
-3. What should you never paste into a bug report?
-
-    ??? question "Answer"
-        Real customer data, real passwords, keys or tokens.
-
 ## References
 
 - [Simon Tatham: How to Report Bugs Effectively](https://www.chiark.greenend.org.uk/~sgtatham/bugs.html)

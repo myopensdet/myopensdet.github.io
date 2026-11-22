@@ -107,23 +107,6 @@ Here is one acceptance criterion: "The user can upload a profile photo." Without
 
     Each one is a case that would otherwise be decided by whoever writes the code, and probably differently from what the product owner wanted.
 
-## Quick check
-
-1. What makes testing "static"?
-
-    ??? question "Answer"
-        It checks work without running it: reading stories, specs, plans and code, by people or tools.
-
-2. Name two kinds of problem static testing finds best.
-
-    ??? question "Answer"
-        Any two of: missing requirements, words with two meanings, contradictions between rules, and code mistakes a tool can see.
-
-3. What can't static testing find?
-
-    ??? question "Answer"
-        Things that need the running app: speed, real behaviour with other systems, and how it feels to use.
-
 ## References
 
 - [ISTQB Certified Tester Foundation Level](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/): chapter 3, "Static Testing"

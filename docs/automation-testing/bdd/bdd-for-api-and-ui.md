@@ -142,18 +142,6 @@ Run only the `@smoke` scenarios on the UI, in both tools.
 ??? success "Solution"
     behave: `behave --tags=@smoke -D target=ui`. pytest-bdd: `python -m pytest -m smoke --target=ui`. Two scenarios each.
 
-## Quick check
-
-1. What does the driver hide from the steps?
-
-    ??? question "Answer"
-        How the app is reached: URLs and JSON for the API, labels and buttons for the page.
-
-2. Which run goes on every change, and why?
-
-    ??? question "Answer"
-        The API run. It's several times faster.
-
 ## References
 
 - [Playwright for Python: Getting started](https://playwright.dev/python/docs/library)

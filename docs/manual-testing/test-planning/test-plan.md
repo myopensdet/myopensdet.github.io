@@ -107,23 +107,6 @@ The product owner adds one line to the refund story two days before release: "Cu
     - Who and when: someone's name, by when.
     - At the top: "Updated: email refund link added." And tell the team the plan changed.
 
-## Quick check
-
-1. Which column of the scope table matters most, and why?
-
-    ??? question "Answer"
-        Out of scope, with reasons. Each line there is a decision someone might disagree with.
-
-2. Where does the order of testing come from?
-
-    ??? question "Answer"
-        From the scored risks: deep first, then normal, then light.
-
-3. When should the plan be updated?
-
-    ??? question "Answer"
-        The same day the feature or the scope changes.
-
 ## References
 
 - [ISTQB Glossary: test plan](https://glossary.istqb.org/)

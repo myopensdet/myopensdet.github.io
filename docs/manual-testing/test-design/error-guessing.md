@@ -157,23 +157,6 @@ A booking form has a "date of arrival" field and a "Book now" button. Using the 
 
     The last two are actions, not input. Many testers forget them, and they cause some of the most expensive bugs: paying twice.
 
-## Quick check
-
-1. Why is error guessing not really "guessing"?
-
-    ??? question "Answer"
-        It uses a list of inputs and actions that have broken software before. It is experience written down.
-
-2. A guess shows behaviour the rules don't cover. What do you do?
-
-    ??? question "Answer"
-        Write it up as a question with the evidence, and get a decision before you write a test for it.
-
-3. What is the best source of guesses for your team?
-
-    ??? question "Answer"
-        Your team's own past bugs. Add each one to the checklist.
-
 ## References
 
 - [Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings): text that has broken real software

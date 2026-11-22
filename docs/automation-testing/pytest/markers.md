@@ -111,23 +111,6 @@ Mark `test_coupon_is_refused` as `smoke`, then run `python -m pytest -m smoke`. 
 ??? success "Solution"
     Five: the two cart smoke tests, plus the three rows of `test_coupon_is_refused`. A marker on a parametrized test applies to every row.
 
-## Quick check
-
-1. What does "deselected" mean in the results?
-
-    ??? question "Answer"
-        Not chosen by `-m` or `-k` this time. It didn't run, and it didn't fail.
-
-2. What is the difference between `skip` and `xfail`?
-
-    ??? question "Answer"
-        `skip` doesn't run the test. `xfail` runs it and expects it to fail, for example because of a known bug.
-
-3. What does `--strict-markers` do?
-
-    ??? question "Answer"
-        It turns a marker that isn't registered, like a typo, into an error.
-
 ## References
 
 - [pytest: How to mark test functions with attributes](https://docs.pytest.org/en/stable/how-to/mark.html)

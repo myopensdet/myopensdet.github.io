@@ -137,23 +137,6 @@ A team's pyramid report shows: e2e 2, ui 40, api 5, integration 0, unit 3. Their
 
     Then look at the other UI tests the same way. Most suites shaped like this have many rule checks hiding in the browser layer.
 
-## Quick check
-
-1. Why should most tests be at the bottom of the pyramid?
-
-    ??? question "Answer"
-        They are fast and cheap to write, and when they fail they point to one place.
-
-2. What is the "ice cream cone"?
-
-    ??? question "Answer"
-        An upside-down pyramid: mostly UI tests and very few unit tests. It makes a suite slow and flaky.
-
-3. When you move a test down a level, which step must you not skip?
-
-    ??? question "Answer"
-        Break the rule on purpose and check that the new test fails. Otherwise you don't know it really tests anything.
-
 ## References
 
 - [Martin Fowler: Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html): where the idea came from

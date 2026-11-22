@@ -138,23 +138,6 @@ Change `first_look.py` so it also prints the text of the cart count in the heade
 
     It prints `Cart count: 0`: a new context means a new session and an empty cart.
 
-## Quick check
-
-1. Why does each test get a new context, but not a new browser?
-
-    ??? question "Answer"
-        A new context is a clean profile (no cookies, no cart) and takes milliseconds. Starting a browser takes many times longer.
-
-2. When does a locator search the page?
-
-    ??? question "Answer"
-        Each time you use it: an action like `click()`, or an `expect()` check. Not when you create it.
-
-3. What does strict mode protect you from?
-
-    ??? question "Answer"
-        Clicking or typing into the wrong one of several matching elements.
-
 ## References
 
 - [Playwright: Browsers](https://playwright.dev/python/docs/browsers)

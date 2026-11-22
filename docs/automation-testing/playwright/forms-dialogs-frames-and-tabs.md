@@ -13,7 +13,7 @@ updated: "2026-11-22"
 
 # Forms, Dialogs, Iframes and New Tabs in Playwright
 
-A checkout page has everything that makes UI tests hard: a form with a dropdown and radio buttons, a card field that lives inside an **iframe** (another page shown inside this one), a terms link that opens a **new tab**, and, on the cart page, a **confirm dialog** before emptying the cart. Each needs one specific move in Playwright. Without it, the test waits and times out, or does nothing and fails later.
+A checkout page has everything that makes UI tests hard. It has a form with a dropdown and radio buttons. The card field lives inside an **iframe**: another page shown inside this one. The terms link opens a **new tab**. And the cart page asks a **confirm dialog** before it empties the cart. Each needs one specific move in Playwright. Without it, the test waits and times out, or does nothing and fails later.
 
 !!! note "Before you start"
     Read [Page Object Model](page-object-model.md). Have the [template project](index.md#templates) open.
@@ -27,7 +27,7 @@ A checkout page has everything that makes UI tests hard: a form with a dropdown 
 
 ## Why this matters at work
 
-Payment forms are almost always in an iframe from the payment provider. "Are you sure?" dialogs guard every delete. Terms, help and invoices open in new tabs. These are the steps where UI suites fail with a timeout and nobody knows why, until someone knows the one move each needs.
+Payment forms are almost always in an iframe from the payment provider. "Are you sure?" dialogs guard every delete. Terms, help and invoices open in new tabs. UI suites often fail at these steps with a timeout, and nobody knows why. Each one needs one move, and this page shows it.
 
 ## The idea in plain words
 
@@ -172,23 +172,6 @@ Write a test that clicks **Empty cart**, answers Cancel, and checks the dialog's
     ```
 
     `dialog.message` is the dialog's text; `dialog.type` is `confirm` here. `click()` returns only after the dialog has been answered, so `messages` is filled by the last line.
-
-## Quick check
-
-1. What does Playwright do with a dialog you don't handle?
-
-    ??? question "Answer"
-        Dismisses it, like clicking Cancel.
-
-2. How do you fill a field that's inside an iframe?
-
-    ??? question "Answer"
-        Find the frame with `page.frame_locator(...)`, then the field inside it.
-
-3. How do you get hold of a tab that a link opens?
-
-    ??? question "Answer"
-        Click inside `with page.context.expect_page() as new_tab:`, then use `new_tab.value`.
 
 ## References
 

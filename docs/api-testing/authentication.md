@@ -146,23 +146,6 @@ Write a test that checks DummyJSON's `/auth/me` refuses a request with no `Autho
 
     401: there's no login at all. Run it and check. If an API answers 200 here, that's a serious bug.
 
-## Quick check
-
-1. Why should an API key go in a header, not the URL?
-
-    ??? question "Answer"
-        URLs end up in server logs, browser history and proxies. Headers usually don't.
-
-2. What do you send to get an OAuth2 client credentials token?
-
-    ??? question "Answer"
-        A form with `grant_type=client_credentials`, and the client id and secret (usually as Basic auth), to the token URL.
-
-3. Where do test secrets live?
-
-    ??? question "Answer"
-        In environment variables, filled from the CI tool's secret store. Never in code.
-
 ## References
 
 - [MDN: HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Authentication)

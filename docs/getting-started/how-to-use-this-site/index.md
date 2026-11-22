@@ -65,20 +65,21 @@ A **topic** is one area of the work, like [API testing](../../api-testing/index.
 
 ### 3. Read a lesson
 
-A **lesson** teaches one skill, like [writing step definitions](../../automation-testing/bdd/step-definitions.md). Lessons always have the same parts, so you can find what you need quickly:
+A **lesson** teaches one skill, like [writing step definitions](../../automation-testing/bdd/step-definitions.md). Lessons follow the same order, so you can find what you need quickly:
 
 | Part | What it gives you |
 | --- | --- |
-| Before you start | What to read or install first |
-| What you will learn | The skills, in a short list |
-| Why this matters at work | Where you'll use it |
-| The idea in plain words | The idea, with an everyday example |
-| Step by step | What to type, and what you should see after each step |
-| When it goes wrong | Real errors, and what each one means |
-| Common mistakes | What people often get wrong, and one error explained in full |
-| Try it yourself | An exercise, with the answer folded away |
-| Quick check | Two or three questions to test yourself |
+| Before you start | What to read or install first, and the example file |
+| Why testers need this | A real situation at work where you need it |
+| How it works | The idea, with a diagram |
+| The code | Real code, how to run it, and its real output |
+| Line by line | What the important lines do |
+| How it is used in a real QA project | Where you'll use it at work |
+| Your task | An exercise, with the answer folded away |
+| When it goes wrong | Real error messages, and how to fix each one |
 | References | The official documentation |
+
+Some older lessons still use slightly different headings, such as "Step by step" and "Try it yourself". They are being moved to this layout one category at a time.
 
 When you finish a lesson, click **Mark this lesson as done** at the end.
 
@@ -150,23 +151,6 @@ Find the lesson that explains what to do when pytest-bdd says `Step definition i
 
 ??? success "Solution"
     Search for `Step definition is not found`. It's in [Step definitions](../../automation-testing/bdd/step-definitions.md#when-it-goes-wrong), under "When it goes wrong": a step's text doesn't match any pattern, often because of a typo.
-
-## Quick check
-
-1. Where do you find the files for a topic?
-
-    ??? question "Answer"
-        In the topic's **Templates** section, each in a tab with a copy button. The whole folder is on GitHub too.
-
-2. Your test run says `in 0.61s` and the page says `in 0.48s`. Is something wrong?
-
-    ??? question "Answer"
-        No. Times differ between computers. Compare the results: passed, failed, skipped.
-
-3. Where is your progress saved?
-
-    ??? question "Answer"
-        Only in your own browser, on this computer.
 
 ## References
 

@@ -132,23 +132,6 @@ A new database uses the placeholder `:1`, `:2`, ... (like Oracle's driver). Wher
 ??? success "Solution"
     In that database's own client class, by overriding `insert()` (or `placeholder` plus a small method that numbers them). Never in the tests, and not in `SqlClient`, which the other three share.
 
-## Quick check
-
-1. Which methods may tests call?
-
-    ??? question "Answer"
-        Only the base client's: `count`, `fetch`, `rows`, `checksum`, `columns`, `run_query` and the setup ones.
-
-2. Why does `MongoDbClient.connect()` send a ping?
-
-    ??? question "Answer"
-        `MongoClient` connects lazily. The ping makes a wrong address or password fail at once.
-
-3. Where does "SQLite can't store Decimal" get handled?
-
-    ??? question "Answer"
-        In `SqliteClient.to_db`, and nowhere else.
-
 ## References
 
 - [PEP 249: Python Database API Specification v2.0](https://peps.python.org/pep-0249/)

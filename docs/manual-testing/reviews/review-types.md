@@ -117,23 +117,6 @@ Pick a review type for each, and say why: (a) a new test case for "password must
     - **(b) Technical review.** Everyone will build on it for years, so check it against agreed standards with the people who know most. A mistake here gets copied into hundreds of tests.
     - **(c) Walkthrough.** The main goal is that everyone understands the plan and can question it. The author explaining it to the team does exactly that.
 
-## Quick check
-
-1. What decides how formal a review should be?
-
-    ??? question "Answer"
-        How much a mistake would cost, and how late you would find it.
-
-2. What should happen before a review meeting?
-
-    ??? question "Answer"
-        Reviewers get the work in advance, with a note about what to look at, and read it before the meeting.
-
-3. Why start comments with a label like "must:" or "question:"?
-
-    ??? question "Answer"
-        So the author knows at once how important each comment is, and what kind of answer it needs.
-
 ## References
 
 - [Google: How to do a code review](https://google.github.io/eng-practices/review/): a public guide many teams use

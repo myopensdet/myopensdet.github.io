@@ -180,18 +180,6 @@ Add a step, in both tools, for `Then the cart is empty`, using the total as the 
 
     No `parsers.parse` is needed in pytest-bdd: the text has no values in it.
 
-## Quick check
-
-1. What does `{copies:d}` do?
-
-    ??? question "Answer"
-        Matches a whole number, and passes it to the function as an `int`.
-
-2. How does a step reach the app in each tool?
-
-    ??? question "Answer"
-        behave: through `context`. pytest-bdd: through fixtures.
-
 ## References
 
 - [behave: Python step implementations](https://behave.readthedocs.io/en/latest/tutorial/#python-step-implementations)

@@ -132,23 +132,6 @@ Write a fixture `booking_without_breakfast` that builds on `new_booking`: it PAT
 
     No own clean-up: it uses `new_booking`, and `new_booking` deletes the booking after the test. Each fixture cleans up only what it made.
 
-## Quick check
-
-1. Why is the token fixture session-scoped?
-
-    ??? question "Answer"
-        One login for the whole run is faster, and some APIs limit logins.
-
-2. When does the code after `yield` run?
-
-    ??? question "Answer"
-        When the test ends, whether it passed or failed.
-
-3. Why shouldn't test 2 use the booking test 1 made?
-
-    ??? question "Answer"
-        Test 2 then fails when test 1 fails, can't run alone, and can't run in parallel.
-
 ## References
 
 - [pytest: How to use fixtures](https://docs.pytest.org/en/stable/how-to/fixtures.html)

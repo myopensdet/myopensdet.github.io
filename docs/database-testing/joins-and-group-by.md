@@ -213,23 +213,6 @@ Write a query that shows each book's title and how many copies have been ordered
 
     `LEFT JOIN` keeps the book nobody ordered. `COALESCE` turns its `NULL` sum into 0. The three books with 3 copies may come back in a different order: sorting on `copies` alone doesn't decide ties. Add `, b.title` to the `ORDER BY` when the order matters.
 
-## Quick check
-
-1. What's the difference between `JOIN` and `LEFT JOIN`?
-
-    ??? question "Answer"
-        `JOIN` keeps only rows that match on both sides. `LEFT JOIN` keeps every row from the left table, with `NULL`s when nothing matches.
-
-2. Where do you filter on `COUNT(*)`: `WHERE` or `HAVING`?
-
-    ??? question "Answer"
-        `HAVING`. `WHERE` runs before the rows are grouped.
-
-3. Why did `ARSHAD@example.com` get past the `UNIQUE` rule?
-
-    ??? question "Answer"
-        `UNIQUE` compares text exactly, so different capitals count as different values.
-
 ## References
 
 - [PostgreSQL tutorial: Joins between tables](https://www.postgresql.org/docs/17/tutorial-join.html)

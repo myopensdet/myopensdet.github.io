@@ -102,23 +102,6 @@ Write a test that creating a book with no `stock` saves it with stock 0, the col
         assert db.value("SELECT stock FROM books WHERE id = %s", (book_id,)) == 0
     ```
 
-## Quick check
-
-1. What does `RETURNING id` give you?
-
-    ??? question "Answer"
-        The id the database made for the new row, straight from the `INSERT`.
-
-2. An `UPDATE` with a wrong `WHERE` matches nothing. Does SQL raise an error?
-
-    ??? question "Answer"
-        No. It changes 0 rows and says so. Check the row count.
-
-3. Why save the other rows before an update?
-
-    ??? question "Answer"
-        To prove the update changed only its own row.
-
 ## References
 
 - [PostgreSQL: Returning data from modified rows](https://www.postgresql.org/docs/17/dml-returning.html)

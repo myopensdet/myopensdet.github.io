@@ -118,18 +118,6 @@ The business team adds a row: "Welcome coupon for a member", subtotal 40, coupon
 ??? success "Solution"
     40 − 5 = 35, then 5% off for a member: 35 × 0.95 = 33.25. Add the row with `expected_total` 33.25, typed in, not a formula. You can add it in Excel, or add it to `ROWS` in `tools/make_discount_sheet.py` and run the script.
 
-## Quick check
-
-1. What does `data_only=True` do?
-
-    ??? question "Answer"
-        Gives the value a formula showed when the file was last saved in Excel, instead of the formula.
-
-2. Why can a formula cell come back as `None`?
-
-    ??? question "Answer"
-        The file was made or changed by a script and never saved in Excel, so it has no saved value.
-
 ## References
 
 - [openpyxl documentation](https://openpyxl.readthedocs.io/en/stable/)

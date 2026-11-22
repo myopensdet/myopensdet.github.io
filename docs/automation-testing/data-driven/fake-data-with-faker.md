@@ -123,23 +123,6 @@ Make a test that creates 50 signups with `make_signup()` and checks every email 
 
     It passes because the factory uses `fake.unique.safe_email()`. Without `unique`, two fake people can get the same email, and a "same email twice" rule would fail at random.
 
-## Quick check
-
-1. Which email domains are safe for tests?
-
-    ??? question "Answer"
-        `example.com`, `example.net` and `example.org`.
-
-2. What do you need to repeat a run with random data?
-
-    ??? question "Answer"
-        Its seed: `TEST_SEED=<seed> python -m pytest`.
-
-3. Should "exactly 18" be tested with random data?
-
-    ??? question "Answer"
-        No. Edges go in fixed rows. Random data is for "any valid value".
-
 ## References
 
 - [Faker documentation](https://faker.readthedocs.io/en/master/)

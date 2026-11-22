@@ -130,18 +130,6 @@ Add a row: 1 copy of "SQL in a Week". What's the total? Does "1 copies" read bad
 
     The step text becomes `I add 1 copies of "SQL in a Week"`. It still matches the "copies" pattern, so it runs. It reads a bit oddly; that's the price of a table. The single-book case already has its own scenario with "1 copy".
 
-## Quick check
-
-1. What happens to `<copies>` before a row runs?
-
-    ??? question "Answer"
-        It's replaced by that row's value from the `copies` column.
-
-2. Why is "11 copies" its own scenario, not a row?
-
-    ??? question "Answer"
-        Its behaviour is different: a message, and no change. Different behaviour, different scenario.
-
 ## References
 
 - [Cucumber: Scenario Outline](https://cucumber.io/docs/gherkin/reference/#scenario-outline)

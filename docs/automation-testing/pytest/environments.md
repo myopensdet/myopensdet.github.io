@@ -147,23 +147,6 @@ Add a third environment, `qa`, with the URL `https://qa.example.com` and the tok
 
     The header says `environment: qa (https://qa.example.com)`. With `--env QA`, the run stops with `Unknown environment 'QA'. Choose one of: local, staging, qa`. Strict is usually right for environment names: a typo should never quietly pick a default.
 
-## Quick check
-
-1. Where should a token come from?
-
-    ??? question "Answer"
-        From an environment variable, set in the terminal or by the pipeline's secret store. Never from a file in the project.
-
-2. How does the run show which environment it used?
-
-    ??? question "Answer"
-        The `environment:` line in the header, printed by `pytest_report_header`.
-
-3. When should "no server" skip, and when should it fail?
-
-    ??? question "Answer"
-        Skip on a laptop, where the server may not be running. Fail in a pipeline job whose whole purpose is to test that server.
-
 ## References
 
 - [pytest: Writing hook functions](https://docs.pytest.org/en/stable/how-to/writing_hook_functions.html)

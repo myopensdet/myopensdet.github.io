@@ -124,23 +124,6 @@ test_a_delivered_order_cannot_be_cancelled
 
     Seems missing: can someone download **another person's invoice**? It looks like a gap. But before you say so, search the whole test folder for `invoice`. In this team's tests, another file has `test_no_invoice_for_someone_elses_order`. A gap in one file isn't always a gap. Search before you decide, and you will save yourself an awkward conversation.
 
-## Quick check
-
-1. What are the three parts of most tests?
-
-    ??? question "Answer"
-        Setup, action, check.
-
-2. Why read test names before the code?
-
-    ??? question "Answer"
-        Good names say what is tested in plain words. You learn a lot without reading any code.
-
-3. Your risk has no test. What does that tell you?
-
-    ??? question "Answer"
-        It is a gap: nobody checks it, so a bug there would not be caught. Test it first.
-
 ## References
 
 - [pytest: Anatomy of a test](https://docs.pytest.org/en/stable/explanation/anatomy.html): arrange, act, assert

@@ -151,23 +151,6 @@ Add a JSON case: a member with no coupon on a 19.99 order. Work out the expected
     {"case": "member, no coupon", "subtotal": "19.99", "coupon": null, "member": true, "expected": "18.99"}
     ```
 
-## Quick check
-
-1. Why is money written as text in the JSON file?
-
-    ??? question "Answer"
-        JSON numbers become floats, and floats aren't exact.
-
-2. What does YAML make of an unquoted `NO`?
-
-    ??? question "Answer"
-        `False`.
-
-3. Why `utf-8-sig` for CSV files?
-
-    ??? question "Answer"
-        It drops the invisible mark Excel puts at the start.
-
 ## References
 
 - [Python: csv](https://docs.python.org/3/library/csv.html)

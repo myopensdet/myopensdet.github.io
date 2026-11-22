@@ -100,23 +100,6 @@ Open `templates/run_summary.py` from this topic. Without running it, answer: wha
 
     You answered by reading two small parts, `summary()` and the end of `main()`, not the whole file. That's the method.
 
-## Quick check
-
-1. Where should you start reading a test project?
-
-    ??? question "Answer"
-        From the tests, starting with their names, or from the script's entry point.
-
-2. What is the "predict, then run" habit?
-
-    ??? question "Answer"
-        Write down what you think the code does, run it, and look closely where your guess was wrong.
-
-3. What does `breakpoint()` do?
-
-    ??? question "Answer"
-        It stops the program on that line, so you can look at variables and step through the code.
-
 ## References
 
 - [Python: pdb, the debugger](https://docs.python.org/3/library/pdb.html)

@@ -224,23 +224,6 @@ See a test run from the app's side: start the environment, run the tests, then s
 
     You see three `POST /books` lines: two `201 Created` from the tests that add a book, and one `422 Unprocessable Content` from the price-of-zero test.
 
-## Quick check
-
-1. What does `condition: service_healthy` add to `depends_on`?
-
-    ??? question "Answer"
-        It waits until the other service's health check says "ready", not only until its container has started.
-
-2. How does the test container reach the app?
-
-    ??? question "Answer"
-        By the app's service name on the Compose network: `http://api:8000`.
-
-3. Why does the pipeline script keep `$?` before running `down -v`?
-
-    ??? question "Answer"
-        `down -v` has its own exit code. Keeping the tests' code first means the pipeline still fails when a test fails.
-
 ## References
 
 - [Docker Compose: How Compose works](https://docs.docker.com/compose/intro/compose-application-model/)

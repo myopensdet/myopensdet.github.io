@@ -135,18 +135,6 @@ Add a test: an order for a book that doesn't exist (`book_id` 999999999) must an
         assert db.value("SELECT COUNT(*) FROM orders") == before
     ```
 
-## Quick check
-
-1. Why does the database helper use autocommit?
-
-    ??? question "Answer"
-        The app uses its own connection, and only sees rows the test has committed.
-
-2. What does `raises=AssertionError` add to an xfail?
-
-    ??? question "Answer"
-        Only a failed check counts as the known bug. Any other error, like a typo, fails the run.
-
 ## References
 
 - [requests: Advanced usage (sessions, timeouts)](https://requests.readthedocs.io/en/latest/user/advanced/)

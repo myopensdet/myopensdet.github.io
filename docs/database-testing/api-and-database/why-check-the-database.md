@@ -109,18 +109,6 @@ On the practice API, create a customer, then send the same email again with capi
 ??? success "Solution"
     `arshad@example.com` then `ARSHAD@example.com`: both answer 201, and the table has two rows. Email addresses are not case sensitive in practice, so this is the second planted bug: the same person can now sign up twice. The exact same email *is* refused with 409, because the database has a unique rule on it.
 
-## Quick check
-
-1. The API answered 201 with the right total. What can still be wrong?
-
-    ??? question "Answer"
-        The saved values, the side effects (stock, history), duplicates, and anything the app writes later.
-
-2. Why isn't "the answer matches the row" enough?
-
-    ??? question "Answer"
-        Both come from the same code. Compare with a value you know from somewhere else.
-
 ## References
 
 - [OWASP: Mass Assignment Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html)

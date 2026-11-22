@@ -113,23 +113,6 @@ Change the tour so the PATCH sends `{"totalprice": 99}` instead. What should the
 
     It should print `99 Breakfast`: PATCH changes only what you send, so `additionalneeds` keeps its value from the POST.
 
-## Quick check
-
-1. What is the difference between PUT and PATCH?
-
-    ??? question "Answer"
-        PUT replaces the whole thing. PATCH changes only the fields you send.
-
-2. How do you check that a DELETE really worked?
-
-    ??? question "Answer"
-        GET the same id afterwards, and expect 404.
-
-3. Why is retrying a POST risky?
-
-    ??? question "Answer"
-        POST isn't idempotent. A retry can create a second booking or a second payment.
-
 ## References
 
 - [MDN: HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods)

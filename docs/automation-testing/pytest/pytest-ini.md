@@ -100,23 +100,6 @@ Change the example's `pytest.ini` so smoke tests are the default selection, inst
 ??? success "Solution"
     Change the `addopts` line to `addopts = -ra --strict-markers -m smoke`. Then `python -m pytest --co -q` shows `2/64 tests collected (62 deselected)`. That's a quick default for a pre-push check, but most teams keep the default wide and choose smoke in the pipeline instead.
 
-## Quick check
-
-1. What does `testpaths = tests` do?
-
-    ??? question "Answer"
-        It tells pytest to look for tests in `tests` when no path is given.
-
-2. Why put `--strict-markers` in `addopts`?
-
-    ??? question "Answer"
-        So every run treats marker typos as errors, not only when someone remembers the option.
-
-3. How do you see which tests would run, without running them?
-
-    ??? question "Answer"
-        `python -m pytest --co -q`.
-
 ## References
 
 - [pytest: Configuration](https://docs.pytest.org/en/stable/reference/customize.html)

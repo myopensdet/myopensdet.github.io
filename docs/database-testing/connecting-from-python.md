@@ -144,23 +144,6 @@ Write a function `customer_by_email(conn, email)` that returns the customer's ro
 
     `fetchone()` returns `None` when there's no row. `LOWER` on both sides makes the match ignore capitals. The email still goes in as a parameter.
 
-## Quick check
-
-1. Where does the database password live?
-
-    ??? question "Answer"
-        In an environment variable, set in the terminal or in the CI secrets store. Never in a file in git.
-
-2. What's wrong with `f"... WHERE email = '{email}'"`?
-
-    ??? question "Answer"
-        A quote mark in `email` can change the query. That's SQL injection. Pass the value as a parameter.
-
-3. Why log the SQL but not the values?
-
-    ??? question "Answer"
-        Values can be personal data or secrets, and logs are kept and shared.
-
 ## References
 
 - [psycopg 3: Basic module usage](https://www.psycopg.org/psycopg3/docs/basic/usage.html)

@@ -126,23 +126,6 @@ A delivery form asks for a postcode. The rule: "5 digits, numbers only." List th
 
     Then ask the team one question the rule doesn't answer: is `01234` allowed? A postcode can start with zero, but if the code stores it as a number, the zero disappears. That is a classic bug.
 
-## Quick check
-
-1. What is an equivalence partition?
-
-    ??? question "Answer"
-        A group of inputs that the app should treat the same way. Testing one value from the group tells you about the whole group.
-
-2. Why test invalid groups?
-
-    ??? question "Answer"
-        Many real bugs are in how the app handles bad input: wrong errors, crashes, or bad data saved.
-
-3. Which value should you pick from a group?
-
-    ??? question "Answer"
-        A normal value from the middle. The edges get their own tests, with boundary values.
-
 ## References
 
 - [ISTQB Glossary: equivalence partitioning](https://glossary.istqb.org/)

@@ -220,23 +220,6 @@ Build the image as `books-tests:try`, and use it to list only the tests with "ne
 
     Everything after the image name goes to pytest, so it works the same as on your computer. Careful with `-k book`: it picks all 5, because `-k` also matches the file name, `test_books_api.py`. Remove the image afterwards with `docker image rm books-tests:try`.
 
-## Quick check
-
-1. Why copy `requirements.txt` and install packages before copying the tests?
-
-    ??? question "Answer"
-        Docker reuses a step if nothing before it changed. Tests change often, packages rarely, so the slow install is reused on most builds.
-
-2. What does `localhost` mean inside a container?
-
-    ??? question "Answer"
-        The container itself, not your computer.
-
-3. How do test reports get from the container to your computer?
-
-    ??? question "Answer"
-        With `-v`, which connects a folder on your computer to the folder inside where pytest writes them.
-
 ## References
 
 - [Docker: Writing a Dockerfile](https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/)

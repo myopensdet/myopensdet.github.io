@@ -159,23 +159,6 @@ Change the template so it also saves a screenshot when a test fails during set-u
 
     A failure in a fixture that needs `context`, like `logged_in_page`, happens during set-up. The `context` fixture's clean-up still runs, so it can take the screenshot.
 
-## Quick check
-
-1. Why does a passing test leave no files?
-
-    ??? question "Answer"
-        The fixture calls `tracing.stop()` without a path, and takes no screenshot, unless the test failed.
-
-2. What does a trace have that a screenshot doesn't?
-
-    ??? question "Answer"
-        Every action before the failure, with the page before and after each one, plus network calls and console messages.
-
-3. Why take the screenshot before `context.close()`?
-
-    ??? question "Answer"
-        After closing, the page is gone, and the screenshot fails with `TargetClosedError`.
-
 ## References
 
 - [Playwright: Trace viewer](https://playwright.dev/python/docs/trace-viewer)

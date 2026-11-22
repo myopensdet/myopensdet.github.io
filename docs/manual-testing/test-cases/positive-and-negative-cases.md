@@ -130,23 +130,6 @@ A coupon rule: "The code WELCOME5 gives $5 off a first order of $20 or more." Wr
 
     The last one is the kind of negative case that finds real money bugs.
 
-## Quick check
-
-1. What is a negative test case?
-
-    ??? question "Answer"
-        One that checks the app refuses something it must refuse, like a refund on day 31.
-
-2. What are the three questions for finding negative cases?
-
-    ??? question "Answer"
-        What is just outside the limit? What has already happened? What doesn't meet the condition?
-
-3. Why should a negative test check the exact reason?
-
-    ??? question "Answer"
-        To prove the right rule did the refusing. Refused for the wrong reason is still a bug.
-
 ## References
 
 - [ISTQB Glossary: negative testing](https://glossary.istqb.org/)

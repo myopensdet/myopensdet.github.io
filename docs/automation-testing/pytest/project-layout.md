@@ -108,23 +108,6 @@ Your team has a folder with `login_tests.py`, `checkout.py` (which has tests in 
 
     The file names now match what pytest looks for, and the shared setup lives in one place.
 
-## Quick check
-
-1. Which files does pytest collect by default?
-
-    ??? question "Answer"
-        Files named `test_*.py` or `*_test.py`, and in them, functions starting with `test`.
-
-2. Do you import `conftest.py`?
-
-    ??? question "Answer"
-        No. pytest loads it automatically, and its fixtures are available to the tests below it.
-
-3. What is the rootdir?
-
-    ??? question "Answer"
-        The project folder pytest works from, usually the one with `pytest.ini`.
-
 ## References
 
 - [pytest: Good integration practices](https://docs.pytest.org/en/stable/explanation/goodpractices.html)

@@ -151,23 +151,6 @@ Add a keyword-driven test: an order of 100.00 with SAVE10 for a member should co
 
     100 × 0.90 = 90, × 0.95 = 85.50. The combined keyword has no member step, so it suits non-members: `Order Of 100.00 With SAVE10 Should Cost 90.00`.
 
-## Quick check
-
-1. How does a Python method become a keyword?
-
-    ??? question "Answer"
-        Its name, with underscores as spaces: `total_should_be` is `Total Should Be`.
-
-2. What does `Test Template` do?
-
-    ??? question "Answer"
-        Every test in the file calls that one keyword, with its row as the arguments.
-
-3. What does `--skiponfailure known-bug` do?
-
-    ??? question "Answer"
-        A failing test tagged `known-bug` is reported as skipped, with the original failure kept.
-
 ## References
 
 - [Robot Framework User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)

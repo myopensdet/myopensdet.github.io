@@ -141,23 +141,6 @@ Run only the `@smoke` tests on WebKit.
 
     `-m smoke` picks the tests marked `smoke`, `--browser` the engine. Options combine freely.
 
-## Quick check
-
-1. Which engine does Safari use?
-
-    ??? question "Answer"
-        WebKit.
-
-2. What do you change in the tests to run them on Firefox?
-
-    ??? question "Answer"
-        Nothing. Only the `--browser=firefox` option.
-
-3. Why not run every browser on every change?
-
-    ??? question "Answer"
-        Each browser adds a full run. Fast feedback on every change comes from one browser; the others run at night and before releases.
-
 ## References
 
 - [Playwright: Browsers](https://playwright.dev/python/docs/browsers)

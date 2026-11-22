@@ -120,23 +120,6 @@ Add a second PostgreSQL called `staging`, on host `staging-db.example.com`, port
 
     Then `TEST_DATABASES=staging LOAD_TEST_DATA=none python -m pytest`. `LOAD_TEST_DATA=none` matters: loading test data drops and re-creates the tables, which you must never do on a shared database.
 
-## Quick check
-
-1. Where does a database's password live?
-
-    ??? question "Answer"
-        In an environment variable (or `.env`), named by `password_env`.
-
-2. Why `yaml.safe_load`?
-
-    ??? question "Answer"
-        It reads plain data only. Other loaders can be made to run code.
-
-3. What happens when a password is set but the database is down?
-
-    ??? question "Answer"
-        The test fails. Only a missing password skips.
-
 ## References
 
 - [PyYAML documentation](https://pyyaml.org/wiki/PyYAMLDocumentation)

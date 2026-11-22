@@ -102,23 +102,6 @@ The product owner says: "Shoppers can't buy more than 10 copies of a book." Writ
 
     This is the scenario in the template's `cart.feature`. Writing it raises a question for the product owner: what exactly should the message say?
 
-## Quick check
-
-1. Who writes the examples in BDD?
-
-    ??? question "Answer"
-        The team together: business, developers and testers.
-
-2. What's the difference between ATDD and BDD?
-
-    ??? question "Answer"
-        BDD adds a shared, plain-words language (Given, When, Then) that the business can read.
-
-3. When is plain pytest the better choice?
-
-    ??? question "Answer"
-        When only engineers will read the tests, for example unit tests.
-
 ## References
 
 - [Cucumber: Behaviour-Driven Development](https://cucumber.io/docs/bdd/)

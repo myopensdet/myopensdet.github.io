@@ -110,23 +110,6 @@ Give each bug a severity and a suggested priority, with a one-line reason:
     2. **Trivial, low.** Nobody is stopped from doing anything. Fix it with the next small change.
     3. **Critical, high.** Money leaves the company. It needs two people at once, which makes it rare, not harmless. Also tell your lead directly: someone could do it on purpose.
 
-## Quick check
-
-1. Who sets the severity, and who sets the priority?
-
-    ??? question "Answer"
-        The reporter sets the severity, from facts about users. The team sets the priority, in triage. The reporter suggests one.
-
-2. Give an example of high severity and low priority.
-
-    ??? question "Answer"
-        The app crashes, but only on a browser almost nobody uses.
-
-3. Why write a reason next to the severity?
-
-    ??? question "Answer"
-        A label alone invites argument. A fact ("no workaround, a whole group is blocked") is easy to check and agree with.
-
 ## References
 
 - [ISTQB Glossary: severity, priority](https://glossary.istqb.org/)

@@ -139,23 +139,6 @@ Teams stop trusting a suite with flaky tests. People rerun until it's green, rea
 ??? success "Solution"
     Each click waits until the button can be clicked. The check, `expect(books.header.cart_count).to_have_text("2")`, reads the count again and again until the page's answer from the server has updated it. Nothing needs a fixed wait.
 
-## Quick check
-
-1. Which of these waits: `click()`, `count()`, `expect(...).to_have_text(...)`?
-
-    ??? question "Answer"
-        `click()` and `expect()` wait. `count()` answers at once.
-
-2. Why is `time.sleep(2)` bad in two ways?
-
-    ??? question "Answer"
-        It's slow when the page is fast, and too short when the page is slow.
-
-3. What does a page object's "ready" wait give you?
-
-    ??? question "Answer"
-        Every test that uses the page starts acting only when the page is ready, so none of them race the page.
-
 ## References
 
 - [Playwright: Auto-waiting](https://playwright.dev/python/docs/actionability)

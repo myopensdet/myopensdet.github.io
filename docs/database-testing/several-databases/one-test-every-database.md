@@ -153,23 +153,6 @@ Add a query `paid_total` that returns the sum of `total` for paid orders, in all
         assert normalize(db.run_query("paid_total")[0]["paid"]) == "273.46"
     ```
 
-## Quick check
-
-1. What does `params=DATABASES` on a fixture do?
-
-    ??? question "Answer"
-        Every test using the fixture runs once per database, with the name in the test id.
-
-2. Why does `clients` open each database only once?
-
-    ??? question "Answer"
-        Opening and loading data is slow. Once per run is enough.
-
-3. Why check "every order has a customer" in Python here?
-
-    ??? question "Answer"
-        MongoDB has no join. In Python, the same check works on all four.
-
 ## References
 
 - [pytest: Parametrizing fixtures](https://docs.pytest.org/en/stable/how-to/fixtures.html#parametrizing-fixtures)

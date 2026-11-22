@@ -135,23 +135,6 @@ Your lead says: "Can you test product reviews in the shop?" Make the two lists a
 
     A small first try: ask the API for one product's reviews. In the shop that is `GET /api/products/6/reviews`, and it answers with a list of reviews in JSON. Now you know what a review looks like, which helps with every other question.
 
-## Quick check
-
-1. What is the first thing to write down for a new task?
-
-    ??? question "Answer"
-        The task in one sentence, in your own words. If you can't write it, you don't understand it yet.
-
-2. Why try one small thing in the first hour?
-
-    ??? question "Answer"
-        Trying something real shows you what you still need to learn, so your reading has a purpose.
-
-3. "How do I test this?" is a weak question. Why?
-
-    ??? question "Answer"
-        It is too big for anyone to answer quickly. Small questions with a clear owner get fast answers.
-
 ## References
 
 - [OWASP Forgot Password Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html): what a safe password reset does

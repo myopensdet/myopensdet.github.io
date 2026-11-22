@@ -134,23 +134,6 @@ The app checks what users type. But data also arrives from imports, scripts, oth
 
     Order 3 and book 1 both exist, and order 3 doesn't contain book 1 yet. So only the quantity rule can fail, and the test proves that rule alone.
 
-## Quick check
-
-1. Why does each refusal test need a "good row is accepted" test?
-
-    ??? question "Answer"
-        Without it, the refusal test also passes when every insert fails, for example from a typo in the SQL.
-
-2. What does `DID NOT RAISE UniqueViolation` tell you?
-
-    ??? question "Answer"
-        The database took the duplicate row. The `UNIQUE` rule is missing.
-
-3. Why `db.savepoint()` around the bad insert?
-
-    ??? question "Answer"
-        After an error, PostgreSQL refuses the next queries in the same transaction. The savepoint undoes just the failed part, so the test can go on.
-
 ## References
 
 - [PostgreSQL: Constraints](https://www.postgresql.org/docs/17/ddl-constraints.html)

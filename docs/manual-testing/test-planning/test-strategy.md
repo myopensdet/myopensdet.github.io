@@ -104,23 +104,6 @@ Your team writes unit tests, but nobody writes API or UI tests, and releases oft
 
     One journey, checked automatically on every change, is usually enough to stop that kind of break.
 
-## Quick check
-
-1. Which changes more often, the strategy or the plan?
-
-    ??? question "Answer"
-        The plan. It is written for each feature. The strategy changes every few months.
-
-2. What is the most useful part of a strategy?
-
-    ??? question "Answer"
-        The levels table: what each level checks, who writes it, and when it runs.
-
-3. Can a test plan use weaker exit criteria than the strategy?
-
-    ??? question "Answer"
-        Only with a written reason that the team agreed.
-
 ## References
 
 - [ISTQB Glossary: test strategy, test plan](https://glossary.istqb.org/)

@@ -151,23 +151,6 @@ A user account has these rules: "A new account becomes active when the email is 
 
     Notice the "no?" in the first row. Can a new account get locked by wrong passwords before the email is confirmed? The story doesn't say. That is a question for the product owner, found by the table.
 
-## Quick check
-
-1. What is a transition?
-
-    ??? question "Answer"
-        An allowed move from one state to another, caused by an action, like "pay" moving an order from placed to paid.
-
-2. Why test the "no" cells?
-
-    ??? question "Answer"
-        They are actions at the wrong moment, like paying twice or cancelling a shipped order. Many serious bugs live there.
-
-3. Why must the test keep its own list of allowed moves?
-
-    ??? question "Answer"
-        If the test copies the code's list, a wrong list in the code passes its own tests. The test's list must come from the rules.
-
 ## References
 
 - [ISTQB Glossary: state transition testing](https://glossary.istqb.org/)

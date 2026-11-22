@@ -129,23 +129,6 @@ Add a row **Test data: fake (local_only)** to the Environment table, and remove 
 
     The Environment table then has a **Test data** row, and no **Packages** row. Or add the row from the command line: `python -m pytest --metadata "Test data" "fake (local_only)"`.
 
-## Quick check
-
-1. Why use `--self-contained-html`?
-
-    ??? question "Answer"
-        It puts the styles and images in the one HTML file, so you can send that file alone.
-
-2. Where are the logs of a passing test?
-
-    ??? question "Answer"
-        Not in the HTML report. In `reports/tests.log`, which has every line of the run.
-
-3. Which hook removes a row from the Environment table?
-
-    ??? question "Answer"
-        `pytest_metadata(metadata)`, from pytest-metadata: `metadata.pop("Platform", None)`.
-
 ## References
 
 - [pytest-html: User guide](https://pytest-html.readthedocs.io/en/latest/user_guide.html)

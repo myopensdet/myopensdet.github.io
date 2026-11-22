@@ -127,18 +127,6 @@ The product owner adds a rule: age must be 120 or less. Add the rows you need.
 
     The second fails until the developers add the rule: that's the test doing its job.
 
-## Quick check
-
-1. Why does every row have a `case` name?
-
-    ??? question "Answer"
-        It becomes the test's name, so a failure says which case broke.
-
-2. When should cases move from the code to a file?
-
-    ??? question "Answer"
-        When there are many, or when someone who doesn't read Python owns them.
-
 ## References
 
 - [pytest: How to parametrize fixtures and test functions](https://docs.pytest.org/en/stable/how-to/parametrize.html)

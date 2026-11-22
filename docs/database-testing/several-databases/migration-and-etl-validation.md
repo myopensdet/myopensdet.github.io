@@ -142,23 +142,6 @@ Fix all three bugs in a copy of `etl_copy.py`, run it, and run the comparison ag
 
     Two row-count tests and two value tests, for `customers` and `orders`.
 
-## Quick check
-
-1. Why load test data into the source only?
-
-    ??? question "Answer"
-        The target must hold what the job wrote. Reloading it would hide the job's bugs.
-
-2. Why include an order at 23:30 on the last day of a month?
-
-    ??? question "Answer"
-        A time-zone shift moves it into the next month, so reports by month show the bug.
-
-3. Which bug does a row count find, and which does it miss?
-
-    ??? question "Answer"
-        It finds lost or doubled rows. It misses changed values, like cut names or shifted times.
-
 ## References
 
 - [MySQL: Strict SQL mode](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sql-mode-strict)

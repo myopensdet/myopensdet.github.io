@@ -103,18 +103,6 @@ Add a test: a signup with a 7-character password has only one problem, `password
         assert check_signup(signup.email, signup.password, signup.age) == ["password"]
     ```
 
-## Quick check
-
-1. What does "valid by default" mean?
-
-    ??? question "Answer"
-        Calling the factory with no changes gives an object that passes every rule.
-
-2. Why are the factory's ages 21 to 90, and not 18 to 90?
-
-    ??? question "Answer"
-        Edges are tested by fixed rows, on every run. The factory gives typical values, so it never hits a bug by luck.
-
 ## References
 
 - [Python: dataclasses](https://docs.python.org/3/library/dataclasses.html)

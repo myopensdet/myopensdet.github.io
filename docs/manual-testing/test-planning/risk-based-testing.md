@@ -135,23 +135,6 @@ Score these three risks for a new login page, and put them in order: (a) the "Fo
 
     The interesting one is (b): a low score with a very bad impact. Scores help you think. They don't replace thinking.
 
-## Quick check
-
-1. What two numbers make up a risk score?
-
-    ??? question "Answer"
-        Likelihood (how likely the bug is) and impact (how bad it would be), each from 1 to 3.
-
-2. Why use 1 to 3 instead of 1 to 10?
-
-    ??? question "Answer"
-        Small scales keep the conversation quick. Nobody argues over 6 or 7.
-
-3. What do you do when time runs out?
-
-    ??? question "Answer"
-        Stop at a line in the risk list, and tell the team which risks below it got no testing.
-
 ## References
 
 - [ISTQB Glossary: risk-based testing, risk level](https://glossary.istqb.org/)

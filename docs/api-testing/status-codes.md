@@ -138,23 +138,6 @@ Write a test that checks a wrong password gets a 401 from Restful-booker's `/aut
 
     It fails with `assert 200 == 401`. The test is right, and the API is wrong. Mark it `xfail` with the reason, and file a bug with the request and the response body `{"reason": "Bad credentials"}`.
 
-## Quick check
-
-1. What does the first digit of a status code tell you?
-
-    ??? question "Answer"
-        The group: 2 worked, 3 look elsewhere, 4 the request was wrong, 5 the server failed.
-
-2. What is the difference between 401 and 403?
-
-    ??? question "Answer"
-        401: not logged in, or the login is invalid. 403: logged in, but not allowed.
-
-3. Why doesn't `requests` raise an error for a 404?
-
-    ??? question "Answer"
-        The conversation worked. It gives you the response so you can check the code yourself.
-
 ## References
 
 - [MDN: HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)

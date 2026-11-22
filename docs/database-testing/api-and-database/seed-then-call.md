@@ -109,18 +109,6 @@ Seed a customer straight into the database, then check `GET /customers/{id}` ret
         }
     ```
 
-## Quick check
-
-1. Why seed a `shipped` order instead of a `new` one?
-
-    ??? question "Answer"
-        The API only makes `new`. Seeing `shipped` proves it read the row.
-
-2. Why `RETURNING id` instead of a fixed id?
-
-    ??? question "Answer"
-        A fixed id clashes with other tests and other people.
-
 ## References
 
 - [PostgreSQL: Returning data from modified rows](https://www.postgresql.org/docs/17/dml-returning.html)

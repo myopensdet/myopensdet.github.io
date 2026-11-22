@@ -146,23 +146,6 @@ You are testing password reset, and the app answers: `{"error": {"code": "CODE_E
 
     Why ask about the clock? Some test environments let people move the server's time forward, to test expiry without waiting. If someone moved it and forgot, every new code looks old. Good help messages include your best guess.
 
-## Quick check
-
-1. What are the four parts of a good help message?
-
-    ??? question "Answer"
-        What you are trying to do, what you expected, what happened (the exact error), and what you tried.
-
-2. When should you ask sooner than 30 minutes?
-
-    ??? question "Answer"
-        When the problem blocks the whole team, or when you might break shared data.
-
-3. What must never go into a help message?
-
-    ??? question "Answer"
-        Passwords, tokens, keys or real customer data.
-
 ## References
 
 - [Stack Overflow: How do I ask a good question?](https://stackoverflow.com/help/how-to-ask)

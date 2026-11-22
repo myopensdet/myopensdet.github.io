@@ -55,7 +55,6 @@ Kent C. Dodds suggested this shape for testing web front ends. His reasoning: in
     FREE_SHIPPING_FROM = 5000
     SHIPPING_FEE = 499
 
-
     def shipping_cost(subtotal_cents: int) -> int:
         if subtotal_cents >= FREE_SHIPPING_FROM:
             return 0
@@ -129,23 +128,6 @@ A team looks at its last 10 bugs. Six were "the web form sent the wrong value to
     Six of ten bugs were parts not fitting together, so the **trophy** fits this team better: add integration tests between the form and the API first.
 
     The three price bugs still need unit tests on the price rules. And the typo would have been caught by **static analysis** for free, so switching on a checker like Ruff is the quickest win of all.
-
-## Quick check
-
-1. What is the widest part of the testing trophy?
-
-    ??? question "Answer"
-        Integration tests.
-
-2. What is static analysis?
-
-    ??? question "Answer"
-        Checking code without running it, to find mistakes like typos and undefined names.
-
-3. How do you choose between the pyramid and the trophy?
-
-    ??? question "Answer"
-        Look at where your real bugs come from, and put most of your tests at the level that would catch them.
 
 ## References
 

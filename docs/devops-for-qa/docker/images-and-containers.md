@@ -205,23 +205,6 @@ Start the pinned `python` image in the background with the name `zts-try`, and p
 
     `docker exec` prints `Python 3.13.18`. The last command prints only the header line: no container is left.
 
-## Quick check
-
-1. What's the difference between an image and a container?
-
-    ??? question "Answer"
-        The image is the read-only recipe. A container is one running copy made from it. Many containers can come from one image.
-
-2. Why pin an image by digest, not only by tag?
-
-    ??? question "Answer"
-        A tag can be moved to a newer image. A digest always names the same image, so every run gets exactly that one.
-
-3. What does `-p 127.0.0.1:58133:5432` do?
-
-    ??? question "Answer"
-        Port 58133 on your computer leads to port 5432 in the container, and only your own computer can reach it.
-
 ## References
 
 - [Docker: What is a container?](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/)

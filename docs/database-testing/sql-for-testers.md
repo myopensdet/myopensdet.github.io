@@ -168,23 +168,6 @@ Write one query that lists the title and price of every book under 20.00, cheape
 
     Two rows: `Clean Tests` at 15.00, then `SQL in a Week` at 19.50.
 
-## Quick check
-
-1. Why name the columns instead of `SELECT *` in a test?
-
-    ??? question "Answer"
-        A new column added later would change the result and break the test for no real reason.
-
-2. Which finds rows with no value: `= NULL` or `IS NULL`?
-
-    ??? question "Answer"
-        `IS NULL`. `NULL` is never equal to anything.
-
-3. Can you trust the order of rows without `ORDER BY`?
-
-    ??? question "Answer"
-        No. The database may return them in any order.
-
 ## References
 
 - [PostgreSQL tutorial: Querying a table](https://www.postgresql.org/docs/17/tutorial-select.html)

@@ -128,23 +128,6 @@ Rewrite these as exit criteria you can check: "Testing is complete. Most bugs ar
 
     "Complete" became counts. "Most bugs" became a limit per severity. "Acceptable" became a number from a test, with the limit written down.
 
-## Quick check
-
-1. When should exit criteria be agreed?
-
-    ??? question "Answer"
-        Before testing starts, as part of the test plan.
-
-2. What does the exit checker do with a missing result?
-
-    ??? question "Answer"
-        It says MISSING and counts it as not met.
-
-3. A criterion isn't met on release day. What are the honest options?
-
-    ??? question "Answer"
-        Fix it, release with a written exception the team agrees, or move the date.
-
 ## References
 
 - [ISTQB Glossary: entry criteria, exit criteria](https://glossary.istqb.org/)

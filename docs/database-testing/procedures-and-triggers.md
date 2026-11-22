@@ -178,23 +178,6 @@ Write a test that `place_order` with an unknown customer id (99999) raises an er
 
     The stock was already taken when the order insert failed. The error undid the whole function, stock included, and the test proves it.
 
-## Quick check
-
-1. How do you call a function, and how a procedure?
-
-    ??? question "Answer"
-        A function with `SELECT name(...)`. A procedure with `CALL name(...)`.
-
-2. What does `now()` return inside a transaction?
-
-    ??? question "Answer"
-        The time the transaction started. It doesn't move. `clock_timestamp()` is the real time.
-
-3. Why does the trigger test check the history table, not just the status?
-
-    ??? question "Answer"
-        The status changes without the trigger too. Only the history row proves the trigger ran.
-
 ## References
 
 - [PostgreSQL: PL/pgSQL](https://www.postgresql.org/docs/17/plpgsql.html)

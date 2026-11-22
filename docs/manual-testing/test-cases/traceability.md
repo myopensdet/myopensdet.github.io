@@ -159,23 +159,6 @@ A story has criteria LOG-1 to LOG-4. The test cases are: TC-1 covers LOG-1, TC-2
 
     Two gaps, and one case that points nowhere. TC-3 might be the missing test for LOG-2 or LOG-4 with a typo in the ID. Check that first.
 
-## Quick check
-
-1. What three questions does traceability answer?
-
-    ??? question "Answer"
-        Is every requirement tested? Which tests change when a requirement changes? Which requirement broke when a test fails?
-
-2. Why did REF-5 show "NONE" even though it was tested?
-
-    ??? question "Answer"
-        Its automated tests weren't listed in the CSV. The two lists had drifted apart.
-
-3. What does an unknown ID like REF-8 usually mean?
-
-    ??? question "Answer"
-        Either a typo, or a real requirement that was never written into the story.
-
 ## References
 
 - [ISTQB Glossary: traceability](https://glossary.istqb.org/)

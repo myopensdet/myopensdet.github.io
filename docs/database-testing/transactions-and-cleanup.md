@@ -142,23 +142,6 @@ Without running it: if a test using `db` creates a customer and then fails on an
 ??? success "Solution"
     No. The `db` fixture's savepoint is rolled back when the test ends, passed or failed. At the end of the run, the `connection` fixture's transaction is rolled back too.
 
-## Quick check
-
-1. What does `force_rollback=True` do?
-
-    ??? question "Answer"
-        It rolls the transaction back at the end of the block, even when nothing failed.
-
-2. What's a savepoint?
-
-    ??? question "Answer"
-        A transaction inside a transaction. You can roll back to it without losing the rest.
-
-3. Name one thing rollback can't undo.
-
-    ??? question "Answer"
-        Anything the app committed through its own connection. Also emails sent, files written, and used-up ids.
-
 ## References
 
 - [PostgreSQL tutorial: Transactions](https://www.postgresql.org/docs/17/tutorial-transactions.html)

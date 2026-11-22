@@ -308,23 +308,6 @@ Run the [data-driven testing](../../automation-testing/data-driven/index.md#temp
 
     The xfailed test is a bug planted in the practice code on purpose. That topic shows how to find it.
 
-## Quick check
-
-1. Why use `python3.13 -m venv` instead of `python3 -m venv`?
-
-    ??? question "Answer"
-        `python3` may be an old system Python. Naming 3.13 makes sure the virtual environment gets the right one.
-
-2. What does `(.venv)` at the start of the prompt tell you?
-
-    ??? question "Answer"
-        The virtual environment is on, so `python` and `pip` are the ones inside `.venv`.
-
-3. What do you do in a project folder you've never seen before?
-
-    ??? question "Answer"
-        Make a virtual environment, activate it, `python -m pip install -r requirements.txt`, then run the tests.
-
 ## References
 
 - [Python downloads](https://www.python.org/downloads/)

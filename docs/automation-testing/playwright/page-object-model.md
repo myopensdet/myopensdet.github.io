@@ -103,7 +103,6 @@ Without page objects, the locator for the **Remove** button is copied into every
         assert response.ok, response.text()
         return page
 
-
     @pytest.fixture
     def cart_with_books(logged_in_page):
         """Fill the cart through the API, then test the cart page itself."""
@@ -175,23 +174,6 @@ Add a `LoginPage` method `log_in_expecting_error(email, password)` that fills th
     ```
 
     A wrong password keeps the user on the log-in page, so the method returns that page. The test still does the check.
-
-## Quick check
-
-1. What belongs in a page object, and what in a test?
-
-    ??? question "Answer"
-        Page objects: locators and actions. Tests: the steps and the checks with `expect()`.
-
-2. Why does `go_to_checkout()` return a `CheckoutPage`?
-
-    ??? question "Answer"
-        After the click, the user is on the checkout page. The test continues with that page's actions.
-
-3. Why log in through the API in most tests?
-
-    ??? question "Answer"
-        It's much faster, and the log-in form is already tested by the log-in tests.
 
 ## References
 

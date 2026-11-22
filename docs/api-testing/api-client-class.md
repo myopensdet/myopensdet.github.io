@@ -117,23 +117,6 @@ Add a `health()` method to `ApiClient` that calls `/ping` and returns `True` whe
 
     One clear skip reason beats a hundred connection errors. Restful-booker uses 201 for "up"; most APIs use 200.
 
-## Quick check
-
-1. Why build the client on `requests.Session`?
-
-    ??? question "Answer"
-        It keeps the connection open, and holds default headers and the login for every request.
-
-2. Why shouldn't the client assert status codes?
-
-    ??? question "Answer"
-        Tests that expect 404 or 403 need to see those answers. The test decides what's right.
-
-3. What does `check_status` hide, and what doesn't it?
-
-    ??? question "Answer"
-        It hides secret headers: `Authorization`, `Cookie`, `X-API-Key`. It doesn't hide anything in the body.
-
 ## References
 
 - [Requests: Session objects](https://requests.readthedocs.io/en/latest/user/advanced/#session-objects)

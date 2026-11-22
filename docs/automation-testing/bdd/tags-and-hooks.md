@@ -178,23 +178,6 @@ Tag "An unknown coupon changes nothing" with `@smoke` too, and run the smoke sce
 ??? success "Solution"
     Three in each tool. In behave: `3 scenarios passed, 0 failed, 6 skipped`. In pytest-bdd: `3 passed, 6 deselected`. `smoke` is already listed in `pytest.ini`, so no change is needed there.
 
-## Quick check
-
-1. How do you run only `@smoke` scenarios in each tool?
-
-    ??? question "Answer"
-        behave: `--tags=@smoke`. pytest-bdd: `-m smoke`.
-
-2. How does each tool handle `@known_bug` in this template?
-
-    ??? question "Answer"
-        behave leaves it out of the normal run and checks it in a second run. pytest-bdd turns it into a strict xfail.
-
-3. Where does a fresh driver for each scenario come from?
-
-    ??? question "Answer"
-        behave: `before_scenario`. pytest-bdd: the function-scoped `shop` fixture.
-
 ## References
 
 - [behave: Environmental controls (hooks)](https://behave.readthedocs.io/en/latest/tutorial/#environmental-controls)

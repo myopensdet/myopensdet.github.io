@@ -117,23 +117,6 @@ Add a rule to `booking.json` so `firstname` can be at most 50 characters. Then c
 ??? success "Solution"
     Change the field to `"firstname": {"type": "string", "minLength": 1, "maxLength": 50}`. The check then reports `$.firstname: 'AAAA...' is too long`, with the path first, so you know which field. Ask the API team for the real limit first: the schema should match what the API promises.
 
-## Quick check
-
-1. What does `additionalProperties: false` catch?
-
-    ??? question "Answer"
-        Any field the schema doesn't name, like a new field that leaks data.
-
-2. Why is the format checker important?
-
-    ??? question "Answer"
-        Without it, `format: date` isn't checked, so any string passes.
-
-3. What can a schema not check?
-
-    ??? question "Answer"
-        Meaning: that values are right, that dates are in order, that the data is yours.
-
 ## References
 
 - [JSON Schema: Getting started](https://json-schema.org/learn/getting-started-step-by-step)

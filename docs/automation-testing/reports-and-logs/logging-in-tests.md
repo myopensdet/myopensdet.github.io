@@ -219,23 +219,6 @@ Add a WARNING line to `ShopApi.call()` when a call takes longer than 500 ms. Whi
 
     That test promised one line per call, and now a slow call writes two. The test did its job: it made the change visible. Decide which you want, then change the code or the test.
 
-## Quick check
-
-1. Which level for "POST /api/cart -> 200 in 3 ms"? And for the request body?
-
-    ??? question "Answer"
-        INFO for the one-line summary, DEBUG for the body.
-
-2. Why do passing tests show no log lines in the terminal?
-
-    ??? question "Answer"
-        pytest shows captured logs only for failed tests. Use `--log-cli-level` to see them live, or read the log file.
-
-3. What does `caplog` give you?
-
-    ??? question "Answer"
-        The log lines written during a test, so the test can check them.
-
 ## References
 
 - [Python: Logging HOWTO](https://docs.python.org/3/howto/logging.html)

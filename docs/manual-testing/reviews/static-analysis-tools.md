@@ -177,23 +177,6 @@ def test_discount():
 
     Fix it by removing the brackets: `assert discounted == 90, "10% off"`. Then break it on purpose (change 0.9 to 0.8) and check that it fails. Watching a test fail once is the best proof it can.
 
-## Quick check
-
-1. Why can a broken test be worse than no test?
-
-    ??? question "Answer"
-        It passes, so everyone thinks the feature is checked, and nobody looks at it.
-
-2. What does `F631` mean?
-
-    ??? question "Answer"
-        The `assert` is a non-empty tuple, so it is always true and can never fail.
-
-3. What does pre-commit do?
-
-    ??? question "Answer"
-        It runs the checks automatically on every `git commit`, and stops the commit if something is wrong.
-
 ## References
 
 - [Ruff documentation](https://docs.astral.sh/ruff/) and [Ruff rules](https://docs.astral.sh/ruff/rules/)

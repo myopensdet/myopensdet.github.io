@@ -149,7 +149,6 @@ Add `"otp"` (one-time code) to the secrets, and extend `test_passwords_never_rea
     ```python
     from helpers.api_client import redact
 
-
     def test_one_time_codes_are_hidden():
         assert redact({"user": "a@example.com", "otp": "123456"}) == {
             "user": "a@example.com",
@@ -158,23 +157,6 @@ Add `"otp"` (one-time code) to the secrets, and extend `test_passwords_never_rea
     ```
 
     `redact()` is a plain function, so it can be tested on its own, with no app running.
-
-## Quick check
-
-1. At which level does the template log a refused call's answer, and why?
-
-    ??? question "Answer"
-        WARNING, so it's collected with the failed test and shows in the report. Successful answers stay at DEBUG.
-
-2. Where should secrets be hidden: in the client, or in the report?
-
-    ??? question "Answer"
-        In the client, before they're logged. Otherwise they're already in the log file, the console and the XML.
-
-3. Why is the page still open when the screenshot hook runs?
-
-    ??? question "Answer"
-        The hook runs right after the test body. Fixtures, which close the page, run their clean-up after that.
 
 ## References
 

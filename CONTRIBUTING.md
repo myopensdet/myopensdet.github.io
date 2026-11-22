@@ -122,7 +122,7 @@ A lesson is done when:
 - [ ] It follows the writing style ([Style guide 8](.github/STYLE_GUIDE.md#8-writing-style)) and was read aloud once
 - [ ] It has at least one diagram, and a screenshot or output block for every step (or a placeholder listed in `docs/assets/images/IMAGES_NEEDED.md`)
 - [ ] Every code sample runs, comes from `modules/`, and has a passing test
-- [ ] It has common mistakes, "if you see this error", an exercise with a solution, a quick check, and a References list
+- [ ] It has real usage at work, a task with a solution, "When it goes wrong" with real error messages, and a References list (no quiz)
 - [ ] Every new term is in the Glossary and linked
 - [ ] It looks right on phone and desktop, in light and dark mode
 - [ ] All links work

@@ -115,23 +115,6 @@ Write a rule: "a cancelled order was never shipped". Use the `order_status_histo
 
     Prove it can fail: in a test, change an order to `shipped`, then to `cancelled`, and check the rule finds it.
 
-## Quick check
-
-1. What's the healthy answer for every rule query?
-
-    ??? question "Answer"
-        Zero rows.
-
-2. Why test that a rule finds bad data?
-
-    ??? question "Answer"
-        A rule query with a mistake in it returns zero rows forever, and passes forever.
-
-3. Where else can you run the rules?
-
-    ??? question "Answer"
-        After imports and migrations, and on a schedule against staging. Production only after asking.
-
 ## References
 
 - [PostgreSQL tutorial: Aggregate functions](https://www.postgresql.org/docs/17/tutorial-agg.html)

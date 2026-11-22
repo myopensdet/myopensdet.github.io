@@ -139,23 +139,6 @@ Review this story: "As a customer, I want to save items for later, so that I can
     - Is there a limit on how many items can be saved? What happens at the limit?
     - What happens to a guest's saved list when they log in?
 
-## Quick check
-
-1. What are the three passes of a story review?
-
-    ??? question "Answer"
-        Read it like a customer, check every criterion can pass or fail, and look for missing cases.
-
-2. Why send questions with your best guess?
-
-    ??? question "Answer"
-        Saying yes or no to a guess is much faster than answering an open question, so you get answers sooner.
-
-3. Where should the answers end up?
-
-    ??? question "Answer"
-        In the story itself, not only in a chat.
-
 ## References
 
 - [Agile Alliance: INVEST](https://www.agilealliance.org/glossary/invest/): six things a good story has

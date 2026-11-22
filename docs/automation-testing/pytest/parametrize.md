@@ -107,23 +107,6 @@ Add two rows to `test_coupon_is_refused`: the code `"SAVE 10"` (with a space) an
 
     Both pass. The first one is worth a question to the product owner: should a space inside the code be accepted, like spaces around it are?
 
-## Quick check
-
-1. What does the first argument of `parametrize` say?
-
-    ??? question "Answer"
-        The names of the parameters, which must match the test's arguments.
-
-2. Why give rows an `id`?
-
-    ??? question "Answer"
-        So each case has a readable name in the results.
-
-3. Why separate passing and refused cases?
-
-    ??? question "Answer"
-        They check different things. Two simple tests are easier to read than one with `if` inside.
-
 ## References
 
 - [pytest: How to parametrize fixtures and test functions](https://docs.pytest.org/en/stable/how-to/parametrize.html)

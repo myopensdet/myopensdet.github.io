@@ -121,23 +121,6 @@ Change the example to upload two files in one request: `results.csv` as `file`, 
 
     The server's `files` now has two keys, `file` and `backup`: one part per field name.
 
-## Quick check
-
-1. Which `requests` arguments send a file and a form field?
-
-    ??? question "Answer"
-        `files=` for the file, `data=` for the field.
-
-2. Why shouldn't you set `Content-Type` yourself for an upload?
-
-    ??? question "Answer"
-        It needs the boundary that separates the parts, and only `requests` knows it.
-
-3. Why test a file name like `../../config`?
-
-    ??? question "Answer"
-        If the server uses the name as a path, it might write outside the upload folder. That's a security bug.
-
 ## References
 
 - [Requests: POST a multipart-encoded file](https://requests.readthedocs.io/en/latest/user/quickstart/#post-a-multipart-encoded-file)

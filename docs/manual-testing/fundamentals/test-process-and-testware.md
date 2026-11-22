@@ -128,23 +128,6 @@ For the task "test product reviews", write one piece of testware for analysis, d
     | Design | Test case: log in as a user with no orders, post a review, expect an error |
     | Execution | Result: "error as expected", or a bug report if the review was saved |
 
-## Quick check
-
-1. What is testware?
-
-    ??? question "Answer"
-        Everything testing produces: plans, test conditions, test cases, test data, scripts, results and reports.
-
-2. Which activity runs the whole time, alongside the others?
-
-    ??? question "Answer"
-        Test monitoring and control.
-
-3. What is the difference between test analysis and test design?
-
-    ??? question "Answer"
-        Analysis decides what to test (test conditions). Design decides how to test it (test cases with inputs and expected results).
-
 ## References
 
 - [ISTQB Certified Tester Foundation Level v4.0](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/): section 1.4, test activities, testware and roles

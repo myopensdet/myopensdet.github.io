@@ -115,23 +115,6 @@ A shared test environment fills up with "test1@example.com" rows from every test
 ??? success "Solution"
     No. `DELETE ... WHERE id = %s` on a missing row deletes nothing and raises no error. The template's `test_delete_through_the_api_removes_the_row` does exactly this, and passes.
 
-## Quick check
-
-1. Why doesn't rollback remove an order made through the API?
-
-    ??? question "Answer"
-        The app committed it on its own connection. Rollback only covers your connection.
-
-2. Why delete newest first?
-
-    ??? question "Answer"
-        Newer rows point at older ones. Deleting the older first breaks the foreign key.
-
-3. Why wait for the event before cleaning up?
-
-    ??? question "Answer"
-        The app is still writing. Deleting first makes the app fail in the background.
-
 ## References
 
 - [pytest: Teardown and cleanup with yield fixtures](https://docs.pytest.org/en/stable/how-to/fixtures.html#teardown-cleanup-aka-fixture-finalization)

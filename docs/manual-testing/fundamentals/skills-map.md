@@ -129,23 +129,6 @@ A developer on your team wants to move into test automation. They write Python e
 
     They don't need Python yet: they already have it. Their gaps are in testing basics, not code. That is common for developers, and the opposite of most manual testers.
 
-## Quick check
-
-1. When should you tick a skill?
-
-    ??? question "Answer"
-        Only when you have done the task yourself, without help.
-
-2. How do you choose which three gaps to work on?
-
-    ??? question "Answer"
-        Pick the ones your next real task needs, not the hardest or most impressive ones.
-
-3. Why is "learn pytest" a weak goal?
-
-    ??? question "Answer"
-        It has no proof. "10 tests for shipping and coupons, reviewed by a developer" can be checked.
-
 ## References
 
 - [Skills Matrix](../../getting-started/skills-matrix.md): every SDET skill, grouped by area, with the lesson for each

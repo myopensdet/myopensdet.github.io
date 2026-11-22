@@ -136,23 +136,6 @@ The shop's docs say this about `POST /api/cart/items`: "`product_id` must be a p
 
     Notice how each idea came straight from a number or a word in the rule. That is the habit to build.
 
-## Quick check
-
-1. You need to know the exact maximum length of a field. Which kind of page do you open?
-
-    ??? question "Answer"
-        A reference page, like the API docs.
-
-2. Why read the rules, and not only the example?
-
-    ??? question "Answer"
-        Every rule has a limit, and limits are where bugs hide. The example only shows the normal case.
-
-3. The app does something the docs say it shouldn't. What is that?
-
-    ??? question "Answer"
-        A finding. Either the app or the docs is wrong. Report it.
-
 ## References
 
 - [Diátaxis](https://diataxis.fr/): the four kinds of documentation pages

@@ -134,23 +134,6 @@ A check takes 15 minutes by hand and runs on every pull request, about 60 times 
 
     The calculator says "Pays back fast". Checks that run on every pull request almost always do.
 
-## Quick check
-
-1. Name three kinds of checks that usually stay manual.
-
-    ??? question "Answer"
-        Checks that need a human eye (looks, wording), one-off checks, and checks on features that change every week.
-
-2. Which two costs does the calculator count?
-
-    ??? question "Answer"
-        The hours to build the test, and the hours per month to keep it working.
-
-3. A UI test takes years to pay back. What should you try before giving up?
-
-    ??? question "Answer"
-        Check whether a lower level, like a unit or API test, could do the same check much more cheaply.
-
 ## References
 
 - [Martin Fowler: The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)

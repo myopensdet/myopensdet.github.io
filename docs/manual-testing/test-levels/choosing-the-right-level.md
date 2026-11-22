@@ -136,23 +136,6 @@ The shop adds a new feature: "Customers can save their cart and come back to it 
 
     Notice the date edges are tested once, low down. The end-to-end test doesn't wait 7 days. It only checks that the journey works.
 
-## Quick check
-
-1. What is the one question behind every level choice?
-
-    ??? question "Answer"
-        "What is the lowest level that can really catch this bug?"
-
-2. An idea fits two levels. Which do you pick?
-
-    ??? question "Answer"
-        The lower one. Add a higher test only if you would still worry after the lower one passes.
-
-3. Where do ideas like "is the coupon box easy to find?" go?
-
-    ??? question "Answer"
-        On the manual or exploratory list, because a person has to judge them.
-
 ## References
 
 - [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html): see "Avoid Test Duplication"

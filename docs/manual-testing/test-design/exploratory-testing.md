@@ -122,23 +122,6 @@ Write a charter for a 45-minute session on a "change your email address" feature
 
     Notice the charter is about a risk ("take over an account"), not just a feature. A risk gives the session a direction.
 
-## Quick check
-
-1. What are the three parts of a charter?
-
-    ??? question "Answer"
-        Explore *what*, with *what tool or idea*, to find out *what*.
-
-2. Why use a time box?
-
-    ??? question "Answer"
-        It keeps the session focused. New areas you find go under "Ideas" for another session.
-
-3. What goes in the wrap-up?
-
-    ??? question "Answer"
-        What you covered, what you didn't, and how it felt: solid, shaky or blocked.
-
 ## References
 
 - [Elisabeth Hendrickson, *Explore It!*](https://pragprog.com/titles/ehxta/explore-it/): the book that made charters popular

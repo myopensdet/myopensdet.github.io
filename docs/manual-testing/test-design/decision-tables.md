@@ -167,23 +167,6 @@ A bank app has this rule: "A transfer needs a code by text message if it is over
 
     And don't forget the boundary: what about exactly $1,000? "Over" means $1,000.00 does *not* need a code, but $1,000.01 does. Test both.
 
-## Quick check
-
-1. How many rows does a table with 4 yes/no conditions have?
-
-    ??? question "Answer"
-        16. Each condition doubles the rows: 2 × 2 × 2 × 2.
-
-2. What should you do with a row the story doesn't answer?
-
-    ??? question "Answer"
-        Ask the product owner, and write the answer into the story. Don't guess.
-
-3. Why put a row number in the test?
-
-    ??? question "Answer"
-        So a failure points straight at the row in the table, and everyone can see which mix of conditions broke.
-
 ## References
 
 - [ISTQB Glossary: decision table testing](https://glossary.istqb.org/)

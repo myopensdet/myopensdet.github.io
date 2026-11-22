@@ -93,23 +93,6 @@ Change the example to ask for `https://httpbin.org/get` with two parameters, `na
 ??? success "Solution"
     Use `params={"name": "Test", "page": 3}`. The request line becomes `GET https://httpbin.org/get?name=Test&page=3`, and `args` shows both values, as text: `{'name': 'Test', 'page': '3'}`. Everything in a URL is text, even numbers.
 
-## Quick check
-
-1. Name the four parts of a request.
-
-    ??? question "Answer"
-        Method, URL, headers and body (the body is optional).
-
-2. What does `response.ok` tell you?
-
-    ??? question "Answer"
-        Whether the status code is below 400.
-
-3. What does "stateless" mean for tests?
-
-    ??? question "Answer"
-        Each request must carry everything it needs, like a token. The server doesn't remember earlier requests.
-
 ## References
 
 - [MDN: An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview)

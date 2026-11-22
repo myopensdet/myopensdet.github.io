@@ -136,23 +136,6 @@ Your lead says: "The checkout tests all passed last night, so we can release." W
     so I'd like 30 minutes to explore it by hand before we release.
     ```
 
-## Quick check
-
-1. All 4 shipping tests passed, but exactly $50.00 still paid shipping. Which principle does that show?
-
-    ??? question "Answer"
-        Principle 1: testing shows that bugs are there, not that they are gone.
-
-2. What is the pesticide paradox?
-
-    ??? question "Answer"
-        Running the same tests again and again finds fewer new bugs. You need new tests and new data to find new bugs.
-
-3. You found two bugs in the coupon code. Where should you look next?
-
-    ??? question "Answer"
-        At the coupon code and the parts near it. Bugs cluster together.
-
 ## References
 
 - [ISTQB Certified Tester Foundation Level v4.0](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/): section 1.3, the seven testing principles
