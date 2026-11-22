@@ -1,135 +1,147 @@
 ---
-title: "Virtual Environments and pip: Install Tools for One Project at a Time"
-description: "Why every Python test project needs its own virtual environment, how to create and activate one on macOS, Linux and Windows, install packages with pip, pin versions in requirements.txt, and check which Python you're really using."
+title: "Virtual Environments and pip: Give Every Test Project Its Own Tools"
+description: "Why every Python test project needs its own virtual environment, how to create and activate one on macOS, Linux and Windows, install pinned packages with pip, save them in requirements.txt, rebuild the same setup anywhere, and check which Python you are really using."
 level: Beginner
 tags:
   - Python
   - Tools
 nav_title: "Virtual environments and pip"
 order: 100
-summary: "Give each project its own Python packages, and pin their versions."
+summary: "Give each project its own packages, pin their versions, and rebuild the same setup anywhere."
 updated: "2026-11-22"
 ---
 
-# Virtual Environments and pip: Install Tools for One Project at a Time
+# Virtual Environments and pip: Give Every Test Project Its Own Tools
 
-**pip** installs Python packages, like pytest or Playwright. A **virtual environment** is a folder with its own copy of Python and its own packages, for one project. Without one, every project shares the same packages, and upgrading pytest for one project can break another. With one, each project has exactly what it needs, and `requirements.txt` lets anyone rebuild it.
+**pip** installs Python packages, like pytest or Playwright. A **virtual environment** is a folder with its own Python and its own packages, for one project only. Each test project gets one. A file called `requirements.txt` lists the exact versions, so your laptop, your teammate's laptop and the CI server all run the tests with the same tools.
 
 !!! note "Before you start"
-    You need Python 3.11 or newer. On macOS and Linux the command may be `python3`; on Windows it is often `py`.
+    You need Python 3.13. On macOS and Linux the command may be `python3`; on Windows it is often `py`. See [Environment setup](../getting-started/environment-setup/index.md) if Python is not installed yet.
 
-## What you will learn
+## Why testers need this
 
-- Why each project needs its own virtual environment
-- How to create and activate one, on each system
-- How to install packages, and pin them in `requirements.txt`
-- How to check which Python and which packages you're really using
+You look after two test projects. The device API tests need the newest pytest. An older mobile test project still needs an older version, and nobody has time to update it this month. If both projects share one set of packages, updating pytest for one breaks the other.
 
-## Why this matters at work
+It gets worse on a team. A test passes on your laptop and fails in the pipeline. After an hour you find that the pipeline installed a newer version of a library, which changed how it works. "Works on my machine" very often means "my machine has different package versions".
 
-"Works on my machine" often means "my machine has a different version of a package". Teams fix that with a virtual environment per project and pinned versions in a file. The pipeline builds the same environment from the same file, so the tests run the same everywhere.
+Virtual environments and pinned versions fix both problems.
 
-## The idea in plain words
+## How it works
 
-!!! info "In plain words"
-    A virtual environment is a separate toolbox for each job. The plumbing job's box has plumbing tools. The electrics job's box has electrics tools.
-    Nobody borrows a tool from one box and forgets to put it back.
+Each project folder has its own `.venv` folder with its own packages. The system Python is left alone. `requirements.txt` goes into Git; the `.venv` folder does not.
+
+```mermaid
+flowchart TD
+    GIT["Git repository<br/>tests + requirements.txt"] -->|"clone, then<br/>pip install -r"| A["Device API tests<br/>.venv: pytest 9.2.0"]
+    GIT -->|"the pipeline does<br/>the same"| CI["CI server<br/>.venv: pytest 9.2.0"]
+    B["Old mobile tests<br/>.venv: older pytest"]
+    SYS["System Python<br/>nothing installed here"]
+```
+
+*Every place that runs the device API tests builds its `.venv` from the same `requirements.txt`, so the versions match. The old project keeps its own versions, and the system Python stays clean.*
 
 ## Step by step
 
-1. **Create it, inside your project folder.** The folder is usually called `.venv`:
+These commands and outputs are from a real run on macOS with Python 3.13. Windows commands are in the tabs.
+
+**1. Create the environment, inside your project folder.** The folder is usually called `.venv`:
+
+```bash
+python3 -m venv .venv
+```
+
+`-m venv` runs Python's built-in `venv` module. It makes the `.venv` folder with a fresh Python and pip inside.
+
+**2. Activate it.** This makes `python` and `pip` mean the ones inside `.venv`:
+
+=== "macOS and Linux"
 
     ```bash
-    python3 -m venv .venv
+    source .venv/bin/activate
     ```
 
-2. **Activate it.** This makes `python` and `pip` mean the ones inside `.venv`:
+=== "Windows (PowerShell)"
 
-    === "macOS and Linux"
-
-        ```bash
-        source .venv/bin/activate
-        ```
-
-    === "Windows (PowerShell)"
-
-        ```powershell
-        .venv\Scripts\Activate.ps1
-        ```
-
-    Your prompt usually shows `(.venv)` at the start. Check it really worked:
-
-    ```bash
-    python --version
-    python -m pip list
+    ```powershell
+    .venv\Scripts\Activate.ps1
     ```
 
-    ```text
-    Python 3.13.18
-    Package Version
-    ------- -------
-    pip     26.3
-    ```
+Your prompt usually shows `(.venv)` at the start. Check that it really worked:
 
-    A new environment has only pip. That's the point: nothing from other projects.
+```bash
+python --version
+python -m pip list
+```
 
-3. **Install what the project needs, with a version.**
+```text
+Python 3.13.18
+Package Version
+------- -------
+pip     26.3
+```
 
-    ```bash
-    python -m pip install "pytest==9.2.0"
-    python -m pytest --version
-    ```
+A new environment has only pip. That is the point: nothing comes in from other projects.
 
-    ```text
-    pytest 9.2.0
-    ```
+**3. Install what the project needs, with a version.**
 
-    `python -m pip` makes sure you use the pip of the Python you're running. Writing `==9.2.0` pins the version, so everyone gets the same one.
+```bash
+python -m pip install "pytest==9.2.0"
+python -m pytest --version
+```
 
-4. **Write the list down.** `pip freeze` lists everything installed, with exact versions. Save it as `requirements.txt`:
+```text
+pytest 9.2.0
+```
 
-    ```bash
-    python -m pip freeze > requirements.txt
-    ```
+- `python -m pip` runs the pip that belongs to the Python you are using. Plain `pip` can belong to a different Python.
+- `==9.2.0` **pins** the version, so everyone gets exactly this one.
 
-    ```text
-    iniconfig==2.3.1
-    packaging==26.3
-    pluggy==1.7.0
-    Pygments==2.21.0
-    pytest==9.2.0
-    ```
+**4. Write the list down.** `pip freeze` lists everything installed, with exact versions. Save it as `requirements.txt`:
 
-    You asked for one package and got five: pytest needs the other four. Anyone can now rebuild the same environment with `python -m pip install -r requirements.txt`.
+```bash
+python -m pip freeze > requirements.txt
+```
 
-5. **Keep `.venv` out of Git.** Add `.venv/` to `.gitignore`. Share `requirements.txt`, not the folder: the folder is big, and it only works on the computer that made it.
+```text
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.2.0
+```
 
-6. **Leave it when you're done.** `deactivate` goes back to the normal Python. Next time, activate again before you work.
+You asked for one package and got five. pytest needs the other four, so pip installed them too. Those are called **dependencies**. They are pinned as well, so nothing changes under you.
 
-    !!! success "Check: you should now be able to"
-        Create and activate a virtual environment, install a pinned package, save `requirements.txt`, and rebuild from it.
+**5. Rebuild it anywhere.** On another computer, or in the pipeline, after cloning the project:
 
-## When it goes wrong
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
 
-- **`ModuleNotFoundError: No module named 'pytest'`, though you installed it.** You installed it in one Python and ran another. Activate the environment, then use `python -m pytest`. To see which Python runs, use `python -c "import sys; print(sys.executable)"`. It should point into your project's `.venv`.
-- **`error: externally-managed-environment`.** Your system protects its own Python from pip. That's the system telling you to use a virtual environment. Make one, activate it, and install there.
-- **PowerShell says running scripts is disabled.** Windows blocks the activate script by default. Run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, or use `.venv\Scripts\activate.bat` in Command Prompt.
-- **Everything broke after moving the project folder.** Virtual environments don't move well. Delete `.venv`, make a new one, and install from `requirements.txt`.
+`-r` means "install everything in this file". The result is the same five packages, with the same versions.
 
-## Common mistakes
+**6. Keep `.venv` out of Git.** Add `.venv/` to `.gitignore`. Share `requirements.txt`, not the folder. The folder is big, and it only works on the computer that made it.
 
-!!! warning "Common mistakes"
-    - **Installing with no environment active.** The package goes into the system Python.
-    - **No versions in `requirements.txt`.** Tomorrow's install gets different versions.
-    - **Committing `.venv` to Git.** Commit `requirements.txt` instead.
+**7. Leave it when you are done.** `deactivate` goes back to the normal Python. Next time, activate it again before you work.
 
-!!! failure "If you see this error"
-    **`zsh: command not found: python`**
-    On many macOS and Linux systems, the command is `python3`, not `python`. Use `python3 -m venv .venv`. After you activate the environment, `python` works too.
+## How it is used in a real QA project
 
-## Try it yourself
+- **Every test project has a `.venv` and a `requirements.txt`** (or a `pyproject.toml`, which newer projects use for the same job). The README says how to build it, like the steps above.
+- **The CI pipeline builds the environment from the file** on every run, then runs the tests. See [CI/CD for testers](../devops-for-qa/ci-cd/index.md).
+- **Updates are planned.** A team updates a pinned version on purpose, runs the tests, and commits the new `requirements.txt`. Nothing changes by surprise.
+- **Hashes for extra safety.** Some projects (this site is one) also store a hash for each package and install with `--require-hashes`. Then pip refuses any file that was changed, even with the same version number.
+- **Browsers are separate.** Playwright's Python package goes in `.venv`, but its browsers are downloaded with `python -m playwright install`. See [Playwright](../automation-testing/playwright/index.md).
 
-In a new empty folder: create a virtual environment, activate it, install `pytest==9.2.0`, save `requirements.txt`, and run the exercises from this topic with `python -m pytest`. Then delete the `.venv` folder, make a new one, and rebuild it from `requirements.txt`.
+## Your task
+
+In a new, empty folder:
+
+1. Create a virtual environment and activate it.
+2. Install `pytest==9.2.0`, and save `requirements.txt`.
+3. Copy this topic's `exercises` folder in, and run `python -m pytest`. The tests fail with `NotImplementedError` until you solve them; that's fine. What matters is that pytest runs.
+4. Leave the environment, delete the `.venv` folder, make a new one, and rebuild it from `requirements.txt`.
 
 ??? success "Solution"
     ```bash
@@ -137,6 +149,7 @@ In a new empty folder: create a virtual environment, activate it, install `pytes
     source .venv/bin/activate        # Windows: .venv\Scripts\Activate.ps1
     python -m pip install "pytest==9.2.0"
     python -m pip freeze > requirements.txt
+    python -m pytest                 # inside the copied exercises folder
     deactivate
     rm -rf .venv                     # Windows: Remove-Item -Recurse .venv
     python3 -m venv .venv
@@ -147,27 +160,41 @@ In a new empty folder: create a virtual environment, activate it, install `pytes
 
     If the last line says `pytest 9.2.0`, the file did its job: you rebuilt the same environment from it.
 
-## Quick check
+## When it goes wrong
 
-1. Why does each project get its own virtual environment?
+**The package is "missing", but you installed it.**
 
-    ??? question "Answer"
-        So each project has exactly the packages and versions it needs, without breaking other projects.
+```text
+ModuleNotFoundError: No module named 'pytest'
+```
 
-2. Why write `python -m pip` instead of just `pip`?
+(This is a real message from a Python with no environment active.) You installed the package into one Python and ran another. Activate the environment, then use `python -m pytest`. To see which Python is running:
 
-    ??? question "Answer"
-        It makes sure you use the pip that belongs to the Python you're running.
+```bash
+python -c "import sys; print(sys.executable)"
+```
 
-3. Which goes into Git: `.venv` or `requirements.txt`?
+It should print a path that ends in `.venv/bin/python` (on Windows, `.venv\Scripts\python.exe`).
 
-    ??? question "Answer"
-        `requirements.txt`. The `.venv` folder stays out.
+**The `python` command does not exist.**
+
+```text
+zsh:1: command not found: python
+```
+
+On many macOS and Linux systems, the command is `python3`. Use `python3 -m venv .venv`. After you activate the environment, `python` works too.
+
+**pip says `error: externally-managed-environment`.** Your system protects its own Python from pip. That is the system telling you to use a virtual environment. Make one, activate it, and install there.
+
+**PowerShell says running scripts is disabled.** Windows blocks the activate script by default. Run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, or use `.venv\Scripts\activate.bat` in Command Prompt.
+
+**Everything broke after you moved or renamed the project folder.** Virtual environments don't move well. Delete `.venv`, make a new one, and install from `requirements.txt`.
 
 ## References
 
-- [Python: venv](https://docs.python.org/3/library/venv.html)
-- [Python Packaging User Guide: Install packages in a virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
-- [pip: Requirements file format](https://pip.pypa.io/en/stable/reference/requirements-file-format/)
+- [Python docs: venv](https://docs.python.org/3/library/venv.html)
+- [Python Packaging User Guide: install packages in a virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
+- [pip: requirements file format](https://pip.pypa.io/en/stable/reference/requirements-file-format/)
+- [pip: secure installs with hashes](https://pip.pypa.io/en/stable/topics/secure-installs/)
 
 Written for Python 3.13 and pip 26. Links checked: November 2026.

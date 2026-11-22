@@ -108,7 +108,7 @@ topic you need today. Click a category to open it.
 - [Exception handling](https://myopensdet.github.io/programming-for-testers/exception-handling/): Read a traceback fast, set bad data aside without stopping, and always clean up.
 - [File handling](https://myopensdet.github.io/programming-for-testers/file-handling/): Read test cases from a CSV file, write a results file, and keep Bengali text safe.
 - [JSON](https://myopensdet.github.io/programming-for-testers/json/): Read nested API data, catch wrong types, and compare an expected response with the real one.
-- [Virtual environments and pip](https://myopensdet.github.io/programming-for-testers/virtual-environments-and-pip/): Give each project its own Python packages, and pin their versions.
+- [Virtual environments and pip](https://myopensdet.github.io/programming-for-testers/virtual-environments-and-pip/): Give each project its own packages, pin their versions, and rebuild the same setup anywhere.
 - [Reading other people's code](https://myopensdet.github.io/programming-for-testers/reading-other-peoples-code/): Find your way around code you didn't write: predict, run, and check.
 
 </details>

@@ -245,7 +245,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 10.  [**Virtual environments and pip**](virtual-environments-and-pip.md)
 
-    Give each project its own Python packages, and pin their versions.
+    Give each project its own packages, pin their versions, and rebuild the same setup anywhere.
 
     <span class="zts-chip">Beginner</span>
 
