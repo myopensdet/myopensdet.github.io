@@ -1,6 +1,6 @@
 ---
 title: "Python for Testers: Just Enough Python to Write Real Tests and Tools"
-description: "The Python a tester needs at work: types, strings, lists and dictionaries, if and loops, functions, modules, classes, errors, files, JSON, virtual environments and reading other people's code, with exercises checked by pytest and three starter scripts."
+description: "The Python a tester needs at work: types, lists, tuples, sets and dictionaries, conditions and loops, functions, modules, classes, exceptions, files, JSON, virtual environments and reading other people's code, with exercises checked by pytest and three starter scripts."
 level: Beginner
 tags:
   - Python
@@ -34,18 +34,18 @@ You don't need to be a software developer to write good tests, but you do need t
 
 ## Jump to what you need
 
-Work through them in order if Python is new to you. Each one takes 20 to 30 minutes, with an exercise.
+Work through them in order if Python is new to you. Each one uses real test data (device IDs, status codes, API responses), has a diagram, and ends with an exercise checked by pytest. Plan 30 to 45 minutes for each.
 
-1. [Variables and types](variables-and-data-types.md): text, numbers, True and False, and why `"30"` isn't `30`
-2. [Strings, lists and dictionaries](lists-tuples-sets-and-dictionaries.md): the three shapes most test data comes in
-3. [If and loops](conditions-and-loops.md): make decisions, and do the same check many times
-4. [Functions](functions.md): name a piece of work, so you can test it and use it again
-5. [Modules and imports](modules-and-imports.md): use dates, paths and JSON from the standard library
-6. [Classes and objects](object-oriented-programming.md): the idea behind page objects and API clients
-7. [Errors and exceptions](exception-handling.md): read a traceback, and handle what can go wrong
-8. [Reading and writing files](file-handling.md): test data, CSV files and reports
-9. [JSON](json.md): the format of almost every API response
-10. [Virtual environments and pip](virtual-environments-and-pip.md): install tools for one project, without breaking another
+1. [Variables and data types](variables-and-data-types.md): keep an API check in variables, and pick the right type for each value
+2. [Lists, tuples, sets and dictionaries](lists-tuples-sets-and-dictionaries.md): results in a list, missing devices with a set, API data in a dictionary
+3. [Conditions and loops](conditions-and-loops.md): judge a result, check every reading, and retry with a limit
+4. [Functions](functions.md): turn a check into a tool you can test and reuse
+5. [Modules and imports](modules-and-imports.md): share checks between files, and use dates, paths and random data
+6. [Object-oriented programming](object-oriented-programming.md): classes for devices, page objects and API clients
+7. [Exception handling](exception-handling.md): read a traceback, set bad data aside, and always clean up
+8. [File handling](file-handling.md): read test cases from CSV, write results and logs
+9. [JSON](json.md): read API responses, check their types, and compare them
+10. [Virtual environments and pip](virtual-environments-and-pip.md): give every test project its own tools
 11. [Reading other people's code](reading-other-peoples-code.md): find your way around a test suite you didn't write
 
 ## 1. Understand the ask
