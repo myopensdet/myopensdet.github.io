@@ -233,7 +233,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 8.  [**File handling**](file-handling.md)
 
-    Read test data and CSV files, write reports, and keep Bengali text safe.
+    Read test cases from a CSV file, write a results file, and keep Bengali text safe.
 
     <span class="zts-chip">Beginner</span>
 

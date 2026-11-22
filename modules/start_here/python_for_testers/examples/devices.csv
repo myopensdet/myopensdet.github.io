@@ -1,0 +1,5 @@
+# Template from myOpenSDET: https://myopensdet.github.io/
+device_id,expected_status,max_seconds,location
+SNS-0041,200,1.0,ঢাকা অফিস
+SNS-0042,200,1.0,Lab 2
+SNS-0043,404,0.5,Lab 2

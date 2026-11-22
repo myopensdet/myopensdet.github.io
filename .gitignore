@@ -81,6 +81,8 @@ locust_*.html
 zap-report*
 *.log
 logs/
+# Files the lesson examples write when you run them yourself
+modules/**/examples/out/
 
 # ===== Databases and Docker data =====
 *.db
