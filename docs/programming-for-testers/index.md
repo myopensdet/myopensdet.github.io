@@ -203,7 +203,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 3.  [**Conditions and loops**](conditions-and-loops.md)
 
-    Make decisions, do the same check many times, and retry with a limit.
+    Judge a result with if, check every reading with for, and retry with a limit.
 
     <span class="zts-chip">Beginner</span>
 

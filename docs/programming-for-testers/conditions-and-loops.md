@@ -1,129 +1,182 @@
 ---
-title: "If and Loops: Make Decisions, and Repeat a Check"
-description: "Python if, elif and else, for loops over lists, enumerate, list comprehensions, and a retry loop with a limit and break, using HTTP status codes and test steps as examples."
+title: "Conditions and Loops: Decide, Check Every Item, and Retry Safely"
+description: "Python if, elif and else, for loops, list comprehensions and retries with a limit, shown with real test work: judging a response, checking every device reading, and waiting for a device to come online."
 level: Beginner
 tags:
   - Python
   - Getting started
 nav_title: "Conditions and loops"
 order: 30
-summary: "Make decisions, do the same check many times, and retry with a limit."
+summary: "Judge a result with if, check every reading with for, and retry with a limit."
 updated: "2026-11-22"
 ---
 
-# If and Loops: Make Decisions, and Repeat a Check
+# Conditions and Loops: Decide, Check Every Item, and Retry Safely
 
-`if` lets your code choose: if the status is 200, it's fine; otherwise, report it. A `for` loop does the same thing for every item in a list: check every user, every product, every row. Together they cover most of the logic in test helpers. This lesson also shows a retry loop, because waiting for a slow service is a daily task in testing.
+A test makes decisions all the time: is this status a pass, a fail, or "try again"? And it repeats the same check many times: every row in a file, every device in a list. **Conditions** (`if`, `elif`, `else`) make the decisions. **Loops** (`for`) do the repeating. Together they turn one check into a check of a whole system.
 
 !!! note "Before you start"
-    Read [Strings, lists and dictionaries](lists-tuples-sets-and-dictionaries.md) first.
+    You need Python 3.13 and the lesson on [lists, tuples, sets and dictionaries](lists-tuples-sets-and-dictionaries.md). The example file is `examples/loops_demo.py`.
 
-## What you will learn
+## Why testers need this
 
-- How to write `if`, `elif` and `else`
-- How to loop over a list, with or without a counter
-- How to build a list in one line with a comprehension
-- How to retry something with a limit, and stop with `break`
+A team runs a fleet of temperature sensors. The rule says every reading must be between -20 and 60 degrees. Your test gets the latest reading from each device, and must:
 
-## Why this matters at work
+- treat a missing reading as a failure, not skip it,
+- list every reading out of range, not stop at the first one,
+- pick out the slow API answers,
+- wait for a device that is still starting up, but never wait forever.
 
-A test helper that checks one response is useful. One that checks every response in a list, and groups the failures, is what the team actually needs. Loops are how you go from one to many.
+Checking 4 devices by hand is fine. Checking 400 needs a loop.
 
-## The idea in plain words
+## How it works
 
-!!! info "In plain words"
-    A loop is a teacher marking a pile of homework: take the next one, check it, put it down, repeat until the pile is empty.
-    `if` is the marking itself: right, wrong, or "see me".
+The loop takes one reading at a time and runs the same checks on it. The conditions decide which path each reading takes.
 
-## Step by step
+```mermaid
+flowchart TD
+    A["Take the next reading"] --> B{"Is the temperature None?"}
+    B -- yes --> F1["Add: no reading"]
+    B -- no --> C{"Between -20 and 60?"}
+    C -- no --> F2["Add: out of range"]
+    C -- yes --> OK["Nothing to add"]
+    F1 --> N{"More readings?"}
+    F2 --> N
+    OK --> N
+    N -- yes --> A
+    N -- no --> R["Print the report"]
+```
 
-1. **Run the example.**
+*Every reading goes through the same two questions. The loop ends when no readings are left, then the report is printed once.*
 
-    ```python
-    --8<-- "modules/start_here/python_for_testers/examples/loops_demo.py"
-    ```
+## The code
 
-    ```bash
-    python loops_demo.py
-    ```
+```python title="examples/loops_demo.py"
+--8<-- "modules/start_here/python_for_testers/examples/loops_demo.py"
+```
 
-    ```text
-    200 ok
-    201 ok
-    404 client error
-    500 server error
-    200 ok
-    errors: [404, 500]
-    step 1: login
-    step 2: search
-    step 3: pay
-    try 1: 503
-    try 2: 503
-    try 3: 200
-    ```
+From the `examples` folder, run:
 
-2. **Read the `if`.** Python checks each condition from the top and runs the first one that's true. `elif` means "else if". `else` catches everything left. The indented lines belong to the condition above them. Indentation is how Python knows where a block ends, so keep it at 4 spaces.
+```bash
+python loops_demo.py
+```
 
-3. **Read the `for` loop.** `for code in codes:` takes each item in turn and calls it `code`. The loop body runs once per item: five codes, five lines of output.
+```text
+status 503: RETRY
+4 readings checked, 2 failed
+  - SNS-0042: 85.0 is out of range
+  - SNS-0043: no reading
+slow responses: [1.8, 2.4]
+try 1: booting
+try 2: booting
+try 3: online
+PASS: online after 3 tries
+```
 
-4. **Use `enumerate` when you need a number.** `enumerate(steps, start=1)` gives the position and the item together. Handy for "step 3 failed" messages.
+## Line by line
 
-5. **Build a list in one line.** `[code for code in codes if code >= 400]` is a **list comprehension**: "every code, for each code in codes, if it's 400 or more". It does the same as a loop with `append`, in one readable line.
+**Part 1: one decision.**
 
-6. **Retry with a limit.** The last loop tries up to 5 times, and `break` stops it as soon as the answer is 200. Never retry without a limit: a test that waits forever is worse than one that fails. Python also has `while condition:` loops, which repeat until the condition is false. For retries, a `for` with `range` is safer, because the limit is built in.
+- `if 200 <= status < 300:` asks a question. The colon `:` ends the question. The indented lines under it run only when the answer is `True`. `200 <= status < 300` means "200 or more, and less than 300": any 2xx code.
+- `elif status in (429, 503):` is checked only when the `if` was `False`. 429 (too many requests) and 503 (service unavailable) often mean "busy, try later", so the verdict is `RETRY`, not `FAIL`.
+- `else:` catches everything left. Python checks from the top and stops at the first `True`, so the order of the questions matters.
 
-    !!! success "Check: you should now be able to"
-        Write an `if` with `elif` and `else`, loop over a list, build a filtered list with a comprehension, and write a retry loop with a limit.
+**Part 2: a check for every reading.**
 
-## When it goes wrong
+- `for reading in readings:` takes the items one by one. Each time round, `reading` is the next dictionary. The indented block runs once per item: 4 times here.
+- `if temperature is None:` comes first. If it came second, `-20 <= None` would crash the script (see [When it goes wrong](#when-it-goes-wrong)).
+- `elif not -20 <= temperature <= 60:` is `True` when the reading is outside the range. `not` turns `True` into `False` and back.
+- `failures.append(...)` collects every problem. The test reports all of them at the end, so one run shows the whole picture.
+- `SNS-0044` reads `-3.0`, which is inside the range, so it adds nothing.
 
-- **`IndentationError: expected an indented block after 'if' statement on line 4`.** The line after `if ...:` or `for ...:` must be indented. Use 4 spaces, and let your editor do it.
-- **The loop runs, but nothing is printed.** The list may be empty. Print `len(codes)` before the loop. An empty list from an API is often the real finding.
-- **The wrong branch runs.** Check the order of your conditions. `if code < 500` before `if code < 300` would call 200 a client error, because the first true condition wins.
-- **A loop never ends.** It's almost always a `while` whose condition never becomes false. Press Ctrl+C to stop it, and switch to `for attempt in range(5)`.
+**Part 3: a loop in one line.**
 
-## Common mistakes
+- `[seconds for seconds in response_times if seconds > 1.0]` is a **list comprehension**. Read it as "each `seconds` from `response_times`, if `seconds > 1.0`". It builds a new list, `[1.8, 2.4]`. Use it for short filters. For anything longer, a normal `for` loop is easier to read.
 
-!!! warning "Common mistakes"
-    - **Using `=` instead of `==` in a condition.** `=` assigns, `==` compares.
-    - **Changing a list while looping over it.** Build a new list instead, with a comprehension.
-    - **Retrying without a limit, or without a pause in real code.** Add both.
+**Part 4: retry with a limit.**
 
-!!! failure "If you see this error"
-    **`SyntaxError: expected ':'`**
-    Every `if`, `elif`, `else` and `for` line ends with a colon. Add it, and check the next line is indented.
+- `range(1, max_tries + 1)` gives the numbers 1 to 5. The loop can never run more than 5 times, so a broken device can't hang your test run.
+- `device_answers[attempt - 1]` stands in for a real API call. List positions start at 0, so try 1 reads position 0.
+- `break` stops the loop at once, as soon as the device is online. Tries 4 and 5 never happen.
+- The `else:` under a `for` runs only when the loop ended without `break`. Here that means "it never came online", so the test prints `FAIL`.
 
-## Try it yourself
+## How it is used in a real QA project
 
-Open `exercises/ex03_loops.py`. Write `status_group(code)`, which names the group of a status code, and `count_outcomes(outcomes)`, which counts each outcome in a list. Run `python -m pytest tests/test_ex03_loops.py` from the `exercises` folder.
+- **Checking many rows.** A loop goes through every row of a test-data file, every item in an API list, or every link on a page.
+- **Collecting all failures.** Good checks gather every problem first, then fail once with the full list. One run then tells you everything that broke.
+- **Waiting for a system.** Tests wait for a device to come online, a job to finish, or an email to arrive. Always set a limit and a short pause between tries (`time.sleep(2)` in a real test). In UI tests, [Playwright waits](../automation-testing/playwright/waits.md) do this for you.
+- **Grouping results.** `if`/`elif`/`else` turns a status code or an error message into a group, such as "client error" or "server error", for a report.
+- **Fewer loops in pytest.** When each item should be its own test, use [parametrize](../automation-testing/pytest/parametrize.md) instead of a loop. Then pytest reports each case on its own.
+
+## Your task
+
+Open `exercises/ex03_loops.py`. Replace each `raise` line with your code:
+
+1. `status_group(code)`: return `"ok"`, `"client error"`, `"server error"` or `"other"`, using `if`, `elif` and `else`.
+2. `count_outcomes(outcomes)`: count each outcome in a list, like `["passed", "failed", "passed"]`, into a dictionary.
+3. `first_ok_try(statuses, max_tries)`: return the try number of the first `200`, looking at no more than `max_tries` items. Return `0` when none of them is `200`.
+
+From the `exercises` folder:
+
+```bash
+python -m pytest tests/test_ex03_loops.py
+```
+
+All 9 tests pass when your answers are right.
 
 ??? success "Solution"
     ```python
     --8<-- "modules/start_here/python_for_testers/solutions/ex03_loops.py"
     ```
 
-    `counts.get(outcome, 0) + 1` means "the count so far, or 0 if this is the first one, plus one". You'll see that line in many test reports.
+    - `status_group` returns inside each branch, so Python leaves the function at the first match.
+    - `counts.get(outcome, 0) + 1` reads the count so far (0 the first time) and adds one.
+    - `statuses[:max_tries]` keeps only the first tries, so the limit is respected. `enumerate(..., start=1)` gives each status its try number. `return` inside the loop stops it, like `break`.
 
-## Quick check
+## When it goes wrong
 
-1. In an `if` / `elif` chain, which branch runs?
+These are real messages from Python 3.13.
 
-    ??? question "Answer"
-        The first one whose condition is true, from the top.
+**You forgot the colon.**
 
-2. What does `[n for n in numbers if n > 0]` make?
+```text
+    if status == 200
+                    ^
+SyntaxError: expected ':'
+```
 
-    ??? question "Answer"
-        A new list with only the numbers greater than 0.
+Every `if`, `elif`, `else` and `for` line ends with `:`.
 
-3. Why should a retry loop have a limit?
+**You used `=` instead of `==`.**
 
-    ??? question "Answer"
-        Without one, a broken service makes the test wait forever, instead of failing with a clear message.
+```text
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+```
+
+One `=` gives a value to a name. Two (`==`) ask "are they equal?".
+
+**The block under the loop is not indented.**
+
+```text
+IndentationError: expected an indented block after 'for' statement on line 1
+```
+
+Python uses the spaces at the start of a line to know what belongs to the loop. Indent the block by 4 spaces.
+
+**You compared `None` with a number.**
+
+```text
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+```
+
+A reading was missing. Check `is None` before you compare, like Part 2 does.
+
+**The test never ends.** A loop without a limit is waiting for something that never happens. Use `for attempt in range(...)` with `break`, not an endless loop. Press ++ctrl+c++ to stop the script.
 
 ## References
 
-- [Python Tutorial: if statements and for loops](https://docs.python.org/3/tutorial/controlflow.html)
-- [Python Tutorial: List comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
+- [Python tutorial: if statements](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
+- [Python tutorial: for statements, break and else on loops](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
+- [Python tutorial: list comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 
 Written for Python 3.13. Links checked: November 2026.
