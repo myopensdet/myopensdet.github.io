@@ -49,6 +49,9 @@ jobs:
       - name: Make the share images
         run: python scripts/build_share_images.py
 
+      - name: Forward old addresses to moved pages
+        run: python scripts/build_redirects.py
+
       - name: Set up Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 

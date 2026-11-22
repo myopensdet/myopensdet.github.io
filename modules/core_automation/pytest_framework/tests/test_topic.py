@@ -12,7 +12,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 ROOT = TOPIC.parents[2]
-DOCS = ROOT / "docs" / "core-automation" / "pytest-framework"
+DOCS = ROOT / "docs" / "automation-testing" / "pytest"
 EXAMPLES = TOPIC / "examples"
 PROJECT = EXAMPLES / "shop_project"
 SKELETON = TOPIC / "templates" / "pytest_skeleton"

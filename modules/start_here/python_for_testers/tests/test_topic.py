@@ -10,21 +10,21 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 ROOT = TOPIC.parents[2]
-DOCS = ROOT / "docs" / "start-here" / "python-for-testers"
+DOCS = ROOT / "docs" / "programming-for-testers"
 TEMPLATES = TOPIC / "templates"
 EXAMPLES = TOPIC / "examples"
 CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 
 # Each example script, and the page that shows its output.
 PAGES = {
-    "types_demo.py": "variables-and-types.md",
-    "collections_demo.py": "strings-lists-and-dictionaries.md",
-    "loops_demo.py": "if-and-loops.md",
+    "types_demo.py": "variables-and-data-types.md",
+    "collections_demo.py": "lists-tuples-sets-and-dictionaries.md",
+    "loops_demo.py": "conditions-and-loops.md",
     "functions_demo.py": "functions.md",
     "modules_demo.py": "modules-and-imports.md",
-    "classes_demo.py": "classes-and-objects.md",
-    "errors_demo.py": "errors-and-exceptions.md",
-    "files_demo.py": "reading-and-writing-files.md",
+    "classes_demo.py": "object-oriented-programming.md",
+    "errors_demo.py": "exception-handling.md",
+    "files_demo.py": "file-handling.md",
     "json_demo.py": "json.md",
     "mystery.py": "reading-other-peoples-code.md",
 }

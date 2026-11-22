@@ -9,6 +9,7 @@ nav_title: "Cheat sheets"
 order: 10
 summary: "One-page reminders: SQL, pytest, HTTP, Git, Linux, Docker and more."
 updated: "2026-11-22"
+code: "toolbox/cheat_sheets"
 ---
 
 # Cheat Sheets for Testers: SQL, HTTP, pytest, Playwright, Gherkin, Git, Linux and Docker

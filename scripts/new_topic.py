@@ -3,7 +3,7 @@
 Example (from the repository root):
 
     .venv/bin/python scripts/new_topic.py \\
-        --section core-automation --slug api-testing --title "API testing" \\
+        --section api-testing --slug graphql --title "API testing" \\
         --level Intermediate --group "API and databases" --after pytest-framework \\
         --tags API Python \\
         --summary "Send requests from Python and check status codes, JSON, headers and auth."
@@ -43,6 +43,7 @@ tags:
 {tag_lines}nav_title: {title}
 order: {order}
 {group_line}summary: {summary}
+code: {code}
 ---
 
 # {plain_title}
@@ -166,6 +167,7 @@ def main() -> None:
         order=order,
         group_line=f"group: {q(args.group)}\n" if args.group else "",
         summary=q(args.summary),
+        code=code_dir.relative_to(MODULES).as_posix(),
     )
 
     page_dir.mkdir(parents=True)

@@ -37,7 +37,7 @@ pre-commit install            # runs gitleaks and the other checks before every 
 
 ## Add a new topic
 
-A topic is a folder in a section, for example `docs/core-automation/api-testing/`.
+A topic is a folder in a category, for example `docs/api-testing/mocking-and-stubbing/`.
 The menu and the section overview cards are **built from the topic's own front
 matter**, so there is no list to edit by hand.
 
@@ -45,10 +45,10 @@ matter**, so there is no list to edit by hand.
 and the menu entry. It checks the section, group and name for you.
 
 ```bash
-.venv/bin/python scripts/new_topic.py --section core-automation --slug api-testing \
-  --title "API testing" --level Intermediate --group "API and databases" \
-  --after pytest-framework --tags API Python \
-  --summary "Send requests from Python and check the answers."
+.venv/bin/python scripts/new_topic.py --section api-testing --slug graphql \
+  --title "GraphQL testing" --level Intermediate \
+  --after mocking-and-stubbing --tags API Python \
+  --summary "Test GraphQL queries, mutations, variables and errors."
 ```
 
 When you start writing the real pages, copy them from
@@ -65,19 +65,19 @@ When you start writing the real pages, copy them from
     title: "API testing"
     description: "One or two sentences for search engines and link previews."
     level: Intermediate                 # Beginner, Intermediate, Advanced or Senior
-    status: draft                       # remove when the topic is finished
+    status: draft                       # remove when finished; drafts are listed on the Roadmap, not in the menu
     tags:                               # 1 to 3, only from data/tags.yml
       - API
       - Python
     nav_title: "API testing"            # short label in the menu
     order: 25                           # between the topics at 20 and 30
-    group: "API and databases"          # only if the section uses groups
     summary: "One plain sentence for the card on the section overview."
+    code: api_testing/graphql            # the folder in modules/ that holds its code
     ---
     ```
 
-3. Make the same folder in `modules/` for the code (underscores instead of `-`,
-   for example `modules/core_automation/api_testing/`). See [modules/README.md](modules/README.md).
+3. Make a folder in `modules/` for the code (underscores instead of `-`,
+   for example `modules/api_testing/graphql/`), and name it in `code:`. See [modules/README.md](modules/README.md).
 4. Build the menu and the overview cards:
 
     ```bash
@@ -100,7 +100,9 @@ run `.venv/bin/python scripts/build_reference.py`. See the
 **Lessons** inside a topic are more `.md` files in the topic folder, each with
 `nav_title` and `order`. They appear under the topic in the menu automatically.
 
-**Published addresses never change.** If a page must move, add a redirect.
+**Published addresses never change.** If a page must move, `git mv` it and add a line
+`old/address/: new/address/` to `data/redirects.yml`. After the build,
+`scripts/build_redirects.py` puts a forwarding page at the old address.
 
 ## Check everything before you push
 
@@ -127,7 +129,7 @@ A lesson is done when:
 - [ ] It is in the menu (`scripts/build_nav.py`), with tags and a level
 - [ ] It passes the [security rules](.github/SECURITY.md)
 - [ ] It passes the 10-year-old test ([Style guide 8A](.github/STYLE_GUIDE.md#8a-the-10-year-old-test))
-- [ ] It is linked from the [Skills Matrix](docs/start-here/skills-matrix.md)
+- [ ] It is linked from the [Skills Matrix](docs/getting-started/skills-matrix.md)
 
 A topic is done when all its lessons are done, its templates pass locally, its
 `index.md` is a complete "First time? Start here" playbook.

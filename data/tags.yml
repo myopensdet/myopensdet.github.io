@@ -42,6 +42,8 @@
   about: Saving and sharing code changes with your team.
 - name: Interviews
   about: Getting ready for SDET job interviews.
+- name: IoT
+  about: Devices, MQTT messages and firmware updates.
 - name: Leadership
   about: Leading quality for a team or a whole company.
 - name: Linux

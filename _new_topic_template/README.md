@@ -8,20 +8,19 @@ One command creates the page, the code folders, and updates the menu:
 
 ```bash
 .venv/bin/python scripts/new_topic.py \
-  --section core-automation \
-  --slug api-testing \
-  --title "API testing" \
+  --section api-testing \
+  --slug graphql \
+  --title "GraphQL testing" \
   --level Intermediate \
-  --group "API and databases" \
-  --after pytest-framework \
-  --summary "Send requests from Python and check status codes, JSON, headers and auth."
+  --after mocking-and-stubbing \
+  --summary "Test GraphQL queries, mutations, variables and errors."
 ```
 
 It creates:
 
 ```text
-docs/core-automation/api-testing/index.md        "Coming soon" page (status: draft)
-modules/core_automation/api_testing/
+docs/api-testing/graphql/index.md        "Coming soon" page (status: draft, listed on the Roadmap)
+modules/api_testing/graphql/
     templates/  examples/  exercises/  solutions/  tests/
 ```
 

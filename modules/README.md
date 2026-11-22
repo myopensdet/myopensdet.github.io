@@ -2,8 +2,10 @@
 
 Runnable code for every topic: templates, examples, exercises, solutions and tests.
 
-This folder mirrors `docs/`. A topic at `docs/core-automation/api-testing/` keeps its code at
-`modules/core_automation/api_testing/` (Python package names use underscores).
+Each code folder belongs to one page. The page names it in its front matter, for example
+`code: core_automation/api_testing` in `docs/api-testing/index.md`. Folder names use
+underscores, because Python package names can't contain `-`. Some folders keep the names
+of the site's earlier sections; the `code:` line is what links them.
 
 Each topic folder has:
 

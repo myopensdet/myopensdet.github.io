@@ -31,9 +31,10 @@ every page about that subject, across all sections.
 <a class="zts-tag" href="#tag:debugging" title="Finding out why something failed, step by step.">Debugging <span class="zts-tag__count">11</span></a>
 <a class="zts-tag" href="#tag:docker" title="Running apps and tests in containers, the same way on every computer.">Docker <span class="zts-tag__count">8</span></a>
 <a class="zts-tag" href="#tag:flaky-tests" title="Tests that pass one day and fail the next, and how to fix them.">Flaky tests <span class="zts-tag__count">1</span></a>
-<a class="zts-tag" href="#tag:getting-started" title="The first pages to read if you are new.">Getting started <span class="zts-tag__count">9</span></a>
+<a class="zts-tag" href="#tag:getting-started" title="The first pages to read if you are new.">Getting started <span class="zts-tag__count">10</span></a>
 <a class="zts-tag" href="#tag:git" title="Saving and sharing code changes with your team.">Git <span class="zts-tag__count">2</span></a>
 <a class="zts-tag" href="#tag:interviews" title="Getting ready for SDET job interviews.">Interviews <span class="zts-tag__count">1</span></a>
+<a class="zts-tag" href="#tag:iot" title="Devices, MQTT messages and firmware updates.">IoT <span class="zts-tag__count">1</span></a>
 <a class="zts-tag" href="#tag:leadership" title="Leading quality for a team or a whole company.">Leadership <span class="zts-tag__count">2</span></a>
 <a class="zts-tag" href="#tag:linux" title="Using the terminal and the shell on Linux servers.">Linux <span class="zts-tag__count">2</span></a>
 <a class="zts-tag" href="#tag:microservices" title="Testing systems made of many small services that talk to each other.">Microservices <span class="zts-tag__count">4</span></a>

@@ -10,6 +10,7 @@ nav_title: "Test idea banks"
 order: 20
 summary: "Ready lists of test ideas for login, search, checkout and more."
 updated: "2026-11-22"
+code: "toolbox/test_idea_banks"
 ---
 
 # Test Idea Banks: What to Test for Login, Checkout, Payments and More
@@ -44,7 +45,7 @@ Every bank has the same five areas. Each one catches a kind of bug that a quick 
 | **Security** | Can a user see or change what isn't theirs? | Easy to forget, and the most expensive to miss |
 | **People, devices and failures** | Keyboard, screen reader, phone, a slow or broken service? | Real users and real networks |
 
-The nine banks: **login, sign-up, search, cart and checkout, payments, bank transfer, file sharing, notifications, roles and permissions**. For single fields (text, numbers, dates), use the [error guessing checklist](../../think-like-a-tester/test-design-techniques/error-guessing.md) as well.
+The nine banks: **login, sign-up, search, cart and checkout, payments, bank transfer, file sharing, notifications, roles and permissions**. For single fields (text, numbers, dates), use the [error guessing checklist](../../manual-testing/test-design/error-guessing.md) as well.
 
 ## Step 2: Get the kit
 
@@ -129,7 +130,7 @@ A bank is a start, not a plan. Spend 20 minutes on the list before you send it:
 1. **Strike out** what doesn't apply, with a reason: "~~Two discount codes~~: the shop allows only one, by design." The reason shows you thought about it.
 2. **Add what's special** about this feature. The banks don't know gift cards. Ask "what's new here?": a gift card used for part of a payment, a card used twice at the same moment, a card that expires, a refund of an order paid by gift card.
 3. **Add your team's past bugs.** If refunds broke last year, add "refund of an order with cents". Past bugs are the best ideas there are.
-4. **Rank by risk.** Mark the ideas where a bug would cost the most, and test those first. See [risk-based testing](../../think-like-a-tester/test-strategy-and-planning/risk-based-testing.md).
+4. **Rank by risk.** Mark the ideas where a bug would cost the most, and test those first. See [risk-based testing](../../manual-testing/test-planning/risk-based-testing.md).
 
 Then send it. Ideas shared **before** the code is done are the cheapest bugs: a developer who reads "two people use the same gift card at the same moment" may handle it before you ever test it.
 
@@ -148,7 +149,7 @@ Cart and checkout,Works as it should,Change the quantity and remove items: the t
 Cart and checkout,Works as it should,"Tax, shipping and discount are each correct, and in the right order"
 ```
 
-An idea is not yet a test case. For the ones you keep, write the steps and the expected result as shown in [test cases](../../think-like-a-tester/test-cases/index.md). Ideas you'll run on every release are candidates for automation.
+An idea is not yet a test case. For the ones you keep, write the steps and the expected result as shown in [test cases](../../manual-testing/test-cases/index.md). Ideas you'll run on every release are candidates for automation.
 
 ## Step 7: Grow the banks
 

@@ -15,7 +15,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 ROOT = TOPIC.parents[2]
-DOCS = ROOT / "docs" / "core-automation" / "api-testing"
+DOCS = ROOT / "docs" / "api-testing"
 EXAMPLES = TOPIC / "examples"
 PROJECT = TOPIC / "templates" / "booker_api_tests"
 CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"

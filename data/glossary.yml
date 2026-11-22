@@ -14,728 +14,728 @@
 
 - term: Acceptance criteria
   meaning: The list of things a feature must do before the team calls it finished. Testers turn each one into tests.
-  page: think-like-a-tester/test-cases/index.md
+  page: manual-testing/test-cases/index.md
 
 - term: Accessibility
   meaning: How easy the app is to use for everyone, including people who use a screen reader, a keyboard only, or large text.
-  page: advanced-testing/accessibility-testing/index.md
+  page: automation-testing/accessibility/index.md
 
 - term: API
   stands_for: Application Programming Interface
   meaning: A way for one program to ask another program for data or to do something. Like a waiter who takes your order to the kitchen and brings back your food.
-  page: core-automation/api-testing/index.md
+  page: api-testing/index.md
 
 - term: Assertion
   meaning: The line in a test that checks the result. If the check is false, the test fails.
-  page: core-automation/pytest-framework/tests-and-asserts.md
+  page: automation-testing/pytest/tests-and-asserts.md
 
 - term: Automation
   meaning: Letting a program do a check that a person would otherwise do by hand, so it can run again and again in seconds.
-  page: think-like-a-tester/the-sdet-role/index.md
+  page: manual-testing/fundamentals/index.md
 
 - term: BDD
   stands_for: Behavior-Driven Development
   meaning: A way of writing tests as plain English examples, like "Given I am logged in, When I add a book, Then my cart has 1 item".
-  page: core-automation/bdd-testing/what-is-bdd.md
+  page: automation-testing/bdd/what-is-bdd.md
 
 - term: Boundary value
   meaning: A value right at the edge of what is allowed, like 0, 1, 99 and 100 for "1 to 99". Bugs love edges.
-  page: think-like-a-tester/test-design-techniques/boundary-values.md
+  page: manual-testing/test-design/boundary-values.md
 
 - term: Bug report
   meaning: A short note that tells a developer what went wrong, how to make it happen again, and what should have happened instead.
-  page: think-like-a-tester/bug-reports/index.md
+  page: manual-testing/bug-reports/index.md
 
 - term: CI/CD
   stands_for: Continuous Integration and Continuous Delivery
   meaning: A setup that builds the app and runs the tests every time someone changes the code, then helps ship it.
-  page: infrastructure/ci-cd/index.md
+  page: devops-for-qa/ci-cd/index.md
 
 - term: Container
   meaning: A small, sealed box that holds an app and everything it needs, so it runs the same way on every computer.
-  page: infrastructure/docker-for-testers/index.md
+  page: devops-for-qa/docker/index.md
 
 - term: Contract testing
   meaning: Checking that two services still agree on the shape of the messages they send each other.
-  page: advanced-testing/contract-testing/index.md
+  page: api-testing/contract-testing/index.md
 
 - term: Database
   meaning: An organized store of data that an app saves to and reads from, like a set of very large tables.
-  page: core-automation/database-testing/index.md
+  page: database-testing/index.md
 
 - term: Docker
   meaning: The most common tool for building and running containers.
-  page: infrastructure/docker-for-testers/index.md
+  page: devops-for-qa/docker/index.md
 
 - term: E2E
   stands_for: End-to-end
   meaning: A test that goes through the whole app the way a real user would, from the web page down to the database and back.
-  page: think-like-a-tester/test-levels-and-the-pyramid/index.md
+  page: manual-testing/test-levels/index.md
 
 - term: Endpoint
   meaning: One address of an API that you can send a request to, like /products or /orders/42.
-  page: core-automation/api-testing/index.md
+  page: api-testing/index.md
 
 - term: Environment
   meaning: One full copy of the app for a purpose, like your own computer, a shared test copy, or the live site.
-  page: core-automation/pytest-framework/environments.md
+  page: automation-testing/pytest/environments.md
 
 - term: Equivalence partitioning
   meaning: Splitting inputs into groups that should behave the same, then testing one value from each group instead of all of them.
-  page: think-like-a-tester/test-design-techniques/equivalence-partitioning.md
+  page: manual-testing/test-design/equivalence-partitioning.md
 
 - term: Exploratory testing
   meaning: Testing by learning the app as you go, trying ideas and following anything that looks odd, instead of following a script.
-  page: think-like-a-tester/test-design-techniques/exploratory-testing.md
+  page: manual-testing/test-design/exploratory-testing.md
 
 - term: Fixture
   meaning: In pytest, a small helper that gets something ready for a test, like a logged-in user, and cleans it up afterwards.
-  page: core-automation/pytest-framework/fixtures-and-conftest.md
+  page: automation-testing/pytest/fixtures-and-conftest.md
 
 - term: Flaky test
   meaning: A test that sometimes passes and sometimes fails without any change to the code.
-  page: advanced-testing/flaky-tests-and-speed/index.md
+  page: automation-testing/flaky-tests/index.md
 
 - term: Framework
   meaning: The shared structure of a test project, such as folders, settings and helpers, so every test is written the same way.
-  page: core-automation/pytest-framework/index.md
+  page: automation-testing/pytest/index.md
 
 - term: Gherkin
   meaning: The plain-English format BDD tests are written in, using the words Given, When and Then.
-  page: core-automation/bdd-testing/gherkin-and-feature-files.md
+  page: automation-testing/bdd/gherkin-and-feature-files.md
 
 - term: Git
   meaning: A tool that saves every change to your code, so you can go back in time and work with others safely.
-  page: professional-sdet/git-in-a-team/index.md
+  page: devops-for-qa/git-and-github/index.md
 
 - term: HTTP
   stands_for: Hypertext Transfer Protocol
   meaning: The set of rules web browsers and APIs use to send requests and answers.
-  page: infrastructure/networking-for-testers/index.md
+  page: devops-for-qa/networking/index.md
 
 - term: Integration test
   meaning: A test that checks two or more parts of the app work together, like the API and the database.
-  page: think-like-a-tester/test-levels-and-the-pyramid/index.md
+  page: manual-testing/test-levels/index.md
 
 - term: JSON
   stands_for: JavaScript Object Notation
   meaning: A simple text format for data, made of names and values in curly brackets. Most APIs send and receive JSON.
-  page: start-here/python-for-testers/json.md
+  page: programming-for-testers/json.md
 
 - term: Load testing
   meaning: Checking how the app behaves when many people use it at the same time.
-  page: advanced-testing/performance-testing/index.md
+  page: performance-testing/index.md
 
 - term: Locator
   meaning: The instruction that tells a UI test which button, box or link on the page to use.
-  page: core-automation/ui-automation/choosing-locators.md
+  page: automation-testing/playwright/choosing-locators.md
 
 - term: Manual testing
   meaning: Testing by using the app yourself, by hand, and checking what happens.
-  page: think-like-a-tester/the-sdet-role/index.md
+  page: manual-testing/fundamentals/index.md
 
 - term: Microservice
   meaning: One small service that does one job. A big app can be made of many microservices talking to each other.
-  page: advanced-testing/testing-microservices/index.md
+  page: api-testing/microservices/index.md
 
 - term: Mock
   meaning: A fake version of a real service, used in a test so you control exactly what it answers.
-  page: advanced-testing/mocking-and-stubbing/index.md
+  page: api-testing/mocking-and-stubbing/index.md
 
 - term: Page Object
   meaning: A class that holds everything a UI test needs about one page, so tests stay short and a page change is fixed in one place.
-  page: core-automation/ui-automation/page-object-model.md
+  page: automation-testing/playwright/page-object-model.md
 
 - term: Performance testing
   meaning: Measuring how fast the app is and how much it can handle before it slows down or breaks.
-  page: advanced-testing/performance-testing/index.md
+  page: performance-testing/index.md
 
 - term: Playwright
   meaning: A tool that controls a real web browser from code, so a test can click, type and check a page.
-  page: core-automation/ui-automation/index.md
+  page: automation-testing/playwright/index.md
 
 
 - term: Pull request
   meaning: A request to add your code changes to the team's main code. Others review it first.
-  page: professional-sdet/git-in-a-team/index.md
+  page: devops-for-qa/git-and-github/index.md
 
 - term: pytest
   meaning: The most popular tool for writing and running tests in Python.
-  page: core-automation/pytest-framework/index.md
+  page: automation-testing/pytest/index.md
 
 - term: QA
   stands_for: Quality Assurance
   meaning: All the work a team does to make sure the product is good, including testing.
-  page: think-like-a-tester/the-sdet-role/index.md
+  page: manual-testing/fundamentals/index.md
 
 - term: Regression testing
   meaning: Running tests again after a change, to make sure things that worked before still work.
-  page: professional-sdet/regression-hotfixes-and-incidents/index.md
+  page: working-as-a-qa/regression-hotfixes-and-incidents/index.md
 
 - term: REST
   stands_for: Representational State Transfer
   meaning: The most common style of web API. You use web addresses for things and HTTP methods like GET and POST for actions.
-  page: core-automation/api-testing/how-the-web-works.md
+  page: api-testing/how-the-web-works.md
 
 - term: SDET
   stands_for: Software Development Engineer in Test
   meaning: A tester who writes code to test software.
-  page: think-like-a-tester/the-sdet-role/index.md
+  page: manual-testing/fundamentals/index.md
 
 - term: Smoke test
   meaning: A few quick tests that check the most important things work, before you spend time on deeper testing.
-  page: think-like-a-tester/test-levels-and-the-pyramid/index.md
+  page: manual-testing/test-levels/index.md
 
 - term: SQL
   stands_for: Structured Query Language
   meaning: The language used to ask a database for data or change it, like SELECT * FROM orders.
-  page: core-automation/database-testing/sql-for-testers.md
+  page: database-testing/sql-for-testers.md
 
 - term: Status code
   meaning: The number an API sends back to say how a request went, like 200 for OK or 404 for not found.
-  page: core-automation/api-testing/status-codes.md
+  page: api-testing/status-codes.md
 
 - term: Stub
   meaning: A very simple fake that always gives the same ready answer, so a test does not need the real thing.
-  page: advanced-testing/mocking-and-stubbing/index.md
+  page: api-testing/mocking-and-stubbing/index.md
 
 - term: Test case
   meaning: One check written down step by step, with the expected result, so anyone can run it the same way.
-  page: think-like-a-tester/test-cases/anatomy-of-a-test-case.md
+  page: manual-testing/test-cases/anatomy-of-a-test-case.md
 
 - term: Test data
   meaning: The users, products, orders and other data a test needs to run.
-  page: core-automation/data-driven-testing/index.md
+  page: automation-testing/data-driven/index.md
 
 - term: Test plan
   meaning: A short document that says what will be tested, how, by whom and when.
-  page: think-like-a-tester/test-strategy-and-planning/test-plan.md
+  page: manual-testing/test-planning/test-plan.md
 
 - term: Test pyramid
   meaning: A picture of a healthy test mix. Many small, fast unit tests at the bottom, fewer integration tests, and only a few slow end-to-end tests at the top.
-  page: think-like-a-tester/test-levels-and-the-pyramid/index.md
+  page: manual-testing/test-levels/index.md
 
 - term: UI
   stands_for: User Interface
   meaning: The part of an app people see and use, like pages, buttons and forms.
-  page: core-automation/ui-automation/index.md
+  page: automation-testing/playwright/index.md
 
 - term: Unit test
   meaning: A small, fast test that checks one piece of code on its own.
-  page: think-like-a-tester/test-levels-and-the-pyramid/index.md
+  page: manual-testing/test-levels/index.md
 
 - term: Virtual environment
   meaning: A private folder of Python packages for one project, so projects do not mix up each other's versions.
-  page: start-here/python-for-testers/virtual-environments-and-pip.md
+  page: programming-for-testers/virtual-environments-and-pip.md
 
 - term: Happy path
   meaning: The normal way a user uses a feature, with good data and no mistakes. It is usually the first thing you test.
-  page: think-like-a-tester/learning-a-new-testing-area/the-9-step-playbook.md
+  page: working-as-a-qa/learning-a-new-area/the-9-step-playbook.md
 
 - term: Negative test
   meaning: A test that sends bad input on purpose, like a wrong code or a short password, to check the app refuses it.
-  page: think-like-a-tester/learning-a-new-testing-area/the-9-step-playbook.md
+  page: working-as-a-qa/learning-a-new-area/the-9-step-playbook.md
 
 - term: Edge case
   meaning: A test right at a limit, like a code used at exactly 10 minutes. Bugs often hide at limits.
-  page: think-like-a-tester/learning-a-new-testing-area/the-9-step-playbook.md
+  page: working-as-a-qa/learning-a-new-area/the-9-step-playbook.md
 
 - term: Scope
   meaning: What is part of a task, and what is not. Writing it down stops you from testing the wrong thing.
-  page: think-like-a-tester/learning-a-new-testing-area/asking-the-right-questions.md
+  page: working-as-a-qa/learning-a-new-area/asking-the-right-questions.md
 
 - term: Risk
   meaning: Something that could go wrong, and how much it would hurt users or the company. Testers test the biggest risks first.
-  page: think-like-a-tester/learning-a-new-testing-area/index.md
+  page: working-as-a-qa/learning-a-new-area/index.md
 
 - term: Playbook
   meaning: A list of steps a team follows every time for the same kind of job, so nobody has to invent the plan again.
-  page: think-like-a-tester/learning-a-new-testing-area/the-9-step-playbook.md
+  page: working-as-a-qa/learning-a-new-area/the-9-step-playbook.md
 
 - term: ISTQB
   stands_for: International Software Testing Qualifications Board
   meaning: A group that writes testing exams and a shared list of testing words, used in many countries.
-  page: think-like-a-tester/the-sdet-role/seven-testing-principles.md
+  page: manual-testing/fundamentals/seven-testing-principles.md
 
 - term: Pesticide paradox
   meaning: Running the same tests again and again finds fewer new bugs over time. New tests and new data find new bugs.
-  page: think-like-a-tester/the-sdet-role/seven-testing-principles.md
+  page: manual-testing/fundamentals/seven-testing-principles.md
 
 - term: Defect clustering
   meaning: Most bugs hide in a few parts of a system. When you find one bug, look for more nearby.
-  page: think-like-a-tester/the-sdet-role/seven-testing-principles.md
+  page: manual-testing/fundamentals/seven-testing-principles.md
 
 - term: Test condition
   meaning: One thing worth testing, found by reading the story. For example, "a code older than 10 minutes must not work".
-  page: think-like-a-tester/the-sdet-role/test-process-and-testware.md
+  page: manual-testing/fundamentals/test-process-and-testware.md
 
 - term: Testware
   meaning: Everything testing produces, such as plans, test cases, test data, scripts, results and reports.
-  page: think-like-a-tester/the-sdet-role/test-process-and-testware.md
+  page: manual-testing/fundamentals/test-process-and-testware.md
 
 - term: Test level
   meaning: How much of the app a test uses at once, from one small function (unit) up to the whole system (end-to-end).
-  page: think-like-a-tester/test-levels-and-the-pyramid/the-test-levels.md
+  page: manual-testing/test-levels/the-test-levels.md
 
 - term: API test
   meaning: A test that sends a real request to the app's API and checks the status code and the data that come back.
-  page: think-like-a-tester/test-levels-and-the-pyramid/the-test-levels.md
+  page: manual-testing/test-levels/the-test-levels.md
 
 - term: Ice cream cone
   meaning: A test suite shaped like an upside-down pyramid, with many slow UI tests and very few unit tests. It is slow and often flaky.
-  page: think-like-a-tester/test-levels-and-the-pyramid/the-test-pyramid.md
+  page: manual-testing/test-levels/the-test-pyramid.md
 
 - term: Marker
   meaning: A label on a pytest test, like unit or ui, so you can run only the tests with that label.
-  page: core-automation/pytest-framework/markers.md
+  page: automation-testing/pytest/markers.md
 
 - term: Testing trophy
   meaning: Another picture of a healthy test mix, with static checks at the base and most tests checking parts working together.
-  page: think-like-a-tester/test-levels-and-the-pyramid/the-testing-trophy.md
+  page: manual-testing/test-levels/the-testing-trophy.md
 
 - term: Static analysis
   meaning: Checking code for mistakes without running it, like a spell checker for code.
-  page: think-like-a-tester/static-testing-and-reviews/static-analysis-tools.md
+  page: manual-testing/reviews/static-analysis-tools.md
 
 - term: Non-functional testing
   meaning: Testing how well the app works, not what it does. For example, how fast it is, how easy it is to use, and whether it stays up.
-  page: think-like-a-tester/test-levels-and-the-pyramid/non-functional-testing.md
+  page: manual-testing/test-levels/non-functional-testing.md
 
 - term: Percentile
   meaning: A way to describe speed. The 95th percentile is the time that 95 out of 100 requests were as fast as, or faster than.
-  page: think-like-a-tester/test-levels-and-the-pyramid/non-functional-testing.md
+  page: manual-testing/test-levels/non-functional-testing.md
 
 - term: Decision table
   meaning: A table that lists every mix of conditions, like "member" and "order over $50", with the result for each. Each row becomes a test.
-  page: think-like-a-tester/test-design-techniques/decision-tables.md
+  page: manual-testing/test-design/decision-tables.md
 
 - term: State transition
   meaning: A move from one status to another, like an order going from paid to shipped. Testing them checks allowed moves work and the rest are refused.
-  page: think-like-a-tester/test-design-techniques/state-transitions.md
+  page: manual-testing/test-design/state-transitions.md
 
 - term: Off-by-one bug
   meaning: A bug where a limit is out by one step, like refusing age 18 when 18 should be allowed. Often caused by mixing up < and <=.
-  page: think-like-a-tester/test-design-techniques/boundary-values.md
+  page: manual-testing/test-design/boundary-values.md
 
 - term: Parametrize
   meaning: A pytest feature that runs the same test many times, once for each row of values you give it.
-  page: core-automation/pytest-framework/parametrize.md
+  page: automation-testing/pytest/parametrize.md
 
 - term: Pairwise testing
   meaning: Picking a small set of tests where every pair of settings, like Safari with PayPal, appears together at least once.
-  page: think-like-a-tester/test-design-techniques/pairwise-testing.md
+  page: manual-testing/test-design/pairwise-testing.md
 
 - term: Error guessing
   meaning: Trying the inputs and actions that often break software, like emoji, double clicks or 29 February.
-  page: think-like-a-tester/test-design-techniques/error-guessing.md
+  page: manual-testing/test-design/error-guessing.md
 
 - term: Test charter
   meaning: One sentence that sets the goal of an exploratory testing session. Explore something, with some idea, to find out something.
-  page: think-like-a-tester/test-design-techniques/exploratory-testing.md
+  page: manual-testing/test-design/exploratory-testing.md
 
 - term: Checklist-based testing
   meaning: Testing with a short list of things that must be true for every feature of one kind, like every web form.
-  page: think-like-a-tester/test-design-techniques/checklist-based-testing.md
+  page: manual-testing/test-design/checklist-based-testing.md
 
 - term: Statement coverage
   meaning: The share of code lines that ran at least once during the tests. 100% means every line ran, not that every line was checked.
-  page: think-like-a-tester/test-design-techniques/statement-and-branch-coverage.md
+  page: manual-testing/test-design/statement-and-branch-coverage.md
 
 - term: Branch coverage
   meaning: The share of ways through each if (yes and no) that the tests took. It finds paths that line coverage misses.
-  page: think-like-a-tester/test-design-techniques/statement-and-branch-coverage.md
+  page: manual-testing/test-design/statement-and-branch-coverage.md
 
 - term: White-box testing
   meaning: Testing with a view of the code inside, for example to see which lines and branches the tests run.
-  page: think-like-a-tester/test-design-techniques/statement-and-branch-coverage.md
+  page: manual-testing/test-design/statement-and-branch-coverage.md
 
 - term: Static testing
   meaning: Checking work without running it, by reading stories, specs, plans and code, or by letting a tool read the code.
-  page: think-like-a-tester/static-testing-and-reviews/what-is-static-testing.md
+  page: manual-testing/reviews/what-is-static-testing.md
 
 - term: Dynamic testing
   meaning: Testing by running the software and checking what it does.
-  page: think-like-a-tester/static-testing-and-reviews/what-is-static-testing.md
+  page: manual-testing/reviews/what-is-static-testing.md
 
 - term: User story
   meaning: A short description of a feature from the user's side, like "As a customer, I want to request a refund, so that I get my money back".
-  page: think-like-a-tester/static-testing-and-reviews/reviewing-user-stories.md
+  page: manual-testing/reviews/reviewing-user-stories.md
 
 - term: Ambiguity
   meaning: Words that two people can read in different ways, like "fast" or "recent". Testers ask for a number or a clear rule instead.
-  page: think-like-a-tester/static-testing-and-reviews/finding-ambiguity-and-missing-cases.md
+  page: manual-testing/reviews/finding-ambiguity-and-missing-cases.md
 
 - term: Walkthrough
   meaning: A review where the author takes others through their work, explaining it and taking questions.
-  page: think-like-a-tester/static-testing-and-reviews/review-types.md
+  page: manual-testing/reviews/review-types.md
 
 - term: Inspection
   meaning: The most formal kind of review, with set roles, a checklist, prepared reviewers and a written list of findings.
-  page: think-like-a-tester/static-testing-and-reviews/review-types.md
+  page: manual-testing/reviews/review-types.md
 
 - term: Linter
   meaning: A tool that reads code and points at bugs and risky patterns, like an unused import or an assert that can never fail.
-  page: think-like-a-tester/static-testing-and-reviews/static-analysis-tools.md
+  page: manual-testing/reviews/static-analysis-tools.md
 
 - term: pre-commit
   meaning: A tool that runs checks automatically every time you commit, and stops the commit if something is wrong.
-  page: think-like-a-tester/static-testing-and-reviews/static-analysis-tools.md
+  page: manual-testing/reviews/static-analysis-tools.md
 
 - term: Positive test
   meaning: A test that checks something works when it should, like a refund within 30 days going through.
-  page: think-like-a-tester/test-cases/positive-and-negative-cases.md
+  page: manual-testing/test-cases/positive-and-negative-cases.md
 
 - term: Precondition
   meaning: The state the system must be in before a test starts, like "a customer with one delivered item".
-  page: think-like-a-tester/test-cases/anatomy-of-a-test-case.md
+  page: manual-testing/test-cases/anatomy-of-a-test-case.md
 
 - term: Expected result
   meaning: Exactly what should happen when you run a test, and what must not. The most important line of a test case.
-  page: think-like-a-tester/test-cases/anatomy-of-a-test-case.md
+  page: manual-testing/test-cases/anatomy-of-a-test-case.md
 
 - term: Traceability
   meaning: The link between each requirement and the tests that check it, so you can see what has no test.
-  page: think-like-a-tester/test-cases/traceability.md
+  page: manual-testing/test-cases/traceability.md
 
 - term: Traceability matrix
   meaning: A table with one row per requirement and the test cases that cover it. Empty rows are gaps.
-  page: think-like-a-tester/test-cases/traceability.md
+  page: manual-testing/test-cases/traceability.md
 
 - term: Severity
   meaning: How badly a bug hurts the people using the app, from critical (money, data or security) to trivial (a typo). The reporter sets it.
-  page: think-like-a-tester/bug-reports/severity-and-priority.md
+  page: manual-testing/bug-reports/severity-and-priority.md
 
 - term: Priority
   meaning: How soon the team will fix a bug. The team decides it in triage, and the reporter can suggest one.
-  page: think-like-a-tester/bug-reports/severity-and-priority.md
+  page: manual-testing/bug-reports/severity-and-priority.md
 
 - term: Triage
   meaning: Looking at new bugs, checking they are real and clear, and deciding how soon each one gets fixed.
-  page: think-like-a-tester/bug-reports/severity-and-priority.md
+  page: manual-testing/bug-reports/severity-and-priority.md
 
 - term: Steps to reproduce
   meaning: The numbered actions in a bug report that make the bug happen again, written so someone else can follow them.
-  page: think-like-a-tester/bug-reports/what-makes-a-great-bug-report.md
+  page: manual-testing/bug-reports/what-makes-a-great-bug-report.md
 
 - term: Bug lifecycle
   meaning: The states a bug moves through, like new, triaged, in progress, fixed, verified and closed.
-  page: think-like-a-tester/bug-reports/bug-lifecycle.md
+  page: manual-testing/bug-reports/bug-lifecycle.md
 
 - term: Test strategy
   meaning: One page that says how a team tests every feature, at which levels, with which tools, and when a release is ready.
-  page: think-like-a-tester/test-strategy-and-planning/test-strategy.md
+  page: manual-testing/test-planning/test-strategy.md
 
 - term: Risk-based testing
   meaning: Spending most of your testing time where a bug is most likely and would hurt most, and testing those things first.
-  page: think-like-a-tester/test-strategy-and-planning/risk-based-testing.md
+  page: manual-testing/test-planning/risk-based-testing.md
 
 - term: Entry criteria
   meaning: What must be true before testing starts, like a reviewed story, a deployed build and ready test data.
-  page: think-like-a-tester/test-strategy-and-planning/entry-and-exit-criteria.md
+  page: manual-testing/test-planning/entry-and-exit-criteria.md
 
 - term: Exit criteria
   meaning: What must be true before testing is done, like no failing tests and no open critical bugs. Agreed before testing starts.
-  page: think-like-a-tester/test-strategy-and-planning/entry-and-exit-criteria.md
+  page: manual-testing/test-planning/entry-and-exit-criteria.md
 
 - term: Automation ROI
   meaning: ROI means return on investment. It is whether an automated test saves more time than it costs to build and keep working, and how soon.
-  page: think-like-a-tester/test-strategy-and-planning/what-not-to-automate.md
+  page: manual-testing/test-planning/what-not-to-automate.md
 
 - term: Variable
   meaning: A name for a value in a program, like the name age for the number 30.
-  page: start-here/python-for-testers/variables-and-types.md
+  page: programming-for-testers/variables-and-data-types.md
 
 - term: Dictionary
   meaning: In Python, a set of named values, like a product with a name and a price. API responses become dictionaries.
-  page: start-here/python-for-testers/strings-lists-and-dictionaries.md
+  page: programming-for-testers/lists-tuples-sets-and-dictionaries.md
 
 - term: Function
   meaning: A named piece of work that takes inputs and returns a result. Every pytest test is a function.
-  page: start-here/python-for-testers/functions.md
+  page: programming-for-testers/functions.md
 
 - term: Class
   meaning: A blueprint that bundles data and actions together. Page objects and API clients are classes.
-  page: start-here/python-for-testers/classes-and-objects.md
+  page: programming-for-testers/object-oriented-programming.md
 
 - term: Traceback
   meaning: What Python prints when something goes wrong, the error at the bottom and the path to it above. Read it from the bottom.
-  page: start-here/python-for-testers/errors-and-exceptions.md
+  page: programming-for-testers/exception-handling.md
 
 - term: pip
   meaning: The tool that installs Python packages, like pytest, into your virtual environment.
-  page: start-here/python-for-testers/virtual-environments-and-pip.md
+  page: programming-for-testers/virtual-environments-and-pip.md
 
 - term: conftest.py
   meaning: A file pytest loads by itself, where you put fixtures and options that many test files share.
-  page: core-automation/pytest-framework/fixtures-and-conftest.md
+  page: automation-testing/pytest/fixtures-and-conftest.md
 
 - term: xfail
   meaning: A pytest marker for a test that is expected to fail, usually because of a known bug. The run stays green until the bug is fixed.
-  page: core-automation/pytest-framework/markers.md
+  page: automation-testing/pytest/markers.md
 
 - term: HTTP method
   meaning: The word at the start of a request that says what to do, like GET to read, POST to create, PUT or PATCH to change and DELETE to remove.
-  page: core-automation/api-testing/http-methods.md
+  page: api-testing/http-methods.md
 
 - term: Idempotent
   meaning: A request is idempotent when sending it twice gives the same result as sending it once. PUT and DELETE are, POST is not.
-  page: core-automation/api-testing/http-methods.md
+  page: api-testing/http-methods.md
 
 - term: Request header
   meaning: A short note sent with a request, like Accept or Authorization, that tells the server about the request.
-  page: core-automation/api-testing/headers-and-json.md
+  page: api-testing/headers-and-json.md
 
 - term: Query parameter
   meaning: A value after the question mark in a web address, like page=2, used to filter, sort or page results.
-  page: core-automation/api-testing/query-and-path-params.md
+  page: api-testing/query-and-path-params.md
 
 - term: Path parameter
   meaning: A value that is part of the web address itself, like the 42 in /booking/42, usually the id of one thing.
-  page: core-automation/api-testing/query-and-path-params.md
+  page: api-testing/query-and-path-params.md
 
 - term: API key
   meaning: A secret code an app sends with every request, usually in a header, so the API knows who is calling.
-  page: core-automation/api-testing/authentication.md
+  page: api-testing/authentication.md
 
 - term: Bearer token
   meaning: A secret you get from logging in and send in the Authorization header on every request. Whoever holds it gets in, until it expires.
-  page: core-automation/api-testing/authentication.md
+  page: api-testing/authentication.md
 
 - term: OAuth2
   meaning: A standard way to get access tokens from a separate token server, instead of sending a password to every API.
-  page: core-automation/api-testing/authentication.md
+  page: api-testing/authentication.md
 
 - term: JSON Schema
   meaning: A file that describes the shape JSON must have, like which fields are required and what type each one is. Tests use it to check responses.
-  page: core-automation/api-testing/schema-validation.md
+  page: api-testing/schema-validation.md
 
 - term: Multipart form data
   meaning: The kind of request body used to upload files. It is split into parts, one for each file and form field.
-  page: core-automation/api-testing/file-upload.md
+  page: api-testing/file-upload.md
 
 - term: API client
   meaning: A small class in a test project that holds the base address, headers, timeout and logging for one API, so tests do not repeat them.
-  page: core-automation/api-testing/api-client-class.md
+  page: api-testing/api-client-class.md
 
 - term: Table
   meaning: One set of rows and columns in a database, like one sheet in a spreadsheet. Each row is one thing, such as one order.
-  page: core-automation/database-testing/sql-for-testers.md
+  page: database-testing/sql-for-testers.md
 
 - term: "NULL"
   meaning: The value a database uses for nothing at all. It is not zero and not empty text, and you find it with IS NULL.
-  page: core-automation/database-testing/sql-for-testers.md
+  page: database-testing/sql-for-testers.md
 
 - term: JOIN
   meaning: SQL that reads two tables together by matching a column, such as each order with its customer.
-  page: core-automation/database-testing/joins-and-group-by.md
+  page: database-testing/joins-and-group-by.md
 
 - term: SQL injection
   meaning: A security bug where text typed by a user changes the SQL the app runs. Passing values as parameters prevents it.
-  page: core-automation/database-testing/connecting-from-python.md
+  page: database-testing/connecting-from-python.md
 
 - term: Database schema
   meaning: The shape of a database. Which tables it has, which columns each table has, and their types and rules.
-  page: core-automation/database-testing/schema-tests.md
+  page: database-testing/schema-tests.md
 
 - term: Primary key
   meaning: The column that gives every row its own id, never empty and never repeated.
-  page: core-automation/database-testing/integrity-constraints.md
+  page: database-testing/integrity-constraints.md
 
 - term: Foreign key
   meaning: A column whose value must exist in another table, such as an order's customer id. It keeps links between tables real.
-  page: core-automation/database-testing/integrity-constraints.md
+  page: database-testing/integrity-constraints.md
 
 - term: Constraint
   meaning: A rule written into a database table, such as NOT NULL or UNIQUE. The database refuses any row that breaks it.
-  page: core-automation/database-testing/integrity-constraints.md
+  page: database-testing/integrity-constraints.md
 
 - term: CRUD
   stands_for: Create, Read, Update, Delete
   meaning: The four things an app does with stored data. In SQL they are INSERT, SELECT, UPDATE and DELETE.
-  page: core-automation/database-testing/crud-tests.md
+  page: database-testing/crud-tests.md
 
 - term: Stored procedure
   meaning: Code saved inside the database and run by name, such as place_order. In PostgreSQL it is often written as a function.
-  page: core-automation/database-testing/procedures-and-triggers.md
+  page: database-testing/procedures-and-triggers.md
 
 - term: Trigger
   meaning: Code inside the database that runs by itself when a row changes, such as writing a history row when an order's status changes.
-  page: core-automation/database-testing/procedures-and-triggers.md
+  page: database-testing/procedures-and-triggers.md
 
 - term: Transaction
   meaning: A group of database changes that are saved together with COMMIT or undone together with ROLLBACK.
-  page: core-automation/database-testing/transactions-and-cleanup.md
+  page: database-testing/transactions-and-cleanup.md
 
 - term: Rollback
   meaning: Undoing every change made in a transaction. Tests use it to leave the database exactly as they found it.
-  page: core-automation/database-testing/transactions-and-cleanup.md
+  page: database-testing/transactions-and-cleanup.md
 
 - term: Savepoint
   meaning: A point inside a transaction you can roll back to without undoing everything before it.
-  page: core-automation/database-testing/transactions-and-cleanup.md
+  page: database-testing/transactions-and-cleanup.md
 
 - term: Data migration
   meaning: Moving data from one database to another, often once, such as from MySQL to PostgreSQL.
-  page: core-automation/multi-database-testing/migration-and-etl-validation.md
+  page: database-testing/several-databases/migration-and-etl-validation.md
 
 - term: ETL
   stands_for: Extract, Transform, Load
   meaning: A job that copies data from one place to another and changes it on the way, often every night.
-  page: core-automation/multi-database-testing/migration-and-etl-validation.md
+  page: database-testing/several-databases/migration-and-etl-validation.md
 
 - term: Checksum
   meaning: A short fingerprint made from data. The same data always gives the same fingerprint, so two fingerprints that differ mean the data differs.
-  page: core-automation/multi-database-testing/cross-database-comparison.md
+  page: database-testing/several-databases/cross-database-comparison.md
 
 - term: Source of truth
   meaning: The one place everyone agrees holds the right data. Copies are checked against it.
-  page: core-automation/multi-database-testing/why-test-several-databases.md
+  page: database-testing/several-databases/why-test-several-databases.md
 
 - term: Seed data
   meaning: Rows a test puts straight into the database before it starts, so the app has something to work with.
-  page: core-automation/api-and-database/seed-then-call.md
+  page: database-testing/api-and-database/seed-then-call.md
 
 - term: Background job
   meaning: Work an app does after it has already answered the request, like sending an email or writing a history row.
-  page: core-automation/api-and-database/waiting-for-async-writes.md
+  page: database-testing/api-and-database/waiting-for-async-writes.md
 
 - term: Polling
   meaning: Asking the same question again and again, a short time apart, until the answer is there or time runs out.
-  page: core-automation/api-and-database/waiting-for-async-writes.md
+  page: database-testing/api-and-database/waiting-for-async-writes.md
 
 - term: Race condition
   meaning: A bug that depends on which of two things happens first. It can pass a hundred times and then fail.
-  page: core-automation/api-and-database/cleanup-after-api-tests.md
+  page: database-testing/api-and-database/cleanup-after-api-tests.md
 
 - term: Data-driven testing
   meaning: Writing a check once and running it with many rows of data, often read from a file.
-  page: core-automation/data-driven-testing/one-test-many-rows.md
+  page: automation-testing/data-driven/one-test-many-rows.md
 
 - term: Keyword-driven testing
   meaning: Writing tests as plain steps called keywords, like "Apply coupon". The code behind each keyword is written once.
-  page: core-automation/data-driven-testing/keyword-driven-robot-framework.md
+  page: automation-testing/data-driven/keyword-driven-robot-framework.md
 
 - term: Test data factory
   meaning: A small function that makes a complete, valid test object, so each test changes only what it is about.
-  page: core-automation/data-driven-testing/test-data-factories.md
+  page: automation-testing/data-driven/test-data-factories.md
 
 - term: Random seed
   meaning: The starting number for random values. The same seed gives the same values again, so a random test can be repeated.
-  page: core-automation/data-driven-testing/fake-data-with-faker.md
+  page: automation-testing/data-driven/fake-data-with-faker.md
 
 - term: TDD
   stands_for: Test-Driven Development
   meaning: Writing a small failing test first, then the code that makes it pass, then tidying the code.
-  page: core-automation/bdd-testing/what-is-bdd.md
+  page: automation-testing/bdd/what-is-bdd.md
 
 - term: ATDD
   stands_for: Acceptance Test-Driven Development
   meaning: The team writes the acceptance tests for a feature before it is built, then builds until they pass.
-  page: core-automation/bdd-testing/what-is-bdd.md
+  page: automation-testing/bdd/what-is-bdd.md
 
 - term: Feature file
   meaning: A file ending in .feature that holds one feature and its scenarios, written in Gherkin.
-  page: core-automation/bdd-testing/gherkin-and-feature-files.md
+  page: automation-testing/bdd/gherkin-and-feature-files.md
 
 - term: Step definition
   meaning: The Python function that runs when a Gherkin step like "When I apply the coupon" matches its pattern.
-  page: core-automation/bdd-testing/step-definitions.md
+  page: automation-testing/bdd/step-definitions.md
 
 - term: Scenario outline
   meaning: One Gherkin scenario with blanks, run once for each row of an Examples table.
-  page: core-automation/bdd-testing/scenario-outlines.md
+  page: automation-testing/bdd/scenario-outlines.md
 
 - term: Three Amigos
   meaning: A short meeting where a product owner, a developer and a tester agree on how a story should behave.
-  page: core-automation/bdd-testing/writing-scenarios-with-the-business.md
+  page: automation-testing/bdd/writing-scenarios-with-the-business.md
 
 - term: Example mapping
   meaning: A way to run a Three Amigos meeting with coloured cards for the story, its rules, examples and open questions.
-  page: core-automation/bdd-testing/writing-scenarios-with-the-business.md
+  page: automation-testing/bdd/writing-scenarios-with-the-business.md
 
 - term: Browser context
   meaning: A fresh, private browser profile with its own cookies and tabs. UI tests get a new one each, so nothing leaks between tests.
-  page: core-automation/ui-automation/how-browsers-and-locators-work.md
+  page: automation-testing/playwright/how-browsers-and-locators-work.md
 
 - term: Headless browser
   meaning: A browser running without a window. Faster, and what test pipelines use.
-  page: core-automation/ui-automation/how-browsers-and-locators-work.md
+  page: automation-testing/playwright/how-browsers-and-locators-work.md
 
 - term: Auto-waiting
   meaning: Playwright waits by itself until an element can be used before it clicks or types, so tests don't need fixed waits.
-  page: core-automation/ui-automation/waits.md
+  page: automation-testing/playwright/waits.md
 
 - term: Iframe
   meaning: A web page shown inside another web page, like a payment form from a payment company. Tests must reach into it to use it.
-  page: core-automation/ui-automation/forms-dialogs-frames-and-tabs.md
+  page: automation-testing/playwright/forms-dialogs-frames-and-tabs.md
 
 - term: Trace
   meaning: A recording of a UI test run, with every action, a snapshot of the page before and after it, and the network calls. Opened in Playwright's trace viewer.
-  page: core-automation/ui-automation/screenshots-and-traces.md
+  page: automation-testing/playwright/screenshots-and-traces.md
 
 - term: Cross-browser testing
   meaning: Running the same tests on several browsers, like Chrome, Firefox and Safari, to find bugs that show in only one.
-  page: core-automation/ui-automation/cross-browser-runs.md
+  page: automation-testing/playwright/cross-browser-runs.md
 
 - term: Log level
   meaning: How important a log line is, from DEBUG (details) through INFO, WARNING and ERROR to CRITICAL. You choose which levels to keep.
-  page: core-automation/reporting-and-logging/logging-in-tests.md
+  page: automation-testing/reports-and-logs/logging-in-tests.md
 
 - term: JUnit XML
   meaning: A test results file format that almost every CI tool can read, with one entry per test and its failure message.
-  page: core-automation/reporting-and-logging/junit-xml-for-pipelines.md
+  page: automation-testing/reports-and-logs/junit-xml-for-pipelines.md
 
 - term: Redaction
   meaning: Hiding secrets like passwords and card numbers, for example by writing "***" instead, before they reach a log or report.
-  page: core-automation/reporting-and-logging/screenshots-and-request-logs.md
+  page: automation-testing/reports-and-logs/screenshots-and-request-logs.md
 
 - term: Docker image
   meaning: A read-only package with a program and everything it needs. Docker makes containers from it, like cakes from one recipe.
-  page: infrastructure/docker-for-testers/images-and-containers.md
+  page: devops-for-qa/docker/images-and-containers.md
 
 - term: Image digest
   meaning: A long code starting with sha256 that names one exact Docker image. Unlike a tag, it can never point to a different image.
-  page: infrastructure/docker-for-testers/images-and-containers.md
+  page: devops-for-qa/docker/images-and-containers.md
 
 - term: Dockerfile
   meaning: A text file with the steps to build a Docker image, read from top to bottom.
-  page: infrastructure/docker-for-testers/dockerfile-for-a-test-suite.md
+  page: devops-for-qa/docker/dockerfile-for-a-test-suite.md
 
 - term: Docker Compose
   meaning: A Docker tool that starts several containers from one file, in the right order, so they can work together.
-  page: infrastructure/docker-for-testers/compose-test-environments.md
+  page: devops-for-qa/docker/compose-test-environments.md
 
 - term: Health check
   meaning: A small command that tells whether a service is ready to use, so other services can wait for it.
-  page: infrastructure/docker-for-testers/compose-test-environments.md
+  page: devops-for-qa/docker/compose-test-environments.md
 
 - term: AJAX
   stands_for: Asynchronous JavaScript and XML
   meaning: When JavaScript in a web page asks the server for data in the background and updates the page without loading a new one. Today the data is almost always JSON.
-  page: core-automation/api-testing/how-the-web-works.md
+  page: api-testing/how-the-web-works.md
 
 - term: HTML
   stands_for: HyperText Markup Language
   meaning: The text a web page is made of, with tags like <h1> for a heading and <button> for a button. The browser turns it into what you see.
-  page: core-automation/api-testing/how-the-web-works.md
+  page: api-testing/how-the-web-works.md
 
 - term: DOM
   stands_for: Document Object Model
   meaning: The page as the browser holds it right now, after JavaScript has changed it. It can differ from the HTML the server sent.
-  page: core-automation/api-testing/how-the-web-works.md
+  page: api-testing/how-the-web-works.md
 
 - term: Client
   meaning: "The program that asks: a browser, a phone app, or your test. It sends a request and waits for the answer."
-  page: core-automation/api-testing/how-the-web-works.md
+  page: api-testing/how-the-web-works.md
 
 - term: Server
   meaning: The program that answers requests. It runs the app's rules and talks to the database.
-  page: core-automation/api-testing/how-the-web-works.md
+  page: api-testing/how-the-web-works.md
 
 - term: Frontend
   meaning: "The part of an app that runs on the user's device: the web page, its JavaScript, or the phone app."
-  page: core-automation/api-testing/how-the-web-works.md
+  page: api-testing/how-the-web-works.md
 
 - term: Backend
   meaning: "The part of an app that runs on the servers: the API, the rules, and the database."
-  page: core-automation/api-testing/how-the-web-works.md
+  page: api-testing/how-the-web-works.md

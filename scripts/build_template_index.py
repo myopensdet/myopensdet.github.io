@@ -2,7 +2,8 @@
 
 Why: the site has hundreds of template files. A hand-kept list would miss new ones
 on the first day. This script lists every file Git tracks under
-modules/<section>/<topic>/templates/, grouped like the menu, with one line saying
+modules/<section>/<topic>/templates/ (the page that owns a folder says `code: <section>/<topic>`
+in its front matter), grouped like the menu, with one line saying
 what each file is (taken from the file itself).
 
 Writes
@@ -135,9 +136,17 @@ def build_block() -> str:
     lines = [BEGIN, "", f"**{len(files)} files in {len(by_topic)} topics.**", ""]
     for section, topics in build_nav.load_sections():
         rows = []
-        for topic in topics:
-            key = topic.path.parent.relative_to(build_nav.DOCS).as_posix().replace("-", "_")
-            paths = sorted(by_topic.pop(key, []))
+        # A page owns a code folder when its front matter says `code: <section>/<topic>`
+        # (the folder in modules/). The section page itself can own one too.
+        pages = [section]
+        stack = list(topics)
+        while stack:
+            page = stack.pop(0)
+            pages.append(page)
+            stack[0:0] = page.children
+        for topic in pages:
+            key = topic.meta.get("code")
+            paths = sorted(by_topic.pop(key, [])) if key else []
             if not paths:
                 continue
             link = "../../" + topic.rel
@@ -152,7 +161,9 @@ def build_block() -> str:
         if rows:
             lines += [f"## {section.title}", "", *rows]
     if by_topic:
-        raise build_nav.NavError(f"templates with no topic page in docs/: {sorted(by_topic)}")
+        raise build_nav.NavError(
+            f"code folders with no page (add `code:` to its front matter): {sorted(by_topic)}"
+        )
     lines.append(END)
     return "\n".join(lines)
 

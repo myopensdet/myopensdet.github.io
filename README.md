@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <b>Learn software testing and test automation, step by step.<br>Real templates and code you can use at work. Free.</b>
+  <b>My open SDET handbook: practical QA engineering, learned and documented in public.</b>
 </p>
 
 <p align="center">
-  <a href="https://myopensdet.github.io/"><img src="https://img.shields.io/badge/website-read%20the%20course-1f5fbf" alt="Website: read the course"></a>
+  <a href="https://myopensdet.github.io/"><img src="https://img.shields.io/badge/website-read%20the%20handbook-1f5fbf" alt="Website: read the handbook"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-1f5fbf" alt="Code license: MIT"></a>
   <a href="LICENSE-CC-BY-4.0.txt"><img src="https://img.shields.io/badge/text-CC%20BY%204.0-1f5fbf" alt="Text license: CC BY 4.0"></a>
   <img src="https://img.shields.io/badge/python-3.13-1f5fbf" alt="Python 3.13">
@@ -18,21 +18,23 @@
 </p>
 
 <p align="center">
-  <a href="https://myopensdet.github.io/start-here/"><b>Start learning</b></a> ·
+  <a href="https://myopensdet.github.io/getting-started/"><b>Start learning</b></a> ·
   <a href="https://myopensdet.github.io/learning-path/">Learning path</a> ·
-  <a href="https://myopensdet.github.io/start-here/skills-matrix/">Skills matrix</a> ·
+  <a href="https://myopensdet.github.io/getting-started/skills-matrix/">Skills matrix</a> ·
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 
 ## What is this?
 
-**myOpenSDET** is a free course and toolkit for becoming an **SDET** (Software
-Development Engineer in Test): a tester who writes code to test software.
+**myOpenSDET** is an open handbook for QA engineers and SDETs (Software Development
+Engineers in Test): testers who write code to test software. I am building it while I
+learn and practise, and I write down what works in real testing jobs. You are welcome
+to learn from it, use it at work, and help improve it.
 
-- **Start from zero.** No coding experience needed. Every lesson explains one idea at
-  a time, shows exactly what to type, and shows what you should see.
-- **Real work, not theory.** Each topic starts with a task you might get at work, for
-  example "Can you set up API tests for our new service?", and walks you through it.
+- **Plain English, step by step.** Every lesson explains one idea at a time, shows
+  exactly what to type, and shows what you should see.
+- **Real work, not theory.** Examples use real testing data: status codes, test
+  results, user records, device IDs and MQTT messages.
 - **Templates that run.** Every code sample is a tested template you can copy into your
   own project.
 - **Built for your own app.** Settings come from environment variables, so the same
@@ -40,15 +42,15 @@ Development Engineer in Test): a tester who writes code to test software.
   output, so you can learn from the page alone.
 
 > [!NOTE]
-> The site structure is ready and lessons are being written now. Topics marked
-> *coming soon* in the map below are not written yet. Star the repository to see
-> new topics as they arrive.
+> Lessons are being written now. Topics that are not finished yet are on the
+> [Roadmap](https://myopensdet.github.io/roadmap/). Star the repository to see new
+> topics as they arrive.
 
 <p align="center">
   <a href="https://myopensdet.github.io/">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset=".github/readme/site-dark.png">
-      <img src=".github/readme/site-light.png" alt="The myOpenSDET home page: a short promise, a Start learning button and a terminal where six tests pass." width="100%">
+      <img src=".github/readme/site-light.png" alt="The myOpenSDET home page: the learning categories and a terminal where the tests pass." width="100%">
     </picture>
   </a>
 </p>
@@ -59,203 +61,168 @@ Got a task at work today? Go straight to the page that helps.
 
 | I need to… | Go to |
 | --- | --- |
-| Test an API | [API testing](https://myopensdet.github.io/core-automation/api-testing/) |
-| Check data in a database | [Database testing](https://myopensdet.github.io/core-automation/database-testing/) |
-| Test several databases | [Multi-database testing](https://myopensdet.github.io/core-automation/multi-database-testing/) |
-| Set up BDD | [BDD testing](https://myopensdet.github.io/core-automation/bdd-testing/) |
-| Automate a web page | [UI automation with Playwright](https://myopensdet.github.io/core-automation/ui-automation/) |
-| Run tests in Docker | [Docker for testers](https://myopensdet.github.io/infrastructure/docker-for-testers/) |
-| Fix a flaky test | [Flaky tests and speed](https://myopensdet.github.io/advanced-testing/flaky-tests-and-speed/) |
-| Write a bug report | [Bug reports](https://myopensdet.github.io/think-like-a-tester/bug-reports/) |
-| Plan testing for a feature | [Test strategy and planning](https://myopensdet.github.io/think-like-a-tester/test-strategy-and-planning/) |
-| Test speed under load | [Performance testing](https://myopensdet.github.io/advanced-testing/performance-testing/) |
-| Learn Python for testing | [Python for testers](https://myopensdet.github.io/start-here/python-for-testers/) |
-| Prepare for an interview | [Interview preparation](https://myopensdet.github.io/professional-sdet/interview-preparation/) |
+| Test an API | [API testing](https://myopensdet.github.io/api-testing/) |
+| Check data in a database | [Database testing](https://myopensdet.github.io/database-testing/) |
+| Test several databases | [Multi-database testing](https://myopensdet.github.io/database-testing/several-databases/) |
+| Set up BDD | [BDD testing](https://myopensdet.github.io/automation-testing/bdd/) |
+| Automate a web page | [UI automation with Playwright](https://myopensdet.github.io/automation-testing/playwright/) |
+| Run tests in Docker | [Docker for testers](https://myopensdet.github.io/devops-for-qa/docker/) |
+| Fix a flaky test | [Flaky tests and speed](https://myopensdet.github.io/automation-testing/flaky-tests/) |
+| Write a bug report | [Bug reports](https://myopensdet.github.io/manual-testing/bug-reports/) |
+| Plan testing for a feature | [Test strategy and planning](https://myopensdet.github.io/manual-testing/test-planning/) |
+| Test speed under load | [Performance testing](https://myopensdet.github.io/performance-testing/) |
+| Learn Python for testing | [Python for testers](https://myopensdet.github.io/programming-for-testers/) |
+| Prepare for an interview | [Interview preparation](https://myopensdet.github.io/working-as-a-qa/interview-preparation/) |
 
 ## Topic map
 
-Six stages, plus a toolbox. Go in order, or jump to the topic you need today.
-Click a stage to open it.
+Learning categories, plus case studies and a toolbox. Go in order, or jump to the
+topic you need today. Click a category to open it.
 
 <!-- BEGIN topic map (generated by scripts/build_nav.py, do not edit by hand) -->
 
 <details>
-<summary><b>Start Here</b> (5 topics)</summary>
+<summary><b>Getting Started</b> (5 topics)</summary>
 
-[Open the Start Here overview](https://myopensdet.github.io/start-here/)
+[Open the Getting Started overview](https://myopensdet.github.io/getting-started/)
 
-- [How to use this site](https://myopensdet.github.io/start-here/how-to-use-this-site/): Pick a path, read a page, copy the files, track your progress, ask for help.
-- [Environment setup](https://myopensdet.github.io/start-here/environment-setup/): Install Python, VS Code and Docker, and run your first tests.
-- [Python for testers](https://myopensdet.github.io/start-here/python-for-testers/): Just enough Python to write real tests: data, loops, functions, classes and files.
-- [Skills Matrix](https://myopensdet.github.io/start-here/skills-matrix/): Every SDET skill, grouped by area. Tick what you know and find your next lesson.
-- [Learning Path](https://myopensdet.github.io/learning-path/): The whole journey on one map, plus step-by-step paths for what you want to do.
-
-</details>
-
-<details>
-<summary><b>Work Playbooks</b> (8 topics)</summary>
-
-[Open the Work Playbooks overview](https://myopensdet.github.io/work-playbooks/)
-
-**API work**
-
-- [Automate API tests, step by step](https://myopensdet.github.io/work-playbooks/automate-api-tests/): Install, read the spec, plan, copy the GET/POST/PUT/DELETE templates, run.
-- [Test a new API endpoint](https://myopensdet.github.io/work-playbooks/new-api-endpoint/): From "please test this by Friday" to a plan, tests and a report.
-- [Test an API from its Swagger file](https://myopensdet.github.io/work-playbooks/api-from-openapi/): From a Swagger link to a plan, contract checks and a report.
-
-**Database work**
-
-- [Check database data, step by step](https://myopensdet.github.io/work-playbooks/check-database-data/): Safe access, read the tables, plan, copy the SQL checks, run, read the results.
-
-**Login and access**
-
-- [Test login and permissions, step by step](https://myopensdet.github.io/work-playbooks/test-login-and-permissions/): How login works, who may do what, ready tests for tokens and access, run, read.
-
-**UI work**
-
-- [Automate UI tests, step by step](https://myopensdet.github.io/work-playbooks/automate-ui-tests/): Install, pick the flows, plan, copy ready tests, run, read screenshots and traces.
-
-**Files and data**
-
-- [Test file upload and import, step by step](https://myopensdet.github.io/work-playbooks/test-file-upload-and-import/): Get the rules, try by hand, plan, copy upload and import tests, run, read.
-
-**Speed**
-
-- [Check API speed, step by step](https://myopensdet.github.io/work-playbooks/check-api-speed/): Targets, one user, many users, read p95 and errors, speed tests in pytest.
+- [How to use this site](https://myopensdet.github.io/getting-started/how-to-use-this-site/): Pick a path, read a page, copy the files, track your progress, ask for help.
+- [Environment setup](https://myopensdet.github.io/getting-started/environment-setup/): Install Python, VS Code and Docker, and run your first tests.
+- [Skills Matrix](https://myopensdet.github.io/getting-started/skills-matrix/): Every SDET skill, grouped by area. Tick what you know and find your next lesson.
+- [Learning Paths](https://myopensdet.github.io/learning-path/): The whole journey on one map, plus step-by-step paths for what you want to do.
+- [Roadmap](https://myopensdet.github.io/roadmap/): Topics being written now, grouped by category.
 
 </details>
 
 <details>
-<summary><b>Think Like a Tester</b> (8 topics)</summary>
+<summary><b>Programming for Testers</b> (11 topics)</summary>
 
-[Open the Think Like a Tester overview](https://myopensdet.github.io/think-like-a-tester/)
+[Open the Programming for Testers overview](https://myopensdet.github.io/programming-for-testers/)
 
-- [Learning a new testing area](https://myopensdet.github.io/think-like-a-tester/learning-a-new-testing-area/): A 9-step playbook for any testing task you have never done before.
-- [The SDET role](https://myopensdet.github.io/think-like-a-tester/the-sdet-role/): What an SDET does, how to start the job well, and the templates for your first 90 days.
-- [Test levels and the pyramid](https://myopensdet.github.io/think-like-a-tester/test-levels-and-the-pyramid/): Unit, integration, API, UI and end-to-end tests, and how many of each to write.
-- [Test design techniques](https://myopensdet.github.io/think-like-a-tester/test-design-techniques/): Boundary values, decision tables and more: find the tests that catch the most bugs.
-- [Static testing and reviews](https://myopensdet.github.io/think-like-a-tester/static-testing-and-reviews/): Find bugs before any code runs, by reviewing requirements and stories.
-- [Test cases](https://myopensdet.github.io/think-like-a-tester/test-cases/): Write clear test cases, positive and negative, linked to what they check.
-- [Bug reports](https://myopensdet.github.io/think-like-a-tester/bug-reports/): Report a bug so a developer can fix it fast: steps, severity and priority.
-- [Test strategy and planning](https://myopensdet.github.io/think-like-a-tester/test-strategy-and-planning/): Decide what to test first, what not to automate, and when testing is done.
-
-</details>
-
-<details>
-<summary><b>Core Automation</b> (9 topics)</summary>
-
-[Open the Core Automation overview](https://myopensdet.github.io/core-automation/)
-
-**Foundations**
-
-- [pytest framework](https://myopensdet.github.io/core-automation/pytest-framework/): Your first automated tests: project layout, fixtures, parametrize and markers.
-
-**API and databases**
-
-- [API testing](https://myopensdet.github.io/core-automation/api-testing/): Send requests from Python and check status codes, JSON, headers and auth.
-- [Database testing](https://myopensdet.github.io/core-automation/database-testing/): Write SQL to prove the right data was saved, and test schemas and rules.
-- [Multi-database testing](https://myopensdet.github.io/core-automation/multi-database-testing/): Run one test on MySQL, PostgreSQL, SQLite and MongoDB.
-- [API + database](https://myopensdet.github.io/core-automation/api-and-database/): Call the API, then prove the change landed in the database.
-- [Data-driven testing](https://myopensdet.github.io/core-automation/data-driven-testing/): Feed tests from CSV, JSON, YAML or Excel, with fake data from Faker.
-
-**BDD and UI**
-
-- [BDD testing](https://myopensdet.github.io/core-automation/bdd-testing/): Tests in plain English with Gherkin, using behave or pytest-bdd.
-- [UI automation](https://myopensdet.github.io/core-automation/ui-automation/): Click, type and check web pages with Playwright and Page Objects.
-
-**Reports**
-
-- [Reporting and logging](https://myopensdet.github.io/core-automation/reporting-and-logging/): Reports people can read: pytest-html, JUnit XML, logs and screenshots.
+- [Variables and types](https://myopensdet.github.io/programming-for-testers/variables-and-data-types/): Text, numbers, True and False, and why "30" isn't 30.
+- [Strings, lists and dictionaries](https://myopensdet.github.io/programming-for-testers/lists-tuples-sets-and-dictionaries/): Text, lists and dictionaries: the three shapes most test data comes in.
+- [If and loops](https://myopensdet.github.io/programming-for-testers/conditions-and-loops/): Make decisions, do the same check many times, and retry with a limit.
+- [Functions](https://myopensdet.github.io/programming-for-testers/functions/): Name a piece of work, so you can test it and use it again.
+- [Modules and imports](https://myopensdet.github.io/programming-for-testers/modules-and-imports/): Use dates, paths and JSON from the standard library, and your own files.
+- [Classes and objects](https://myopensdet.github.io/programming-for-testers/object-oriented-programming/): Bundle data and actions together: the idea behind page objects and API clients.
+- [Errors and exceptions](https://myopensdet.github.io/programming-for-testers/exception-handling/): Read a traceback fast, and handle what can go wrong.
+- [Reading and writing files](https://myopensdet.github.io/programming-for-testers/file-handling/): Read test data and CSV files, write reports, and keep Bengali text safe.
+- [JSON](https://myopensdet.github.io/programming-for-testers/json/): Read and write JSON, and compare an expected API response with the real one.
+- [Virtual environments and pip](https://myopensdet.github.io/programming-for-testers/virtual-environments-and-pip/): Give each project its own Python packages, and pin their versions.
+- [Reading other people's code](https://myopensdet.github.io/programming-for-testers/reading-other-peoples-code/): Find your way around code you didn't write: predict, run, and check.
 
 </details>
 
 <details>
-<summary><b>Infrastructure</b> (8 topics)</summary>
+<summary><b>Manual and Functional Testing</b> (7 topics)</summary>
 
-[Open the Infrastructure overview](https://myopensdet.github.io/infrastructure/)
+[Open the Manual and Functional Testing overview](https://myopensdet.github.io/manual-testing/)
 
-**Your toolkit**
-
-- [Linux and shell](https://myopensdet.github.io/infrastructure/linux-and-shell/): Read logs, search with grep, count with pipes, find ports, a ready log script.
-- [Networking for testers](https://myopensdet.github.io/infrastructure/networking-for-testers/): Name, port, certificate, answer: find which step breaks, with a ready script.
-- [Debugging toolkit](https://myopensdet.github.io/infrastructure/debugging-toolkit/): Read the failure, run it alone, logs, the debugger, curl -v and DevTools.
-- [Everyday tools](https://myopensdet.github.io/infrastructure/everyday-tools/): Copy a request as curl, turn it into a pytest test, debug it in VS Code.
-
-**Pipelines and environments**
-
-- [CI/CD for testers](https://myopensdet.github.io/infrastructure/ci-cd/): Design a test pipeline: when it runs, secrets, reports, a ready workflow.
-- [Docker for testers](https://myopensdet.github.io/infrastructure/docker-for-testers/): Run the same tests the same way on any computer.
-- [Cloud and Kubernetes basics](https://myopensdet.github.io/infrastructure/cloud-and-kubernetes/): Cloud test environments and Kubernetes in plain words. *(coming soon)*
-- [Observability](https://myopensdet.github.io/infrastructure/observability/): Logs, metrics and traces, and testing safely in production. *(coming soon)*
+- [The SDET role](https://myopensdet.github.io/manual-testing/fundamentals/): What an SDET does, how to start the job well, and the templates for your first 90 days.
+- [Test levels and the pyramid](https://myopensdet.github.io/manual-testing/test-levels/): Unit, integration, API, UI and end-to-end tests, and how many of each to write.
+- [Static testing and reviews](https://myopensdet.github.io/manual-testing/reviews/): Find bugs before any code runs, by reviewing requirements and stories.
+- [Test design techniques](https://myopensdet.github.io/manual-testing/test-design/): Boundary values, decision tables and more: find the tests that catch the most bugs.
+- [Test cases](https://myopensdet.github.io/manual-testing/test-cases/): Write clear test cases, positive and negative, linked to what they check.
+- [Test strategy and planning](https://myopensdet.github.io/manual-testing/test-planning/): Decide what to test first, what not to automate, and when testing is done.
+- [Bug reports](https://myopensdet.github.io/manual-testing/bug-reports/): Report a bug so a developer can fix it fast: steps, severity and priority.
 
 </details>
 
 <details>
-<summary><b>Advanced Testing</b> (15 topics)</summary>
+<summary><b>API Testing</b> (12 topics)</summary>
 
-[Open the Advanced Testing overview](https://myopensdet.github.io/advanced-testing/)
+[Open the API Testing overview](https://myopensdet.github.io/api-testing/)
 
-**Services and integrations**
-
-- [Mocking and stubbing](https://myopensdet.github.io/advanced-testing/mocking-and-stubbing/): Replace slow or unreliable parts with fakes you control.
-- [Contract testing](https://myopensdet.github.io/advanced-testing/contract-testing/): Catch breaking API changes between teams before release, with Pact. *(coming soon)*
-- [Testing microservices](https://myopensdet.github.io/advanced-testing/testing-microservices/): Test one service alone, then the conversations between services. *(coming soon)*
-- [GraphQL testing](https://myopensdet.github.io/advanced-testing/graphql-testing/): Test GraphQL queries, mutations, schemas and errors. *(coming soon)*
-- [gRPC and WebSocket testing](https://myopensdet.github.io/advanced-testing/grpc-and-websocket-testing/): Test streams and live messages that are not REST. *(coming soon)*
-- [Message queue testing](https://myopensdet.github.io/advanced-testing/message-queue-testing/): Test Kafka and RabbitMQ flows, where answers arrive later. *(coming soon)*
-
-**Beyond functional testing**
-
-- [Performance testing](https://myopensdet.github.io/advanced-testing/performance-testing/): See what happens under load, with Locust, k6 and JMeter. *(coming soon)*
-- [Security testing basics](https://myopensdet.github.io/advanced-testing/security-testing/): OWASP Top 10, auth and injection tests, and a first ZAP scan. *(coming soon)*
-- [Accessibility testing](https://myopensdet.github.io/advanced-testing/accessibility-testing/): Check that everyone can use the app, with WCAG basics and Axe. *(coming soon)*
-- [Visual regression](https://myopensdet.github.io/advanced-testing/visual-regression/): Catch layout changes by comparing screenshots. *(coming soon)*
-
-**Data and reliability**
-
-- [Data and ETL testing](https://myopensdet.github.io/advanced-testing/data-and-etl-testing/): Check that data pipelines move and change data correctly. *(coming soon)*
-- [Flaky tests and speed](https://myopensdet.github.io/advanced-testing/flaky-tests-and-speed/): Fix tests that pass one day and fail the next, and run them faster. *(coming soon)*
-
-**More platforms**
-
-- [Mobile testing](https://myopensdet.github.io/advanced-testing/mobile-testing/): Automate Android and iOS apps with Appium. *(coming soon)*
-- [AI in testing](https://myopensdet.github.io/advanced-testing/ai-in-testing/): Test features built on AI, and use AI tools safely in your own work. *(coming soon)*
-- [Tricky real-world cases](https://myopensdet.github.io/advanced-testing/tricky-real-world-cases/): Emails, OTPs, file uploads, PDFs, payments and time zones. *(coming soon)*
+- [How the web works](https://myopensdet.github.io/api-testing/how-the-web-works/): Client and server, HTML, AJAX, JSON and REST, and frontend vs backend bugs.
+- [How HTTP works](https://myopensdet.github.io/api-testing/how-http-works/): A request, a response, and what's in each, seen from Python.
+- [GET, POST, PUT, PATCH, DELETE](https://myopensdet.github.io/api-testing/http-methods/): The five methods on one booking, and the difference between PUT and PATCH.
+- [Status codes](https://myopensdet.github.io/api-testing/status-codes/): What 200, 201, 404 and 500 mean, and how to test wrong ones.
+- [Headers and JSON](https://myopensdet.github.io/api-testing/headers-and-json/): Accept, Content-Type and custom headers, and json= versus data=.
+- [Query and path parameters](https://myopensdet.github.io/api-testing/query-and-path-params/): ?page=2 and /booking/42: send them safely, and what to test for each.
+- [Authentication](https://myopensdet.github.io/api-testing/authentication/): API keys, Basic, Bearer tokens and OAuth2, and keeping secrets out of code.
+- [Schema validation](https://myopensdet.github.io/api-testing/schema-validation/): Check required fields, types and formats of every response with JSON Schema.
+- [Chaining requests](https://myopensdet.github.io/api-testing/chaining-requests/): Pass a token and an id from one call to the next, with fixtures that clean up.
+- [File upload](https://myopensdet.github.io/api-testing/file-upload/): Send a file and form fields, check it arrived the same, and what to test.
+- [An API client class](https://myopensdet.github.io/api-testing/api-client-class/): One class for the base URL, headers, timeout and logging, and clear failures.
+- [Mocking and stubbing](https://myopensdet.github.io/api-testing/mocking-and-stubbing/): Replace slow or unreliable parts with fakes you control.
 
 </details>
 
 <details>
-<summary><b>Professional SDET</b> (16 topics)</summary>
+<summary><b>Database and SQL Testing</b> (11 topics)</summary>
 
-[Open the Professional SDET overview](https://myopensdet.github.io/professional-sdet/)
+[Open the Database and SQL Testing overview](https://myopensdet.github.io/database-testing/)
 
-**Working in a team**
+- [SQL for testers](https://myopensdet.github.io/database-testing/sql-for-testers/): Read, filter, sort and count rows: the queries you'll type every day.
+- [JOIN, GROUP BY and subqueries](https://myopensdet.github.io/database-testing/joins-and-group-by/): Join tables, find missing links and duplicates, and compare with a subquery.
+- [Connecting from Python](https://myopensdet.github.io/database-testing/connecting-from-python/): Connect with psycopg, pass values as parameters, and read rows as dicts.
+- [Schema tests](https://myopensdet.github.io/database-testing/schema-tests/): Check the tables, columns, types and keys match what the app expects.
+- [Integrity: keys and rules](https://myopensdet.github.io/database-testing/integrity-constraints/): Insert bad rows on purpose and prove the database refuses each one.
+- [CRUD tests](https://myopensdet.github.io/database-testing/crud-tests/): Create, read, update and delete a row, and check exactly what was saved.
+- [Data validation](https://myopensdet.github.io/database-testing/data-validation/): Write each business rule as a query that must return zero rows.
+- [Stored procedures and triggers](https://myopensdet.github.io/database-testing/procedures-and-triggers/): Call database functions, check every table they touch, and test triggers.
+- [Transactions and clean-up](https://myopensdet.github.io/database-testing/transactions-and-cleanup/): Roll back every test, so the database is the same after the run as before.
+- [API + database](https://myopensdet.github.io/database-testing/api-and-database/): Call the API, then prove the change landed in the database.
+- [Multi-database testing](https://myopensdet.github.io/database-testing/several-databases/): Run one test on MySQL, PostgreSQL, SQLite and MongoDB.
 
-- [A day in the life](https://myopensdet.github.io/professional-sdet/a-day-in-the-life/): Plan the day: nightly run, stand-up, one ticket end to end, reviews, handover.
-- [Your first weeks in a new job](https://myopensdet.github.io/professional-sdet/your-first-weeks/): Map a framework you didn't write, make a first useful change, earn trust.
-- [SDET in Agile](https://myopensdet.github.io/professional-sdet/sdet-in-agile/): Check stories before the sprint, Three Amigos, shift-left, Definition of Done.
-- [Git in a team](https://myopensdet.github.io/professional-sdet/git-in-a-team/): Branches, pull requests, a real merge conflict, and pushing safely.
-- [Jira and test management](https://myopensdet.github.io/professional-sdet/jira-and-test-management/): Tickets, workflows, and linking tests to stories. *(coming soon)*
-- [Working with developers](https://myopensdet.github.io/professional-sdet/working-with-developers/): Answer 'works on my machine' with evidence, talk without blame, pair.
-- [Communicating your work](https://myopensdet.github.io/professional-sdet/communicating-your-work/): Clear GREEN/AMBER/RED status, risk in plain words, honest estimates.
+</details>
 
-**Releases and quality**
+<details>
+<summary><b>Automation Testing</b> (5 topics)</summary>
 
-- [Regression, hotfixes and incidents](https://myopensdet.github.io/professional-sdet/regression-hotfixes-and-incidents/): Pick the right tests for a change, and stay calm in an incident.
-- [Quality metrics](https://myopensdet.github.io/professional-sdet/quality-metrics/): Measure what matters, and know what not to measure. *(coming soon)*
-- [Release sign-off](https://myopensdet.github.io/professional-sdet/release-sign-off/): Make a clear go or no-go call for a release. *(coming soon)*
+[Open the Automation Testing overview](https://myopensdet.github.io/automation-testing/)
 
-**Building and leading**
+- [pytest framework](https://myopensdet.github.io/automation-testing/pytest/): Your first automated tests: project layout, fixtures, parametrize and markers.
+- [UI automation](https://myopensdet.github.io/automation-testing/playwright/): Click, type and check web pages with Playwright and Page Objects.
+- [BDD testing](https://myopensdet.github.io/automation-testing/bdd/): Tests in plain English with Gherkin, using behave or pytest-bdd.
+- [Data-driven testing](https://myopensdet.github.io/automation-testing/data-driven/): Feed tests from CSV, JSON, YAML or Excel, with fake data from Faker.
+- [Reporting and logging](https://myopensdet.github.io/automation-testing/reports-and-logs/): Reports people can read: pytest-html, JUnit XML, logs and screenshots.
 
-- [Clean test code](https://myopensdet.github.io/professional-sdet/clean-test-code/): Test code that is easy to read, change and trust. *(coming soon)*
-- [Leading quality](https://myopensdet.github.io/professional-sdet/leading-quality/): Design test architecture, choose tools and lead quality for a team. *(coming soon)*
-- [Capstone project](https://myopensdet.github.io/professional-sdet/capstone-project/): Build a full test framework for your own app, from API to CI. *(coming soon)*
+</details>
 
-**Your career**
+<details>
+<summary><b>CI/CD and DevOps for QA</b> (7 topics)</summary>
 
-- [Career roadmap](https://myopensdet.github.io/professional-sdet/career-roadmap/): How an SDET career grows, and what each next step asks of you. *(coming soon)*
-- [Interview preparation](https://myopensdet.github.io/professional-sdet/interview-preparation/): Common questions, coding tasks and clear answers. *(coming soon)*
-- [Portfolio and resume](https://myopensdet.github.io/professional-sdet/portfolio-and-resume/): Show your work on GitHub and write a tester resume. *(coming soon)*
+[Open the CI/CD and DevOps for QA overview](https://myopensdet.github.io/devops-for-qa/)
+
+- [Linux and shell](https://myopensdet.github.io/devops-for-qa/linux/): Read logs, search with grep, count with pipes, find ports, a ready log script.
+- [Git in a team](https://myopensdet.github.io/devops-for-qa/git-and-github/): Branches, pull requests, a real merge conflict, and pushing safely.
+- [Docker for testers](https://myopensdet.github.io/devops-for-qa/docker/): Run the same tests the same way on any computer.
+- [CI/CD for testers](https://myopensdet.github.io/devops-for-qa/ci-cd/): Design a test pipeline: when it runs, secrets, reports, a ready workflow.
+- [Everyday tools](https://myopensdet.github.io/devops-for-qa/everyday-tools/): Copy a request as curl, turn it into a pytest test, debug it in VS Code.
+- [Debugging toolkit](https://myopensdet.github.io/devops-for-qa/debugging/): Read the failure, run it alone, logs, the debugger, curl -v and DevTools.
+- [Networking for testers](https://myopensdet.github.io/devops-for-qa/networking/): Name, port, certificate, answer: find which step breaks, with a ready script.
+
+</details>
+
+<details>
+<summary><b>Case Studies</b> (8 topics)</summary>
+
+[Open the Case Studies overview](https://myopensdet.github.io/case-studies/)
+
+- [Automate API tests, step by step](https://myopensdet.github.io/case-studies/automate-api-tests/): Install, read the spec, plan, copy the GET/POST/PUT/DELETE templates, run.
+- [Test a new API endpoint](https://myopensdet.github.io/case-studies/new-api-endpoint/): From "please test this by Friday" to a plan, tests and a report.
+- [Test an API from its Swagger file](https://myopensdet.github.io/case-studies/api-from-openapi/): From a Swagger link to a plan, contract checks and a report.
+- [Check database data, step by step](https://myopensdet.github.io/case-studies/check-database-data/): Safe access, read the tables, plan, copy the SQL checks, run, read the results.
+- [Test login and permissions, step by step](https://myopensdet.github.io/case-studies/test-login-and-permissions/): How login works, who may do what, ready tests for tokens and access, run, read.
+- [Automate UI tests, step by step](https://myopensdet.github.io/case-studies/automate-ui-tests/): Install, pick the flows, plan, copy ready tests, run, read screenshots and traces.
+- [Test file upload and import, step by step](https://myopensdet.github.io/case-studies/test-file-upload-and-import/): Get the rules, try by hand, plan, copy upload and import tests, run, read.
+- [Check API speed, step by step](https://myopensdet.github.io/case-studies/check-api-speed/): Targets, one user, many users, read p95 and errors, speed tests in pytest.
+
+</details>
+
+<details>
+<summary><b>Working as a QA Engineer</b> (7 topics)</summary>
+
+[Open the Working as a QA Engineer overview](https://myopensdet.github.io/working-as-a-qa/)
+
+- [A day in the life](https://myopensdet.github.io/working-as-a-qa/a-day-in-the-life/): Plan the day: nightly run, stand-up, one ticket end to end, reviews, handover.
+- [Learning a new testing area](https://myopensdet.github.io/working-as-a-qa/learning-a-new-area/): A 9-step playbook for any testing task you have never done before.
+- [Your first weeks in a new job](https://myopensdet.github.io/working-as-a-qa/your-first-weeks/): Map a framework you didn't write, make a first useful change, earn trust.
+- [SDET in Agile](https://myopensdet.github.io/working-as-a-qa/sdet-in-agile/): Check stories before the sprint, Three Amigos, shift-left, Definition of Done.
+- [Working with developers](https://myopensdet.github.io/working-as-a-qa/working-with-developers/): Answer 'works on my machine' with evidence, talk without blame, pair.
+- [Communicating your work](https://myopensdet.github.io/working-as-a-qa/communicating-your-work/): Clear GREEN/AMBER/RED status, risk in plain words, honest estimates.
+- [Regression, hotfixes and incidents](https://myopensdet.github.io/working-as-a-qa/regression-hotfixes-and-incidents/): Pick the right tests for a change, and stay calm in an incident.
 
 </details>
 
@@ -272,13 +239,15 @@ Click a stage to open it.
 
 </details>
 
+Coming next: see the [Roadmap](https://myopensdet.github.io/roadmap/).
+
 <!-- END topic map -->
 
 ## How to use it
 
 **To learn:** open the [website](https://myopensdet.github.io/)
 and click **Start learning**. You don't need to download anything first; the
-[Start Here](https://myopensdet.github.io/start-here/) section
+[Start Here](https://myopensdet.github.io/getting-started/) section
 helps you set up your computer.
 
 **To use a template at work:** find it in the
@@ -286,7 +255,7 @@ helps you set up your computer.
 copy it, and keep the first comment line that says where it came from.
 
 **To run the code yourself:** clone the repository and follow
-[Environment setup](https://myopensdet.github.io/start-here/environment-setup/),
+[Environment setup](https://myopensdet.github.io/getting-started/environment-setup/),
 or open it in the cloud with nothing to install:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/myopensdet/myopensdet.github.io?quickstart=1)

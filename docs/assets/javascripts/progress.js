@@ -42,7 +42,7 @@
 
   // ------------------------------------------------------------------ helpers
 
-  /* A page's address inside the site, e.g. "core-automation/api-testing/". */
+  /* A page's address inside the site, e.g. "api-testing/status-codes/". */
   function sitePath(href) {
     var url = new URL(href, window.location.href);
     if (url.origin !== window.location.origin) return null;

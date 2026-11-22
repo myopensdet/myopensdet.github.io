@@ -1,9 +1,9 @@
 ---
 title: "SDET Toolbox: Cheat Sheets, Test Ideas and Templates"
 description: "Quick reference for SDETs: cheat sheets, ready lists of test ideas, every template on the site and the glossary."
-updated: "2026-11-19"
+updated: "2026-11-22"
 nav_title: "Toolbox"
-order: 70
+order: 130
 ---
 
 # Toolbox

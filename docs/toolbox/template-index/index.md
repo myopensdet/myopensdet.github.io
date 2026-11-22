@@ -27,11 +27,11 @@ This list is built from the files themselves by a script, every time the site is
 
 **354 files in 42 topics.**
 
-## Start Here
+## Programming for Testers
 
-??? note "Python for testers (3 files)"
+??? note "Programming for Testers (3 files)"
 
-    Open the guide: [Python for testers](../../start-here/python-for-testers/index.md)
+    Open the guide: [Programming for Testers](../../programming-for-testers/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -39,141 +39,11 @@ This list is built from the files themselves by a script, every time the site is
     | [run_summary.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/start_here/python_for_testers/templates/run_summary.py) | Summarise a test run saved as JSON: counts, failures, and the slowest tests. |
     | [script_starter.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/start_here/python_for_testers/templates/script_starter.py) | A starter to copy: fill in the parts marked < > |
 
-## Work Playbooks
-
-??? note "Automate API tests, step by step (8 files)"
-
-    Open the guide: [Automate API tests, step by step](../../work-playbooks/automate-api-tests/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [api_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/pytest.ini) | pytest settings |
-    | [api_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [api_tests/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/test_plan.md) | API test plan: Booking API |
-    | [api_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [api_tests/tests/test_delete.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_delete.py) | DELETE: remove something. |
-    | [api_tests/tests/test_get.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_get.py) | GET: read something. |
-    | [api_tests/tests/test_post.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_post.py) | POST: create something. |
-    | [api_tests/tests/test_put.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_put.py) | PUT: replace something. |
-
-??? note "Test a new API endpoint (8 files)"
-
-    Open the guide: [Test a new API endpoint](../../work-playbooks/new-api-endpoint/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [endpoint_kit/api_probe.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/api_probe.py) | Send many variations of one request and see every answer in one table. |
-    | [endpoint_kit/cases.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/cases.json) | Data (JSON) |
-    | [endpoint_kit/findings.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/findings.md) | Test results: POST /carts/add |
-    | [endpoint_kit/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/pytest.ini) | pytest settings |
-    | [endpoint_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [endpoint_kit/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/test_plan.md) | Test plan: POST /carts/add |
-    | [endpoint_kit/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/tests/conftest.py) | Shared pytest fixtures |
-    | [endpoint_kit/tests/test_endpoint.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/tests/test_endpoint.py) | Checks for one endpoint, written from the agreed rules, not from what it does today. |
-
-??? note "Test an API from its Swagger file (6 files)"
-
-    Open the guide: [Test an API from its Swagger file](../../work-playbooks/api-from-openapi/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [openapi_kit/findings.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/findings.md) | API check: Swagger Petstore 1.0.27 |
-    | [openapi_kit/openapi_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/openapi_check.py) | Plan and smoke-test an API from its OpenAPI (Swagger) file. |
-    | [openapi_kit/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/pytest.ini) | pytest settings |
-    | [openapi_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [openapi_kit/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/tests/conftest.py) | Shared pytest fixtures |
-    | [openapi_kit/tests/test_contract.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/tests/test_contract.py) | One check per GET endpoint in the spec: the status is listed, the format and the schema match, and endpoints that need a login refuse a call without one. |
-
-??? note "Check database data, step by step (11 files)"
-
-    Open the guide: [Check database data, step by step](../../work-playbooks/check-database-data/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [db_checks/.env.example](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/.env.example) | Settings to copy into .env (no real secrets) |
-    | [db_checks/docker-compose.yml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/docker-compose.yml) | A practice shop database, filled from sql/practice_shop.sql. Your own computer only. |
-    | [db_checks/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/pytest.ini) | pytest settings |
-    | [db_checks/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [db_checks/sql/data_checks.sql](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/sql/data_checks.sql) | Ready data checks. Each query returns the rows that BREAK a rule: no rows = all good. |
-    | [db_checks/sql/practice_shop.sql](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/sql/practice_shop.sql) | A small shop database for practice. Like many real databases, it has some rules in the |
-    | [db_checks/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/test_plan.md) | Database test plan: shop database |
-    | [db_checks/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/conftest.py) | Shared pytest fixtures |
-    | [db_checks/tests/test_data_quality.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_data_quality.py) | Is the data healthy? Each check looks for rows that break one rule. |
-    | [db_checks/tests/test_saved_data.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_saved_data.py) | Was it saved correctly? After your API or UI test creates something, check the rows. |
-    | [db_checks/tests/test_schema.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_schema.py) | Is the structure what the app expects? Catches a missing table or column, a changed type, or a missing rule, right after a release, before the app trips over it. |
-
-??? note "Test login and permissions, step by step (8 files)"
-
-    Open the guide: [Test login and permissions, step by step](../../work-playbooks/test-login-and-permissions/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [auth_tests/practice_api.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/practice_api.py) | A small practice API with login, tokens, orders and an admin page. |
-    | [auth_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/pytest.ini) | pytest settings |
-    | [auth_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [auth_tests/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/test_plan.md) | Login and permissions test plan: <app name> |
-    | [auth_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [auth_tests/tests/test_login.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_login.py) | Login: the right user gets a token; everyone else gets the same plain "no". |
-    | [auth_tests/tests/test_permissions.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_permissions.py) | Permissions: each user sees only their own data; only admins open admin pages. |
-    | [auth_tests/tests/test_tokens.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_tokens.py) | Tokens: only a real, current token opens a page that needs a login. |
-
-??? note "Automate UI tests, step by step (8 files)"
-
-    Open the guide: [Automate UI tests, step by step](../../work-playbooks/automate-ui-tests/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [ui_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/pytest.ini) | pytest settings |
-    | [ui_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [ui_tests/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/test_plan.md) | UI test plan: <feature or app name> |
-    | [ui_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [ui_tests/tests/test_cart.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_cart.py) | Cart: the count, the items and the prices stay right. |
-    | [ui_tests/tests/test_checkout.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_checkout.py) | Checkout: the form checks its fields, the totals add up, the order is placed. |
-    | [ui_tests/tests/test_login.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_login.py) | Login: the right user gets in, everyone else sees a clear message. |
-    | [ui_tests/tests/test_products.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_products.py) | Product list: what's shown, and that sorting really sorts. |
-
-??? note "Test file upload and import, step by step (7 files)"
-
-    Open the guide: [Test file upload and import, step by step](../../work-playbooks/test-file-upload-and-import/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [upload_tests/practice_api.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/practice_api.py) | A small practice API with a file upload and a CSV import. |
-    | [upload_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/pytest.ini) | pytest settings |
-    | [upload_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [upload_tests/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/test_plan.md) | Upload and import test plan: <feature name> |
-    | [upload_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [upload_tests/tests/test_import.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/test_import.py) | CSV import: good files go in whole; bad files are refused whole, with the row number. |
-    | [upload_tests/tests/test_upload.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/test_upload.py) | File upload: allowed files go in; empty, too big, wrong and disguised files don't. |
-
-??? note "Check API speed, step by step (6 files)"
-
-    Open the guide: [Check API speed, step by step](../../work-playbooks/check-api-speed/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [speed_check/practice_api.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/practice_api.py) | A small practice API for speed checks. |
-    | [speed_check/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/pytest.ini) | pytest settings |
-    | [speed_check/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [speed_check/speed_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/speed_check.py) | Send many requests at once to one address and report how fast the answers came. |
-    | [speed_check/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/test_plan.md) | Speed check plan: <app or release name> |
-    | [speed_check/tests/test_speed.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/tests/test_speed.py) | Speed targets as tests: each page must answer fast enough, without errors, while several users use it at once. |
-
-## Think Like a Tester
-
-??? note "Learning a new testing area (3 files)"
-
-    Open the guide: [Learning a new testing area](../../think-like-a-tester/learning-a-new-testing-area/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [day_one_questions.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/day_one_questions.md) | Day-one questions: <feature or area> |
-    | [learning_log.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/learning_log.md) | Learning log: <new area> |
-    | [one_page_test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/one_page_test_plan.md) | Test plan: <feature or area> |
+## Manual and Functional Testing
 
 ??? note "The SDET role (4 files)"
 
-    Open the guide: [The SDET role](../../think-like-a-tester/the-sdet-role/index.md)
+    Open the guide: [The SDET role](../../manual-testing/fundamentals/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -184,7 +54,7 @@ This list is built from the files themselves by a script, every time the site is
 
 ??? note "Test levels and the pyramid (4 files)"
 
-    Open the guide: [Test levels and the pyramid](../../think-like-a-tester/test-levels-and-the-pyramid/index.md)
+    Open the guide: [Test levels and the pyramid](../../manual-testing/test-levels/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -193,9 +63,22 @@ This list is built from the files themselves by a script, every time the site is
     | [pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/pytest.ini) | pytest settings |
     | [test_level_decision_chart.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/test_level_decision_chart.md) | Which test level? A decision chart |
 
+??? note "Static testing and reviews (6 files)"
+
+    Open the guide: [Static testing and reviews](../../manual-testing/reviews/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [ambiguity_scan.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/ambiguity_scan.py) | Find vague words in a user story or requirement, and the question to ask about each. |
+    | [pre-commit-config.yaml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/pre-commit-config.yaml) | Static checks for a test project, run before every commit. |
+    | [requirements_review_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/requirements_review_checklist.md) | Requirements review checklist |
+    | [review_comments_guide.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/review_comments_guide.md) | Review comments guide |
+    | [ruff_settings.toml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/ruff_settings.toml) | Ruff settings for a test project. Save this file as ruff.toml in your project's main folder. |
+    | [user_story_review_worksheet.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/user_story_review_worksheet.md) | User story review |
+
 ??? note "Test design techniques (11 files)"
 
-    Open the guide: [Test design techniques](../../think-like-a-tester/test-design-techniques/index.md)
+    Open the guide: [Test design techniques](../../manual-testing/test-design/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -211,22 +94,9 @@ This list is built from the files themselves by a script, every time the site is
     | [state_transition_worksheet.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/test_design_techniques/templates/state_transition_worksheet.md) | State transition worksheet |
     | [web_form_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/test_design_techniques/templates/web_form_checklist.md) | Web form test checklist |
 
-??? note "Static testing and reviews (6 files)"
-
-    Open the guide: [Static testing and reviews](../../think-like-a-tester/static-testing-and-reviews/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [ambiguity_scan.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/ambiguity_scan.py) | Find vague words in a user story or requirement, and the question to ask about each. |
-    | [pre-commit-config.yaml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/pre-commit-config.yaml) | Static checks for a test project, run before every commit. |
-    | [requirements_review_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/requirements_review_checklist.md) | Requirements review checklist |
-    | [review_comments_guide.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/review_comments_guide.md) | Review comments guide |
-    | [ruff_settings.toml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/ruff_settings.toml) | Ruff settings for a test project. Save this file as ruff.toml in your project's main folder. |
-    | [user_story_review_worksheet.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/user_story_review_worksheet.md) | User story review |
-
 ??? note "Test cases (4 files)"
 
-    Open the guide: [Test cases](../../think-like-a-tester/test-cases/index.md)
+    Open the guide: [Test cases](../../manual-testing/test-cases/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -235,20 +105,9 @@ This list is built from the files themselves by a script, every time the site is
     | [test_cases.csv](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/test_cases/templates/test_cases.csv) | Data (CSV) |
     | [traceability.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/test_cases/templates/traceability.py) | Show which requirements have test cases, and which have none. |
 
-??? note "Bug reports (4 files)"
-
-    Open the guide: [Bug reports](../../think-like-a-tester/bug-reports/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [bug_report.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report.md) | <What is wrong, where, and when: one sentence> |
-    | [bug_report_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report_check.py) | Check a bug report (Markdown, using the bug report template) before you send it. |
-    | [bug_report_issue_form.yml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report_issue_form.yml) | A GitHub issue form for bug reports. |
-    | [severity_priority_guide.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/bug_reports/templates/severity_priority_guide.md) | Severity, priority and bug states |
-
 ??? note "Test strategy and planning (8 files)"
 
-    Open the guide: [Test strategy and planning](../../think-like-a-tester/test-strategy-and-planning/index.md)
+    Open the guide: [Test strategy and planning](../../manual-testing/test-planning/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -261,25 +120,22 @@ This list is built from the files themselves by a script, every time the site is
     | [test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/test_plan.md) | Test plan: <feature> (<release>) |
     | [test_strategy.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/test_strategy.md) | Test strategy: <team or product> |
 
-## Core Automation
+??? note "Bug reports (4 files)"
 
-??? note "pytest framework (7 files)"
-
-    Open the guide: [pytest framework](../../core-automation/pytest-framework/index.md)
+    Open the guide: [Bug reports](../../manual-testing/bug-reports/index.md)
 
     | File | What it is |
     | --- | --- |
-    | [pytest_cheatsheet.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_cheatsheet.md) | pytest commands you will use every day |
-    | [pytest_skeleton/README.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/README.md) | Tests for <your app> |
-    | [pytest_skeleton/config/environments.toml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/config/environments.toml) | One section per environment. Choose one with --env, or the TEST_ENV variable. |
-    | [pytest_skeleton/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/pytest.ini) | pytest settings |
-    | [pytest_skeleton/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [pytest_skeleton/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/tests/conftest.py) | Shared pytest fixtures |
-    | [pytest_skeleton/tests/test_example.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/tests/test_example.py) | Example tests. |
+    | [bug_report.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report.md) | <What is wrong, where, and when: one sentence> |
+    | [bug_report_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report_check.py) | Check a bug report (Markdown, using the bug report template) before you send it. |
+    | [bug_report_issue_form.yml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report_issue_form.yml) | A GitHub issue form for bug reports. |
+    | [severity_priority_guide.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/bug_reports/templates/severity_priority_guide.md) | Severity, priority and bug states |
 
-??? note "API testing (20 files)"
+## API Testing
 
-    Open the guide: [API testing](../../core-automation/api-testing/index.md)
+??? note "API Testing (20 files)"
+
+    Open the guide: [API Testing](../../api-testing/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -304,9 +160,32 @@ This list is built from the files themselves by a script, every time the site is
     | [web_kit/watch_requests.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_testing/templates/web_kit/watch_requests.py) | Open a page in a real browser and list every request it makes, like the Network tab. |
     | [web_kit/web_demo.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_testing/templates/web_kit/web_demo.py) | A tiny web app to see how the web works: a server, an HTML page, JavaScript that calls a REST API in the background (AJAX), and JSON answers. |
 
-??? note "Database testing (12 files)"
+??? note "Mocking and stubbing (14 files)"
 
-    Open the guide: [Database testing](../../core-automation/database-testing/index.md)
+    Open the guide: [Mocking and stubbing](../../api-testing/mocking-and-stubbing/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [mock_kit/docker-compose.yml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/docker-compose.yml) | WireMock with the same mapping files as stub_server.py. Start: docker compose up -d |
+    | [mock_kit/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/pytest.ini) | pytest settings |
+    | [mock_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [mock_kit/shop/payments.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/shop/payments.py) | The code under test: checkout asks a payment provider to charge a card. |
+    | [mock_kit/stub_server.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stub_server.py) | A tiny stub server that answers like a real service, from files you write. |
+    | [mock_kit/stubs/mappings/charge_declined.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_declined.json) | Data (JSON) |
+    | [mock_kit/stubs/mappings/charge_provider_error.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_provider_error.json) | Data (JSON) |
+    | [mock_kit/stubs/mappings/charge_succeeds.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_succeeds.json) | Data (JSON) |
+    | [mock_kit/stubs/mappings/charge_too_slow.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_too_slow.json) | Data (JSON) |
+    | [mock_kit/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/conftest.py) | Shared pytest fixtures |
+    | [mock_kit/tests/test_mock_in_code.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_mock_in_code.py) | Level 1, in code: replace the payment client with a mock (unittest.mock, part of Python). |
+    | [mock_kit/tests/test_stub_over_http.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_stub_over_http.py) | Level 2, over HTTP: the real PaymentClient talks to a stub server instead of the provider. |
+    | [mock_kit/tests/test_ui_route.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_ui_route.py) | Level 3, in the browser: Playwright answers the page's API calls itself (page.route). |
+    | [mock_kit/ui/checkout.html](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/ui/checkout.html) | A checkout page. Its JavaScript calls POST /api/pay and shows what happened. |
+
+## Database and SQL Testing
+
+??? note "Database and SQL Testing (12 files)"
+
+    Open the guide: [Database and SQL Testing](../../database-testing/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -323,9 +202,24 @@ This list is built from the files themselves by a script, every time the site is
     | [shop_db_tests/tests/test_procedures_and_triggers.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_procedures_and_triggers.py) | Stored functions and triggers: code that runs inside the database, tested from outside. |
     | [shop_db_tests/tests/test_schema.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_schema.py) | Schema tests: the tables and columns are what the app expects. |
 
+??? note "API + database (8 files)"
+
+    Open the guide: [API + database](../../database-testing/api-and-database/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [api_db_tests/helpers/clients.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/helpers/clients.py) | The two things an API + database test talks to: the API, and the database behind it. |
+    | [api_db_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/pytest.ini) | pytest settings |
+    | [api_db_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [api_db_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [api_db_tests/tests/test_background_writes.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_background_writes.py) | Writes the app makes after it answers: check them by waiting, never by sleeping. |
+    | [api_db_tests/tests/test_create_order.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_create_order.py) | Call the API, then prove the change landed in the database, exactly. |
+    | [api_db_tests/tests/test_customers.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_customers.py) | Customers: what the API saves, and what it must refuse. |
+    | [api_db_tests/tests/test_seed_then_call.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_seed_then_call.py) | Put data straight into the database, then check the API reads and changes it right. |
+
 ??? note "Multi-database testing (25 files)"
 
-    Open the guide: [Multi-database testing](../../core-automation/multi-database-testing/index.md)
+    Open the guide: [Multi-database testing](../../database-testing/several-databases/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -355,24 +249,67 @@ This list is built from the files themselves by a script, every time the site is
     | [multi_db_tests/tests/test_data_integrity.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/test_data_integrity.py) | Data integrity: the same checks, run on every database. |
     | [multi_db_tests/tests/test_schema.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/test_schema.py) | Schema: every database has the same tables and columns, whatever its own types. |
 
-??? note "API + database (8 files)"
+## Automation Testing
 
-    Open the guide: [API + database](../../core-automation/api-and-database/index.md)
+??? note "pytest framework (7 files)"
+
+    Open the guide: [pytest framework](../../automation-testing/pytest/index.md)
 
     | File | What it is |
     | --- | --- |
-    | [api_db_tests/helpers/clients.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/helpers/clients.py) | The two things an API + database test talks to: the API, and the database behind it. |
-    | [api_db_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/pytest.ini) | pytest settings |
-    | [api_db_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [api_db_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [api_db_tests/tests/test_background_writes.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_background_writes.py) | Writes the app makes after it answers: check them by waiting, never by sleeping. |
-    | [api_db_tests/tests/test_create_order.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_create_order.py) | Call the API, then prove the change landed in the database, exactly. |
-    | [api_db_tests/tests/test_customers.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_customers.py) | Customers: what the API saves, and what it must refuse. |
-    | [api_db_tests/tests/test_seed_then_call.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_seed_then_call.py) | Put data straight into the database, then check the API reads and changes it right. |
+    | [pytest_cheatsheet.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_cheatsheet.md) | pytest commands you will use every day |
+    | [pytest_skeleton/README.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/README.md) | Tests for <your app> |
+    | [pytest_skeleton/config/environments.toml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/config/environments.toml) | One section per environment. Choose one with --env, or the TEST_ENV variable. |
+    | [pytest_skeleton/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/pytest.ini) | pytest settings |
+    | [pytest_skeleton/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [pytest_skeleton/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/tests/conftest.py) | Shared pytest fixtures |
+    | [pytest_skeleton/tests/test_example.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/tests/test_example.py) | Example tests. |
+
+??? note "UI automation (15 files)"
+
+    Open the guide: [UI automation](../../automation-testing/playwright/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [ui_tests/first_look.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/first_look.py) | A first look at Playwright, without pytest: browser, context, page, locator. |
+    | [ui_tests/pages/books_page.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/books_page.py) | The book list. |
+    | [ui_tests/pages/cart_page.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/cart_page.py) | The cart page: a table with a Remove button on every row, and a confirm dialog. |
+    | [ui_tests/pages/checkout_page.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/checkout_page.py) | Checkout: a form, a card field inside an iframe, and a terms link that opens a new tab. |
+    | [ui_tests/pages/header.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/header.py) | The header is on every page, so it is a component that pages share, not a page. |
+    | [ui_tests/pages/login_page.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/login_page.py) | The log-in page. |
+    | [ui_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pytest.ini) | pytest settings |
+    | [ui_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [ui_tests/shop_app/app.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/shop_app/app.py) | A small bookshop web app: the app under test in the UI automation lessons. |
+    | [ui_tests/shop_app/server.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
+    | [ui_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [ui_tests/tests/test_books.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_books.py) | The book list loads after the page. |
+    | [ui_tests/tests/test_cart.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_cart.py) | The cart page. |
+    | [ui_tests/tests/test_checkout.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_checkout.py) | Checkout: a form with a select and radio buttons, a card field in an iframe, a new tab. |
+    | [ui_tests/tests/test_login.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_login.py) | Logging in, through the form. |
+
+??? note "BDD testing (13 files)"
+
+    Open the guide: [BDD testing](../../automation-testing/bdd/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [bdd_tests/behave.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/behave.ini) | Known bugs are left out of the normal run. "behave --tags=@known_bug" checks they still fail. |
+    | [bdd_tests/drivers/api_driver.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/drivers/api_driver.py) | Reach the shop through its API. |
+    | [bdd_tests/drivers/ui_driver.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/drivers/ui_driver.py) | Reach the shop through its web page, the way a person would. |
+    | [bdd_tests/features/cart.feature](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/cart.feature) | Feature: Shopping cart |
+    | [bdd_tests/features/coupons.feature](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/coupons.feature) | Feature: Coupons |
+    | [bdd_tests/features/environment.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/environment.py) | behave hooks: start the shop once, give every scenario a fresh driver. |
+    | [bdd_tests/features/steps/shop_steps.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/steps/shop_steps.py) | behave steps. |
+    | [bdd_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/pytest.ini) | pytest settings |
+    | [bdd_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [bdd_tests/shop_app/app.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/shop_app/app.py) | A tiny bookshop with an API and a web page: the app under test in the BDD lessons. |
+    | [bdd_tests/shop_app/server.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
+    | [bdd_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [bdd_tests/tests/test_shop.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/tests/test_shop.py) | pytest-bdd steps for the same feature files behave uses. |
 
 ??? note "Data-driven testing (19 files)"
 
-    Open the guide: [Data-driven testing](../../core-automation/data-driven-testing/index.md)
+    Open the guide: [Data-driven testing](../../automation-testing/data-driven/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -396,51 +333,9 @@ This list is built from the files themselves by a script, every time the site is
     | [data_driven_tests/tests/test_with_factories.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_with_factories.py) | Tests that build their data with factories: valid by default, one change per test. |
     | [data_driven_tests/tools/make_discount_sheet.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tools/make_discount_sheet.py) | Make test_data/discount_rules.xlsx: the sheet the business team keeps their discount rules in. |
 
-??? note "BDD testing (13 files)"
-
-    Open the guide: [BDD testing](../../core-automation/bdd-testing/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [bdd_tests/behave.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/behave.ini) | Known bugs are left out of the normal run. "behave --tags=@known_bug" checks they still fail. |
-    | [bdd_tests/drivers/api_driver.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/drivers/api_driver.py) | Reach the shop through its API. |
-    | [bdd_tests/drivers/ui_driver.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/drivers/ui_driver.py) | Reach the shop through its web page, the way a person would. |
-    | [bdd_tests/features/cart.feature](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/cart.feature) | Feature: Shopping cart |
-    | [bdd_tests/features/coupons.feature](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/coupons.feature) | Feature: Coupons |
-    | [bdd_tests/features/environment.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/environment.py) | behave hooks: start the shop once, give every scenario a fresh driver. |
-    | [bdd_tests/features/steps/shop_steps.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/steps/shop_steps.py) | behave steps. |
-    | [bdd_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/pytest.ini) | pytest settings |
-    | [bdd_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [bdd_tests/shop_app/app.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/shop_app/app.py) | A tiny bookshop with an API and a web page: the app under test in the BDD lessons. |
-    | [bdd_tests/shop_app/server.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
-    | [bdd_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [bdd_tests/tests/test_shop.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/tests/test_shop.py) | pytest-bdd steps for the same feature files behave uses. |
-
-??? note "UI automation (15 files)"
-
-    Open the guide: [UI automation](../../core-automation/ui-automation/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [ui_tests/first_look.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/first_look.py) | A first look at Playwright, without pytest: browser, context, page, locator. |
-    | [ui_tests/pages/books_page.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/books_page.py) | The book list. |
-    | [ui_tests/pages/cart_page.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/cart_page.py) | The cart page: a table with a Remove button on every row, and a confirm dialog. |
-    | [ui_tests/pages/checkout_page.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/checkout_page.py) | Checkout: a form, a card field inside an iframe, and a terms link that opens a new tab. |
-    | [ui_tests/pages/header.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/header.py) | The header is on every page, so it is a component that pages share, not a page. |
-    | [ui_tests/pages/login_page.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/login_page.py) | The log-in page. |
-    | [ui_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pytest.ini) | pytest settings |
-    | [ui_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [ui_tests/shop_app/app.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/shop_app/app.py) | A small bookshop web app: the app under test in the UI automation lessons. |
-    | [ui_tests/shop_app/server.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
-    | [ui_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [ui_tests/tests/test_books.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_books.py) | The book list loads after the page. |
-    | [ui_tests/tests/test_cart.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_cart.py) | The cart page. |
-    | [ui_tests/tests/test_checkout.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_checkout.py) | Checkout: a form with a select and radio buttons, a card field in an iframe, a new tab. |
-    | [ui_tests/tests/test_login.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_login.py) | Logging in, through the form. |
-
 ??? note "Reporting and logging (9 files)"
 
-    Open the guide: [Reporting and logging](../../core-automation/reporting-and-logging/index.md)
+    Open the guide: [Reporting and logging](../../automation-testing/reports-and-logs/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -454,11 +349,11 @@ This list is built from the files themselves by a script, every time the site is
     | [report_tests/tests/test_logging.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/test_logging.py) | Logs are evidence, and evidence gets shared. |
     | [report_tests/tests/test_pages.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/test_pages.py) | Page tests. |
 
-## Infrastructure
+## CI/CD and DevOps for QA
 
 ??? note "Linux and shell (3 files)"
 
-    Open the guide: [Linux and shell](../../infrastructure/linux-and-shell/index.md)
+    Open the guide: [Linux and shell](../../devops-for-qa/linux/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -466,60 +361,20 @@ This list is built from the files themselves by a script, every time the site is
     | [shell_kit/make_practice_logs.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/linux_and_shell/templates/shell_kit/make_practice_logs.py) | Make practice log files in logs/: the same lines every time, like a small web shop's logs. |
     | [shell_kit/shell_cheat_sheet.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/linux_and_shell/templates/shell_kit/shell_cheat_sheet.md) | Shell cheat sheet for testers |
 
-??? note "Networking for testers (4 files)"
+??? note "Git in a team (4 files)"
 
-    Open the guide: [Networking for testers](../../infrastructure/networking-for-testers/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [net_kit/net_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/net_check.py) | Check one address step by step and say where it breaks: the name, the connection, the HTTPS certificate, or the answer. |
-    | [net_kit/network_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/network_checklist.md) | "It doesn't work": network checklist |
-    | [net_kit/practice_server.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/practice_server.py) | A small practice web server for networking checks. |
-    | [net_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-
-??? note "Debugging toolkit (6 files)"
-
-    Open the guide: [Debugging toolkit](../../infrastructure/debugging-toolkit/index.md)
+    Open the guide: [Git in a team](../../devops-for-qa/git-and-github/index.md)
 
     | File | What it is |
     | --- | --- |
-    | [debug_practice/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/pytest.ini) | pytest settings |
-    | [debug_practice/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [debug_practice/shop/cart.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/shop/cart.py) | A tiny shop cart. |
-    | [debug_practice/shop/discounts.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/shop/discounts.py) | Discount codes. |
-    | [debug_practice/tests/test_cart.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/tests/test_cart.py) | Tests for the practice cart. |
-    | [debugging_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debugging_checklist.md) | Debugging checklist: a test failed |
-
-??? note "Everyday tools (6 files)"
-
-    Open the guide: [Everyday tools](../../infrastructure/everyday-tools/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [everyday_kit/copied_request.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/copied_request.txt) | Text file |
-    | [everyday_kit/curl_to_pytest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/curl_to_pytest.py) | Turn a curl command (from "Copy as cURL" in the browser, Postman or Bruno) into a pytest test that uses requests. |
-    | [everyday_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [everyday_kit/vscode/extensions.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/extensions.json) | Data (JSON) |
-    | [everyday_kit/vscode/launch.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/launch.json) | Data (JSON) |
-    | [everyday_kit/vscode/settings.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/settings.json) | Data (JSON) |
-
-??? note "CI/CD for testers (7 files)"
-
-    Open the guide: [CI/CD for testers](../../infrastructure/ci-cd/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [ci_kit/ci_summary.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/ci_summary.py) | Read pytest's JUnit XML report and write a short summary: the totals, then every failed test with the first line of its error. |
-    | [ci_kit/github_workflows/tests.yml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/github_workflows/tests.yml) | Put this file in your repository at .github/workflows/tests.yml |
-    | [ci_kit/pipeline_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/pipeline_checklist.md) | Test pipeline checklist |
-    | [ci_kit/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/pytest.ini) | pytest settings |
-    | [ci_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [ci_kit/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/tests/conftest.py) | Shared pytest fixtures |
-    | [ci_kit/tests/test_smoke.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/tests/test_smoke.py) | Smoke tests: the quick checks that run first on every change. |
+    | [git_kit/git_practice.sh](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_practice.sh) | A safe place to practise team Git: a pretend server and two copies of a small test |
+    | [git_kit/git_team_cheat_sheet.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_team_cheat_sheet.md) | Git in a team: cheat sheet |
+    | [git_kit/gitignore_for_tests.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/gitignore_for_tests.txt) | Rename this file to .gitignore in your test project. Git will never add these. |
+    | [git_kit/pull_request_template.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/pull_request_template.md) | Save as .github/pull_request_template.md: GitHub fills every new pull request with it. |
 
 ??? note "Docker for testers (11 files)"
 
-    Open the guide: [Docker for testers](../../infrastructure/docker-for-testers/index.md)
+    Open the guide: [Docker for testers](../../devops-for-qa/docker/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -535,34 +390,182 @@ This list is built from the files themselves by a script, every time the site is
     | [docker_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/tests/conftest.py) | Shared pytest fixtures |
     | [docker_tests/tests/test_books_api.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/tests/test_books_api.py) | Checks of the book API, and of what it saves in the database. |
 
-## Advanced Testing
+??? note "CI/CD for testers (7 files)"
 
-??? note "Mocking and stubbing (14 files)"
-
-    Open the guide: [Mocking and stubbing](../../advanced-testing/mocking-and-stubbing/index.md)
+    Open the guide: [CI/CD for testers](../../devops-for-qa/ci-cd/index.md)
 
     | File | What it is |
     | --- | --- |
-    | [mock_kit/docker-compose.yml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/docker-compose.yml) | WireMock with the same mapping files as stub_server.py. Start: docker compose up -d |
-    | [mock_kit/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/pytest.ini) | pytest settings |
-    | [mock_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [mock_kit/shop/payments.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/shop/payments.py) | The code under test: checkout asks a payment provider to charge a card. |
-    | [mock_kit/stub_server.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stub_server.py) | A tiny stub server that answers like a real service, from files you write. |
-    | [mock_kit/stubs/mappings/charge_declined.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_declined.json) | Data (JSON) |
-    | [mock_kit/stubs/mappings/charge_provider_error.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_provider_error.json) | Data (JSON) |
-    | [mock_kit/stubs/mappings/charge_succeeds.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_succeeds.json) | Data (JSON) |
-    | [mock_kit/stubs/mappings/charge_too_slow.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_too_slow.json) | Data (JSON) |
-    | [mock_kit/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/conftest.py) | Shared pytest fixtures |
-    | [mock_kit/tests/test_mock_in_code.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_mock_in_code.py) | Level 1, in code: replace the payment client with a mock (unittest.mock, part of Python). |
-    | [mock_kit/tests/test_stub_over_http.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_stub_over_http.py) | Level 2, over HTTP: the real PaymentClient talks to a stub server instead of the provider. |
-    | [mock_kit/tests/test_ui_route.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_ui_route.py) | Level 3, in the browser: Playwright answers the page's API calls itself (page.route). |
-    | [mock_kit/ui/checkout.html](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/ui/checkout.html) | A checkout page. Its JavaScript calls POST /api/pay and shows what happened. |
+    | [ci_kit/ci_summary.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/ci_summary.py) | Read pytest's JUnit XML report and write a short summary: the totals, then every failed test with the first line of its error. |
+    | [ci_kit/github_workflows/tests.yml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/github_workflows/tests.yml) | Put this file in your repository at .github/workflows/tests.yml |
+    | [ci_kit/pipeline_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/pipeline_checklist.md) | Test pipeline checklist |
+    | [ci_kit/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/pytest.ini) | pytest settings |
+    | [ci_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [ci_kit/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/tests/conftest.py) | Shared pytest fixtures |
+    | [ci_kit/tests/test_smoke.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/tests/test_smoke.py) | Smoke tests: the quick checks that run first on every change. |
 
-## Professional SDET
+??? note "Everyday tools (6 files)"
+
+    Open the guide: [Everyday tools](../../devops-for-qa/everyday-tools/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [everyday_kit/copied_request.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/copied_request.txt) | Text file |
+    | [everyday_kit/curl_to_pytest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/curl_to_pytest.py) | Turn a curl command (from "Copy as cURL" in the browser, Postman or Bruno) into a pytest test that uses requests. |
+    | [everyday_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [everyday_kit/vscode/extensions.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/extensions.json) | Data (JSON) |
+    | [everyday_kit/vscode/launch.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/launch.json) | Data (JSON) |
+    | [everyday_kit/vscode/settings.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/settings.json) | Data (JSON) |
+
+??? note "Debugging toolkit (6 files)"
+
+    Open the guide: [Debugging toolkit](../../devops-for-qa/debugging/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [debug_practice/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/pytest.ini) | pytest settings |
+    | [debug_practice/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [debug_practice/shop/cart.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/shop/cart.py) | A tiny shop cart. |
+    | [debug_practice/shop/discounts.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/shop/discounts.py) | Discount codes. |
+    | [debug_practice/tests/test_cart.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/tests/test_cart.py) | Tests for the practice cart. |
+    | [debugging_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/debugging_toolkit/templates/debugging_checklist.md) | Debugging checklist: a test failed |
+
+??? note "Networking for testers (4 files)"
+
+    Open the guide: [Networking for testers](../../devops-for-qa/networking/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [net_kit/net_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/net_check.py) | Check one address step by step and say where it breaks: the name, the connection, the HTTPS certificate, or the answer. |
+    | [net_kit/network_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/network_checklist.md) | "It doesn't work": network checklist |
+    | [net_kit/practice_server.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/practice_server.py) | A small practice web server for networking checks. |
+    | [net_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+
+## Case Studies
+
+??? note "Automate API tests, step by step (8 files)"
+
+    Open the guide: [Automate API tests, step by step](../../case-studies/automate-api-tests/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [api_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/pytest.ini) | pytest settings |
+    | [api_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [api_tests/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/test_plan.md) | API test plan: Booking API |
+    | [api_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [api_tests/tests/test_delete.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_delete.py) | DELETE: remove something. |
+    | [api_tests/tests/test_get.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_get.py) | GET: read something. |
+    | [api_tests/tests/test_post.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_post.py) | POST: create something. |
+    | [api_tests/tests/test_put.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_put.py) | PUT: replace something. |
+
+??? note "Test a new API endpoint (8 files)"
+
+    Open the guide: [Test a new API endpoint](../../case-studies/new-api-endpoint/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [endpoint_kit/api_probe.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/api_probe.py) | Send many variations of one request and see every answer in one table. |
+    | [endpoint_kit/cases.json](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/cases.json) | Data (JSON) |
+    | [endpoint_kit/findings.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/findings.md) | Test results: POST /carts/add |
+    | [endpoint_kit/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/pytest.ini) | pytest settings |
+    | [endpoint_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [endpoint_kit/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/test_plan.md) | Test plan: POST /carts/add |
+    | [endpoint_kit/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/tests/conftest.py) | Shared pytest fixtures |
+    | [endpoint_kit/tests/test_endpoint.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/tests/test_endpoint.py) | Checks for one endpoint, written from the agreed rules, not from what it does today. |
+
+??? note "Test an API from its Swagger file (6 files)"
+
+    Open the guide: [Test an API from its Swagger file](../../case-studies/api-from-openapi/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [openapi_kit/findings.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/findings.md) | API check: Swagger Petstore 1.0.27 |
+    | [openapi_kit/openapi_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/openapi_check.py) | Plan and smoke-test an API from its OpenAPI (Swagger) file. |
+    | [openapi_kit/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/pytest.ini) | pytest settings |
+    | [openapi_kit/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [openapi_kit/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/tests/conftest.py) | Shared pytest fixtures |
+    | [openapi_kit/tests/test_contract.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/tests/test_contract.py) | One check per GET endpoint in the spec: the status is listed, the format and the schema match, and endpoints that need a login refuse a call without one. |
+
+??? note "Check database data, step by step (11 files)"
+
+    Open the guide: [Check database data, step by step](../../case-studies/check-database-data/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [db_checks/.env.example](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/.env.example) | Settings to copy into .env (no real secrets) |
+    | [db_checks/docker-compose.yml](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/docker-compose.yml) | A practice shop database, filled from sql/practice_shop.sql. Your own computer only. |
+    | [db_checks/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/pytest.ini) | pytest settings |
+    | [db_checks/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [db_checks/sql/data_checks.sql](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/sql/data_checks.sql) | Ready data checks. Each query returns the rows that BREAK a rule: no rows = all good. |
+    | [db_checks/sql/practice_shop.sql](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/sql/practice_shop.sql) | A small shop database for practice. Like many real databases, it has some rules in the |
+    | [db_checks/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/test_plan.md) | Database test plan: shop database |
+    | [db_checks/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/conftest.py) | Shared pytest fixtures |
+    | [db_checks/tests/test_data_quality.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_data_quality.py) | Is the data healthy? Each check looks for rows that break one rule. |
+    | [db_checks/tests/test_saved_data.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_saved_data.py) | Was it saved correctly? After your API or UI test creates something, check the rows. |
+    | [db_checks/tests/test_schema.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_schema.py) | Is the structure what the app expects? Catches a missing table or column, a changed type, or a missing rule, right after a release, before the app trips over it. |
+
+??? note "Test login and permissions, step by step (8 files)"
+
+    Open the guide: [Test login and permissions, step by step](../../case-studies/test-login-and-permissions/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [auth_tests/practice_api.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/practice_api.py) | A small practice API with login, tokens, orders and an admin page. |
+    | [auth_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/pytest.ini) | pytest settings |
+    | [auth_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [auth_tests/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/test_plan.md) | Login and permissions test plan: <app name> |
+    | [auth_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [auth_tests/tests/test_login.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_login.py) | Login: the right user gets a token; everyone else gets the same plain "no". |
+    | [auth_tests/tests/test_permissions.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_permissions.py) | Permissions: each user sees only their own data; only admins open admin pages. |
+    | [auth_tests/tests/test_tokens.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_tokens.py) | Tokens: only a real, current token opens a page that needs a login. |
+
+??? note "Automate UI tests, step by step (8 files)"
+
+    Open the guide: [Automate UI tests, step by step](../../case-studies/automate-ui-tests/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [ui_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/pytest.ini) | pytest settings |
+    | [ui_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [ui_tests/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/test_plan.md) | UI test plan: <feature or app name> |
+    | [ui_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [ui_tests/tests/test_cart.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_cart.py) | Cart: the count, the items and the prices stay right. |
+    | [ui_tests/tests/test_checkout.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_checkout.py) | Checkout: the form checks its fields, the totals add up, the order is placed. |
+    | [ui_tests/tests/test_login.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_login.py) | Login: the right user gets in, everyone else sees a clear message. |
+    | [ui_tests/tests/test_products.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_products.py) | Product list: what's shown, and that sorting really sorts. |
+
+??? note "Test file upload and import, step by step (7 files)"
+
+    Open the guide: [Test file upload and import, step by step](../../case-studies/test-file-upload-and-import/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [upload_tests/practice_api.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/practice_api.py) | A small practice API with a file upload and a CSV import. |
+    | [upload_tests/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/pytest.ini) | pytest settings |
+    | [upload_tests/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [upload_tests/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/test_plan.md) | Upload and import test plan: <feature name> |
+    | [upload_tests/tests/conftest.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [upload_tests/tests/test_import.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/test_import.py) | CSV import: good files go in whole; bad files are refused whole, with the row number. |
+    | [upload_tests/tests/test_upload.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/test_upload.py) | File upload: allowed files go in; empty, too big, wrong and disguised files don't. |
+
+??? note "Check API speed, step by step (6 files)"
+
+    Open the guide: [Check API speed, step by step](../../case-studies/check-api-speed/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [speed_check/practice_api.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/practice_api.py) | A small practice API for speed checks. |
+    | [speed_check/pytest.ini](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/pytest.ini) | pytest settings |
+    | [speed_check/requirements.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [speed_check/speed_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/speed_check.py) | Send many requests at once to one address and report how fast the answers came. |
+    | [speed_check/test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/test_plan.md) | Speed check plan: <app or release name> |
+    | [speed_check/tests/test_speed.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/tests/test_speed.py) | Speed targets as tests: each page must answer fast enough, without errors, while several users use it at once. |
+
+## Working as a QA Engineer
 
 ??? note "A day in the life (6 files)"
 
-    Open the guide: [A day in the life](../../professional-sdet/a-day-in-the-life/index.md)
+    Open the guide: [A day in the life](../../working-as-a-qa/a-day-in-the-life/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -573,9 +576,19 @@ This list is built from the files themselves by a script, every time the site is
     | [day_kit/pr_review_checklist.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/pr_review_checklist.md) | Reviewing a pull request as a tester |
     | [day_kit/standup_update.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/standup_update.md) | Stand-up update (copy, fill, say it in under a minute) |
 
+??? note "Learning a new testing area (3 files)"
+
+    Open the guide: [Learning a new testing area](../../working-as-a-qa/learning-a-new-area/index.md)
+
+    | File | What it is |
+    | --- | --- |
+    | [day_one_questions.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/day_one_questions.md) | Day-one questions: <feature or area> |
+    | [learning_log.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/learning_log.md) | Learning log: <new area> |
+    | [one_page_test_plan.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/one_page_test_plan.md) | Test plan: <feature or area> |
+
 ??? note "Your first weeks in a new job (10 files)"
 
-    Open the guide: [Your first weeks in a new job](../../professional-sdet/your-first-weeks/index.md)
+    Open the guide: [Your first weeks in a new job](../../working-as-a-qa/your-first-weeks/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -592,7 +605,7 @@ This list is built from the files themselves by a script, every time the site is
 
 ??? note "SDET in Agile (6 files)"
 
-    Open the guide: [SDET in Agile](../../professional-sdet/sdet-in-agile/index.md)
+    Open the guide: [SDET in Agile](../../working-as-a-qa/sdet-in-agile/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -603,20 +616,9 @@ This list is built from the files themselves by a script, every time the site is
     | [agile_kit/stories/SHOP-420.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/stories/SHOP-420.md) | SHOP-420: Discount code at checkout |
     | [agile_kit/story_check.py](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/story_check.py) | Check a user story before the sprint: find vague words in the acceptance criteria, and the areas the story never mentions. |
 
-??? note "Git in a team (4 files)"
-
-    Open the guide: [Git in a team](../../professional-sdet/git-in-a-team/index.md)
-
-    | File | What it is |
-    | --- | --- |
-    | [git_kit/git_practice.sh](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_practice.sh) | A safe place to practise team Git: a pretend server and two copies of a small test |
-    | [git_kit/git_team_cheat_sheet.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_team_cheat_sheet.md) | Git in a team: cheat sheet |
-    | [git_kit/gitignore_for_tests.txt](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/gitignore_for_tests.txt) | Rename this file to .gitignore in your test project. Git will never add these. |
-    | [git_kit/pull_request_template.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/pull_request_template.md) | Save as .github/pull_request_template.md: GitHub fills every new pull request with it. |
-
 ??? note "Working with developers (4 files)"
 
-    Open the guide: [Working with developers](../../professional-sdet/working-with-developers/index.md)
+    Open the guide: [Working with developers](../../working-as-a-qa/working-with-developers/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -627,7 +629,7 @@ This list is built from the files themselves by a script, every time the site is
 
 ??? note "Communicating your work (7 files)"
 
-    Open the guide: [Communicating your work](../../professional-sdet/communicating-your-work/index.md)
+    Open the guide: [Communicating your work](../../working-as-a-qa/communicating-your-work/index.md)
 
     | File | What it is |
     | --- | --- |
@@ -641,7 +643,7 @@ This list is built from the files themselves by a script, every time the site is
 
 ??? note "Regression, hotfixes and incidents (9 files)"
 
-    Open the guide: [Regression, hotfixes and incidents](../../professional-sdet/regression-hotfixes-and-incidents/index.md)
+    Open the guide: [Regression, hotfixes and incidents](../../working-as-a-qa/regression-hotfixes-and-incidents/index.md)
 
     | File | What it is |
     | --- | --- |
