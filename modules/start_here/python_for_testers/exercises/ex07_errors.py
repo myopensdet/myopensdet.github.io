@@ -1,9 +1,13 @@
 # Template from myOpenSDET: https://myopensdet.github.io/
-"""Exercise 7: errors and exceptions."""
+"""Exercise 7: exception handling. Replace each raise NotImplementedError line."""
 
 
-def parse_age(text: str) -> int:
-    """Turn "30" into 30. Raise ValueError with a clear message for anything else."""
+def parse_battery(text: str) -> int:
+    """Turn "87" into 87.
+
+    Raise ValueError("Battery must be a whole number from 0 to 100, got '...'")
+    for text that is not a whole number, or a number outside 0 to 100.
+    """
     raise NotImplementedError("Write your code here")
 
 

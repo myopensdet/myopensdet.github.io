@@ -227,7 +227,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 7.  [**Exception handling**](exception-handling.md)
 
-    Read a traceback fast, and handle what can go wrong.
+    Read a traceback fast, set bad data aside without stopping, and always clean up.
 
     <span class="zts-chip">Beginner</span>
 
