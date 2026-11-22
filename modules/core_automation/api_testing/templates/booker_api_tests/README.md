@@ -20,7 +20,7 @@ export BOOKER_USERNAME=admin BOOKER_PASSWORD=password123
 python -m pytest
 ```
 
-Without them, the tests that need a login are skipped, with a reason.
+Without them, the tests that need a login are skipped on your computer, with a reason. When the `CI` variable is set (as in most pipelines), they fail instead, so a green run never hides skipped login tests.
 
 ## Where things are
 

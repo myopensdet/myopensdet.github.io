@@ -221,3 +221,44 @@ def test_template_project_passes_against_restful_booker():
         env={**os.environ, **DEMO_LOGIN, "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"},
     )
     assert "11 passed, 1 xfailed" in result.stdout, result.stdout
+
+
+# The login fixture: skip on a laptop, fail in CI. Offline: no request is sent.
+
+
+def run_login_test(ci: bool):
+    env = {k: v for k, v in os.environ.items() if k not in ("CI", *DEMO_LOGIN)}
+    env.update({"BOOKER_URL": "http://127.0.0.1:9", "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"})
+    if ci:
+        env["CI"] = "true"
+    return subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "pytest",
+            "-p",
+            "no:cacheprovider",
+            "-q",
+            "-rs",
+            "tests/test_auth.py::test_login_gives_a_token",
+        ],
+        cwd=PROJECT,
+        capture_output=True,
+        text=True,
+        timeout=60,
+        check=False,
+        env=env,
+    )
+
+
+def test_missing_login_is_skipped_on_a_laptop():
+    result = run_login_test(ci=False)
+    assert "1 skipped" in result.stdout, result.stdout
+    assert "in CI this fails" in result.stdout
+
+
+def test_missing_login_fails_in_ci():
+    result = run_login_test(ci=True)
+    assert result.returncode != 0
+    assert "1 error" in result.stdout, result.stdout
+    assert "In CI the login tests must run, not be skipped." in result.stdout

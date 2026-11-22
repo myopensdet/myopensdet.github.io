@@ -114,10 +114,29 @@ python -m pytest
 
 ```text
 XFAIL tests/test_post_booking.py::test_missing_field_is_a_client_error - Restful-booker answers 500 for a missing field; it should be 400
-======================== 11 passed, 1 xfailed in 6.22s =========================
+======================== 11 passed, 1 xfailed in 6.49s =========================
 ```
 
 The "xfailed" test is a real bug in the API, kept as a test marked `xfail` with the reason. When the API is fixed, the test starts passing, `xfail_strict` fails the run, and someone removes the marker.
+
+Three details in `tests/conftest.py` keep the suite honest in a pipeline:
+
+- **Clean-up runs even when a test fails.** A test that creates a booking hands its id to the `created_bookings` fixture *before* any check. The fixture deletes every id after the test, pass or fail. A delete placed at the end of the test would never run after a failed check, and the test environment would fill up with old bookings.
+- **The delete is checked.** `delete_booking()` fails loudly if the API does not answer "deleted" (200, 201 or 204) or "already gone" (404 or 405). A clean-up that silently fails is how test data leaks.
+- **A missing login fails in CI.** On your laptop, the login tests are skipped with a reason when the username and password are not set. When the `CI` variable is set, as it is in GitHub Actions and most pipelines, the same thing fails the run. Otherwise the pipeline would show green while the login tests never ran.
+
+Test it the way the pipeline does, with no login set:
+
+```bash
+CI=true python -m pytest tests/test_auth.py
+```
+
+```text
+ERROR tests/test_auth.py::test_login_gives_a_token - Failed: Set the environment variable BOOKER_USERNAME first. In CI the login tests must run, not be skipped.
+========================== 1 passed, 1 error in 0.54s ==========================
+```
+
+The wrong-password test still passes: it needs no login. The login test fails the run instead of disappearing.
 
 ## 8. Report and get feedback
 
@@ -130,7 +149,8 @@ Next, [database testing](../database-testing/index.md) checks what the API saved
 !!! tip "How an experienced SDET thinks about this"
     - Read the docs, then distrust them. The docs say what should happen. Your tests find what does.
     - Check the status code, the body and the shape. A 200 with the wrong body is still a bug.
-    - Every test creates its own data and deletes it. Never depend on data someone else made.
+    - Every test creates its own data and deletes it, even when it fails. Never depend on data someone else made.
+    - A skipped test is not a passed test. In a pipeline, missing setup should fail the run, not skip quietly.
     - Secrets come from environment variables, and never appear in logs or failure messages.
 
 !!! warning "Red flags"
@@ -138,7 +158,8 @@ Next, [database testing](../database-testing/index.md) checks what the API saved
     - Tests that use a fixed id like `/booking/1`, which someone else can change or delete.
     - A token or password written in a test file.
     - No timeout on requests, so one slow server hangs the pipeline.
-    - Tests that leave data behind, so the test environment fills up with rubbish.
+    - Tests that leave data behind, so the test environment fills up with rubbish. A delete as the last line of a test is the usual cause: it never runs after a failed check.
+    - A green pipeline where half the tests were skipped.
 
 !!! question "Stuck? Try this"
     - **You get 401 or 403.** Print the request headers (with the token hidden). The login is missing, sent in the wrong header, or expired. See [authentication](authentication.md).
@@ -215,7 +236,7 @@ Copy the whole `booker_api_tests` folder, or the parts you need. Each file start
 === "How to use them"
 
     1. Copy `booker_api_tests`, make a virtual environment, and `python -m pip install -r requirements.txt`.
-    2. Set the login as environment variables, then `python -m pytest`. Without them, the tests that need a login are skipped with a reason.
+    2. Set the login as environment variables, then `python -m pytest`. Without them, the tests that need a login are skipped with a reason on your computer, and fail in CI.
     3. For your own API: change `BOOKER_URL`, the login in `api/auth.py`, the test data in `api/data.py`, and the schemas.
     4. Keep the patterns: one file per resource or method, a fixture that cleans up, `check_status` for clear failures, a schema check on every body.
 

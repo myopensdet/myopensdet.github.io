@@ -3,6 +3,7 @@
 
 from api.client import check_status
 from api.data import booking_data
+from api.schema import assert_matches_schema, load_schema
 
 
 def test_put_replaces_the_booking(client, auth, new_booking):
@@ -10,6 +11,7 @@ def test_put_replaces_the_booking(client, auth, new_booking):
     changed = booking_data(totalprice=150, additionalneeds="Late checkout")
     response = client.put(f"/booking/{booking_id}", json=changed, headers=auth)
     check_status(response, 200)
+    assert_matches_schema(response.json(), load_schema("booking.json"))
     assert client.get(f"/booking/{booking_id}").json() == changed
 
 
