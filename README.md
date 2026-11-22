@@ -99,7 +99,7 @@ topic you need today. Click a category to open it.
 
 [Open the Programming for Testers overview](https://myopensdet.github.io/programming-for-testers/)
 
-- [Variables and data types](https://myopensdet.github.io/programming-for-testers/variables-and-data-types/): Text, numbers, True and False, and why "30" isn't 30.
+- [Variables and data types](https://myopensdet.github.io/programming-for-testers/variables-and-data-types/): Store an API check in variables, and pick the right type for each value.
 - [Strings, lists and dictionaries](https://myopensdet.github.io/programming-for-testers/lists-tuples-sets-and-dictionaries/): Text, lists and dictionaries: the three shapes most test data comes in.
 - [Conditions and loops](https://myopensdet.github.io/programming-for-testers/conditions-and-loops/): Make decisions, do the same check many times, and retry with a limit.
 - [Functions](https://myopensdet.github.io/programming-for-testers/functions/): Name a piece of work, so you can test it and use it again.

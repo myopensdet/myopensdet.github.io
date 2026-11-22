@@ -1,125 +1,183 @@
 ---
-title: "Variables and Types: Text, Numbers, True and False"
-description: "Python variables and the basic types a tester meets every day: str, int, float, bool and None, why text that looks like a number isn't one, and why money should never be compared as a float."
+title: "Variables and Data Types: Store Test Data the Right Way"
+description: "Python variables and data types for testers: str, int, float, bool and None in a real API check, why \"200\" from a CSV file is not 200, and why money is compared in cents."
 level: Beginner
 tags:
   - Python
   - Getting started
 nav_title: "Variables and data types"
 order: 10
-summary: "Text, numbers, True and False, and why \"30\" isn't 30."
+summary: "Store an API check in variables, and pick the right type for each value."
 updated: "2026-11-22"
 ---
 
-# Variables and Types: Text, Numbers, True and False
+# Variables and Data Types: Store Test Data the Right Way
 
-A **variable** is a name for a value: `age = 30`. Every value has a **type**, which decides what you can do with it. Text is a `str`, a whole number is an `int`, a number with a decimal point is a `float`, `True` and `False` are a `bool`, and `None` means "nothing here". Two of the most common test bugs come from types: a number that is really text, and money stored as a float.
+Every test works with values: an ID, a status code, a time, a yes or no. A **variable** is a name you give to one of those values, so you can use it again and print it in a clear message. Each value also has a **data type**. The type decides what you can do with the value, and it causes some of the most common test bugs.
 
 !!! note "Before you start"
-    You need Python 3.11 or newer. Run the example from this topic's `examples` folder.
+    You need Python 3.13. The example file is `examples/types_demo.py` in this topic's folder. See [Environment setup](../getting-started/environment-setup/index.md) if Python is not installed yet.
 
-## What you will learn
+## Why testers need this
 
-- How to make a variable, and print it with an f-string
-- The five basic types, and how to check a value's type
-- Why `"30"` and `30` are different, and how to convert
-- Why you should never compare money with `==` on floats
+Say you check a device API. You send a request for device `SNS-0042`. You expect status `200`, and the answer must come within 1 second. To check this, you need to keep five things: the device ID, the expected status, the real status, the time it took, and the result. Each one has a different type, and picking the wrong type gives you a wrong result:
 
-## Why this matters at work
+- A status code read from a CSV file is the text `"200"`, not the number `200`. Compare them and the test fails, even though the API is fine.
+- A price total like `0.10 + 0.20` is not exactly `0.30` inside the computer. Compare it with `==` and a correct cart looks broken.
 
-Forms, files and APIs often send numbers as text. A test that compares `"30"` with `30` fails, and a check that forgets to convert passes the wrong thing. Knowing types is how you read those failures in seconds instead of an hour.
+## How it works
 
-## The idea in plain words
+A variable is a label. The value sits behind the label, and the value has a type. Python works out the type from how you write the value.
 
-!!! info "In plain words"
-    A variable is a label on a box. The type is what kind of thing is in the box: words, a number, a yes or no.
-    You can't do maths with a box of words, even if the words are "thirty".
+```mermaid
+flowchart LR
+    N1["device_id<br/>SNS-0042<br/>str"]
+    N2["actual_status<br/>200<br/>int"]
+    N3["response_time<br/>0.45<br/>float"]
+    N4["firmware<br/>None<br/>NoneType"]
+    N2 --> C{"200 and<br/>1.0s or less?"}
+    N3 --> C
+    C --> R["test_passed<br/>True<br/>bool"]
+```
 
-## Step by step
+*Each box shows a variable name, its value and its type. The check uses two of the values and makes a new one: a `bool`.*
 
-1. **Make variables, and look at their types.** Here's the example:
+The five types you will use most:
 
-    ```python
-    --8<-- "modules/start_here/python_for_testers/examples/types_demo.py"
-    ```
+| Type | What it holds | Written like | In a test |
+| --- | --- | --- | --- |
+| `str` | Text | `"SNS-0042"` | IDs, names, messages, anything read from a file or form |
+| `int` | Whole numbers | `200` | Status codes, counts, retries |
+| `float` | Numbers with a decimal point | `0.45` | Times in seconds, percentages |
+| `bool` | `True` or `False` | `True` | The result of a check |
+| `None` | "No value" | `None` | A field the API did not send |
 
-    ```bash
-    python types_demo.py
-    ```
+## The code
 
-    ```text
-    <class 'str'> <class 'int'> <class 'float'> <class 'bool'> <class 'NoneType'>
-    arshad is 30, the notebook costs 4.25
-    False True
-    0.30000000000000004 False
-    True True
-    ```
+This script keeps one API check in variables, then shows the three type traps.
 
-2. **Read the f-string line.** `f"{username} is {age}"` puts the values inside the text. The `f` before the quote turns it on. You'll use it in almost every assertion message and log line.
+```python title="examples/types_demo.py"
+--8<-- "modules/start_here/python_for_testers/examples/types_demo.py"
+```
 
-3. **Look at line three of the output: `False True`.** `"30" == 30` is `False`, because text is never equal to a number. `int("30") == 30` is `True`. When a value comes from a form, a CSV file or a URL, it's text until you convert it with `int()` or `float()`.
+From the `examples` folder, run:
 
-4. **Look at line four: `0.30000000000000004`.** Computers store floats in binary, and most decimals, like 0.1, can't be stored exactly. So `0.1 + 0.2 == 0.3` is `False`. For money, either round before comparing, or count in whole cents: `10 + 20 == 30` is always right.
+```bash
+python types_demo.py
+```
 
-5. **Know `None`.** `None` means "no value": a coupon not entered, a field not filled in. Check for it with `is None`, not `== None`. An API that returns `None` (or `null` in JSON) where you expected a number is a common bug.
+```text
+<class 'str'> <class 'int'> <class 'float'>
+<class 'bool'> <class 'NoneType'>
+PASS: SNS-0042 answered 200 in 0.45s
+False True
+0.30000000000000004 False
+True True
+True
+```
 
-    !!! success "Check: you should now be able to"
-        Make variables, check their types, convert text to numbers, and explain why money shouldn't be compared as floats.
+## Line by line
 
-## When it goes wrong
+**Part 1: one API check.**
 
-- **`TypeError: can only concatenate str (not "int") to str`.** You joined text and a number with `+`. Use an f-string instead: `f"Age: {age}"`.
-- **`ValueError: invalid literal for int() with base 10: '30.5'`.** `int()` only takes whole numbers. Use `float()` for decimals, or check the input first. A form that sends `"30.5"` for an age might be a bug worth reporting.
-- **A test says `assert 4.25 == '4.25'` failed.** One side is a number, the other is text. The API probably sends the price as text. Decide which is right, and report it if the API is wrong.
-- **A price total is off by 0.01.** Floats again. Round to 2 places at the end, or use whole cents.
+- `device_id = "SNS-0042"`: the `=` sign gives the name `device_id` to the value. The quotes make it a `str`. An ID is text even when it has digits, because you never do maths with it.
+- `expected_status = 200`: no quotes, no decimal point, so it is an `int`. Status codes are whole numbers.
+- `response_time = 0.45`: the decimal point makes it a `float`.
+- `firmware = None`: the API did not send a firmware version. `None` says "no value" on purpose. It is not `0` and not an empty text.
+- `test_passed = actual_status == expected_status and response_time <= max_response_time`: `==` asks "are these equal?" and `<=` asks "is this less than or equal?". Each answer is `True` or `False`. `and` is `True` only when both are `True`. So `test_passed` is a `bool`.
+- `print(type(device_id), ...)`: `type()` tells you a value's type. The first two lines of the output show `str`, `int`, `float`, `bool` and `NoneType`.
+- `print(f"PASS: {device_id} answered {actual_status} in {response_time}s")`: the `f` before the quote makes an **f-string**. Python puts each value in `{ }` into the text. This is how you write clear test messages. The `if` and `else` lines pick which message to print; [Conditions and loops](conditions-and-loops.md) covers them.
 
-## Common mistakes
+**Part 2: text that looks like a number.**
 
-!!! warning "Common mistakes"
-    - **Forgetting the `f` in an f-string.** `"{age}"` prints the braces as they are.
-    - **Comparing floats with `==`.** Round, or use cents.
-    - **Using `== None`.** Use `is None`.
+- `status_from_csv = "200"`: values from CSV files, web forms and URLs always arrive as text.
+- `status_from_csv == 200` is `False`, because text is never equal to a number. `int(status_from_csv) == 200` is `True`, because `int()` turns the text into a number first. That is output line 4: `False True`.
 
-!!! failure "If you see this error"
-    **`NameError: name 'usename' is not defined`**
-    Python doesn't know that name. Usually it's a typo (`usename` for `username`), or the variable is made further down the file than where you use it. When a similar name exists, Python adds a hint like `Did you mean: 'username'?`. Check the spelling first.
+**Part 3: decimals are not exact.**
 
-## Try it yourself
+- `0.10 + 0.20` gives `0.30000000000000004`. A computer keeps a `float` in binary, and most decimals can't be stored exactly in binary. So `item_prices == 0.30` is `False` (output line 5).
+- The fix for money: count in whole cents (`10 + 20 == 30`), or round both sides before you compare: `round(item_prices, 2) == 0.30`. Both are `True` (output line 6).
 
-The exercise file is `exercises/ex01_variables.py`. Write `to_cents("12.50")`, which returns `1250`, and `is_adult(age)`, which is `True` from 18. Then, from the `exercises` folder:
+**Part 4: checking for no value.**
+
+- `firmware is None` is `True`. Always check for `None` with `is None`, not `== None`. `is` asks "is this the very same thing?", and there is only one `None`.
+
+## How it is used in a real QA project
+
+- **Test data at the top of a test.** Testers put the expected values in named variables (`expected_status`, `max_response_time`) instead of typing `200` and `1.0` deep inside the code. When the rule changes, you change one line.
+- **Clear failure messages.** An f-string message like `FAIL: SNS-0042 expected 200, got 503` tells the team what broke without opening the code.
+- **Converting data from files.** In [data-driven tests](../automation-testing/data-driven/index.md), every value from a CSV file is text. You convert numbers with `int()` or `float()` before you compare.
+- **Checking API fields.** A response field that is `None` (shown as `null` in JSON) when you expected a value is a real bug to report.
+- **Money.** Shops and payment tests compare prices in cents, or round to 2 places, so the totals match exactly.
+
+## Your task
+
+Open `exercises/ex01_variables.py`. It has three small functions. Replace each `raise` line with one line of code that returns the answer:
+
+1. `parse_status(text)`: turn a status code read from a file, like `"200"`, into the number `200`.
+2. `is_fast_enough(response_time, limit)`: return `True` when the time is no more than the limit.
+3. `to_cents(price)`: turn a price like `4.25` into whole cents: `425`.
+
+Then check your work from the `exercises` folder:
 
 ```bash
 python -m pytest tests/test_ex01_variables.py
 ```
+
+All 5 tests pass when your answers are right.
 
 ??? success "Solution"
     ```python
     --8<-- "modules/start_here/python_for_testers/solutions/ex01_variables.py"
     ```
 
-    `partition(".")` splits `"12.5"` into `"12"`, `"."` and `"5"`. `ljust(2, "0")` turns `"5"` into `"50"`, so `12.5` means 12 and 50 cents, not 5.
+    - `int(text)` also removes spaces and the line break at the end, so `" 201\n"` becomes `201`.
+    - `response_time <= limit` is already `True` or `False`, so you can return it as it is.
+    - `round(price * 100)` matters: `19.99 * 100` comes out as `1998.9999999999998`. `round()` makes it `1999`. `int()` would cut off the decimals and give `1998`, one cent wrong.
 
-## Quick check
+## When it goes wrong
 
-1. What type does `"42"` have, and what about `42`?
+These are real messages from Python 3.13.
 
-    ??? question "Answer"
-        `"42"` is a `str` (text). `42` is an `int`.
+**You joined text and a number with `+`.**
 
-2. Why is `0.1 + 0.2 == 0.3` False?
+```text
+TypeError: can only concatenate str (not "int") to str
+```
 
-    ??? question "Answer"
-        Floats can't store most decimals exactly, so the sum is 0.30000000000000004.
+`"Checked " + device_id + ": " + status` fails when `status` is an `int`. Use an f-string: `f"Checked {device_id}: {status}"`.
 
-3. How do you check that a value is None?
+**`int()` got text that is not a whole number.**
 
-    ??? question "Answer"
-        With `value is None`.
+```text
+ValueError: invalid literal for int() with base 10: '200 OK'
+```
+
+The text had more than digits in it, such as `"200 OK"` or `"200.0"`. Look at the real value first with `print(repr(value))`. Then take out the number part, or use `float()` for decimals. If the API sends `"200 OK"` where the docs say a number, that may be a bug to report.
+
+**A test compares text with a number.**
+
+```text
+E       AssertionError: assert '200' == 200
+```
+
+This is pytest's message. The quotes around `'200'` show it is text. Convert it with `int()` before you compare, or fix the place the text comes from.
+
+**A typo in a variable name.**
+
+```text
+NameError: name 'actual_stauts' is not defined. Did you mean: 'actual_status'?
+```
+
+Python does not know that name. Read the hint at the end, and fix the spelling.
+
+**A price total is off by 0.01.** You compared `float` values. Compare whole cents, or round both sides to 2 places.
 
 ## References
 
-- [Python Tutorial: Using Python as a calculator](https://docs.python.org/3/tutorial/introduction.html)
-- [Python Tutorial: Floating-point arithmetic, issues and limitations](https://docs.python.org/3/tutorial/floatingpoint.html)
-- [Python: f-strings](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals)
+- [Python tutorial: numbers, text and variables](https://docs.python.org/3/tutorial/introduction.html)
+- [Python tutorial: floating-point problems](https://docs.python.org/3/tutorial/floatingpoint.html)
+- [Python tutorial: f-strings](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals)
+- [Python docs: built-in types](https://docs.python.org/3/library/stdtypes.html)
 
 Written for Python 3.13. Links checked: November 2026.

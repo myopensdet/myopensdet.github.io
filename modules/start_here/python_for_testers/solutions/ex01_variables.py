@@ -1,13 +1,17 @@
 # Template from myOpenSDET: https://myopensdet.github.io/
-"""Exercise 1: variables and types."""
+"""Exercise 1: variables and data types. Replace each raise line with your code."""
 
 
-def to_cents(price: str) -> int:
-    """Turn a price written as text, like "12.50", into whole cents: 1250."""
-    euros, _, cents = price.partition(".")
-    return int(euros) * 100 + int(cents.ljust(2, "0"))
+def parse_status(text: str) -> int:
+    """A status code read from a CSV file, like "200", as a number: 200."""
+    return int(text)
 
 
-def is_adult(age: int) -> bool:
-    """True when the age is 18 or more."""
-    return age >= 18
+def is_fast_enough(response_time: float, limit: float) -> bool:
+    """True when the response took no longer than the limit (in seconds)."""
+    return response_time <= limit
+
+
+def to_cents(price: float) -> int:
+    """A price like 4.25 as whole cents: 425. Then money compares exactly."""
+    return round(price * 100)

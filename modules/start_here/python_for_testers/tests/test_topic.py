@@ -79,7 +79,8 @@ def test_every_solution_passes_the_exercise_tests(tmp_path):
     copy_exercise_tests(tmp_path, "solutions")
     result = python("-m", "pytest", "-q", "-p", "no:cacheprovider", cwd=tmp_path)
     assert result.returncode == 0, result.stdout
-    assert "32 passed" in result.stdout
+    summary = result.stdout.strip().splitlines()[-1]
+    assert " passed" in summary and "failed" not in summary
 
 
 def test_the_solutions_folder_runs_on_its_own():
@@ -90,7 +91,8 @@ def test_the_solutions_folder_runs_on_its_own():
 def test_the_exercises_start_empty(tmp_path):
     copy_exercise_tests(tmp_path, "exercises")
     result = python("-m", "pytest", "-q", "-p", "no:cacheprovider", cwd=tmp_path)
-    assert "32 failed" in result.stdout
+    summary = result.stdout.strip().splitlines()[-1]
+    assert " failed" in summary and "passed" not in summary
     assert "NotImplementedError: Write your code here" in result.stdout
 
 

@@ -191,7 +191,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 1.  [**Variables and data types**](variables-and-data-types.md)
 
-    Text, numbers, True and False, and why "30" isn't 30.
+    Store an API check in variables, and pick the right type for each value.
 
     <span class="zts-chip">Beginner</span>
 
