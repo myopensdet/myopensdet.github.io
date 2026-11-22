@@ -29,7 +29,7 @@ A function fixes this. The rule lives in one place, every test calls it, and a c
 Values go in through the **parameters**. The function does its work. One value comes out with `return`.
 
 ```mermaid
-flowchart LR
+flowchart TD
     IN["Inputs<br/>temperature = 85.0<br/>high = 90.0"] --> F["is_valid_reading()<br/>is it there?<br/>is it in range?"]
     F --> OUT["return<br/>True"]
     D["Defaults<br/>low = -20.0"] -.-> F

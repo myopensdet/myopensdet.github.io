@@ -221,7 +221,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 6.  [**Object-oriented programming**](object-oriented-programming.md)
 
-    Bundle data and actions together: the idea behind page objects and API clients.
+    Keep data and the actions on it together: the idea behind page objects and API clients.
 
     <span class="zts-chip">Beginner</span>
 

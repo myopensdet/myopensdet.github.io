@@ -1,22 +1,39 @@
 # Template from myOpenSDET: https://myopensdet.github.io/
-from ex06_classes import Cart
+from ex06_classes import TestRun
 
 
-def test_new_cart_is_empty():
-    cart = Cart()
-    assert cart.count() == 0
-    assert cart.total() == 0
+def make_run():
+    run = TestRun("nightly")
+    run.add("test_login", "passed")
+    run.add("test_device_list", "failed")
+    run.add("test_export", "skipped")
+    run.add("test_battery_alert", "failed")
+    return run
 
 
-def test_cart_counts_quantities():
-    cart = Cart()
-    cart.add("Pen", 1.5, quantity=3)
-    cart.add("Notebook", 4.25)
-    assert cart.count() == 4
-    assert cart.total() == 8.75
+def test_new_run_is_empty():
+    run = TestRun("smoke")
+    assert run.name == "smoke"
+    assert run.count("passed") == 0
+    assert run.failed_tests() == []
 
 
-def test_two_carts_are_separate():
-    first, second = Cart(), Cart()
-    first.add("Pen", 1.5)
-    assert second.count() == 0
+def test_count_each_outcome():
+    run = make_run()
+    assert run.count("passed") == 1
+    assert run.count("failed") == 2
+    assert run.count("skipped") == 1
+
+
+def test_failed_tests_keep_their_order():
+    assert make_run().failed_tests() == ["test_device_list", "test_battery_alert"]
+
+
+def test_summary():
+    assert make_run().summary() == "nightly: 4 tests, 2 failed"
+
+
+def test_two_runs_are_separate():
+    first, second = TestRun("first"), TestRun("second")
+    first.add("test_login", "failed")
+    assert second.count("failed") == 0

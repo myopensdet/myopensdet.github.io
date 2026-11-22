@@ -1,22 +1,29 @@
 # Template from myOpenSDET: https://myopensdet.github.io/
-"""Exercise 6: classes and objects."""
+"""Exercise 6: classes and objects. Replace each raise line with your code."""
 
 
-class Cart:
-    """A shopping cart that remembers items and works out the total."""
+class TestRun:
+    """The results of one test run: each test's name and outcome."""
 
-    def __init__(self):
-        """Start with an empty list of items."""
-        self.items = []
+    __test__ = False  # tells pytest this is not a test class, despite its name
 
-    def add(self, name: str, price: float, quantity: int = 1):
-        """Add an item, as a dict with "name", "price" and "quantity"."""
-        self.items.append({"name": name, "price": price, "quantity": quantity})
+    def __init__(self, name: str):
+        """Keep the run's name, and start with an empty list of results."""
+        self.name = name
+        self.results = []
 
-    def count(self) -> int:
-        """How many things are in the cart, counting quantities."""
-        return sum(item["quantity"] for item in self.items)
+    def add(self, test_name: str, outcome: str):
+        """Add one result. outcome is "passed", "failed" or "skipped"."""
+        self.results.append({"test": test_name, "outcome": outcome})
 
-    def total(self) -> float:
-        """The total price, rounded to 2 decimals."""
-        return round(sum(item["price"] * item["quantity"] for item in self.items), 2)
+    def count(self, outcome: str) -> int:
+        """How many results have this outcome."""
+        return len([r for r in self.results if r["outcome"] == outcome])
+
+    def failed_tests(self) -> list[str]:
+        """The names of the failed tests, in the order they were added."""
+        return [r["test"] for r in self.results if r["outcome"] == "failed"]
+
+    def summary(self) -> str:
+        """Like "nightly: 3 tests, 1 failed"."""
+        return f"{self.name}: {len(self.results)} tests, {self.count('failed')} failed"
