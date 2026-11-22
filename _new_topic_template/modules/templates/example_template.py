@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Example template: shows the shape every template follows.
 
 Replace this file with the topic's real template. Keep the credit line above

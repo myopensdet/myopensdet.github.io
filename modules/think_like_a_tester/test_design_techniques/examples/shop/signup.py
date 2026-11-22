@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Sign-up rules for the shop's new member accounts."""
 
 USERNAME_MIN = 3

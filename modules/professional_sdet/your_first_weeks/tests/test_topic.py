@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Your first weeks: map_test_suite.py maps the sample framework exactly as the page
 shows: tests, fixtures, markers, skips without reasons, settings, fixed waits, hosts."""
 
@@ -10,7 +10,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "first_weeks_kit"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 FILES = sorted(
     p
     for p in TOPIC.rglob("*")

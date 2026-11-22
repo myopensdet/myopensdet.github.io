@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Web form test checklist
 
 For any form: sign-up, checkout, contact, search. Tick what you checked, write "n/a" and a reason

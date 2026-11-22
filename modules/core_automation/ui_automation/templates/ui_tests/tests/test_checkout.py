@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Checkout: a form with a select and radio buttons, a card field in an iframe, a new tab."""
 
 import re

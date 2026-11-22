@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """A cart puts the money rules together. Testing it checks that the parts work as one."""
 
 from dataclasses import dataclass, field

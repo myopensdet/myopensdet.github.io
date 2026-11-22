@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """A shopping cart. All prices are whole cents, so 4.25 is 425."""
 
 WELCOME5_OFF = 500

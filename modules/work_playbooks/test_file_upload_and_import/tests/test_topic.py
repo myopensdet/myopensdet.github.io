@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Upload and import guide: the template finds exactly the three planted bugs in the
 practice API, passes on the fixed API, and writes no files. All offline, on a free port."""
 
@@ -15,7 +15,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "upload_tests"
 ROOT = TOPIC.parents[2]
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 EXPECTED_FAILS = {
     "tests/test_import.py::test_bad_row_rejects_the_whole_file_and_names_the_row",
     "tests/test_upload.py::test_file_one_byte_over_the_limit_is_refused",

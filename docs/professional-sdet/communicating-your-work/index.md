@@ -47,7 +47,7 @@ The verdict uses three colours everyone understands:
 
 ## Step 2: Get the kit
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/communicating_your_work/templates). The scripts use only Python's standard library.
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/professional_sdet/communicating_your_work/templates). The scripts use only Python's standard library.
 
 ## Step 3: Write your notes
 
@@ -197,7 +197,7 @@ Show **results** (bugs caught, time saved), not effort (tests written).
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/communicating_your_work/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/professional_sdet/communicating_your_work/templates).
 
 === "status_update.py"
 

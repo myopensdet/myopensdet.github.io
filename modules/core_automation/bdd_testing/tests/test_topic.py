@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """BDD testing: behave and pytest-bdd run the same feature files, on the API and the web page.
 All offline: the template starts its own shop. The web page runs need Playwright's Chromium."""
 
@@ -12,7 +12,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 PROJECT = TOPIC / "templates" / "bdd_tests"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 BEHAVE = [sys.executable, "-m", "behave", "--format=progress"]
 PYTEST = [sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider"]
 

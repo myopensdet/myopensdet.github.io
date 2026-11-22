@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """The "before" picture: a check someone runs by hand and reads. Run: python check_cart.py"""
 
 import sys

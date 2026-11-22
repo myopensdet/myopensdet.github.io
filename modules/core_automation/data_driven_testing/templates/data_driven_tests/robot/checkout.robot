@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 *** Settings ***
 Documentation       Keyword-driven: each test is a list of steps anyone on the team can read.
 Library             ShopKeywords.py

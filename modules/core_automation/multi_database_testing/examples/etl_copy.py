@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """A copy job from PostgreSQL to MySQL, with three bugs a real one might have.
 
 It's the thing under test in the migration lesson. Don't copy it into real work.

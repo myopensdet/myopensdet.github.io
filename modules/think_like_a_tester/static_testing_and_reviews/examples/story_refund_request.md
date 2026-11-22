@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Story: refund request
 
 As a customer, I want to request a refund for an order, so that I get my money back quickly.

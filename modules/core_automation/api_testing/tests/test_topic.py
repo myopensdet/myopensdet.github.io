@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """API testing: the helpers work offline against a local server, and, with ZTS_ONLINE=1,
 the examples and the template project work against the real public APIs."""
 
@@ -18,7 +18,7 @@ ROOT = TOPIC.parents[2]
 DOCS = ROOT / "docs" / "core-automation" / "api-testing"
 EXAMPLES = TOPIC / "examples"
 PROJECT = TOPIC / "templates" / "booker_api_tests"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 
 sys.path.insert(0, str(PROJECT))
 from api.auth import (  # noqa: E402

@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # User story review: refund request
 
 ## Questions for the product owner

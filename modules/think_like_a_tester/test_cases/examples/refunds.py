@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Refund rules, from the reviewed refund story (REF-1 to REF-7)."""
 
 from datetime import date

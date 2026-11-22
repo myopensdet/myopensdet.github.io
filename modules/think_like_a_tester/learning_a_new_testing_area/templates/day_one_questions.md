@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Day-one questions: <feature or area>
 
 Ask these before you plan or write any test. Write the answer next to each

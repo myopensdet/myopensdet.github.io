@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # <ID>: <what is checked, as a short sentence>
 
 - **Covers:** <requirement or acceptance criterion IDs, for example REF-1>

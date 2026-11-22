@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """API automation guide: the GET, POST, PUT and DELETE templates all pass against a local
 booking API that behaves well, never print the token, and skip clearly without a login.
 With ZTS_ONLINE=1, Restful-booker still fails the five checks the page shows."""
@@ -16,7 +16,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "api_tests"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 TOKEN = "local-test-token-42"  # noqa: S105 (fake token of the local test server)
 FIELDS = {"firstname": str, "lastname": str, "totalprice": int, "depositpaid": bool}
 

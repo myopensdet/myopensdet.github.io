@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """The code under test: checkout asks a payment provider to charge a card.
 
 The provider is the part we can't control in tests: a sandbox that is slow, sometimes

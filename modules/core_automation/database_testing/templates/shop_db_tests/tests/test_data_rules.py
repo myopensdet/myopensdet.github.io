@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Data validation: business rules the database can't enforce on its own.
 
 Each rule is a query that finds the rows that break it. A healthy database

@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 <!-- Save as .github/pull_request_template.md: GitHub fills every new pull request with it. -->
 
 ## What changed

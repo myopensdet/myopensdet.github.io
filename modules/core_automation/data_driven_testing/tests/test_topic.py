@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Data-driven testing: all offline, including the whole template and Robot Framework."""
 
 import os
@@ -13,7 +13,7 @@ from openpyxl import load_workbook
 
 TOPIC = Path(__file__).resolve().parents[1]
 PROJECT = TOPIC / "templates" / "data_driven_tests"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 
 sys.path.insert(0, str(PROJECT))
 from helpers import factories  # noqa: E402

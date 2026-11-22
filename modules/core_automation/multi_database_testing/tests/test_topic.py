@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Multi-database testing: offline checks always run, including the whole template
 on SQLite. With ZTS_MULTI_DB=1 and the template's Docker databases up, it runs on all four."""
 
@@ -15,7 +15,7 @@ import yaml
 
 TOPIC = Path(__file__).resolve().parents[1]
 PROJECT = TOPIC / "templates" / "multi_db_tests"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 
 sys.path.insert(0, str(PROJECT))
 from db_clients import make_client  # noqa: E402

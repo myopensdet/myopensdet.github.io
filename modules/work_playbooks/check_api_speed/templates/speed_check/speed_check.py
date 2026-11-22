@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Send many requests at once to one address and report how fast the answers came.
 
     python speed_check.py http://127.0.0.1:8770/api/products --users 10 --seconds 10

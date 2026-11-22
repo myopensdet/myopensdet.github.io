@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Loyalty points. This version has a bug on purpose, for the coverage lesson.
 
 The rules: 1 point per whole dollar. Members get double points.

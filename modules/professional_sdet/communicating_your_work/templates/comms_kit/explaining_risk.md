@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Explaining a risk to a manager
 
 Managers decide. Your job is to make the decision easy: what could happen, to whom,

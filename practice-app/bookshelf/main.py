@@ -32,7 +32,7 @@ CSP = (
 )
 
 DESCRIPTION = """
-**Bookshelf** is the Practice App for [myOpenSDET](https://arshaduzzaman-sm.github.io/myopensdet/):
+**Bookshelf** is the Practice App for [myOpenSDET](https://myopensdet.github.io/):
 a small online shop for books and study gadgets.
 
 > For practice on your own computer only. Never deploy it to the internet.

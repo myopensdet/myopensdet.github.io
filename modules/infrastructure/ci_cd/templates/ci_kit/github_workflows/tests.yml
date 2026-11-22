@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # Put this file in your repository at .github/workflows/tests.yml
 # It runs the tests on every pull request, on every push to main, every night,
 # and when you press "Run workflow". CHANGE the parts marked CHANGE.

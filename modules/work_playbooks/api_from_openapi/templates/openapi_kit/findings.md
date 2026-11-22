@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # API check: Swagger Petstore 1.0.27
 
 **Tested on:** `https://petstore3.swagger.io/api/v3`, on `YYYY-MM-DD`

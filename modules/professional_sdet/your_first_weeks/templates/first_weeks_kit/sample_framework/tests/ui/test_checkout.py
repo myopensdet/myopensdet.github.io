@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 import pytest
 
 PAYMENT_PAGE = "https://pay.partner.example.net/checkout"

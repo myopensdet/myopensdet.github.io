@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Where the app and the database are. The same tests run inside a container and on your
 computer: only these two addresses change, and they come from the environment."""
 

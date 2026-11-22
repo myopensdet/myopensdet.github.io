@@ -1,4 +1,4 @@
--- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+-- Template from myOpenSDET: https://myopensdet.github.io/
 -- A small shop database for practice. Like many real databases, it has some rules in the
 -- tables (NOT NULL, UNIQUE) and some only in the app. Some rows break the app's rules:
 -- the guide's checks find them. All names and emails are made up.

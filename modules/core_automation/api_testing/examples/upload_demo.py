@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Upload a file, with a form field. Run: python upload_demo.py"""
 
 from pathlib import Path

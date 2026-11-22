@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """SQLite, through Python's own sqlite3. The database is one file, no server."""
 
 import sqlite3

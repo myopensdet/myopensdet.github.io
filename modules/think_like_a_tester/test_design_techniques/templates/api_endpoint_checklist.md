@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # API endpoint test checklist
 
 For any endpoint. Tick what you checked. Write "n/a" and a reason for what doesn't apply.

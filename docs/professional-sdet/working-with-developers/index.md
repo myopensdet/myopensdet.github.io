@@ -41,7 +41,7 @@ flowchart LR
 
 ## Step 2: Get the kit
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/working_with_developers/templates). Everything uses Python's standard library: nothing to install.
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/professional_sdet/working_with_developers/templates). Everything uses Python's standard library: nothing to install.
 
 Start the practice API in one terminal. It has the classic "works on my machine" bug:
 
@@ -183,7 +183,7 @@ When you're done: **Ctrl+C** stops the practice server.
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/working_with_developers/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/professional_sdet/working_with_developers/templates).
 
 === "evidence.py"
 

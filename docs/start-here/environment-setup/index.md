@@ -175,11 +175,11 @@ Every topic page has a **Templates** section. Each file is in its own tab, and e
 - **A bigger project?** Get the whole site's code once, with Git. Every topic's files are then in the `modules/` folder:
 
     ```bash
-    git clone https://github.com/arshaduzzaman-sm/myopensdet.git
+    git clone https://github.com/myopensdet/myopensdet.github.io.git myopensdet
     cd myopensdet/modules/core_automation/pytest_framework/templates
     ```
 
-    No Git? On the [project's GitHub page](https://github.com/arshaduzzaman-sm/myopensdet), click **Code**, then **Download ZIP**.
+    No Git? On the [project's GitHub page](https://github.com/myopensdet/myopensdet.github.io), click **Code**, then **Download ZIP**.
 
 ### 7. Run your first tests
 
@@ -255,7 +255,7 @@ It downloads about 600 MB, so do it when a topic asks for it, not now.
 
 ### 9. Nothing can be installed? Use Codespaces
 
-If you can't install programs, for example on a locked work laptop, use **GitHub Codespaces**: a computer in the cloud that opens in your browser, with Python 3.13, VS Code, Docker and the Practice App already set up. You need a free GitHub account. Open the [project on GitHub](https://github.com/arshaduzzaman-sm/myopensdet), click **Code**, then **Codespaces**, then **Create codespace on main**.
+If you can't install programs, for example on a locked work laptop, use **GitHub Codespaces**: a computer in the cloud that opens in your browser, with Python 3.13, VS Code, Docker and the Practice App already set up. You need a free GitHub account. Open the [project on GitHub](https://github.com/myopensdet/myopensdet.github.io), click **Code**, then **Codespaces**, then **Create codespace on main**.
 
 GitHub gives free accounts a monthly allowance of Codespaces hours. Stop the codespace when you're done, so it doesn't use them up.
 

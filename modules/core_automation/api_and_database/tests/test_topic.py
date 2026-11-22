@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """API + database: offline checks always run. With ZTS_API_DB=1, the practice API on
 127.0.0.1:8090 and its database up, the whole template runs against them."""
 
@@ -14,7 +14,7 @@ import yaml
 TOPIC = Path(__file__).resolve().parents[1]
 PROJECT = TOPIC / "templates" / "api_db_tests"
 APP = TOPIC / "examples" / "bookshop_api"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 
 sys.path.insert(0, str(PROJECT))
 from helpers.clients import Cleanup, setting, wait_for  # noqa: E402

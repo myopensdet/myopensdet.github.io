@@ -48,7 +48,7 @@ The nine banks: **login, sign-up, search, cart and checkout, payments, bank tran
 
 ## Step 2: Get the kit
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/toolbox/test_idea_banks/templates). `idea_checklist.py` uses only Python's standard library. The banks are plain Markdown files in `ideas/`: you can also just open one and read it.
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/toolbox/test_idea_banks/templates). `idea_checklist.py` uses only Python's standard library. The banks are plain Markdown files in `ideas/`: you can also just open one and read it.
 
 ## Step 3: See the banks
 
@@ -169,7 +169,7 @@ Keep your team's banks in the test repository, so ideas are shared and reviewed 
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/toolbox/test_idea_banks/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/toolbox/test_idea_banks/templates).
 
 === "idea_checklist.py"
 

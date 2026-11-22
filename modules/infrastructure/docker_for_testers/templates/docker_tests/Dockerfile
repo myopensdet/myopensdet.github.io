@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # The test runner: your tests and their packages in one image.
 #
 #   docker build -t books-tests:local .                      build it

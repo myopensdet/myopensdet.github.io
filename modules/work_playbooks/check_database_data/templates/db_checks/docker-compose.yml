@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # A practice shop database, filled from sql/practice_shop.sql. Your own computer only.
 #
 #   cp .env.example .env              once, then change the password

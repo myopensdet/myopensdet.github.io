@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """CRUD tests: create, read, update and delete one customer, and check what was saved."""
 
 import pytest

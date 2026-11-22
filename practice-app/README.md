@@ -1,7 +1,7 @@
 # Practice App: Bookshelf
 
 A small online shop with bugs planted on purpose. Every lesson on
-[myOpenSDET](https://arshaduzzaman-sm.github.io/myopensdet/) tests this app.
+[myOpenSDET](https://myopensdet.github.io/) tests this app.
 
 > [!WARNING]
 > For practice on your own computer (or your own private Codespace) only. Every
@@ -40,7 +40,7 @@ only if you want to change a setting.
 No Docker on your computer? Open the repository in a Codespace: your own
 private copy, in the browser, with nothing to install.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/arshaduzzaman-sm/myopensdet?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/myopensdet/myopensdet.github.io?quickstart=1)
 
 1. Click the button, then **Create codespace**. The first start takes a few minutes.
 2. The Practice App starts by itself. Open the **Ports** tab and click the globe

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Writes the app makes after it answers: check them by waiting, never by sleeping."""
 
 from helpers.clients import check_status, wait_for

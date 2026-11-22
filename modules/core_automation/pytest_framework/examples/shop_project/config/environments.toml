@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # One section per environment. Choose one with --env, or the TEST_ENV variable.
 # Never put passwords or tokens here: name the environment variable that holds them.
 

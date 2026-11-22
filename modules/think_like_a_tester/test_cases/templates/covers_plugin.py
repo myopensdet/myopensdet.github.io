@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Link automated tests to requirement IDs, and print which IDs have tests.
 
 Save this as conftest.py in your tests folder (or paste it into the one you have).

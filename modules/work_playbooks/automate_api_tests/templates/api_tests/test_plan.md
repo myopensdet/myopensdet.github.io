@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # API test plan: Booking API
 
 Fill this in before you write tests. Post it in the ticket so the developer can check it.

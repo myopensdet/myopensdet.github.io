@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """File upload: allowed files go in; empty, too big, wrong and disguised files don't."""
 
 import pytest

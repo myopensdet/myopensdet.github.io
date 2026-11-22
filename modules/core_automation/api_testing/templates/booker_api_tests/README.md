@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # API tests for the booking API
 
 Tests for [Restful-booker](https://restful-booker.herokuapp.com/apidoc/index.html), a public practice API. Change `BOOKER_URL` and the fixtures to test your own API the same way.

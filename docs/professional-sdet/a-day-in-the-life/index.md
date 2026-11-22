@@ -42,7 +42,7 @@ Your team's hours will differ. Keep the **order**, and fit the times around it.
 
 ## Step 2: Get the kit
 
-You need **Python 3.13** for the triage script. The rest is checklists to copy. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/a_day_in_the_life/templates). The script uses only Python's standard library: nothing to install.
+You need **Python 3.13** for the triage script. The rest is checklists to copy. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/professional_sdet/a_day_in_the_life/templates). The script uses only Python's standard library: nothing to install.
 
 ## Step 3: Before stand-up, read the nightly run
 
@@ -172,7 +172,7 @@ On release day, the order changes: **the release comes first.**
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/a_day_in_the_life/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/professional_sdet/a_day_in_the_life/templates).
 
 === "Daily checklist"
 

@@ -8,7 +8,7 @@ myOpenSDET uses two licenses:
   Attribution 4.0 International License, printed below.
 
 Credit for the text: "myOpenSDET by Arshaduzzaman SM,
-https://arshaduzzaman-sm.github.io/myopensdet/, CC BY 4.0".
+https://myopensdet.github.io/, CC BY 4.0".
 
 -----------------------------------------------------------------------
 

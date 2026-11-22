@@ -40,7 +40,7 @@ The design decision that makes this work: **every test is tagged** with its area
 
 ## Step 2: Get the kit
 
-You need **Python 3.13** and pytest. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates). `pick_tests.py` uses only Python's standard library. The `sample_suite` folder is a small tagged test suite to try it on.
+You need **Python 3.13** and pytest. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates). `pick_tests.py` uses only Python's standard library. The `sample_suite` folder is a small tagged test suite to try it on.
 
 ## Step 3: Tag your tests
 
@@ -214,7 +214,7 @@ The section testers own: **"Why our tests didn't catch it."** Turn the answer in
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates).
 
 === "pick_tests.py"
 

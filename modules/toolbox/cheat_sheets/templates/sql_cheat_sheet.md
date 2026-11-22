@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # SQL cheat sheet for testers
 
 Every query here runs on `practice_shop.sql`: try one with `python try_sql.py "<query>"`. On your own database, change the table and column names. Read-only queries first; change data only on a test database.

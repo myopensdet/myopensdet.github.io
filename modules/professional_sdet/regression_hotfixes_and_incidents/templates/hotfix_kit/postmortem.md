@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Postmortem: <incident name>
 
 Date: <YYYY-MM-DD>   Duration: <HH:MM to HH:MM UTC>   Written by: <names>

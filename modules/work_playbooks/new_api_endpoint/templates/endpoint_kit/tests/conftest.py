@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Where the API is, and how to call it. Point it at your own app with environment variables:
 
 BASE_URL=https://staging.your-app.example.com API_TOKEN=... python -m pytest

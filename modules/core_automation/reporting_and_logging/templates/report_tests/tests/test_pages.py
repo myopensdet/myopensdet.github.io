@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Page tests. A failed one gets a screenshot in the HTML report (see conftest.py)."""
 
 import logging

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """API key, Basic, Bearer and a token login. Run: python auth_demo.py
 
 The keys and passwords here are fake, or the public demo accounts the APIs publish.

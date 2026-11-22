@@ -143,7 +143,7 @@ Use the worksheets on your next real story, even a small one. After a few times,
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/think_like_a_tester/test_design_techniques/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/think_like_a_tester/test_design_techniques/templates).
 
 Copy these into your own notes or project. Each file starts with a line that says where it came from.
 

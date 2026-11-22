@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """The database connection for every test. Set the address in the terminal, never in a file:
 
     macOS / Linux:  export DATABASE_URL=postgresql://user:password@host:port/database

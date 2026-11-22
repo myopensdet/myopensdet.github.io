@@ -17,4 +17,4 @@ updated: "2026-11-22"
 
 ---
 
-Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_cheatsheet.md). [All cheat sheets](index.md).
+Copy this sheet as a Markdown file [from GitHub](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/core_automation/pytest_framework/templates/pytest_cheatsheet.md). [All cheat sheets](index.md).

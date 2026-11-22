@@ -13,7 +13,7 @@ body:
     attributes:
       label: Page address
       description: Copy it from your browser's address bar.
-      placeholder: https://arshaduzzaman-sm.github.io/myopensdet/...
+      placeholder: https://myopensdet.github.io/...
     validations:
       required: true
   - type: dropdown

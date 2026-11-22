@@ -26,7 +26,7 @@ You'll practise on **Sauce Demo** (`https://www.saucedemo.com`), a free practice
 
 You need **Python 3.13** and **VS Code**. If you don't have them, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/automate_ui_tests/templates). Then open the `ui_tests` folder in VS Code (**File → Open Folder**).
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/work_playbooks/automate_ui_tests/templates). Then open the `ui_tests` folder in VS Code (**File → Open Folder**).
 
 2. **Open a terminal** in VS Code (**Terminal → New Terminal**), make a virtual environment and install the packages. **pytest** runs the tests; **Playwright** drives the browser; **pytest-playwright** joins the two.
 
@@ -344,7 +344,7 @@ Still stuck? Go deeper:
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/automate_ui_tests/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/work_playbooks/automate_ui_tests/templates).
 
 === "test_plan.md"
 

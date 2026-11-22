@@ -1,7 +1,7 @@
 ---
 title: "The Professional SDET: Teamwork, Releases, Career and Leadership"
 description: "How SDETs work in real teams: Agile, Git, releases, incidents, metrics, clean code, interviews and leading quality."
-updated: "2026-11-20"
+updated: "2026-11-22"
 nav_title: "Professional SDET"
 order: 60
 ---

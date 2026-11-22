@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Roles and permissions: test ideas
 
 Make a table first: every role down the side, every action across the top, and what's allowed in each cell. Then test each cell.

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Lesson: strings, lists and dictionaries. Run: python collections_demo.py"""
 
 message = "  Refunds are possible up to 30 days after delivery  "

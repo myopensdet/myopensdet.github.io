@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """The Markdown templates of "The SDET role" are complete, and the example tests pass."""
 
 import re
@@ -10,7 +10,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 TEMPLATES = TOPIC / "templates"
-CREDIT = "<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->"
+CREDIT = "<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->"
 
 EXPECTED_HEADINGS = {
     "new_team_onboarding_checklist.md": [

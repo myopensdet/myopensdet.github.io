@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Test plan: <feature or area>
 
 Author: <your name> · Reviewed by: <lead> · Date: <YYYY-MM-DD>

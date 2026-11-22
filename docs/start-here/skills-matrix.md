@@ -242,7 +242,7 @@ We used three sources, so the list reflects real jobs and not just our opinion.
 **2. 58 real job ads, read in November 2026,** for testing and test automation roles of every kind.
 They came from companies in the USA, Canada, India, Pakistan, Poland, Romania, Denmark, Spain, Ukraine, Costa Rica, Hong Kong and other parts of Latin America and Europe.
 We collected open ads from the public job boards of those companies, then counted how many ads mention each skill.
-The scripts we used are in [`scripts/research/`](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/scripts/research), so anyone can repeat the count.
+The scripts we used are in [`scripts/research/`](https://github.com/myopensdet/myopensdet.github.io/tree/main/scripts/research), so anyone can repeat the count.
 
 **3. Public testing syllabi.** The [ISTQB Certified Tester Foundation Level v4.0](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/) and the [ISTQB Test Automation Engineering v2.0](https://istqb.org/certifications/certified-tester-advanced-level-test-automation-engineering-ctal-tae-v2-0/) syllabi.
 ISTQB (International Software Testing Qualifications Board) is the group behind the most common testing certificates.

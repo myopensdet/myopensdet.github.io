@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """behave steps. Each step says what a shopper does or sees; the driver does the work."""
 
 from decimal import Decimal

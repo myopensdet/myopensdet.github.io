@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # Then, once per computer: python -m playwright install chromium
 behave==1.3.3
 pytest==9.2.0

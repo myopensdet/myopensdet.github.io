@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Smoke tests: the quick checks that run first on every change. CHANGE the paths to
 your app's most important pages and endpoints."""
 

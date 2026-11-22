@@ -1,4 +1,4 @@
-// Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+// Template from myOpenSDET: https://myopensdet.github.io/
 // The JavaScript in the browser. It calls the API in the background (AJAX, with fetch)
 // and puts the answer on the page, without loading a new page.
 

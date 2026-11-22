@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Make test_data/discount_rules.xlsx: the sheet the business team keeps their discount rules in.
 
 At work you get this file from them. This script only exists so the sample is easy to rebuild:
@@ -10,7 +10,7 @@ from pathlib import Path
 
 from openpyxl import Workbook
 
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 ROWS = [
     ("rule", "subtotal", "coupon", "member", "expected_total"),
     ("Plain order", 45.5, None, False, 45.5),

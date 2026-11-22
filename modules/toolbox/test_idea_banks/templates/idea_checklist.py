@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Turn the test idea banks into one checklist for the feature you're testing.
 
 Each file in ideas/ is one kind of feature (login.md, payments.md ...). Pick the ones

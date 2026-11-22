@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Test strategy: the example shop
 
 Owner: QA engineer · Last reviewed: 2026-11-16 · Review again: May 2027, or when we add a new payment type

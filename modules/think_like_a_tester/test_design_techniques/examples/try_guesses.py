@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Try a list of tricky usernames on the sign-up rules, and print what happens.
 
 A quick probe like this comes before writing tests: it shows you which

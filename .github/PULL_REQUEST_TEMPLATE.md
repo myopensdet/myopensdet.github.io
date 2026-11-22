@@ -25,5 +25,5 @@
 - [ ] Only fake data (`@example.com`, `local_only_password`)
 - [ ] No new packages, or an issue agreed to them and they are pinned with hashes
 - [ ] New images are cropped, blurred where needed, and have no metadata
-- [ ] Follows the [Style guide](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/.github/STYLE_GUIDE.md) and the [rules for pull requests](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/CONTRIBUTING.md#rules-for-pull-requests)
+- [ ] Follows the [Style guide](https://github.com/myopensdet/myopensdet.github.io/blob/main/.github/STYLE_GUIDE.md) and the [rules for pull requests](https://github.com/myopensdet/myopensdet.github.io/blob/main/CONTRIBUTING.md#rules-for-pull-requests)
 - [ ] I agree my code is shared under MIT and my text under CC BY 4.0

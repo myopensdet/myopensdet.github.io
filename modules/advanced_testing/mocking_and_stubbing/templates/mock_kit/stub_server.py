@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """A tiny stub server that answers like a real service, from files you write.
 
 It reads WireMock's mapping format (a small part of it), so the same files work in

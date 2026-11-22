@@ -24,7 +24,7 @@ Most API tests start the same way: someone clicks through the app, finds the one
 
 You need **Python 3.13** and an editor. [VS Code](https://code.visualstudio.com/) is free and used here. If you don't have Python, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/everyday_tools/templates). Then open the `everyday_kit` folder in VS Code (**File → Open Folder**).
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/infrastructure/everyday_tools/templates). Then open the `everyday_kit` folder in VS Code (**File → Open Folder**).
 2. Open the terminal in VS Code (**Terminal → New Terminal**) and install the two packages:
 
     ```bash
@@ -216,7 +216,7 @@ For reading the code you're debugging, see the [debugging toolkit](../debugging-
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/everyday_tools/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/infrastructure/everyday_tools/templates).
 
 === "curl_to_pytest.py"
 

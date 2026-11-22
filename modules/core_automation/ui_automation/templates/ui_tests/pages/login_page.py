@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """The log-in page. Methods do what a person does; they return the page that comes next."""
 
 from playwright.sync_api import Page

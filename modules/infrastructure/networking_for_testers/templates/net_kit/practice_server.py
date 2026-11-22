@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """A small practice web server for networking checks. Only for practice.
 
     python practice_server.py      # http://127.0.0.1:8790

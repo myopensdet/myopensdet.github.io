@@ -130,7 +130,7 @@ Show developers the locators: ask them to keep labels and roles stable, and to a
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/core_automation/ui_automation/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/core_automation/ui_automation/templates).
 
 Copy the whole `ui_tests` folder, or the parts you need. Each file starts with a line that says where it came from.
 

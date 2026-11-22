@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Is the data healthy? Each check looks for rows that break one rule. No rows = pass.
 Run them after every release or data migration. The same queries are in sql/data_checks.sql.
 """

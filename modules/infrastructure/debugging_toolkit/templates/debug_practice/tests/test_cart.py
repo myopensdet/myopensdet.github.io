@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Tests for the practice cart. Three of them fail, each for a different reason."""
 
 from shop.cart import Cart

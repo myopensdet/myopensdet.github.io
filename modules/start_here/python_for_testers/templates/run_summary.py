@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Summarise a test run saved as JSON: counts, failures, and the slowest tests.
 
 Usage:

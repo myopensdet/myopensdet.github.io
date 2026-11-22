@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Show how many tests you have at each level, as a pyramid.
 
 Use it with the level markers from conftest.py and pytest.ini. From your

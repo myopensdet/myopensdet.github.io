@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """The same calls through ApiClient, with logging and a clear failure. Run: python client_demo.py"""
 
 import logging

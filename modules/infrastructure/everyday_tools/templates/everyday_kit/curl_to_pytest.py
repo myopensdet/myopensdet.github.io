@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Turn a curl command (from "Copy as cURL" in the browser, Postman or Bruno) into a
 pytest test that uses requests. Login headers and cookies are never written into the
 test: it reads them from environment variables instead.

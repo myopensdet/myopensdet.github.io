@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Cart: the count, the items and the prices stay right."""
 
 from playwright.sync_api import Page, expect

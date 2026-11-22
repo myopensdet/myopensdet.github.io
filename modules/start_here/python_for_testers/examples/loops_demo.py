@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Lesson: if and loops. Run: python loops_demo.py"""
 
 codes = [200, 201, 404, 500, 200]

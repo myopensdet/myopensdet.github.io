@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 task,best,likely,worst
 Read the story and ask questions,1,2,4
 Write API tests for discount codes,4,6,12

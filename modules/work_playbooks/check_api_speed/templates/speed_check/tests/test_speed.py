@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Speed targets as tests: each page must answer fast enough, without errors,
 while several users use it at once. Run them on a test environment, never production."""
 

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """How HTTP works: one request, and everything in the answer. Run: python http_basics.py"""
 
 import requests

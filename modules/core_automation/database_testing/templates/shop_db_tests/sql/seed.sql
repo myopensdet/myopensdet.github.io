@@ -1,4 +1,4 @@
--- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+-- Template from myOpenSDET: https://myopensdet.github.io/
 -- Fake test data for the bookshop. Every name and email is made up.
 
 INSERT INTO customers (email, full_name, created_at) VALUES

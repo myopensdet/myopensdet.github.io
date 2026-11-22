@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Is the structure what the app expects? Catches a missing table or column, a changed type,
 or a missing rule, right after a release, before the app trips over it."""
 

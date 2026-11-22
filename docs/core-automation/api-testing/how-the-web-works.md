@@ -57,7 +57,7 @@ The **frontend** is everything on the user's device: HTML, JavaScript, the DOM. 
 
 ## Step 2: Start the practice shop
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/core_automation/api_testing/templates/web_kit). The shop uses only Python's standard library. `watch_requests.py` (step 4) also needs `pip install playwright` and `playwright install chromium`.
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/core_automation/api_testing/templates/web_kit). The shop uses only Python's standard library. `watch_requests.py` (step 4) also needs `pip install playwright` and `playwright install chromium`.
 
 ```bash
 python web_demo.py
@@ -266,7 +266,7 @@ Pages behind a login show only the login page's calls at first. Log in with Play
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/core_automation/api_testing/templates/web_kit).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/core_automation/api_testing/templates/web_kit).
 
 === "watch_requests.py"
 

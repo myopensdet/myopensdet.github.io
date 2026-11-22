@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Login helpers for the four usual kinds: API key, Basic, Bearer token, OAuth2."""
 
 import os

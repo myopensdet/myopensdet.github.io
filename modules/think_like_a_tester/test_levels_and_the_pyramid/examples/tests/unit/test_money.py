@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Unit tests: one function at a time, no database, no web. Each one runs in a blink."""
 
 import pytest

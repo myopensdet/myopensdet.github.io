@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Gherkin cheat sheet
 
 Gherkin is the plain-language format of `.feature` files, used by behave, pytest-bdd and Cucumber. Every example here is checked with the official Gherkin parser.

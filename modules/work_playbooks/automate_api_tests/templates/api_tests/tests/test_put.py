@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """PUT: replace something. The common checks: it changes, the change is saved, a login is
 needed, and a missing id or an incomplete body is refused."""
 

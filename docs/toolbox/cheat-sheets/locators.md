@@ -18,4 +18,4 @@ updated: "2026-11-22"
 
 ---
 
-Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/locators_cheat_sheet.md). The practice files are in [the kit](index.md#step-2-get-the-kit). [All cheat sheets](index.md).
+Copy this sheet as a Markdown file [from GitHub](https://github.com/myopensdet/myopensdet.github.io/blob/main/modules/toolbox/cheat_sheets/templates/locators_cheat_sheet.md). The practice files are in [the kit](index.md#step-2-get-the-kit). [All cheat sheets](index.md).

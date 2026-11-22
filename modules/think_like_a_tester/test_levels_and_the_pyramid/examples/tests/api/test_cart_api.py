@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """API tests: send real HTTP requests and check the answers, the way another program would."""
 
 from fastapi.testclient import TestClient

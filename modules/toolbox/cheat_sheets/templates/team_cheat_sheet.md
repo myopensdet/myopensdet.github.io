@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # <Project name>: tester's cheat sheet
 
 <!-- CHANGE everything in < >. Keep it in the test repository, next to the README, so it changes with the code. -->

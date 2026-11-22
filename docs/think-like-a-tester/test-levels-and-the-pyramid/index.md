@@ -168,7 +168,7 @@ Run the pyramid report every few weeks, and add it to your team's review of the 
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates).
 
 Copy these into your own project. Each file starts with a comment line that says where it came from.
 

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Find vague words in a user story or requirement, and the question to ask about each.
 
     python ambiguity_scan.py story.md

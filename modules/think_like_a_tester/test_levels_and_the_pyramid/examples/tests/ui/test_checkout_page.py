@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """UI test: drive a real browser, like a user. Slowest and most fragile, so keep only a few.
 
 It runs only when Playwright is installed and SHOP_URL points at a running shop:

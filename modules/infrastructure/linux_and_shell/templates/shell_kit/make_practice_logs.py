@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Make practice log files in logs/: the same lines every time, like a small web shop's logs.
 
 python make_practice_logs.py

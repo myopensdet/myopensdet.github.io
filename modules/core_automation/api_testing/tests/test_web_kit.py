@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """How the web works: the practice shop's HTML has no products, its REST API answers with
 the status codes the page shows, and (with a browser) watch_requests.py finds the AJAX
 call and tells a frontend bug from a backend bug."""
@@ -14,7 +14,7 @@ from pathlib import Path
 import pytest
 
 KIT = Path(__file__).resolve().parents[1] / "templates" / "web_kit"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 
 
 def free_port():

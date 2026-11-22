@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Reporting and logging: every run writes an HTML report, JUnit XML and a log file; a failed
 page test puts a screenshot in the report; secrets never reach the log. Offline. Needs Chromium."""
 
@@ -14,7 +14,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 PROJECT = TOPIC / "templates" / "report_tests"
 REPORTS = PROJECT / "reports"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 
 SKIP_FOLDERS = {"__pycache__", ".pytest_cache", "reports"}
 SUFFIXES = {".py", ".ini", ".txt", ".md"}

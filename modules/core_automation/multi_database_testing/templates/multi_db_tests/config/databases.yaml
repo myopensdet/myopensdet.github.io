@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # One block per database. Passwords are never here: password_env names the
 # environment variable (or .env line) that holds it.
 

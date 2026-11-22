@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Check a real response against a JSON Schema, then a broken copy. Run: python schema_demo.py
 
 Needs BOOKER_USERNAME and BOOKER_PASSWORD, to delete the booking it makes.

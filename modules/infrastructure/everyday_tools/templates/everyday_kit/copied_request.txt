@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 curl 'https://dummyjson.com/products/add' \
   -H 'accept: application/json' \
   -H 'accept-language: en-US,en;q=0.9' \

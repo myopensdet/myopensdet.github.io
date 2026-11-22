@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # Only requirements.txt, pytest.ini and tests/ go into the test image.
 # Never .env (your passwords), reports or local folders.
 .env

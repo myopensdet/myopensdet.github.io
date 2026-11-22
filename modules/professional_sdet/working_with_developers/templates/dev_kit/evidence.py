@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Collect evidence for a bug a developer can't reproduce: send the same request a few
 times and record the time (UTC), status, duration, request id and app version. Prints a
 block to paste into the ticket, with a curl command anyone can run. Login headers are

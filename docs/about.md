@@ -71,7 +71,7 @@ myOpenSDET is open source, and suggestions are welcome. Here is how a change get
 
 1. **Anyone can suggest a change.** The "Edit this page" pencil at the top of a page opens a copy on GitHub. What you change there becomes a **suggestion** (a pull request), not a live edit.
 2. **Nothing goes live without review.** The maintainer reads every suggestion, runs the checks, and approves it, asks for changes, or explains why not.
-3. **Bigger ideas start as an issue.** For a new topic or a rewrite, open an issue on [GitHub](https://github.com/arshaduzzaman-sm/myopensdet) first, so no one spends a weekend on something that won't fit.
+3. **Bigger ideas start as an issue.** For a new topic or a rewrite, open an issue on [GitHub](https://github.com/myopensdet/myopensdet.github.io) first, so no one spends a weekend on something that won't fit.
 
 The rules for every suggestion are short:
 
@@ -81,6 +81,6 @@ The rules for every suggestion are short:
 - No ads, affiliate links or tracking.
 - One fix or one topic per suggestion.
 
-The full rules are in [CONTRIBUTING.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/CONTRIBUTING.md). Security problems go privately, as [SECURITY.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/.github/SECURITY.md) explains, never in a public issue.
+The full rules are in [CONTRIBUTING.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/CONTRIBUTING.md). Security problems go privately, as [SECURITY.md](https://github.com/myopensdet/myopensdet.github.io/blob/main/.github/SECURITY.md) explains, never in a public issue.
 
 See the [Changelog](changelog.md) for what is new.

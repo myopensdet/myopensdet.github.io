@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Incident notes (write while it happens)
 
 Incident: <short name>   Started: <YYYY-MM-DD HH:MM UTC>   Severity: <SEV1 / SEV2 / SEV3>

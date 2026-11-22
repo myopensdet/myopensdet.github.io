@@ -145,7 +145,7 @@ Next, [database testing](../database-testing/index.md) checks what the API saved
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/core_automation/api_testing/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/core_automation/api_testing/templates).
 
 Copy the whole `booker_api_tests` folder, or the parts you need. Each file starts with a line that says where it came from.
 

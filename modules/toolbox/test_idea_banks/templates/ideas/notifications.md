@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Notifications: test ideas
 
 Email, SMS, push and in-app messages. Use a test inbox or a fake email server, never real customers.

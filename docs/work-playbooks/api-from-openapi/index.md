@@ -272,7 +272,7 @@ Say clearly what the smoke test didn't touch: **POST, PUT and DELETE**. Those ch
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/api_from_openapi/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/work_playbooks/api_from_openapi/templates).
 
 === "openapi_check.py"
 

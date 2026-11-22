@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Level 2, over HTTP: the real PaymentClient talks to a stub server instead of the provider.
 
 Tests the real requests, JSON, headers and timeouts, which a mock in code skips. Each

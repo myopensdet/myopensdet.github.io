@@ -249,7 +249,7 @@
 
   // ------------------------------------------- section overview: share it
 
-  var REPO = "https://github.com/arshaduzzaman-sm/myopensdet";
+  var REPO = "https://github.com/myopensdet/myopensdet.github.io";
 
   function setupSection(data) {
     var cards = document.querySelectorAll(".zts-topics > ul > li > p:first-child a[href]");

@@ -54,7 +54,7 @@ Two rules before you start:
 
 ## Step 2: Get the kit
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/advanced_testing/mocking_and_stubbing/templates). Then:
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/advanced_testing/mocking_and_stubbing/templates). Then:
 
 ```bash
 python -m venv .venv
@@ -223,7 +223,7 @@ The same 5 tests, the same 4 mapping files, now answered by WireMock. `STUB_URL`
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/advanced_testing/mocking_and_stubbing/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/advanced_testing/mocking_and_stubbing/templates).
 
 === "stub_server.py"
 

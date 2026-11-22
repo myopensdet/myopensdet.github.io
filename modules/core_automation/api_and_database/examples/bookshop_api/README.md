@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Practice bookshop API
 
 The app under test in the API + database lessons. It has two bugs planted on purpose. Run it on your own computer only.

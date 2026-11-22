@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """An API client that logs every call: what was sent, what came back, and how long it took.
 
 INFO: one line per call. DEBUG: the bodies too, with secrets replaced by "***".

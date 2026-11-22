@@ -123,7 +123,7 @@ Next, read [Test strategy and planning](../test-strategy-and-planning/index.md) 
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/think_like_a_tester/bug_reports/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/think_like_a_tester/bug_reports/templates).
 
 Copy these into your own project. Each file starts with a line that says where it came from.
 

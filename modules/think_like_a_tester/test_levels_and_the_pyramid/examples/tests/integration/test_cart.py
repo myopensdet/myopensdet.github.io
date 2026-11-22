@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Integration tests: several parts together. Here, the cart with the money rules."""
 
 from shop.cart import Cart

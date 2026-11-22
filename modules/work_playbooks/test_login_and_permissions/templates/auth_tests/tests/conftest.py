@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Shared setup for login, token and permission tests.
 
 Change the parts marked CHANGE for your own app. Users come from the terminal,

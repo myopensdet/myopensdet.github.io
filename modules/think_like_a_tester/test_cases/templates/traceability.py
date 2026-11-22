@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Show which requirements have test cases, and which have none.
 
     python traceability.py requirements.txt test_cases.csv

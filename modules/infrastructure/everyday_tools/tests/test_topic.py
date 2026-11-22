@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Everyday tools: curl_to_pytest.py turns copied requests into tests that run, keeps
 secrets out of them, and the VS Code files are valid JSON. Offline against a tiny local
 server; with ZTS_ONLINE=1 the page's dummyjson example runs for real too."""
@@ -16,7 +16,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "everyday_kit"
 TOOL = KIT / "curl_to_pytest.py"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 FILES = sorted(
     p
     for p in TOPIC.rglob("*")

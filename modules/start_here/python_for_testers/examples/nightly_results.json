@@ -1,5 +1,5 @@
 {
-  "_comment": "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/",
+  "_comment": "Template from myOpenSDET: https://myopensdet.github.io/",
   "run": "nightly 2026-11-16",
   "tests": [
     {"name": "test_login_with_right_password", "outcome": "passed", "seconds": 0.41},

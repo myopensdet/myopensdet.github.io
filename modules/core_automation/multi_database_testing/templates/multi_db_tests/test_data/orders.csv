@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 id,customer_id,status,total,created_at
 1,1,paid,49.98,2026-10-02T10:00:00+00:00
 2,2,shipped,49.50,2026-10-03T12:00:00+00:00

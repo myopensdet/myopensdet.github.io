@@ -173,7 +173,7 @@ Keep a [learning log](#templates): five minutes at the end of each day, one shor
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/think_like_a_tester/learning_a_new_testing_area/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/think_like_a_tester/learning_a_new_testing_area/templates).
 
 Copy these into your own project. Each one starts with a comment line that says where it came from.
 

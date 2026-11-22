@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # Rename this file to .gitignore in your test project. Git will never add these.
 
 # Secrets and local settings

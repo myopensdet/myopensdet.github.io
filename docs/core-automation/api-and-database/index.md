@@ -139,7 +139,7 @@ Next, [data-driven testing](../data-driven-testing/index.md) runs the same check
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/core_automation/api_and_database/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/core_automation/api_and_database/templates).
 
 Copy the whole `api_db_tests` folder, or the parts you need. Each file starts with a line that says where it came from.
 

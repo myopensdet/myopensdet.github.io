@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Stand-up update (copy, fill, say it in under a minute)
 
 **Done:** <ticket>: <what is now tested or reported>

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # Static checks for a test project, run before every commit.
 # Save as .pre-commit-config.yaml in your project's main folder, then:
 #   pip install pre-commit

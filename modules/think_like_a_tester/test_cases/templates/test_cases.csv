@@ -1,3 +1,3 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 ID,Title,Covers,Type,Priority,Preconditions,Steps,Expected result,Automated
 TC-01,<what is checked>,<REQ-1>,positive,high,<state before the test>,<1. action; 2. action>,<exact result>,<no / test name>

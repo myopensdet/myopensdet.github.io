@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Which test level? A decision chart
 
 Use this for every new test idea. Go down the questions in order and stop at the first "yes".

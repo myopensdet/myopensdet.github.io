@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """A small bookshop web app: the app under test in the UI automation lessons.
 
 Replace it with your own app. It has what real web apps have: a login, a search

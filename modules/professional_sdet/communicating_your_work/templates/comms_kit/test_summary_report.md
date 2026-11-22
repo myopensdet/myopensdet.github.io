@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Test summary: <release or feature name>
 
 Date: <YYYY-MM-DD>   Tester(s): <names>   Build: <version>

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Fixtures: one connection for the run, and a clean database for every test.
 
 How the clean-up works: the whole run happens inside one transaction that is

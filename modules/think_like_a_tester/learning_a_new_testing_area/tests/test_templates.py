@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """The templates of "Learning a new testing area" are complete and usable."""
 
 import re
@@ -9,7 +9,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 TEMPLATES = TOPIC / "templates"
 EXAMPLES = TOPIC / "examples"
-CREDIT = "<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->"
+CREDIT = "<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->"
 
 EXPECTED_HEADINGS = {
     "day_one_questions.md": ["The ask", "The system", "Environments and access", "Risk", "Answers"],

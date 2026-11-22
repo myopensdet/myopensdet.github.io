@@ -205,7 +205,7 @@ For this endpoint, the summary would read: *"The happy path works. Bad input is 
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/new_api_endpoint/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/work_playbooks/new_api_endpoint/templates).
 
 === "api_probe.py"
 

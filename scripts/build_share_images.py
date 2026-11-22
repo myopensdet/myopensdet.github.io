@@ -44,7 +44,7 @@ TOP, BOTTOM = (20, 63, 128), (31, 95, 191)  # the site's blue
 WHITE = (255, 255, 255)
 SOFT = (214, 228, 248)
 SITE_NAME = "myOpenSDET"
-SITE_ADDRESS = "arshaduzzaman-sm.github.io/myopensdet"
+SITE_ADDRESS = "myopensdet.github.io"
 ROOT_LABEL = "Free SDET course"  # top label for pages outside a section
 
 

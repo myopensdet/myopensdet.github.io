@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """GET, POST, PUT, PATCH and DELETE on one booking. Run: python methods_tour.py
 
 Needs BOOKER_USERNAME and BOOKER_PASSWORD (Restful-booker's public demo account).

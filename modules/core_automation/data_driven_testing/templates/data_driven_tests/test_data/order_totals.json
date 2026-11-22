@@ -1,5 +1,5 @@
 {
-  "$comment": "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ Money is written as text, so it stays exact.",
+  "$comment": "Template from myOpenSDET: https://myopensdet.github.io/ Money is written as text, so it stays exact.",
   "cases": [
     {"case": "no coupon", "subtotal": "30.00", "coupon": null, "member": false, "expected": "30.00"},
     {"case": "SAVE10", "subtotal": "30.00", "coupon": "SAVE10", "member": false, "expected": "27.00"},

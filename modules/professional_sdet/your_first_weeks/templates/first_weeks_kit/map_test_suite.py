@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Map a pytest test suite you didn't write: how many tests and where, the fixtures and
 where they live, markers, skipped tests and why, the settings it reads, fixed waits,
 and the addresses it calls. It only reads the code; nothing is run.

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Level 1, in code: replace the payment client with a mock (unittest.mock, part of Python).
 
 Fast and exact: no network at all. Use it for the rules in your own code: what does

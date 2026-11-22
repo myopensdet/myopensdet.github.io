@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Smoke tests: the quickest check that a deployed app is up and answering.
 
 Run them right after every deploy, before any longer test suite. If they fail,

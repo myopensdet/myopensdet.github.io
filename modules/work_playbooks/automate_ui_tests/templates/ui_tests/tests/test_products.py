@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Product list: what's shown, and that sorting really sorts."""
 
 from playwright.sync_api import Page, expect

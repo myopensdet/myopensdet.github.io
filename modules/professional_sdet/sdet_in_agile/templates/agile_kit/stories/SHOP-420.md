@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # SHOP-420: Discount code at checkout
 
 As a shopper, I want to use a discount code at checkout, so that I pay less.

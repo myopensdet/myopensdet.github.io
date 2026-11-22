@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """UI tests guide: the template is complete, pinned like the repo, holds no password,
 and collects 18 tests offline. With ZTS_ONLINE=1 it runs against the public Sauce Demo
 shop: all pass for standard_user, and problem_user fails exactly as the page shows."""
@@ -14,7 +14,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "ui_tests"
 ROOT = TOPIC.parents[2]
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 DEMO_PASSWORD = "secret_" + "sauce"  # noqa: S105  (the shop's public demo password)
 
 SKIP_FOLDERS = {"__pycache__", ".pytest_cache", "test-results"}

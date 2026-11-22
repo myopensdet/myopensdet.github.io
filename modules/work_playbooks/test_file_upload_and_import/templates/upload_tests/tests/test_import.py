@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """CSV import: good files go in whole; bad files are refused whole, with the row number."""
 
 import uuid

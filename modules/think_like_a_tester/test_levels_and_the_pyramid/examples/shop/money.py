@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Pure money rules. No database, no web: the easiest code to unit test.
 
 Money is in cents, so 5000 means $50.00.

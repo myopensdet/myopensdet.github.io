@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 Area,Risk,Likelihood,Impact,Notes
 Money,The same item is refunded twice (REF-2),2,3,Money leaves the company; two tabs or a double click could do it
 Money,Money goes back to the wrong place (REF-5),2,3,Three payment types with different rules

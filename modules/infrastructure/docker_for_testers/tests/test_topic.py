@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Docker for testers: offline checks of the Dockerfiles and the compose file always run.
 With ZTS_DOCKER=1 and Docker running, the whole environment is built and the tests run in it."""
 
@@ -12,7 +12,7 @@ import yaml
 
 TOPIC = Path(__file__).resolve().parents[1]
 PROJECT = TOPIC / "templates" / "docker_tests"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 DOCKERFILES = [PROJECT / "Dockerfile", PROJECT / "app" / "Dockerfile"]
 COMPOSE = yaml.safe_load((PROJECT / "docker-compose.yml").read_text(encoding="utf-8"))
 

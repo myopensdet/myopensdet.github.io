@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # Shipping prices from the logistics team's price list.
 # Quote country codes and numbers: unquoted, YAML reads NO as false and 1.10 as 1.1.
 cases:

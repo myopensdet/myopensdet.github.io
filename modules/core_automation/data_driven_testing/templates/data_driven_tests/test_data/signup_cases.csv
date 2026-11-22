@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 # Signup rules from the product owner: email with @ and a dot after it, password 8 to 64 characters, age 18 or older.
 case,email,password,age,expected_problems,known_bug
 valid adult,arshad@example.com,correct-horse-1,30,,

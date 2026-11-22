@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Read last night's test report (JUnit XML) and sort the failures before stand-up:
 known problems (already have a ticket), and new ones (need a look today). Failures
 with the same error are grouped, because one cause often breaks many tests.

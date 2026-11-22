@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Fixtures: one client per database, loaded with fresh test data once per run.
 
 Which databases run:  TEST_DATABASES=postgres,sqlite   (default: all in config/databases.yaml)

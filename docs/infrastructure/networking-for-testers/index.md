@@ -24,7 +24,7 @@ updated: "2026-11-22"
 
 You need **Python 3.13**. If you don't have it, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/networking_for_testers/templates). Then open a terminal in the `net_kit` folder.
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/infrastructure/networking_for_testers/templates). Then open a terminal in the `net_kit` folder.
 2. Optional, for HTTPS on some computers: `python -m pip install -r requirements.txt` (installs `certifi`, a list of trusted certificates. If you have requests, you have it).
 3. **Start the practice server** in this terminal, and open a second terminal for the checks:
 
@@ -246,7 +246,7 @@ When you're done: **Ctrl+C** stops the practice server.
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/networking_for_testers/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/infrastructure/networking_for_testers/templates).
 
 === "net_check.py"
 

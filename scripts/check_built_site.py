@@ -1,10 +1,10 @@
 """Check the built site the way GitHub Pages will serve it.
 
-Serves site/ at /myopensdet/ on a local port, opens every page and file it
+Serves site/ at / on a local port, opens every page and file it
 can reach from the home page, and fails when:
 
 - a page or file is missing (a broken link),
-- a link leaves the /myopensdet/ path on the same server (it would 404 on Pages),
+- a link leaves the site on the same server (it would 404 on Pages),
 - a page loads a script, style, image or frame from another server
   (readers' browsers would contact it; everything should come from the site),
 - a page lacks the Mermaid loader before the theme's script (without it, the
@@ -35,7 +35,7 @@ from urllib.parse import urldefrag, urljoin, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
-BASE_PATH = "/myopensdet/"
+BASE_PATH = "/"
 
 # Link tags that only describe the page; they don't make the browser fetch anything.
 DESCRIBING_RELS = {"canonical", "alternate", "author", "license", "me"}
@@ -92,7 +92,7 @@ def loader_problem(url: str, html: str) -> str | None:
 
 
 class SiteHandler(SimpleHTTPRequestHandler):
-    """Serve site/ under /myopensdet/, like GitHub Pages does."""
+    """Serve site/ at /, like GitHub Pages does."""
 
     def translate_path(self, path):
         clean = urlparse(path).path

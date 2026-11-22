@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Logs are evidence, and evidence gets shared. Check that secrets never reach them."""
 
 import logging

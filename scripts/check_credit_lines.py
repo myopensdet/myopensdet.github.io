@@ -3,7 +3,7 @@
 When people copy a template into a work project, this one comment line tells
 their teammates where it came from (brief section 7.7 and the growth plan):
 
-    # Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+    # Template from myOpenSDET: https://myopensdet.github.io/
 
 Template files are the files inside any `templates/` folder under `modules/`
 (and in `_new_topic_template/`). The comment uses each file type's own style:
@@ -22,7 +22,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-SITE_URL = "https://arshaduzzaman-sm.github.io/myopensdet/"
+SITE_URL = "https://myopensdet.github.io/"
 TEXT = f"Template from myOpenSDET: {SITE_URL}"
 ROOTS = (Path("modules"), Path("_new_topic_template/modules"))
 

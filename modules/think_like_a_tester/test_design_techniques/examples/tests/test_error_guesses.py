@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Error guessing: tricky inputs that break code often. Only agreed behaviour becomes a test."""
 
 import pytest

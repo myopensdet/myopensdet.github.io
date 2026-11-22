@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 fastapi==0.163.1
 uvicorn==0.54.0
 psycopg[binary]==3.3.9

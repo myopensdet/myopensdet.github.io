@@ -958,5 +958,5 @@ that teaches it.
 
 <!-- END glossary -->
 
-Missing a word? [Tell us which one](https://github.com/arshaduzzaman-sm/myopensdet/issues/new?template=content-error.yml&title=Glossary%3A%20add%20a%20word)
+Missing a word? [Tell us which one](https://github.com/myopensdet/myopensdet.github.io/issues/new?template=content-error.yml&title=Glossary%3A%20add%20a%20word)
 and we will add it.

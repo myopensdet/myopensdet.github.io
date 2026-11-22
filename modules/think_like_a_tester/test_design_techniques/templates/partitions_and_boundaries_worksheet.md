@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Groups and edges worksheet
 
 One sheet per input (a field, a number, a setting). Fill it before you write any tests.

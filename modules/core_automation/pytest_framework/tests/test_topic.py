@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """pytest framework: the example project, the demos and the skeleton work as the pages say."""
 
 import os
@@ -16,7 +16,7 @@ DOCS = ROOT / "docs" / "core-automation" / "pytest-framework"
 EXAMPLES = TOPIC / "examples"
 PROJECT = EXAMPLES / "shop_project"
 SKELETON = TOPIC / "templates" / "pytest_skeleton"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 
 
 def pytest_run(*args, cwd=PROJECT, extra_env=None):

@@ -84,7 +84,7 @@ flowchart LR
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/SECTION/TOPIC/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/myopensdet/myopensdet.github.io/tree/main/modules/SECTION/TOPIC/templates).
 
 <!-- One tab per main file (=== "name" with a --8<-- snippet), then a "How to use them" tab.
      Replace SECTION/TOPIC with the topic's folder in modules/. -->

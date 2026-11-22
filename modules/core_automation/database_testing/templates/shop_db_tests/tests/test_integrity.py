@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Integrity tests: the database itself refuses bad rows, whatever the app sends."""
 
 import pytest

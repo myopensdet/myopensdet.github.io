@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """A small practice API with a file upload and a CSV import. Only for practice.
 
     python practice_api.py            # http://127.0.0.1:8780, with planted bugs

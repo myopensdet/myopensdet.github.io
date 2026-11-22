@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 *** Settings ***
 Documentation       Data-driven: one keyword, one row of data per test.
 ...                 The same cases as test_data/signup_cases.csv.

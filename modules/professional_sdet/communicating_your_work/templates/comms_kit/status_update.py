@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Turn test results and your notes into a clear status, written three ways: a short
 chat message, an email for a manager, and a ticket comment. Same facts, different
 readers. The verdict is GREEN, AMBER or RED, with the reason.

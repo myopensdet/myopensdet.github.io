@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """The cart page. The cart is filled through the API first (fixture cart_with_books)."""
 
 import pytest

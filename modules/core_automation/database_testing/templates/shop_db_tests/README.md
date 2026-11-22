@@ -1,4 +1,4 @@
-<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
+<!-- Template from myOpenSDET: https://myopensdet.github.io/ -->
 # Database tests for a bookshop
 
 Tests for a small PostgreSQL bookshop database: schema, integrity rules, CRUD, data rules, a stored function and a trigger. Point `DATABASE_URL` at your own test database and swap the demo tables for yours to test it the same way.

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """API tests. Every call is logged by helpers/api_client.py, so the report shows what happened."""
 
 from decimal import Decimal

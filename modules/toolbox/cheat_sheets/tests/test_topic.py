@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Cheat sheets: every SQL query runs on the practice shop, every HTTP status name is
 the official one, every Gherkin example parses, every locator is in the Playwright test
 (and it passes). With ZTS_DOCKER=1, every Docker command and flag exists (--help only)."""
@@ -17,7 +17,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 FILES = sorted(
     p
     for p in TOPIC.rglob("*")

@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """Cross-database comparison: every database holds the same data as the source.
 
 Three levels, cheapest first: row counts, a checksum of the whole table, and,

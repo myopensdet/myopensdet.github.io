@@ -1,4 +1,4 @@
-# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
+# Template from myOpenSDET: https://myopensdet.github.io/
 """New API endpoint playbook: the probe script and the test template work against a small
 local API that follows the rules (offline), and catch a bug put in on purpose.
 With ZTS_ONLINE=1, the template finds the four known issues in DummyJSON's /carts/add."""
@@ -15,7 +15,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "endpoint_kit"
-CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
+CREDIT = "Template from myOpenSDET: https://myopensdet.github.io/"
 PRICES = {144: 44.99}
 
 SKIP_FOLDERS = {"__pycache__", ".pytest_cache"}
