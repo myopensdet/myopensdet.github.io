@@ -239,7 +239,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 9.  [**JSON**](json.md)
 
-    Read and write JSON, and compare an expected API response with the real one.
+    Read nested API data, catch wrong types, and compare an expected response with the real one.
 
     <span class="zts-chip">Beginner</span>
 

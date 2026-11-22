@@ -52,7 +52,9 @@ FILES = sorted(
     p
     for folder in ("templates", "examples", "exercises", "solutions")
     for p in (TOPIC / folder).rglob("*")
-    if p.suffix in {".py", ".csv", ".json", ".ini"} and "__pycache__" not in p.parts
+    if p.suffix in {".py", ".csv", ".json", ".ini"}
+    and "__pycache__" not in p.parts
+    and "out" not in p.parts  # files the examples write when run by hand
 )
 
 
