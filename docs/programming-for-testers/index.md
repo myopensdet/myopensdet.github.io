@@ -209,7 +209,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 4.  [**Functions**](functions.md)
 
-    Name a piece of work, so you can test it and use it again.
+    Give a check a name, so you can test it and use it in every test.
 
     <span class="zts-chip">Beginner</span>
 

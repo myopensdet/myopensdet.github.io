@@ -1,121 +1,165 @@
 ---
-title: "Functions: Name a Piece of Work So You Can Test It"
-description: "Python functions for testers: def, parameters and default values, return versus print, type hints and docstrings, and why small functions that return values are easy to test."
+title: "Functions: Turn a Check into a Tool You Can Test and Reuse"
+description: "Python functions for testers: def, parameters and default values, return versus print, type hints and docstrings, shown with real test helpers: a reading check, a test data builder and a one-line report."
 level: Beginner
 tags:
   - Python
   - Clean code
 nav_title: "Functions"
 order: 40
-summary: "Name a piece of work, so you can test it and use it again."
+summary: "Give a check a name, so you can test it and use it in every test."
 updated: "2026-11-22"
 ---
 
-# Functions: Name a Piece of Work So You Can Test It
+# Functions: Turn a Check into a Tool You Can Test and Reuse
 
-A **function** is a named piece of work. You give it inputs, called **parameters**, and it gives back a result with `return`. Every pytest test is a function, and so is every helper you write for tests. The most useful habit in this lesson: a function that *returns* its answer can be tested; a function that only *prints* it can't.
+A **function** is a piece of work with a name. You write it once with `def`, then use it anywhere by calling its name. Test code is full of them: a function that checks a reading, one that builds fake test data, one that writes a report line. Functions keep your tests short, and a function that returns a value can be tested on its own.
 
 !!! note "Before you start"
-    Read [If and loops](conditions-and-loops.md) first.
+    You need Python 3.13 and the lesson on [conditions and loops](conditions-and-loops.md). The example file is `examples/functions_demo.py`.
 
-## What you will learn
+## Why testers need this
 
-- How to write a function with `def`, parameters and `return`
-- How default values and named arguments work
-- The difference between `return` and `print`
-- How type hints and docstrings make a function easier to use
+In the [last lesson](conditions-and-loops.md), the range check `-20 <= temperature <= 60` sat inside a loop. Now three tests need the same check: the device API test, the dashboard test and the CSV import test. If each test copies the line, and the rule changes to `-25`, you must find and fix every copy. If one is missed, a test checks the old rule and still passes.
 
-## Why this matters at work
+A function fixes this. The rule lives in one place, every test calls it, and a change is one edit.
 
-Test code repeats itself: log in, make a user, check a total. Functions put each of those in one place, so a change is made once. And when the rules live in small functions, you can test them directly, which is much faster than going through the UI.
+## How it works
 
-## The idea in plain words
+Values go in through the **parameters**. The function does its work. One value comes out with `return`.
 
-!!! info "In plain words"
-    A function is a recipe card. "Pancakes: give me flour, eggs and milk, and I'll give you pancakes."
-    You don't rewrite the recipe every time. You say "pancakes", hand over the ingredients, and get the result.
+```mermaid
+flowchart LR
+    IN["Inputs<br/>temperature = 85.0<br/>high = 90.0"] --> F["is_valid_reading()<br/>is it there?<br/>is it in range?"]
+    F --> OUT["return<br/>True"]
+    D["Defaults<br/>low = -20.0"] -.-> F
+```
 
-## Step by step
+*You pass in what changes between calls. Parameters with a default (`low`) can be left out. The function hands back one result with `return`.*
 
-1. **Run the example.**
+## The code
 
-    ```python
-    --8<-- "modules/start_here/python_for_testers/examples/functions_demo.py"
-    ```
+```python title="examples/functions_demo.py"
+--8<-- "modules/start_here/python_for_testers/examples/functions_demo.py"
+```
 
-    ```bash
-    python functions_demo.py
-    ```
+From the `examples` folder, run:
 
-    ```text
-    4.99
-    0.0
-    0.0
-    DONE
-    None
-    ```
+```bash
+python functions_demo.py
+```
 
-2. **Read the first line of the function.** `def delivery_fee(subtotal: float, member: bool = False) -> float:` says: the name is `delivery_fee`; it takes `subtotal` (a float) and `member` (a bool, `False` if you don't give one); and it returns a float. The `: float` parts are **type hints**. Python doesn't enforce them, but editors and readers use them.
+```text
+True False False
+True
+{'id': 'SNS-0042', 'status': 'online', 'battery': 100}
+{'id': 'SNS-0043', 'status': 'online', 'battery': 5}
+PASS: SNS-0042 answered 200 in 0.45s
+FAIL: SNS-0043 expected 200, got 503
+FAIL: SNS-0044 took 2.4s (limit 1.0s)
+[report] 3 devices checked
+None
+True False True
+```
 
-3. **Call it three ways.** `delivery_fee(20)` uses the default `member=False`. `delivery_fee(20, member=True)` names the argument, which makes the call easy to read. `delivery_fee(50)` hits the edge: exactly 50 is free. That's a [boundary value](../manual-testing/test-design/boundary-values.md), and a function makes it trivial to test.
+## Line by line
 
-4. **See the difference between `return` and `print`.** `shout("done")` prints `DONE`, but returns nothing, so `result` is `None`. A test can check `delivery_fee(50) == 0.0`. It can't easily check what `shout` printed. Return values; print only at the edges of your program.
+**The first function.**
 
-5. **Write a docstring.** The text in triple quotes under `def` says what the function does. It shows up when someone hovers over the name in their editor. One clear sentence is enough.
+- `def is_valid_reading(temperature, low=-20.0, high=60.0)` makes a function. `temperature`, `low` and `high` are its **parameters**: names for the values you pass in. `low` and `high` have **default values**, so callers can leave them out.
+- `float | None` and `-> bool` are **type hints**. They say "a float or None goes in, a bool comes out". Python does not enforce them, but your editor uses them to warn you about mistakes, and readers see at once what the function expects.
+- The text in triple quotes is the **docstring**. It says what the function does in one sentence. Editors show it when you hover over the name.
+- `return False` ends the function at once and hands back `False`. The line after it does not run for a missing reading.
 
-    !!! success "Check: you should now be able to"
-        Write a function with parameters, a default value and a return value, and explain why returning is better than printing for testing.
+**Calling the functions.**
 
-## When it goes wrong
+- `is_valid_reading(85.0)` uses the defaults, so 85.0 is out of range: `False`. `is_valid_reading(85.0, high=90.0)` changes one default by name, so the same reading is valid: `True` (line 2 of the output). Naming the value (`high=90.0`) makes the call easy to read.
+- `make_device("SNS-0043", battery=5)` is a **test data builder**. It gives a full, valid device, and the test changes only the field it cares about. A low-battery test says `battery=5` and nothing else.
+- `check_response(...)` has three parameters you must give, and two with defaults. It has two `return` lines for the two ways to fail, and one for the pass. Each return gives a ready-made line for the test report.
 
-- **The function returns `None` when you expected a value.** You forgot `return`, or one path through the `if` has no `return`. Every path should end with one.
-- **`TypeError: delivery_fee() missing 1 required positional argument: 'subtotal'`.** You called it without an argument it needs. Check the `def` line for what it takes.
-- **`TypeError: delivery_fee() got an unexpected keyword argument 'is_member'. Did you mean 'member'?`** The name in the call doesn't match the name in the `def`. Python 3.13 even suggests the right one.
-- **A function is 80 lines long.** It's doing several jobs. Split it: one function per job, each one easy to test.
+**`return` versus `print`.**
 
-## Common mistakes
+- `log_result()` prints a line, but has no `return`. A function without `return` gives back `None`. That is why `print(returned)` shows `None`.
+- Use `print` to show something to a person. Use `return` to hand a value to the code that called you. A check that only prints can't be used in an `assert` or an `if`.
 
-!!! warning "Common mistakes"
-    - **Printing instead of returning.** Tests need values.
-    - **A list or dictionary as a default value**, like `def add(item, items=[])`. The same list is shared between calls. Use `items=None`, then `items = items or []` inside.
-    - **Names that don't say what happens**, like `do_it()` or `check2()`.
+**Testing the function.**
 
-!!! failure "If you see this error"
-    **`TypeError: 'NoneType' object is not subscriptable`**
-    You used `[...]` on something that is `None`, often the result of a function that forgot to `return`. Find where the value came from, and check that function returns on every path.
+- The last line tries the **edges** of the range: exactly 60.0 (valid), just above it (not valid), and exactly -20.0 (valid). Bugs hide at edges, so a good test always tries them. Because the function returns a value, checking it is one line.
 
-## Try it yourself
+## How it is used in a real QA project
 
-Open `exercises/ex04_functions.py`. Write `make_user(name, role="customer")`, which builds a test user dictionary, and `percent(part, whole)`, which must not crash when `whole` is 0. Run `python -m pytest tests/test_ex04_functions.py`.
+- **Shared checks.** Rules like "valid reading", "valid email" or "price in range" live in one function. Every test uses it.
+- **Test data builders.** Functions like `make_device()` or `make_user()` build fake data with safe defaults. See [test data factories](../automation-testing/data-driven/test-data-factories.md) for the bigger version.
+- **Fixtures.** In pytest, [fixtures](../automation-testing/pytest/fixtures-and-conftest.md) are functions that prepare what a test needs, like a logged-in user or a clean database.
+- **Tests are functions too.** Every pytest test is a function whose name starts with `test_`. In [tests and asserts](../automation-testing/pytest/tests-and-asserts.md), you call your helper and check its result with `assert`.
+- **Page objects and API clients** are groups of functions, one per action, such as `login()` or `get_device()`. [Object-oriented programming](object-oriented-programming.md) shows how to group them.
+
+## Your task
+
+Open `exercises/ex04_functions.py`. Replace each `raise` line with your code:
+
+1. `make_user(name, role="customer")`: return a dictionary with `name`, `role` and `email`. The email is the name plus `@example.com`.
+2. `percent(part, whole)`: return the percentage, rounded to 1 decimal. Return `0.0` when `whole` is 0, so you never divide by zero.
+3. `battery_ok(device, minimum=20)`: return `True` when the device's `"battery"` is at least `minimum`. A missing battery value is `False`.
+
+From the `exercises` folder:
+
+```bash
+python -m pytest tests/test_ex04_functions.py
+```
+
+All 7 tests pass when your answers are right.
 
 ??? success "Solution"
     ```python
     --8<-- "modules/start_here/python_for_testers/solutions/ex04_functions.py"
     ```
 
-    The `whole == 0` check is the kind of guard testers think of first: "what if there were no tests at all?"
+    - `f"{name}@example.com"` builds the email. `example.com` is a domain kept for examples, so fake emails never reach a real person.
+    - In `percent`, the check for 0 comes first and returns early. Then the division below it is always safe.
+    - In `battery_ok`, `.get("battery")` gives `None` for a missing value, and the `if` handles it before the comparison.
 
-## Quick check
+## When it goes wrong
 
-1. What does a function return if it has no `return` line?
+These are real messages from Python 3.13.
 
-    ??? question "Answer"
-        `None`.
+**You left out a value the function needs.**
 
-2. Why are functions that return values easier to test than ones that print?
+```text
+TypeError: check_response() missing 1 required positional argument: 'seconds'
+```
 
-    ??? question "Answer"
-        A test can compare the returned value with the expected one directly.
+The function has a parameter without a default, and the call did not give it. Read the name at the end of the message and pass that value.
 
-3. In `def fee(total, member=False)`, what is `member=False`?
+**You misspelled a parameter name.**
 
-    ??? question "Answer"
-        A default value: `member` is `False` unless the caller gives another value.
+```text
+TypeError: make_device() got an unexpected keyword argument 'battry'
+```
+
+The function has no parameter with that name. Check the spelling against the `def` line.
+
+**You forgot `return`.**
+
+```text
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+```
+
+The function did its work but did not `return` the result, so it gave back `None`. Then `None + 1` failed. Add `return` in front of the result.
+
+**You forgot the brackets when calling.** `if is_valid_reading:` is always true, and `print(is_valid_reading)` shows something like this:
+
+```text
+<function is_valid_reading at 0x1014d94e0>
+```
+
+(The number changes every run.) Without `()`, you get the function itself, not its result. Call it: `is_valid_reading(21.5)`.
 
 ## References
 
-- [Python Tutorial: Defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
-- [Python Tutorial: Default argument values](https://docs.python.org/3/tutorial/controlflow.html#default-argument-values)
-- [Python: Type hints (typing)](https://docs.python.org/3/library/typing.html)
+- [Python tutorial: defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+- [Python tutorial: default argument values and keyword arguments](https://docs.python.org/3/tutorial/controlflow.html#default-argument-values)
+- [Python docs: type hints (typing)](https://docs.python.org/3/library/typing.html)
+- [PEP 257: docstring conventions](https://peps.python.org/pep-0257/)
 
 Written for Python 3.13. Links checked: November 2026.
