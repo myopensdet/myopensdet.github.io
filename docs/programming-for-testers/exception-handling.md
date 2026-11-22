@@ -5,7 +5,7 @@ level: Beginner
 tags:
   - Python
   - Debugging
-nav_title: "Errors and exceptions"
+nav_title: "Exception handling"
 order: 70
 summary: "Read a traceback fast, and handle what can go wrong."
 updated: "2026-11-22"

@@ -5,7 +5,7 @@ level: Beginner
 tags:
   - Python
   - Getting started
-nav_title: "If and loops"
+nav_title: "Conditions and loops"
 order: 30
 summary: "Make decisions, do the same check many times, and retry with a limit."
 updated: "2026-11-22"

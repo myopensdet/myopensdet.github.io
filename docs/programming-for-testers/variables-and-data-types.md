@@ -5,7 +5,7 @@ level: Beginner
 tags:
   - Python
   - Getting started
-nav_title: "Variables and types"
+nav_title: "Variables and data types"
 order: 10
 summary: "Text, numbers, True and False, and why \"30\" isn't 30."
 updated: "2026-11-22"

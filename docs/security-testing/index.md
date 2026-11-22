@@ -8,6 +8,9 @@ tags:
 nav_title: "Security Testing"
 order: 100
 summary: "OWASP Top 10, auth and injection tests, and a first ZAP scan."
+kind: "category"
+icon: "lucide/shield-check"
+card: "OWASP Top 10, login and permission tests, input checks and API security."
 ---
 
 # Security testing basics

@@ -157,7 +157,7 @@ that teaches it.
 [](){ #class }**Class**
 :   A blueprint that bundles data and actions together. Page objects and API clients are classes.
 
-    Learn more: [Classes and objects](programming-for-testers/object-oriented-programming.md)
+    Learn more: [Object-oriented programming](programming-for-testers/object-oriented-programming.md)
 
 [](){ #client }**Client**
 :   The program that asks: a browser, a phone app, or your test. It sends a request and waits for the answer.
@@ -891,7 +891,7 @@ that teaches it.
 [](){ #traceback }**Traceback**
 :   What Python prints when something goes wrong, the error at the bottom and the path to it above. Read it from the bottom.
 
-    Learn more: [Errors and exceptions](programming-for-testers/exception-handling.md)
+    Learn more: [Exception handling](programming-for-testers/exception-handling.md)
 
 [](){ #transaction }**Transaction**
 :   A group of database changes that are saved together with COMMIT or undone together with ROLLBACK.
@@ -930,7 +930,7 @@ that teaches it.
 [](){ #variable }**Variable**
 :   A name for a value in a program, like the name age for the number 30.
 
-    Learn more: [Variables and types](programming-for-testers/variables-and-data-types.md)
+    Learn more: [Variables and data types](programming-for-testers/variables-and-data-types.md)
 
 [](){ #virtual-environment }**Virtual environment**
 :   A private folder of Python packages for one project, so projects do not mix up each other's versions.

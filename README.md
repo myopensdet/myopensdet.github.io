@@ -99,14 +99,14 @@ topic you need today. Click a category to open it.
 
 [Open the Programming for Testers overview](https://myopensdet.github.io/programming-for-testers/)
 
-- [Variables and types](https://myopensdet.github.io/programming-for-testers/variables-and-data-types/): Text, numbers, True and False, and why "30" isn't 30.
+- [Variables and data types](https://myopensdet.github.io/programming-for-testers/variables-and-data-types/): Text, numbers, True and False, and why "30" isn't 30.
 - [Strings, lists and dictionaries](https://myopensdet.github.io/programming-for-testers/lists-tuples-sets-and-dictionaries/): Text, lists and dictionaries: the three shapes most test data comes in.
-- [If and loops](https://myopensdet.github.io/programming-for-testers/conditions-and-loops/): Make decisions, do the same check many times, and retry with a limit.
+- [Conditions and loops](https://myopensdet.github.io/programming-for-testers/conditions-and-loops/): Make decisions, do the same check many times, and retry with a limit.
 - [Functions](https://myopensdet.github.io/programming-for-testers/functions/): Name a piece of work, so you can test it and use it again.
 - [Modules and imports](https://myopensdet.github.io/programming-for-testers/modules-and-imports/): Use dates, paths and JSON from the standard library, and your own files.
-- [Classes and objects](https://myopensdet.github.io/programming-for-testers/object-oriented-programming/): Bundle data and actions together: the idea behind page objects and API clients.
-- [Errors and exceptions](https://myopensdet.github.io/programming-for-testers/exception-handling/): Read a traceback fast, and handle what can go wrong.
-- [Reading and writing files](https://myopensdet.github.io/programming-for-testers/file-handling/): Read test data and CSV files, write reports, and keep Bengali text safe.
+- [Object-oriented programming](https://myopensdet.github.io/programming-for-testers/object-oriented-programming/): Bundle data and actions together: the idea behind page objects and API clients.
+- [Exception handling](https://myopensdet.github.io/programming-for-testers/exception-handling/): Read a traceback fast, and handle what can go wrong.
+- [File handling](https://myopensdet.github.io/programming-for-testers/file-handling/): Read test data and CSV files, write reports, and keep Bengali text safe.
 - [JSON](https://myopensdet.github.io/programming-for-testers/json/): Read and write JSON, and compare an expected API response with the real one.
 - [Virtual environments and pip](https://myopensdet.github.io/programming-for-testers/virtual-environments-and-pip/): Give each project its own Python packages, and pin their versions.
 - [Reading other people's code](https://myopensdet.github.io/programming-for-testers/reading-other-peoples-code/): Find your way around code you didn't write: predict, run, and check.

@@ -33,13 +33,14 @@ config:
     rankSpacing: 34
 ---
 flowchart TD
-    A("<b>1. Start Here</b><br/>Set up your computer · Python for testers")
-    B("<b>2. Think Like a Tester</b><br/>Test design · test cases · bug reports · plans")
-    C("<b>3. Core Automation</b><br/>pytest · API · database · BDD · Playwright")
-    D("<b>4. Infrastructure</b><br/>CI/CD · Docker · Linux · debugging")
-    E("<b>5. Advanced Testing</b><br/>Performance · security · contracts · microservices")
-    F("<b>6. The Professional SDET</b><br/>Releases · metrics · leading quality")
-    A --> B --> C --> D --> E --> F
+    A("<b>1. Getting Started</b><br/>Set up your computer · find your level")
+    B("<b>2. Programming for Testers</b><br/>Python with real test data")
+    C("<b>3. Manual and Functional Testing</b><br/>Test design · test cases · bug reports")
+    D("<b>4. API and Database Testing</b><br/>HTTP · REST · SQL · data checks")
+    E("<b>5. Automation Testing</b><br/>pytest · Playwright · BDD · reports")
+    F("<b>6. CI/CD and DevOps for QA</b><br/>Linux · Git · Docker · pipelines")
+    G("<b>Next: Performance, IoT and Security</b><br/>See the Roadmap")
+    A --> B --> C --> D --> E --> F --> G
 ```
 
 You don't have to go in order. If you have a task at work today, jump to the topic you need: every page says what to read first.

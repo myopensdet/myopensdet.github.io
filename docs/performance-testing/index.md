@@ -8,6 +8,9 @@ tags:
 nav_title: "Performance Testing"
 order: 70
 summary: "See what happens under load, with Locust, k6 and JMeter."
+kind: "category"
+icon: "lucide/gauge"
+card: "Load, stress, spike and endurance tests with k6, and reports people can act on."
 ---
 
 # Performance testing

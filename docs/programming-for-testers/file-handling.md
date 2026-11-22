@@ -5,7 +5,7 @@ level: Beginner
 tags:
   - Python
   - Test data
-nav_title: "Reading and writing files"
+nav_title: "File handling"
 order: 80
 summary: "Read test data and CSV files, write reports, and keep Bengali text safe."
 updated: "2026-11-22"

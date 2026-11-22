@@ -252,7 +252,7 @@
   var REPO = "https://github.com/myopensdet/myopensdet.github.io";
 
   function setupSection(data) {
-    var cards = document.querySelectorAll(".zts-topics > ul > li > p:first-child a[href]");
+    var cards = document.querySelectorAll(".zts-topics > ol > li > p:first-child a[href], .zts-topics > ul > li > p:first-child a[href]");
     if (!cards.length) return;
     var old = document.querySelector("[data-zts-section-progress]");
     if (old) old.remove();

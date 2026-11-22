@@ -5,7 +5,7 @@ level: Beginner
 tags:
   - Python
   - Clean code
-nav_title: "Classes and objects"
+nav_title: "Object-oriented programming"
 order: 60
 summary: "Bundle data and actions together: the idea behind page objects and API clients."
 updated: "2026-11-22"
