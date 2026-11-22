@@ -1,13 +1,13 @@
 ---
 title: "Template Index: Every Test Template and Script on the Site, in One Place"
-description: "Every ready-to-use template on Zero to SDET in one list: test scripts, pytest and Playwright kits, checklists, bug report and test plan templates, CI workflows and more. Grouped by topic, with what each file does and a link to copy it from GitHub."
+description: "Every ready-to-use template on myOpenSDET in one list: test scripts, pytest and Playwright kits, checklists, bug report and test plan templates, CI workflows and more. Grouped by topic, with what each file does and a link to copy it from GitHub."
 level: Beginner
 tags:
   - Templates
 nav_title: "Template index"
 order: 30
 summary: "Every template on the site, in one place."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Template Index: Every Test Template and Script on the Site, in One Place
@@ -35,9 +35,9 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [compare_json.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/start_here/python_for_testers/templates/compare_json.py) | Compare two JSON files, like an expected and an actual API response. |
-    | [run_summary.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/start_here/python_for_testers/templates/run_summary.py) | Summarise a test run saved as JSON: counts, failures, and the slowest tests. |
-    | [script_starter.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/start_here/python_for_testers/templates/script_starter.py) | A starter to copy: fill in the parts marked < > |
+    | [compare_json.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/start_here/python_for_testers/templates/compare_json.py) | Compare two JSON files, like an expected and an actual API response. |
+    | [run_summary.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/start_here/python_for_testers/templates/run_summary.py) | Summarise a test run saved as JSON: counts, failures, and the slowest tests. |
+    | [script_starter.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/start_here/python_for_testers/templates/script_starter.py) | A starter to copy: fill in the parts marked < > |
 
 ## Work Playbooks
 
@@ -47,14 +47,14 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [api_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/pytest.ini) | pytest settings |
-    | [api_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [api_tests/test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/test_plan.md) | API test plan: Booking API |
-    | [api_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [api_tests/tests/test_delete.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_delete.py) | DELETE: remove something. |
-    | [api_tests/tests/test_get.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_get.py) | GET: read something. |
-    | [api_tests/tests/test_post.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_post.py) | POST: create something. |
-    | [api_tests/tests/test_put.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_put.py) | PUT: replace something. |
+    | [api_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/pytest.ini) | pytest settings |
+    | [api_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [api_tests/test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/test_plan.md) | API test plan: Booking API |
+    | [api_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [api_tests/tests/test_delete.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_delete.py) | DELETE: remove something. |
+    | [api_tests/tests/test_get.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_get.py) | GET: read something. |
+    | [api_tests/tests/test_post.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_post.py) | POST: create something. |
+    | [api_tests/tests/test_put.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_api_tests/templates/api_tests/tests/test_put.py) | PUT: replace something. |
 
 ??? note "Test a new API endpoint (8 files)"
 
@@ -62,14 +62,14 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [endpoint_kit/api_probe.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/api_probe.py) | Send many variations of one request and see every answer in one table. |
-    | [endpoint_kit/cases.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/cases.json) | Data (JSON) |
-    | [endpoint_kit/findings.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/findings.md) | Test results: POST /carts/add |
-    | [endpoint_kit/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/pytest.ini) | pytest settings |
-    | [endpoint_kit/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [endpoint_kit/test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/test_plan.md) | Test plan: POST /carts/add |
-    | [endpoint_kit/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/tests/conftest.py) | Shared pytest fixtures |
-    | [endpoint_kit/tests/test_endpoint.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/tests/test_endpoint.py) | Checks for one endpoint, written from the agreed rules, not from what it does today. |
+    | [endpoint_kit/api_probe.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/api_probe.py) | Send many variations of one request and see every answer in one table. |
+    | [endpoint_kit/cases.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/cases.json) | Data (JSON) |
+    | [endpoint_kit/findings.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/findings.md) | Test results: POST /carts/add |
+    | [endpoint_kit/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/pytest.ini) | pytest settings |
+    | [endpoint_kit/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [endpoint_kit/test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/test_plan.md) | Test plan: POST /carts/add |
+    | [endpoint_kit/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/tests/conftest.py) | Shared pytest fixtures |
+    | [endpoint_kit/tests/test_endpoint.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/new_api_endpoint/templates/endpoint_kit/tests/test_endpoint.py) | Checks for one endpoint, written from the agreed rules, not from what it does today. |
 
 ??? note "Test an API from its Swagger file (6 files)"
 
@@ -77,12 +77,12 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [openapi_kit/findings.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/findings.md) | API check: Swagger Petstore 1.0.27 |
-    | [openapi_kit/openapi_check.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/openapi_check.py) | Plan and smoke-test an API from its OpenAPI (Swagger) file. |
-    | [openapi_kit/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/pytest.ini) | pytest settings |
-    | [openapi_kit/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [openapi_kit/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/tests/conftest.py) | Shared pytest fixtures |
-    | [openapi_kit/tests/test_contract.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/tests/test_contract.py) | One check per GET endpoint in the spec: the status is listed, the format and the schema match, and endpoints that need a login refuse a call without one. |
+    | [openapi_kit/findings.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/findings.md) | API check: Swagger Petstore 1.0.27 |
+    | [openapi_kit/openapi_check.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/openapi_check.py) | Plan and smoke-test an API from its OpenAPI (Swagger) file. |
+    | [openapi_kit/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/pytest.ini) | pytest settings |
+    | [openapi_kit/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [openapi_kit/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/tests/conftest.py) | Shared pytest fixtures |
+    | [openapi_kit/tests/test_contract.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/api_from_openapi/templates/openapi_kit/tests/test_contract.py) | One check per GET endpoint in the spec: the status is listed, the format and the schema match, and endpoints that need a login refuse a call without one. |
 
 ??? note "Check database data, step by step (11 files)"
 
@@ -90,17 +90,17 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [db_checks/.env.example](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/.env.example) | Settings to copy into .env (no real secrets) |
-    | [db_checks/docker-compose.yml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/docker-compose.yml) | A practice shop database, filled from sql/practice_shop.sql. Your own computer only. |
-    | [db_checks/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/pytest.ini) | pytest settings |
-    | [db_checks/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [db_checks/sql/data_checks.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/sql/data_checks.sql) | Ready data checks. Each query returns the rows that BREAK a rule: no rows = all good. |
-    | [db_checks/sql/practice_shop.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/sql/practice_shop.sql) | A small shop database for practice. Like many real databases, it has some rules in the |
-    | [db_checks/test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/test_plan.md) | Database test plan: shop database |
-    | [db_checks/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/conftest.py) | Shared pytest fixtures |
-    | [db_checks/tests/test_data_quality.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_data_quality.py) | Is the data healthy? Each check looks for rows that break one rule. |
-    | [db_checks/tests/test_saved_data.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_saved_data.py) | Was it saved correctly? After your API or UI test creates something, check the rows. |
-    | [db_checks/tests/test_schema.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_schema.py) | Is the structure what the app expects? Catches a missing table or column, a changed type, or a missing rule, right after a release, before the app trips over it. |
+    | [db_checks/.env.example](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/.env.example) | Settings to copy into .env (no real secrets) |
+    | [db_checks/docker-compose.yml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/docker-compose.yml) | A practice shop database, filled from sql/practice_shop.sql. Your own computer only. |
+    | [db_checks/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/pytest.ini) | pytest settings |
+    | [db_checks/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [db_checks/sql/data_checks.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/sql/data_checks.sql) | Ready data checks. Each query returns the rows that BREAK a rule: no rows = all good. |
+    | [db_checks/sql/practice_shop.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/sql/practice_shop.sql) | A small shop database for practice. Like many real databases, it has some rules in the |
+    | [db_checks/test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/test_plan.md) | Database test plan: shop database |
+    | [db_checks/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/conftest.py) | Shared pytest fixtures |
+    | [db_checks/tests/test_data_quality.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_data_quality.py) | Is the data healthy? Each check looks for rows that break one rule. |
+    | [db_checks/tests/test_saved_data.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_saved_data.py) | Was it saved correctly? After your API or UI test creates something, check the rows. |
+    | [db_checks/tests/test_schema.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_database_data/templates/db_checks/tests/test_schema.py) | Is the structure what the app expects? Catches a missing table or column, a changed type, or a missing rule, right after a release, before the app trips over it. |
 
 ??? note "Test login and permissions, step by step (8 files)"
 
@@ -108,14 +108,14 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [auth_tests/practice_api.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/practice_api.py) | A small practice API with login, tokens, orders and an admin page. |
-    | [auth_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/pytest.ini) | pytest settings |
-    | [auth_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [auth_tests/test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/test_plan.md) | Login and permissions test plan: <app name> |
-    | [auth_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [auth_tests/tests/test_login.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_login.py) | Login: the right user gets a token; everyone else gets the same plain "no". |
-    | [auth_tests/tests/test_permissions.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_permissions.py) | Permissions: each user sees only their own data; only admins open admin pages. |
-    | [auth_tests/tests/test_tokens.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_tokens.py) | Tokens: only a real, current token opens a page that needs a login. |
+    | [auth_tests/practice_api.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/practice_api.py) | A small practice API with login, tokens, orders and an admin page. |
+    | [auth_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/pytest.ini) | pytest settings |
+    | [auth_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [auth_tests/test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/test_plan.md) | Login and permissions test plan: <app name> |
+    | [auth_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [auth_tests/tests/test_login.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_login.py) | Login: the right user gets a token; everyone else gets the same plain "no". |
+    | [auth_tests/tests/test_permissions.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_permissions.py) | Permissions: each user sees only their own data; only admins open admin pages. |
+    | [auth_tests/tests/test_tokens.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_login_and_permissions/templates/auth_tests/tests/test_tokens.py) | Tokens: only a real, current token opens a page that needs a login. |
 
 ??? note "Automate UI tests, step by step (8 files)"
 
@@ -123,14 +123,14 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [ui_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/pytest.ini) | pytest settings |
-    | [ui_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [ui_tests/test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/test_plan.md) | UI test plan: <feature or app name> |
-    | [ui_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [ui_tests/tests/test_cart.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_cart.py) | Cart: the count, the items and the prices stay right. |
-    | [ui_tests/tests/test_checkout.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_checkout.py) | Checkout: the form checks its fields, the totals add up, the order is placed. |
-    | [ui_tests/tests/test_login.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_login.py) | Login: the right user gets in, everyone else sees a clear message. |
-    | [ui_tests/tests/test_products.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_products.py) | Product list: what's shown, and that sorting really sorts. |
+    | [ui_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/pytest.ini) | pytest settings |
+    | [ui_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [ui_tests/test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/test_plan.md) | UI test plan: <feature or app name> |
+    | [ui_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [ui_tests/tests/test_cart.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_cart.py) | Cart: the count, the items and the prices stay right. |
+    | [ui_tests/tests/test_checkout.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_checkout.py) | Checkout: the form checks its fields, the totals add up, the order is placed. |
+    | [ui_tests/tests/test_login.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_login.py) | Login: the right user gets in, everyone else sees a clear message. |
+    | [ui_tests/tests/test_products.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/automate_ui_tests/templates/ui_tests/tests/test_products.py) | Product list: what's shown, and that sorting really sorts. |
 
 ??? note "Test file upload and import, step by step (7 files)"
 
@@ -138,13 +138,13 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [upload_tests/practice_api.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/practice_api.py) | A small practice API with a file upload and a CSV import. |
-    | [upload_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/pytest.ini) | pytest settings |
-    | [upload_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [upload_tests/test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/test_plan.md) | Upload and import test plan: <feature name> |
-    | [upload_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [upload_tests/tests/test_import.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/test_import.py) | CSV import: good files go in whole; bad files are refused whole, with the row number. |
-    | [upload_tests/tests/test_upload.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/test_upload.py) | File upload: allowed files go in; empty, too big, wrong and disguised files don't. |
+    | [upload_tests/practice_api.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/practice_api.py) | A small practice API with a file upload and a CSV import. |
+    | [upload_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/pytest.ini) | pytest settings |
+    | [upload_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [upload_tests/test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/test_plan.md) | Upload and import test plan: <feature name> |
+    | [upload_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [upload_tests/tests/test_import.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/test_import.py) | CSV import: good files go in whole; bad files are refused whole, with the row number. |
+    | [upload_tests/tests/test_upload.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/test_file_upload_and_import/templates/upload_tests/tests/test_upload.py) | File upload: allowed files go in; empty, too big, wrong and disguised files don't. |
 
 ??? note "Check API speed, step by step (6 files)"
 
@@ -152,12 +152,12 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [speed_check/practice_api.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/practice_api.py) | A small practice API for speed checks. |
-    | [speed_check/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/pytest.ini) | pytest settings |
-    | [speed_check/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [speed_check/speed_check.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/speed_check.py) | Send many requests at once to one address and report how fast the answers came. |
-    | [speed_check/test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/test_plan.md) | Speed check plan: <app or release name> |
-    | [speed_check/tests/test_speed.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/tests/test_speed.py) | Speed targets as tests: each page must answer fast enough, without errors, while several users use it at once. |
+    | [speed_check/practice_api.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/practice_api.py) | A small practice API for speed checks. |
+    | [speed_check/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/pytest.ini) | pytest settings |
+    | [speed_check/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [speed_check/speed_check.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/speed_check.py) | Send many requests at once to one address and report how fast the answers came. |
+    | [speed_check/test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/test_plan.md) | Speed check plan: <app or release name> |
+    | [speed_check/tests/test_speed.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/work_playbooks/check_api_speed/templates/speed_check/tests/test_speed.py) | Speed targets as tests: each page must answer fast enough, without errors, while several users use it at once. |
 
 ## Think Like a Tester
 
@@ -167,9 +167,9 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [day_one_questions.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/day_one_questions.md) | Day-one questions: <feature or area> |
-    | [learning_log.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/learning_log.md) | Learning log: <new area> |
-    | [one_page_test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/one_page_test_plan.md) | Test plan: <feature or area> |
+    | [day_one_questions.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/day_one_questions.md) | Day-one questions: <feature or area> |
+    | [learning_log.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/learning_log.md) | Learning log: <new area> |
+    | [one_page_test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/learning_a_new_testing_area/templates/one_page_test_plan.md) | Test plan: <feature or area> |
 
 ??? note "The SDET role (4 files)"
 
@@ -177,10 +177,10 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [automation_readiness_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/the_sdet_role/templates/automation_readiness_checklist.md) | Should we automate this test? Checklist |
-    | [first_90_days_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/the_sdet_role/templates/first_90_days_plan.md) | First 90 days plan (30-60-90) |
-    | [new_team_onboarding_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/the_sdet_role/templates/new_team_onboarding_checklist.md) | New team onboarding checklist for an SDET |
-    | [test_smoke.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/the_sdet_role/templates/test_smoke.py) | Smoke tests: the quickest check that a deployed app is up and answering. |
+    | [automation_readiness_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/the_sdet_role/templates/automation_readiness_checklist.md) | Should we automate this test? Checklist |
+    | [first_90_days_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/the_sdet_role/templates/first_90_days_plan.md) | First 90 days plan (30-60-90) |
+    | [new_team_onboarding_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/the_sdet_role/templates/new_team_onboarding_checklist.md) | New team onboarding checklist for an SDET |
+    | [test_smoke.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/the_sdet_role/templates/test_smoke.py) | Smoke tests: the quickest check that a deployed app is up and answering. |
 
 ??? note "Test levels and the pyramid (4 files)"
 
@@ -188,10 +188,10 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/conftest.py) | Shared pytest fixtures |
-    | [pyramid_report.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/pyramid_report.py) | Show how many tests you have at each level, as a pyramid. |
-    | [pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/pytest.ini) | pytest settings |
-    | [test_level_decision_chart.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/test_level_decision_chart.md) | Which test level? A decision chart |
+    | [conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/conftest.py) | Shared pytest fixtures |
+    | [pyramid_report.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/pyramid_report.py) | Show how many tests you have at each level, as a pyramid. |
+    | [pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/pytest.ini) | pytest settings |
+    | [test_level_decision_chart.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_levels_and_the_pyramid/templates/test_level_decision_chart.md) | Which test level? A decision chart |
 
 ??? note "Test design techniques (11 files)"
 
@@ -199,17 +199,17 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [.coveragerc](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/.coveragerc) | Code coverage settings |
-    | [api_endpoint_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/api_endpoint_checklist.md) | API endpoint test checklist |
-    | [boundaries.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/boundaries.py) | List the values to test at the edges of a range, so you don't have to work them out by hand. |
-    | [decision_table.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/decision_table.py) | Print every combination of yes/no conditions, as a decision table ready to fill in. |
-    | [decision_table_worksheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/decision_table_worksheet.md) | Decision table worksheet |
-    | [error_guessing_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/error_guessing_checklist.md) | Error guessing checklist |
-    | [exploratory_charter.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/exploratory_charter.md) | Exploratory testing session |
-    | [pairwise.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/pairwise.py) | Pick a small set of test combinations that still covers every pair of values. |
-    | [partitions_and_boundaries_worksheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/partitions_and_boundaries_worksheet.md) | Groups and edges worksheet |
-    | [state_transition_worksheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/state_transition_worksheet.md) | State transition worksheet |
-    | [web_form_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/web_form_checklist.md) | Web form test checklist |
+    | [.coveragerc](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/.coveragerc) | Code coverage settings |
+    | [api_endpoint_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/api_endpoint_checklist.md) | API endpoint test checklist |
+    | [boundaries.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/boundaries.py) | List the values to test at the edges of a range, so you don't have to work them out by hand. |
+    | [decision_table.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/decision_table.py) | Print every combination of yes/no conditions, as a decision table ready to fill in. |
+    | [decision_table_worksheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/decision_table_worksheet.md) | Decision table worksheet |
+    | [error_guessing_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/error_guessing_checklist.md) | Error guessing checklist |
+    | [exploratory_charter.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/exploratory_charter.md) | Exploratory testing session |
+    | [pairwise.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/pairwise.py) | Pick a small set of test combinations that still covers every pair of values. |
+    | [partitions_and_boundaries_worksheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/partitions_and_boundaries_worksheet.md) | Groups and edges worksheet |
+    | [state_transition_worksheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/state_transition_worksheet.md) | State transition worksheet |
+    | [web_form_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_design_techniques/templates/web_form_checklist.md) | Web form test checklist |
 
 ??? note "Static testing and reviews (6 files)"
 
@@ -217,12 +217,12 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [ambiguity_scan.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/ambiguity_scan.py) | Find vague words in a user story or requirement, and the question to ask about each. |
-    | [pre-commit-config.yaml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/pre-commit-config.yaml) | Static checks for a test project, run before every commit. |
-    | [requirements_review_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/requirements_review_checklist.md) | Requirements review checklist |
-    | [review_comments_guide.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/review_comments_guide.md) | Review comments guide |
-    | [ruff_settings.toml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/ruff_settings.toml) | Ruff settings for a test project. Save this file as ruff.toml in your project's main folder. |
-    | [user_story_review_worksheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/user_story_review_worksheet.md) | User story review |
+    | [ambiguity_scan.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/ambiguity_scan.py) | Find vague words in a user story or requirement, and the question to ask about each. |
+    | [pre-commit-config.yaml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/pre-commit-config.yaml) | Static checks for a test project, run before every commit. |
+    | [requirements_review_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/requirements_review_checklist.md) | Requirements review checklist |
+    | [review_comments_guide.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/review_comments_guide.md) | Review comments guide |
+    | [ruff_settings.toml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/ruff_settings.toml) | Ruff settings for a test project. Save this file as ruff.toml in your project's main folder. |
+    | [user_story_review_worksheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/static_testing_and_reviews/templates/user_story_review_worksheet.md) | User story review |
 
 ??? note "Test cases (4 files)"
 
@@ -230,10 +230,10 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [covers_plugin.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_cases/templates/covers_plugin.py) | Link automated tests to requirement IDs, and print which IDs have tests. |
-    | [test_case.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_cases/templates/test_case.md) | <ID>: <what is checked, as a short sentence> |
-    | [test_cases.csv](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_cases/templates/test_cases.csv) | Data (CSV) |
-    | [traceability.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_cases/templates/traceability.py) | Show which requirements have test cases, and which have none. |
+    | [covers_plugin.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_cases/templates/covers_plugin.py) | Link automated tests to requirement IDs, and print which IDs have tests. |
+    | [test_case.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_cases/templates/test_case.md) | <ID>: <what is checked, as a short sentence> |
+    | [test_cases.csv](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_cases/templates/test_cases.csv) | Data (CSV) |
+    | [traceability.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_cases/templates/traceability.py) | Show which requirements have test cases, and which have none. |
 
 ??? note "Bug reports (4 files)"
 
@@ -241,10 +241,10 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [bug_report.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report.md) | <What is wrong, where, and when: one sentence> |
-    | [bug_report_check.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report_check.py) | Check a bug report (Markdown, using the bug report template) before you send it. |
-    | [bug_report_issue_form.yml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report_issue_form.yml) | A GitHub issue form for bug reports. |
-    | [severity_priority_guide.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/bug_reports/templates/severity_priority_guide.md) | Severity, priority and bug states |
+    | [bug_report.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report.md) | <What is wrong, where, and when: one sentence> |
+    | [bug_report_check.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report_check.py) | Check a bug report (Markdown, using the bug report template) before you send it. |
+    | [bug_report_issue_form.yml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/bug_reports/templates/bug_report_issue_form.yml) | A GitHub issue form for bug reports. |
+    | [severity_priority_guide.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/bug_reports/templates/severity_priority_guide.md) | Severity, priority and bug states |
 
 ??? note "Test strategy and planning (8 files)"
 
@@ -252,14 +252,14 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [automation_roi.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/automation_roi.py) | Work out how long an automated test takes to pay back the time spent on it. |
-    | [automation_roi_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/automation_roi_checklist.md) | Should we automate this check? |
-    | [exit_check.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/exit_check.py) | Check test results against the exit criteria in the test plan. |
-    | [exit_criteria.toml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/exit_criteria.toml) | Exit criteria: testing is done when every number is at or below its limit. |
-    | [risk_score.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/risk_score.py) | Score each risk by likelihood x impact, and say how deeply to test it. |
-    | [risks.csv](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/risks.csv) | Data (CSV) |
-    | [test_plan.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/test_plan.md) | Test plan: <feature> (<release>) |
-    | [test_strategy.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/test_strategy.md) | Test strategy: <team or product> |
+    | [automation_roi.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/automation_roi.py) | Work out how long an automated test takes to pay back the time spent on it. |
+    | [automation_roi_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/automation_roi_checklist.md) | Should we automate this check? |
+    | [exit_check.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/exit_check.py) | Check test results against the exit criteria in the test plan. |
+    | [exit_criteria.toml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/exit_criteria.toml) | Exit criteria: testing is done when every number is at or below its limit. |
+    | [risk_score.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/risk_score.py) | Score each risk by likelihood x impact, and say how deeply to test it. |
+    | [risks.csv](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/risks.csv) | Data (CSV) |
+    | [test_plan.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/test_plan.md) | Test plan: <feature> (<release>) |
+    | [test_strategy.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/think_like_a_tester/test_strategy_and_planning/templates/test_strategy.md) | Test strategy: <team or product> |
 
 ## Core Automation
 
@@ -269,13 +269,13 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [pytest_cheatsheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_cheatsheet.md) | pytest commands you will use every day |
-    | [pytest_skeleton/README.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/README.md) | Tests for <your app> |
-    | [pytest_skeleton/config/environments.toml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/config/environments.toml) | One section per environment. Choose one with --env, or the TEST_ENV variable. |
-    | [pytest_skeleton/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/pytest.ini) | pytest settings |
-    | [pytest_skeleton/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [pytest_skeleton/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/tests/conftest.py) | Shared pytest fixtures |
-    | [pytest_skeleton/tests/test_example.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/tests/test_example.py) | Example tests. |
+    | [pytest_cheatsheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_cheatsheet.md) | pytest commands you will use every day |
+    | [pytest_skeleton/README.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/README.md) | Tests for <your app> |
+    | [pytest_skeleton/config/environments.toml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/config/environments.toml) | One section per environment. Choose one with --env, or the TEST_ENV variable. |
+    | [pytest_skeleton/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/pytest.ini) | pytest settings |
+    | [pytest_skeleton/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [pytest_skeleton/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/tests/conftest.py) | Shared pytest fixtures |
+    | [pytest_skeleton/tests/test_example.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/pytest_framework/templates/pytest_skeleton/tests/test_example.py) | Example tests. |
 
 ??? note "API testing (20 files)"
 
@@ -283,26 +283,26 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [booker_api_tests/README.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/README.md) | API tests for the booking API |
-    | [booker_api_tests/api/auth.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/api/auth.py) | Login helpers for the four usual kinds: API key, Basic, Bearer token, OAuth2. |
-    | [booker_api_tests/api/client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/api/client.py) | A small API client for tests: one place for the base URL, headers, timeout and logging. |
-    | [booker_api_tests/api/data.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/api/data.py) | Test data for bookings. |
-    | [booker_api_tests/api/schema.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/api/schema.py) | Check that a response has the right shape, and list every problem with its path. |
-    | [booker_api_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/pytest.ini) | pytest settings |
-    | [booker_api_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [booker_api_tests/schemas/booking.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/schemas/booking.json) | Data (JSON) |
-    | [booker_api_tests/schemas/created_booking.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/schemas/created_booking.json) | Data (JSON) |
-    | [booker_api_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [booker_api_tests/tests/test_auth.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_auth.py) | Logging in, and what happens with a wrong password. |
-    | [booker_api_tests/tests/test_delete_booking.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_delete_booking.py) | DELETE: remove a booking, and check it is really gone. |
-    | [booker_api_tests/tests/test_get_booking.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_get_booking.py) | GET: read a booking. |
-    | [booker_api_tests/tests/test_patch_booking.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_patch_booking.py) | PATCH: change some fields, and leave the rest alone. |
-    | [booker_api_tests/tests/test_post_booking.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_post_booking.py) | POST: create a booking. |
-    | [booker_api_tests/tests/test_put_booking.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_put_booking.py) | PUT: replace a whole booking. |
-    | [web_kit/page/app.js](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/web_kit/page/app.js) | The JavaScript in the browser. It calls the API in the background (AJAX, with fetch) |
-    | [web_kit/page/index.html](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/web_kit/page/index.html) | The client: the HTML the browser gets first. The products are NOT in it: app.js asks the API for them. |
-    | [web_kit/watch_requests.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/web_kit/watch_requests.py) | Open a page in a real browser and list every request it makes, like the Network tab. |
-    | [web_kit/web_demo.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_testing/templates/web_kit/web_demo.py) | A tiny web app to see how the web works: a server, an HTML page, JavaScript that calls a REST API in the background (AJAX), and JSON answers. |
+    | [booker_api_tests/README.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/README.md) | API tests for the booking API |
+    | [booker_api_tests/api/auth.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/api/auth.py) | Login helpers for the four usual kinds: API key, Basic, Bearer token, OAuth2. |
+    | [booker_api_tests/api/client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/api/client.py) | A small API client for tests: one place for the base URL, headers, timeout and logging. |
+    | [booker_api_tests/api/data.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/api/data.py) | Test data for bookings. |
+    | [booker_api_tests/api/schema.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/api/schema.py) | Check that a response has the right shape, and list every problem with its path. |
+    | [booker_api_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/pytest.ini) | pytest settings |
+    | [booker_api_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [booker_api_tests/schemas/booking.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/schemas/booking.json) | Data (JSON) |
+    | [booker_api_tests/schemas/created_booking.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/schemas/created_booking.json) | Data (JSON) |
+    | [booker_api_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [booker_api_tests/tests/test_auth.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_auth.py) | Logging in, and what happens with a wrong password. |
+    | [booker_api_tests/tests/test_delete_booking.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_delete_booking.py) | DELETE: remove a booking, and check it is really gone. |
+    | [booker_api_tests/tests/test_get_booking.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_get_booking.py) | GET: read a booking. |
+    | [booker_api_tests/tests/test_patch_booking.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_patch_booking.py) | PATCH: change some fields, and leave the rest alone. |
+    | [booker_api_tests/tests/test_post_booking.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_post_booking.py) | POST: create a booking. |
+    | [booker_api_tests/tests/test_put_booking.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/booker_api_tests/tests/test_put_booking.py) | PUT: replace a whole booking. |
+    | [web_kit/page/app.js](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/web_kit/page/app.js) | The JavaScript in the browser. It calls the API in the background (AJAX, with fetch) |
+    | [web_kit/page/index.html](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/web_kit/page/index.html) | The client: the HTML the browser gets first. The products are NOT in it: app.js asks the API for them. |
+    | [web_kit/watch_requests.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/web_kit/watch_requests.py) | Open a page in a real browser and list every request it makes, like the Network tab. |
+    | [web_kit/web_demo.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_testing/templates/web_kit/web_demo.py) | A tiny web app to see how the web works: a server, an HTML page, JavaScript that calls a REST API in the background (AJAX), and JSON answers. |
 
 ??? note "Database testing (12 files)"
 
@@ -310,18 +310,18 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [shop_db_tests/README.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/README.md) | Database tests for a bookshop |
-    | [shop_db_tests/db/client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/db/client.py) | A small database client for tests: one place for the connection, queries and logging. |
-    | [shop_db_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/pytest.ini) | pytest settings |
-    | [shop_db_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [shop_db_tests/sql/schema.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/sql/schema.sql) | A small bookshop: customers, books, orders and the books in each order. |
-    | [shop_db_tests/sql/seed.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/sql/seed.sql) | Fake test data for the bookshop. Every name and email is made up. |
-    | [shop_db_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [shop_db_tests/tests/test_crud.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_crud.py) | CRUD tests: create, read, update and delete one customer, and check what was saved. |
-    | [shop_db_tests/tests/test_data_rules.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_data_rules.py) | Data validation: business rules the database can't enforce on its own. |
-    | [shop_db_tests/tests/test_integrity.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_integrity.py) | Integrity tests: the database itself refuses bad rows, whatever the app sends. |
-    | [shop_db_tests/tests/test_procedures_and_triggers.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_procedures_and_triggers.py) | Stored functions and triggers: code that runs inside the database, tested from outside. |
-    | [shop_db_tests/tests/test_schema.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_schema.py) | Schema tests: the tables and columns are what the app expects. |
+    | [shop_db_tests/README.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/README.md) | Database tests for a bookshop |
+    | [shop_db_tests/db/client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/db/client.py) | A small database client for tests: one place for the connection, queries and logging. |
+    | [shop_db_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/pytest.ini) | pytest settings |
+    | [shop_db_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [shop_db_tests/sql/schema.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/sql/schema.sql) | A small bookshop: customers, books, orders and the books in each order. |
+    | [shop_db_tests/sql/seed.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/sql/seed.sql) | Fake test data for the bookshop. Every name and email is made up. |
+    | [shop_db_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [shop_db_tests/tests/test_crud.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_crud.py) | CRUD tests: create, read, update and delete one customer, and check what was saved. |
+    | [shop_db_tests/tests/test_data_rules.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_data_rules.py) | Data validation: business rules the database can't enforce on its own. |
+    | [shop_db_tests/tests/test_integrity.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_integrity.py) | Integrity tests: the database itself refuses bad rows, whatever the app sends. |
+    | [shop_db_tests/tests/test_procedures_and_triggers.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_procedures_and_triggers.py) | Stored functions and triggers: code that runs inside the database, tested from outside. |
+    | [shop_db_tests/tests/test_schema.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/database_testing/templates/shop_db_tests/tests/test_schema.py) | Schema tests: the tables and columns are what the app expects. |
 
 ??? note "Multi-database testing (25 files)"
 
@@ -329,31 +329,31 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [multi_db_tests/config/.env.example](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/config/.env.example) | Settings to copy into .env (no real secrets) |
-    | [multi_db_tests/config/databases.yaml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/config/databases.yaml) | One block per database. Passwords are never here: password_env names the |
-    | [multi_db_tests/db_clients/base_client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/base_client.py) | What every database client can do, whatever the database underneath. |
-    | [multi_db_tests/db_clients/mongo_client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/mongo_client.py) | MongoDB, through PyMongo. |
-    | [multi_db_tests/db_clients/mysql_client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/mysql_client.py) | MySQL, through PyMySQL. |
-    | [multi_db_tests/db_clients/postgres_client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/postgres_client.py) | PostgreSQL, through psycopg. |
-    | [multi_db_tests/db_clients/sql_client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/sql_client.py) | What PostgreSQL, MySQL and SQLite share: Python's database API (PEP 249). |
-    | [multi_db_tests/db_clients/sqlite_client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/sqlite_client.py) | SQLite, through Python's own sqlite3. |
-    | [multi_db_tests/db_clients/test_data.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/test_data.py) | Read the test data from test_data/*.csv, with the right Python type for every column. |
-    | [multi_db_tests/docker-compose.yml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/docker-compose.yml) | Three test databases for your own computer: PostgreSQL, MySQL and MongoDB. |
-    | [multi_db_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/pytest.ini) | pytest settings |
-    | [multi_db_tests/queries/mongo/orders_per_month.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/mongo/orders_per_month.json) | Data (JSON) |
-    | [multi_db_tests/queries/mysql/orders_per_month.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/mysql/orders_per_month.sql) | SQL |
-    | [multi_db_tests/queries/mysql/schema.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/mysql/schema.sql) | The test tables, in MySQL's types. Text needs a length, and DATETIME has no time zone. |
-    | [multi_db_tests/queries/postgres/orders_per_month.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/postgres/orders_per_month.sql) | SQL |
-    | [multi_db_tests/queries/postgres/schema.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/postgres/schema.sql) | The test tables, in PostgreSQL's types. |
-    | [multi_db_tests/queries/sqlite/orders_per_month.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/sqlite/orders_per_month.sql) | SQL |
-    | [multi_db_tests/queries/sqlite/schema.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/sqlite/schema.sql) | The test tables, in SQLite. It has no date or money types. Times are text, money is NUMERIC. |
-    | [multi_db_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [multi_db_tests/test_data/customers.csv](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/test_data/customers.csv) | Data (CSV) |
-    | [multi_db_tests/test_data/orders.csv](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/test_data/orders.csv) | Data (CSV) |
-    | [multi_db_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [multi_db_tests/tests/test_cross_db_compare.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/test_cross_db_compare.py) | Cross-database comparison: every database holds the same data as the source. |
-    | [multi_db_tests/tests/test_data_integrity.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/test_data_integrity.py) | Data integrity: the same checks, run on every database. |
-    | [multi_db_tests/tests/test_schema.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/test_schema.py) | Schema: every database has the same tables and columns, whatever its own types. |
+    | [multi_db_tests/config/.env.example](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/config/.env.example) | Settings to copy into .env (no real secrets) |
+    | [multi_db_tests/config/databases.yaml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/config/databases.yaml) | One block per database. Passwords are never here: password_env names the |
+    | [multi_db_tests/db_clients/base_client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/base_client.py) | What every database client can do, whatever the database underneath. |
+    | [multi_db_tests/db_clients/mongo_client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/mongo_client.py) | MongoDB, through PyMongo. |
+    | [multi_db_tests/db_clients/mysql_client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/mysql_client.py) | MySQL, through PyMySQL. |
+    | [multi_db_tests/db_clients/postgres_client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/postgres_client.py) | PostgreSQL, through psycopg. |
+    | [multi_db_tests/db_clients/sql_client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/sql_client.py) | What PostgreSQL, MySQL and SQLite share: Python's database API (PEP 249). |
+    | [multi_db_tests/db_clients/sqlite_client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/sqlite_client.py) | SQLite, through Python's own sqlite3. |
+    | [multi_db_tests/db_clients/test_data.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/db_clients/test_data.py) | Read the test data from test_data/*.csv, with the right Python type for every column. |
+    | [multi_db_tests/docker-compose.yml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/docker-compose.yml) | Three test databases for your own computer: PostgreSQL, MySQL and MongoDB. |
+    | [multi_db_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/pytest.ini) | pytest settings |
+    | [multi_db_tests/queries/mongo/orders_per_month.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/mongo/orders_per_month.json) | Data (JSON) |
+    | [multi_db_tests/queries/mysql/orders_per_month.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/mysql/orders_per_month.sql) | SQL |
+    | [multi_db_tests/queries/mysql/schema.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/mysql/schema.sql) | The test tables, in MySQL's types. Text needs a length, and DATETIME has no time zone. |
+    | [multi_db_tests/queries/postgres/orders_per_month.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/postgres/orders_per_month.sql) | SQL |
+    | [multi_db_tests/queries/postgres/schema.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/postgres/schema.sql) | The test tables, in PostgreSQL's types. |
+    | [multi_db_tests/queries/sqlite/orders_per_month.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/sqlite/orders_per_month.sql) | SQL |
+    | [multi_db_tests/queries/sqlite/schema.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/queries/sqlite/schema.sql) | The test tables, in SQLite. It has no date or money types. Times are text, money is NUMERIC. |
+    | [multi_db_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [multi_db_tests/test_data/customers.csv](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/test_data/customers.csv) | Data (CSV) |
+    | [multi_db_tests/test_data/orders.csv](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/test_data/orders.csv) | Data (CSV) |
+    | [multi_db_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [multi_db_tests/tests/test_cross_db_compare.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/test_cross_db_compare.py) | Cross-database comparison: every database holds the same data as the source. |
+    | [multi_db_tests/tests/test_data_integrity.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/test_data_integrity.py) | Data integrity: the same checks, run on every database. |
+    | [multi_db_tests/tests/test_schema.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/multi_database_testing/templates/multi_db_tests/tests/test_schema.py) | Schema: every database has the same tables and columns, whatever its own types. |
 
 ??? note "API + database (8 files)"
 
@@ -361,14 +361,14 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [api_db_tests/helpers/clients.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/helpers/clients.py) | The two things an API + database test talks to: the API, and the database behind it. |
-    | [api_db_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/pytest.ini) | pytest settings |
-    | [api_db_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [api_db_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [api_db_tests/tests/test_background_writes.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_background_writes.py) | Writes the app makes after it answers: check them by waiting, never by sleeping. |
-    | [api_db_tests/tests/test_create_order.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_create_order.py) | Call the API, then prove the change landed in the database, exactly. |
-    | [api_db_tests/tests/test_customers.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_customers.py) | Customers: what the API saves, and what it must refuse. |
-    | [api_db_tests/tests/test_seed_then_call.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_seed_then_call.py) | Put data straight into the database, then check the API reads and changes it right. |
+    | [api_db_tests/helpers/clients.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/helpers/clients.py) | The two things an API + database test talks to: the API, and the database behind it. |
+    | [api_db_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/pytest.ini) | pytest settings |
+    | [api_db_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [api_db_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [api_db_tests/tests/test_background_writes.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_background_writes.py) | Writes the app makes after it answers: check them by waiting, never by sleeping. |
+    | [api_db_tests/tests/test_create_order.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_create_order.py) | Call the API, then prove the change landed in the database, exactly. |
+    | [api_db_tests/tests/test_customers.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_customers.py) | Customers: what the API saves, and what it must refuse. |
+    | [api_db_tests/tests/test_seed_then_call.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/api_and_database/templates/api_db_tests/tests/test_seed_then_call.py) | Put data straight into the database, then check the API reads and changes it right. |
 
 ??? note "Data-driven testing (19 files)"
 
@@ -376,25 +376,25 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [data_driven_tests/app/shop_rules.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/app/shop_rules.py) | The code under test in this template: a shop's signup, price and shipping rules. |
-    | [data_driven_tests/helpers/data_loaders.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/helpers/data_loaders.py) | Load test cases from CSV, JSON, YAML or Excel files, and turn them into pytest cases. |
-    | [data_driven_tests/helpers/factories.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/helpers/factories.py) | Test data factories: a valid, typical object by default. |
-    | [data_driven_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/pytest.ini) | pytest settings |
-    | [data_driven_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [data_driven_tests/robot/ShopKeywords.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/robot/ShopKeywords.py) | Robot Framework keywords for the shop rules. |
-    | [data_driven_tests/robot/checkout.robot](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/robot/checkout.robot) | Robot Framework file |
-    | [data_driven_tests/robot/signup_rules.robot](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/robot/signup_rules.robot) | Robot Framework file |
-    | [data_driven_tests/test_data/discount_rules.xlsx](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/test_data/discount_rules.xlsx) | Test data (Excel) |
-    | [data_driven_tests/test_data/order_totals.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/test_data/order_totals.json) | Data (JSON) |
-    | [data_driven_tests/test_data/shipping_cases.yaml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/test_data/shipping_cases.yaml) | Shipping prices from the logistics team's price list. |
-    | [data_driven_tests/test_data/signup_cases.csv](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/test_data/signup_cases.csv) | Signup rules from the product owner: email with @ and a dot after it, password 8 to 64 characters, age 18 or older. |
-    | [data_driven_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [data_driven_tests/tests/test_discounts_excel.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_discounts_excel.py) | The business team's discount rules, straight from their Excel sheet. |
-    | [data_driven_tests/tests/test_order_totals_json.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_order_totals_json.py) | Order totals, one test per case in test_data/order_totals.json. |
-    | [data_driven_tests/tests/test_shipping_yaml.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_shipping_yaml.py) | Shipping prices, one test per case in test_data/shipping_cases.yaml. |
-    | [data_driven_tests/tests/test_signup_csv.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_signup_csv.py) | Signup rules, one test per row of test_data/signup_cases.csv. |
-    | [data_driven_tests/tests/test_with_factories.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_with_factories.py) | Tests that build their data with factories: valid by default, one change per test. |
-    | [data_driven_tests/tools/make_discount_sheet.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tools/make_discount_sheet.py) | Make test_data/discount_rules.xlsx: the sheet the business team keeps their discount rules in. |
+    | [data_driven_tests/app/shop_rules.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/app/shop_rules.py) | The code under test in this template: a shop's signup, price and shipping rules. |
+    | [data_driven_tests/helpers/data_loaders.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/helpers/data_loaders.py) | Load test cases from CSV, JSON, YAML or Excel files, and turn them into pytest cases. |
+    | [data_driven_tests/helpers/factories.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/helpers/factories.py) | Test data factories: a valid, typical object by default. |
+    | [data_driven_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/pytest.ini) | pytest settings |
+    | [data_driven_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [data_driven_tests/robot/ShopKeywords.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/robot/ShopKeywords.py) | Robot Framework keywords for the shop rules. |
+    | [data_driven_tests/robot/checkout.robot](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/robot/checkout.robot) | Robot Framework file |
+    | [data_driven_tests/robot/signup_rules.robot](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/robot/signup_rules.robot) | Robot Framework file |
+    | [data_driven_tests/test_data/discount_rules.xlsx](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/test_data/discount_rules.xlsx) | Test data (Excel) |
+    | [data_driven_tests/test_data/order_totals.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/test_data/order_totals.json) | Data (JSON) |
+    | [data_driven_tests/test_data/shipping_cases.yaml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/test_data/shipping_cases.yaml) | Shipping prices from the logistics team's price list. |
+    | [data_driven_tests/test_data/signup_cases.csv](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/test_data/signup_cases.csv) | Signup rules from the product owner: email with @ and a dot after it, password 8 to 64 characters, age 18 or older. |
+    | [data_driven_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [data_driven_tests/tests/test_discounts_excel.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_discounts_excel.py) | The business team's discount rules, straight from their Excel sheet. |
+    | [data_driven_tests/tests/test_order_totals_json.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_order_totals_json.py) | Order totals, one test per case in test_data/order_totals.json. |
+    | [data_driven_tests/tests/test_shipping_yaml.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_shipping_yaml.py) | Shipping prices, one test per case in test_data/shipping_cases.yaml. |
+    | [data_driven_tests/tests/test_signup_csv.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_signup_csv.py) | Signup rules, one test per row of test_data/signup_cases.csv. |
+    | [data_driven_tests/tests/test_with_factories.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tests/test_with_factories.py) | Tests that build their data with factories: valid by default, one change per test. |
+    | [data_driven_tests/tools/make_discount_sheet.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/data_driven_testing/templates/data_driven_tests/tools/make_discount_sheet.py) | Make test_data/discount_rules.xlsx: the sheet the business team keeps their discount rules in. |
 
 ??? note "BDD testing (13 files)"
 
@@ -402,19 +402,19 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [bdd_tests/behave.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/behave.ini) | Known bugs are left out of the normal run. "behave --tags=@known_bug" checks they still fail. |
-    | [bdd_tests/drivers/api_driver.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/drivers/api_driver.py) | Reach the shop through its API. |
-    | [bdd_tests/drivers/ui_driver.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/drivers/ui_driver.py) | Reach the shop through its web page, the way a person would. |
-    | [bdd_tests/features/cart.feature](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/cart.feature) | Feature: Shopping cart |
-    | [bdd_tests/features/coupons.feature](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/coupons.feature) | Feature: Coupons |
-    | [bdd_tests/features/environment.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/environment.py) | behave hooks: start the shop once, give every scenario a fresh driver. |
-    | [bdd_tests/features/steps/shop_steps.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/steps/shop_steps.py) | behave steps. |
-    | [bdd_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/pytest.ini) | pytest settings |
-    | [bdd_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [bdd_tests/shop_app/app.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/shop_app/app.py) | A tiny bookshop with an API and a web page: the app under test in the BDD lessons. |
-    | [bdd_tests/shop_app/server.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
-    | [bdd_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [bdd_tests/tests/test_shop.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/tests/test_shop.py) | pytest-bdd steps for the same feature files behave uses. |
+    | [bdd_tests/behave.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/behave.ini) | Known bugs are left out of the normal run. "behave --tags=@known_bug" checks they still fail. |
+    | [bdd_tests/drivers/api_driver.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/drivers/api_driver.py) | Reach the shop through its API. |
+    | [bdd_tests/drivers/ui_driver.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/drivers/ui_driver.py) | Reach the shop through its web page, the way a person would. |
+    | [bdd_tests/features/cart.feature](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/cart.feature) | Feature: Shopping cart |
+    | [bdd_tests/features/coupons.feature](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/coupons.feature) | Feature: Coupons |
+    | [bdd_tests/features/environment.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/environment.py) | behave hooks: start the shop once, give every scenario a fresh driver. |
+    | [bdd_tests/features/steps/shop_steps.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/features/steps/shop_steps.py) | behave steps. |
+    | [bdd_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/pytest.ini) | pytest settings |
+    | [bdd_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [bdd_tests/shop_app/app.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/shop_app/app.py) | A tiny bookshop with an API and a web page: the app under test in the BDD lessons. |
+    | [bdd_tests/shop_app/server.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
+    | [bdd_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [bdd_tests/tests/test_shop.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/bdd_testing/templates/bdd_tests/tests/test_shop.py) | pytest-bdd steps for the same feature files behave uses. |
 
 ??? note "UI automation (15 files)"
 
@@ -422,21 +422,21 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [ui_tests/first_look.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/first_look.py) | A first look at Playwright, without pytest: browser, context, page, locator. |
-    | [ui_tests/pages/books_page.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/books_page.py) | The book list. |
-    | [ui_tests/pages/cart_page.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/cart_page.py) | The cart page: a table with a Remove button on every row, and a confirm dialog. |
-    | [ui_tests/pages/checkout_page.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/checkout_page.py) | Checkout: a form, a card field inside an iframe, and a terms link that opens a new tab. |
-    | [ui_tests/pages/header.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/header.py) | The header is on every page, so it is a component that pages share, not a page. |
-    | [ui_tests/pages/login_page.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/login_page.py) | The log-in page. |
-    | [ui_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pytest.ini) | pytest settings |
-    | [ui_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [ui_tests/shop_app/app.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/shop_app/app.py) | A small bookshop web app: the app under test in the UI automation lessons. |
-    | [ui_tests/shop_app/server.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
-    | [ui_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [ui_tests/tests/test_books.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_books.py) | The book list loads after the page. |
-    | [ui_tests/tests/test_cart.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_cart.py) | The cart page. |
-    | [ui_tests/tests/test_checkout.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_checkout.py) | Checkout: a form with a select and radio buttons, a card field in an iframe, a new tab. |
-    | [ui_tests/tests/test_login.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_login.py) | Logging in, through the form. |
+    | [ui_tests/first_look.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/first_look.py) | A first look at Playwright, without pytest: browser, context, page, locator. |
+    | [ui_tests/pages/books_page.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/books_page.py) | The book list. |
+    | [ui_tests/pages/cart_page.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/cart_page.py) | The cart page: a table with a Remove button on every row, and a confirm dialog. |
+    | [ui_tests/pages/checkout_page.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/checkout_page.py) | Checkout: a form, a card field inside an iframe, and a terms link that opens a new tab. |
+    | [ui_tests/pages/header.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/header.py) | The header is on every page, so it is a component that pages share, not a page. |
+    | [ui_tests/pages/login_page.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pages/login_page.py) | The log-in page. |
+    | [ui_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/pytest.ini) | pytest settings |
+    | [ui_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [ui_tests/shop_app/app.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/shop_app/app.py) | A small bookshop web app: the app under test in the UI automation lessons. |
+    | [ui_tests/shop_app/server.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
+    | [ui_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [ui_tests/tests/test_books.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_books.py) | The book list loads after the page. |
+    | [ui_tests/tests/test_cart.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_cart.py) | The cart page. |
+    | [ui_tests/tests/test_checkout.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_checkout.py) | Checkout: a form with a select and radio buttons, a card field in an iframe, a new tab. |
+    | [ui_tests/tests/test_login.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/ui_automation/templates/ui_tests/tests/test_login.py) | Logging in, through the form. |
 
 ??? note "Reporting and logging (9 files)"
 
@@ -444,15 +444,15 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [report_tests/helpers/api_client.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/helpers/api_client.py) | An API client that logs every call: what was sent, what came back, and how long it took. |
-    | [report_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/pytest.ini) | pytest settings |
-    | [report_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [report_tests/shop_app/app.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/shop_app/app.py) | A small bookshop web app: the app under test in the UI automation and reporting lessons. |
-    | [report_tests/shop_app/server.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
-    | [report_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [report_tests/tests/test_api.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/test_api.py) | API tests. |
-    | [report_tests/tests/test_logging.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/test_logging.py) | Logs are evidence, and evidence gets shared. |
-    | [report_tests/tests/test_pages.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/test_pages.py) | Page tests. |
+    | [report_tests/helpers/api_client.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/helpers/api_client.py) | An API client that logs every call: what was sent, what came back, and how long it took. |
+    | [report_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/pytest.ini) | pytest settings |
+    | [report_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [report_tests/shop_app/app.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/shop_app/app.py) | A small bookshop web app: the app under test in the UI automation and reporting lessons. |
+    | [report_tests/shop_app/server.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/shop_app/server.py) | Start the practice shop in the background, on a free port of this computer only. |
+    | [report_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [report_tests/tests/test_api.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/test_api.py) | API tests. |
+    | [report_tests/tests/test_logging.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/test_logging.py) | Logs are evidence, and evidence gets shared. |
+    | [report_tests/tests/test_pages.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/core_automation/reporting_and_logging/templates/report_tests/tests/test_pages.py) | Page tests. |
 
 ## Infrastructure
 
@@ -462,9 +462,9 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [shell_kit/log_summary.sh](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/linux_and_shell/templates/shell_kit/log_summary.sh) | Summarise a log file: lines per level, the most common errors, the slowest requests. |
-    | [shell_kit/make_practice_logs.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/linux_and_shell/templates/shell_kit/make_practice_logs.py) | Make practice log files in logs/: the same lines every time, like a small web shop's logs. |
-    | [shell_kit/shell_cheat_sheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/linux_and_shell/templates/shell_kit/shell_cheat_sheet.md) | Shell cheat sheet for testers |
+    | [shell_kit/log_summary.sh](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/linux_and_shell/templates/shell_kit/log_summary.sh) | Summarise a log file: lines per level, the most common errors, the slowest requests. |
+    | [shell_kit/make_practice_logs.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/linux_and_shell/templates/shell_kit/make_practice_logs.py) | Make practice log files in logs/: the same lines every time, like a small web shop's logs. |
+    | [shell_kit/shell_cheat_sheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/linux_and_shell/templates/shell_kit/shell_cheat_sheet.md) | Shell cheat sheet for testers |
 
 ??? note "Networking for testers (4 files)"
 
@@ -472,10 +472,10 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [net_kit/net_check.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/net_check.py) | Check one address step by step and say where it breaks: the name, the connection, the HTTPS certificate, or the answer. |
-    | [net_kit/network_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/network_checklist.md) | "It doesn't work": network checklist |
-    | [net_kit/practice_server.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/practice_server.py) | A small practice web server for networking checks. |
-    | [net_kit/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [net_kit/net_check.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/net_check.py) | Check one address step by step and say where it breaks: the name, the connection, the HTTPS certificate, or the answer. |
+    | [net_kit/network_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/network_checklist.md) | "It doesn't work": network checklist |
+    | [net_kit/practice_server.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/practice_server.py) | A small practice web server for networking checks. |
+    | [net_kit/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/networking_for_testers/templates/net_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
 
 ??? note "Debugging toolkit (6 files)"
 
@@ -483,12 +483,12 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [debug_practice/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/pytest.ini) | pytest settings |
-    | [debug_practice/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [debug_practice/shop/cart.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/shop/cart.py) | A tiny shop cart. |
-    | [debug_practice/shop/discounts.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/shop/discounts.py) | Discount codes. |
-    | [debug_practice/tests/test_cart.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/tests/test_cart.py) | Tests for the practice cart. |
-    | [debugging_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debugging_checklist.md) | Debugging checklist: a test failed |
+    | [debug_practice/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/pytest.ini) | pytest settings |
+    | [debug_practice/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [debug_practice/shop/cart.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/shop/cart.py) | A tiny shop cart. |
+    | [debug_practice/shop/discounts.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/shop/discounts.py) | Discount codes. |
+    | [debug_practice/tests/test_cart.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debug_practice/tests/test_cart.py) | Tests for the practice cart. |
+    | [debugging_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/debugging_toolkit/templates/debugging_checklist.md) | Debugging checklist: a test failed |
 
 ??? note "Everyday tools (6 files)"
 
@@ -496,12 +496,12 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [everyday_kit/copied_request.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/copied_request.txt) | Text file |
-    | [everyday_kit/curl_to_pytest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/curl_to_pytest.py) | Turn a curl command (from "Copy as cURL" in the browser, Postman or Bruno) into a pytest test that uses requests. |
-    | [everyday_kit/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [everyday_kit/vscode/extensions.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/extensions.json) | Data (JSON) |
-    | [everyday_kit/vscode/launch.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/launch.json) | Data (JSON) |
-    | [everyday_kit/vscode/settings.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/settings.json) | Data (JSON) |
+    | [everyday_kit/copied_request.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/copied_request.txt) | Text file |
+    | [everyday_kit/curl_to_pytest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/curl_to_pytest.py) | Turn a curl command (from "Copy as cURL" in the browser, Postman or Bruno) into a pytest test that uses requests. |
+    | [everyday_kit/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [everyday_kit/vscode/extensions.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/extensions.json) | Data (JSON) |
+    | [everyday_kit/vscode/launch.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/launch.json) | Data (JSON) |
+    | [everyday_kit/vscode/settings.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/everyday_tools/templates/everyday_kit/vscode/settings.json) | Data (JSON) |
 
 ??? note "CI/CD for testers (7 files)"
 
@@ -509,13 +509,13 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [ci_kit/ci_summary.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/ci_summary.py) | Read pytest's JUnit XML report and write a short summary: the totals, then every failed test with the first line of its error. |
-    | [ci_kit/github_workflows/tests.yml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/github_workflows/tests.yml) | Put this file in your repository at .github/workflows/tests.yml |
-    | [ci_kit/pipeline_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/pipeline_checklist.md) | Test pipeline checklist |
-    | [ci_kit/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/pytest.ini) | pytest settings |
-    | [ci_kit/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [ci_kit/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/tests/conftest.py) | Shared pytest fixtures |
-    | [ci_kit/tests/test_smoke.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/tests/test_smoke.py) | Smoke tests: the quick checks that run first on every change. |
+    | [ci_kit/ci_summary.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/ci_summary.py) | Read pytest's JUnit XML report and write a short summary: the totals, then every failed test with the first line of its error. |
+    | [ci_kit/github_workflows/tests.yml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/github_workflows/tests.yml) | Put this file in your repository at .github/workflows/tests.yml |
+    | [ci_kit/pipeline_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/pipeline_checklist.md) | Test pipeline checklist |
+    | [ci_kit/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/pytest.ini) | pytest settings |
+    | [ci_kit/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [ci_kit/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/tests/conftest.py) | Shared pytest fixtures |
+    | [ci_kit/tests/test_smoke.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/ci_cd/templates/ci_kit/tests/test_smoke.py) | Smoke tests: the quick checks that run first on every change. |
 
 ??? note "Docker for testers (11 files)"
 
@@ -523,17 +523,17 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [docker_tests/.dockerignore](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/.dockerignore) | Files Docker leaves out of the image |
-    | [docker_tests/.env.example](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/.env.example) | Settings to copy into .env (no real secrets) |
-    | [docker_tests/Dockerfile](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/Dockerfile) | How to build the Docker image |
-    | [docker_tests/app/Dockerfile](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/app/Dockerfile) | How to build the Docker image |
-    | [docker_tests/app/main.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/app/main.py) | A small book API on PostgreSQL: the app the test container checks. |
-    | [docker_tests/app/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/app/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [docker_tests/docker-compose.yml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/docker-compose.yml) | A whole test environment: a database, the app, and a container that runs the tests. |
-    | [docker_tests/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/pytest.ini) | pytest settings |
-    | [docker_tests/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [docker_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/tests/conftest.py) | Shared pytest fixtures |
-    | [docker_tests/tests/test_books_api.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/tests/test_books_api.py) | Checks of the book API, and of what it saves in the database. |
+    | [docker_tests/.dockerignore](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/.dockerignore) | Files Docker leaves out of the image |
+    | [docker_tests/.env.example](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/.env.example) | Settings to copy into .env (no real secrets) |
+    | [docker_tests/Dockerfile](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/Dockerfile) | How to build the Docker image |
+    | [docker_tests/app/Dockerfile](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/app/Dockerfile) | How to build the Docker image |
+    | [docker_tests/app/main.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/app/main.py) | A small book API on PostgreSQL: the app the test container checks. |
+    | [docker_tests/app/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/app/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [docker_tests/docker-compose.yml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/docker-compose.yml) | A whole test environment: a database, the app, and a container that runs the tests. |
+    | [docker_tests/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/pytest.ini) | pytest settings |
+    | [docker_tests/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [docker_tests/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/tests/conftest.py) | Shared pytest fixtures |
+    | [docker_tests/tests/test_books_api.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/infrastructure/docker_for_testers/templates/docker_tests/tests/test_books_api.py) | Checks of the book API, and of what it saves in the database. |
 
 ## Advanced Testing
 
@@ -543,20 +543,20 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [mock_kit/docker-compose.yml](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/docker-compose.yml) | WireMock with the same mapping files as stub_server.py. Start: docker compose up -d |
-    | [mock_kit/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/pytest.ini) | pytest settings |
-    | [mock_kit/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [mock_kit/shop/payments.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/shop/payments.py) | The code under test: checkout asks a payment provider to charge a card. |
-    | [mock_kit/stub_server.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stub_server.py) | A tiny stub server that answers like a real service, from files you write. |
-    | [mock_kit/stubs/mappings/charge_declined.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_declined.json) | Data (JSON) |
-    | [mock_kit/stubs/mappings/charge_provider_error.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_provider_error.json) | Data (JSON) |
-    | [mock_kit/stubs/mappings/charge_succeeds.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_succeeds.json) | Data (JSON) |
-    | [mock_kit/stubs/mappings/charge_too_slow.json](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_too_slow.json) | Data (JSON) |
-    | [mock_kit/tests/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/conftest.py) | Shared pytest fixtures |
-    | [mock_kit/tests/test_mock_in_code.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_mock_in_code.py) | Level 1, in code: replace the payment client with a mock (unittest.mock, part of Python). |
-    | [mock_kit/tests/test_stub_over_http.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_stub_over_http.py) | Level 2, over HTTP: the real PaymentClient talks to a stub server instead of the provider. |
-    | [mock_kit/tests/test_ui_route.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_ui_route.py) | Level 3, in the browser: Playwright answers the page's API calls itself (page.route). |
-    | [mock_kit/ui/checkout.html](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/ui/checkout.html) | A checkout page. Its JavaScript calls POST /api/pay and shows what happened. |
+    | [mock_kit/docker-compose.yml](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/docker-compose.yml) | WireMock with the same mapping files as stub_server.py. Start: docker compose up -d |
+    | [mock_kit/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/pytest.ini) | pytest settings |
+    | [mock_kit/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [mock_kit/shop/payments.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/shop/payments.py) | The code under test: checkout asks a payment provider to charge a card. |
+    | [mock_kit/stub_server.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stub_server.py) | A tiny stub server that answers like a real service, from files you write. |
+    | [mock_kit/stubs/mappings/charge_declined.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_declined.json) | Data (JSON) |
+    | [mock_kit/stubs/mappings/charge_provider_error.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_provider_error.json) | Data (JSON) |
+    | [mock_kit/stubs/mappings/charge_succeeds.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_succeeds.json) | Data (JSON) |
+    | [mock_kit/stubs/mappings/charge_too_slow.json](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/stubs/mappings/charge_too_slow.json) | Data (JSON) |
+    | [mock_kit/tests/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/conftest.py) | Shared pytest fixtures |
+    | [mock_kit/tests/test_mock_in_code.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_mock_in_code.py) | Level 1, in code: replace the payment client with a mock (unittest.mock, part of Python). |
+    | [mock_kit/tests/test_stub_over_http.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_stub_over_http.py) | Level 2, over HTTP: the real PaymentClient talks to a stub server instead of the provider. |
+    | [mock_kit/tests/test_ui_route.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/tests/test_ui_route.py) | Level 3, in the browser: Playwright answers the page's API calls itself (page.route). |
+    | [mock_kit/ui/checkout.html](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/advanced_testing/mocking_and_stubbing/templates/mock_kit/ui/checkout.html) | A checkout page. Its JavaScript calls POST /api/pay and shows what happened. |
 
 ## Professional SDET
 
@@ -566,12 +566,12 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [day_kit/daily_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/daily_checklist.md) | My testing day |
-    | [day_kit/known_issues.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/known_issues.txt) | A piece of the error text \| the ticket that tracks it. Remove the line when the ticket is fixed. |
-    | [day_kit/morning_triage.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/morning_triage.py) | Read last night's test report (JUnit XML) and sort the failures before stand-up: known problems (already have a ticket), and new ones (need a look today). |
-    | [day_kit/nightly_example/test_nightly.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/nightly_example/test_nightly.py) | A pretend nightly run with the kinds of failures a real morning has. |
-    | [day_kit/pr_review_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/pr_review_checklist.md) | Reviewing a pull request as a tester |
-    | [day_kit/standup_update.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/standup_update.md) | Stand-up update (copy, fill, say it in under a minute) |
+    | [day_kit/daily_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/daily_checklist.md) | My testing day |
+    | [day_kit/known_issues.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/known_issues.txt) | A piece of the error text \| the ticket that tracks it. Remove the line when the ticket is fixed. |
+    | [day_kit/morning_triage.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/morning_triage.py) | Read last night's test report (JUnit XML) and sort the failures before stand-up: known problems (already have a ticket), and new ones (need a look today). |
+    | [day_kit/nightly_example/test_nightly.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/nightly_example/test_nightly.py) | A pretend nightly run with the kinds of failures a real morning has. |
+    | [day_kit/pr_review_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/pr_review_checklist.md) | Reviewing a pull request as a tester |
+    | [day_kit/standup_update.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/a_day_in_the_life/templates/day_kit/standup_update.md) | Stand-up update (copy, fill, say it in under a minute) |
 
 ??? note "Your first weeks in a new job (10 files)"
 
@@ -579,16 +579,16 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [first_weeks_kit/framework_reading_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/framework_reading_checklist.md) | Reading a test framework someone else wrote |
-    | [first_weeks_kit/map_test_suite.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/map_test_suite.py) | Map a pytest test suite you didn't write: how many tests and where, the fixtures and where they live, markers, skipped tests and why, the settings it reads, fixed waits, and the addresses it calls. |
-    | [first_weeks_kit/questions_to_ask.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/questions_to_ask.md) | Questions to ask in your first weeks |
-    | [first_weeks_kit/sample_framework/conftest.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/conftest.py) | Shared pytest fixtures |
-    | [first_weeks_kit/sample_framework/helpers/api.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/helpers/api.py) | Python helper code |
-    | [first_weeks_kit/sample_framework/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/pytest.ini) | pytest settings |
-    | [first_weeks_kit/sample_framework/requirements.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/requirements.txt) | Python packages to install: pip install -r requirements.txt |
-    | [first_weeks_kit/sample_framework/tests/api/test_orders.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/tests/api/test_orders.py) | Tests |
-    | [first_weeks_kit/sample_framework/tests/api/test_users.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/tests/api/test_users.py) | Tests |
-    | [first_weeks_kit/sample_framework/tests/ui/test_checkout.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/tests/ui/test_checkout.py) | Tests |
+    | [first_weeks_kit/framework_reading_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/framework_reading_checklist.md) | Reading a test framework someone else wrote |
+    | [first_weeks_kit/map_test_suite.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/map_test_suite.py) | Map a pytest test suite you didn't write: how many tests and where, the fixtures and where they live, markers, skipped tests and why, the settings it reads, fixed waits, and the addresses it calls. |
+    | [first_weeks_kit/questions_to_ask.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/questions_to_ask.md) | Questions to ask in your first weeks |
+    | [first_weeks_kit/sample_framework/conftest.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/conftest.py) | Shared pytest fixtures |
+    | [first_weeks_kit/sample_framework/helpers/api.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/helpers/api.py) | Python helper code |
+    | [first_weeks_kit/sample_framework/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/pytest.ini) | pytest settings |
+    | [first_weeks_kit/sample_framework/requirements.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/requirements.txt) | Python packages to install: pip install -r requirements.txt |
+    | [first_weeks_kit/sample_framework/tests/api/test_orders.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/tests/api/test_orders.py) | Tests |
+    | [first_weeks_kit/sample_framework/tests/api/test_users.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/tests/api/test_users.py) | Tests |
+    | [first_weeks_kit/sample_framework/tests/ui/test_checkout.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/your_first_weeks/templates/first_weeks_kit/sample_framework/tests/ui/test_checkout.py) | Tests |
 
 ??? note "SDET in Agile (6 files)"
 
@@ -596,12 +596,12 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [agile_kit/acceptance_criteria_template.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/acceptance_criteria_template.md) | <TICKET-ID>: <short name> |
-    | [agile_kit/definition_of_done.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/definition_of_done.md) | Definition of Done: the testing part |
-    | [agile_kit/sprint_testing_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/sprint_testing_checklist.md) | Testing through the sprint |
-    | [agile_kit/stories/SHOP-420-after-refinement.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/stories/SHOP-420-after-refinement.md) | SHOP-420: Discount code at checkout (after refinement) |
-    | [agile_kit/stories/SHOP-420.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/stories/SHOP-420.md) | SHOP-420: Discount code at checkout |
-    | [agile_kit/story_check.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/story_check.py) | Check a user story before the sprint: find vague words in the acceptance criteria, and the areas the story never mentions. |
+    | [agile_kit/acceptance_criteria_template.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/acceptance_criteria_template.md) | <TICKET-ID>: <short name> |
+    | [agile_kit/definition_of_done.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/definition_of_done.md) | Definition of Done: the testing part |
+    | [agile_kit/sprint_testing_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/sprint_testing_checklist.md) | Testing through the sprint |
+    | [agile_kit/stories/SHOP-420-after-refinement.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/stories/SHOP-420-after-refinement.md) | SHOP-420: Discount code at checkout (after refinement) |
+    | [agile_kit/stories/SHOP-420.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/stories/SHOP-420.md) | SHOP-420: Discount code at checkout |
+    | [agile_kit/story_check.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/sdet_in_agile/templates/agile_kit/story_check.py) | Check a user story before the sprint: find vague words in the acceptance criteria, and the areas the story never mentions. |
 
 ??? note "Git in a team (4 files)"
 
@@ -609,10 +609,10 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [git_kit/git_practice.sh](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_practice.sh) | A safe place to practise team Git: a pretend server and two copies of a small test |
-    | [git_kit/git_team_cheat_sheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_team_cheat_sheet.md) | Git in a team: cheat sheet |
-    | [git_kit/gitignore_for_tests.txt](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/gitignore_for_tests.txt) | Rename this file to .gitignore in your test project. Git will never add these. |
-    | [git_kit/pull_request_template.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/pull_request_template.md) | Save as .github/pull_request_template.md: GitHub fills every new pull request with it. |
+    | [git_kit/git_practice.sh](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_practice.sh) | A safe place to practise team Git: a pretend server and two copies of a small test |
+    | [git_kit/git_team_cheat_sheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_team_cheat_sheet.md) | Git in a team: cheat sheet |
+    | [git_kit/gitignore_for_tests.txt](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/gitignore_for_tests.txt) | Rename this file to .gitignore in your test project. Git will never add these. |
+    | [git_kit/pull_request_template.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/pull_request_template.md) | Save as .github/pull_request_template.md: GitHub fills every new pull request with it. |
 
 ??? note "Working with developers (4 files)"
 
@@ -620,10 +620,10 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [dev_kit/evidence.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/working_with_developers/templates/dev_kit/evidence.py) | Collect evidence for a bug a developer can't reproduce: send the same request a few times and record the time (UTC), status, duration, request id and app version. |
-    | [dev_kit/pairing_session.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/working_with_developers/templates/dev_kit/pairing_session.md) | Pairing session: tester and developer |
-    | [dev_kit/practice_server.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/working_with_developers/templates/dev_kit/practice_server.py) | A tiny API with a bug that "works on my machine": every third request for order 7 fails with a 500. |
-    | [dev_kit/talking_about_bugs.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/working_with_developers/templates/dev_kit/talking_about_bugs.md) | Talking about bugs without blame |
+    | [dev_kit/evidence.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/working_with_developers/templates/dev_kit/evidence.py) | Collect evidence for a bug a developer can't reproduce: send the same request a few times and record the time (UTC), status, duration, request id and app version. |
+    | [dev_kit/pairing_session.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/working_with_developers/templates/dev_kit/pairing_session.md) | Pairing session: tester and developer |
+    | [dev_kit/practice_server.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/working_with_developers/templates/dev_kit/practice_server.py) | A tiny API with a bug that "works on my machine": every third request for order 7 fails with a 500. |
+    | [dev_kit/talking_about_bugs.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/working_with_developers/templates/dev_kit/talking_about_bugs.md) | Talking about bugs without blame |
 
 ??? note "Communicating your work (7 files)"
 
@@ -631,13 +631,13 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [comms_kit/estimate.csv](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/estimate.csv) | Data (CSV) |
-    | [comms_kit/estimate.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/estimate.py) | Estimate test work as a range, not one number. |
-    | [comms_kit/example_run/test_release.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/example_run/test_release.py) | A pretend release test run, to make a report for status_update.py. |
-    | [comms_kit/explaining_risk.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/explaining_risk.md) | Explaining a risk to a manager |
-    | [comms_kit/status_notes.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/status_notes.ini) | Your notes for the status. Lines are "name = text". CHANGE everything below. |
-    | [comms_kit/status_update.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/status_update.py) | Turn test results and your notes into a clear status, written three ways: a short chat message, an email for a manager, and a ticket comment. |
-    | [comms_kit/test_summary_report.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/test_summary_report.md) | Test summary: <release or feature name> |
+    | [comms_kit/estimate.csv](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/estimate.csv) | Data (CSV) |
+    | [comms_kit/estimate.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/estimate.py) | Estimate test work as a range, not one number. |
+    | [comms_kit/example_run/test_release.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/example_run/test_release.py) | A pretend release test run, to make a report for status_update.py. |
+    | [comms_kit/explaining_risk.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/explaining_risk.md) | Explaining a risk to a manager |
+    | [comms_kit/status_notes.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/status_notes.ini) | Your notes for the status. Lines are "name = text". CHANGE everything below. |
+    | [comms_kit/status_update.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/status_update.py) | Turn test results and your notes into a clear status, written three ways: a short chat message, an email for a manager, and a ticket comment. |
+    | [comms_kit/test_summary_report.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/communicating_your_work/templates/comms_kit/test_summary_report.md) | Test summary: <release or feature name> |
 
 ??? note "Regression, hotfixes and incidents (9 files)"
 
@@ -645,15 +645,15 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [hotfix_kit/hotfix_checklist.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/hotfix_checklist.md) | Hotfix test checklist |
-    | [hotfix_kit/incident_notes.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/incident_notes.md) | Incident notes (write while it happens) |
-    | [hotfix_kit/pick_tests.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/pick_tests.py) | Pick the tests to run for a change: read the changed files, match them to areas in test_map.ini, and print the pytest command. |
-    | [hotfix_kit/postmortem.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/postmortem.md) | Postmortem: <incident name> |
-    | [hotfix_kit/sample_suite/pytest.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/sample_suite/pytest.ini) | pytest settings |
-    | [hotfix_kit/sample_suite/tests/test_checkout.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/sample_suite/tests/test_checkout.py) | Tests |
-    | [hotfix_kit/sample_suite/tests/test_login.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/sample_suite/tests/test_login.py) | Tests |
-    | [hotfix_kit/sample_suite/tests/test_search.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/sample_suite/tests/test_search.py) | Tests |
-    | [hotfix_kit/test_map.ini](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/test_map.ini) | Which code belongs to which test area. CHANGE: your folders and your pytest markers. |
+    | [hotfix_kit/hotfix_checklist.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/hotfix_checklist.md) | Hotfix test checklist |
+    | [hotfix_kit/incident_notes.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/incident_notes.md) | Incident notes (write while it happens) |
+    | [hotfix_kit/pick_tests.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/pick_tests.py) | Pick the tests to run for a change: read the changed files, match them to areas in test_map.ini, and print the pytest command. |
+    | [hotfix_kit/postmortem.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/postmortem.md) | Postmortem: <incident name> |
+    | [hotfix_kit/sample_suite/pytest.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/sample_suite/pytest.ini) | pytest settings |
+    | [hotfix_kit/sample_suite/tests/test_checkout.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/sample_suite/tests/test_checkout.py) | Tests |
+    | [hotfix_kit/sample_suite/tests/test_login.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/sample_suite/tests/test_login.py) | Tests |
+    | [hotfix_kit/sample_suite/tests/test_search.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/sample_suite/tests/test_search.py) | Tests |
+    | [hotfix_kit/test_map.ini](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/regression_hotfixes_and_incidents/templates/hotfix_kit/test_map.ini) | Which code belongs to which test area. CHANGE: your folders and your pytest markers. |
 
 ## Toolbox
 
@@ -663,16 +663,16 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [docker_cheat_sheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/docker_cheat_sheet.md) | Docker cheat sheet for testers |
-    | [gherkin_cheat_sheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/gherkin_cheat_sheet.md) | Gherkin cheat sheet |
-    | [http_cheat_sheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/http_cheat_sheet.md) | HTTP cheat sheet for testers |
-    | [locator_practice.html](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/locator_practice.html) | A small page with one example of everything on the locators cheat sheet. |
-    | [locators_cheat_sheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/locators_cheat_sheet.md) | Playwright locators cheat sheet (Python) |
-    | [practice_shop.sql](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/practice_shop.sql) | A tiny shop database to try every query on the SQL cheat sheet. Fake data only. |
-    | [sql_cheat_sheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/sql_cheat_sheet.md) | SQL cheat sheet for testers |
-    | [team_cheat_sheet.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/team_cheat_sheet.md) | <Project name>: tester's cheat sheet |
-    | [test_locators.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/test_locators.py) | Every line of the locators cheat sheet, run on locator_practice.html. |
-    | [try_sql.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/try_sql.py) | Try any query from the SQL cheat sheet on a tiny practice shop, with nothing to install. |
+    | [docker_cheat_sheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/docker_cheat_sheet.md) | Docker cheat sheet for testers |
+    | [gherkin_cheat_sheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/gherkin_cheat_sheet.md) | Gherkin cheat sheet |
+    | [http_cheat_sheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/http_cheat_sheet.md) | HTTP cheat sheet for testers |
+    | [locator_practice.html](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/locator_practice.html) | A small page with one example of everything on the locators cheat sheet. |
+    | [locators_cheat_sheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/locators_cheat_sheet.md) | Playwright locators cheat sheet (Python) |
+    | [practice_shop.sql](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/practice_shop.sql) | A tiny shop database to try every query on the SQL cheat sheet. Fake data only. |
+    | [sql_cheat_sheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/sql_cheat_sheet.md) | SQL cheat sheet for testers |
+    | [team_cheat_sheet.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/team_cheat_sheet.md) | <Project name>: tester's cheat sheet |
+    | [test_locators.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/test_locators.py) | Every line of the locators cheat sheet, run on locator_practice.html. |
+    | [try_sql.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/try_sql.py) | Try any query from the SQL cheat sheet on a tiny practice shop, with nothing to install. |
 
 ??? note "Test idea banks (10 files)"
 
@@ -680,15 +680,15 @@ This list is built from the files themselves by a script, every time the site is
 
     | File | What it is |
     | --- | --- |
-    | [idea_checklist.py](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/idea_checklist.py) | Turn the test idea banks into one checklist for the feature you're testing. |
-    | [ideas/bank_transfer.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/bank_transfer.md) | Bank transfer: test ideas |
-    | [ideas/cart_and_checkout.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/cart_and_checkout.md) | Cart and checkout: test ideas |
-    | [ideas/file_sharing.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/file_sharing.md) | File sharing: test ideas |
-    | [ideas/login.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/login.md) | Login: test ideas |
-    | [ideas/notifications.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/notifications.md) | Notifications: test ideas |
-    | [ideas/payments.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/payments.md) | Payments: test ideas |
-    | [ideas/roles_and_permissions.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/roles_and_permissions.md) | Roles and permissions: test ideas |
-    | [ideas/search.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/search.md) | Search: test ideas |
-    | [ideas/sign_up.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/sign_up.md) | Sign-up: test ideas |
+    | [idea_checklist.py](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/idea_checklist.py) | Turn the test idea banks into one checklist for the feature you're testing. |
+    | [ideas/bank_transfer.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/bank_transfer.md) | Bank transfer: test ideas |
+    | [ideas/cart_and_checkout.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/cart_and_checkout.md) | Cart and checkout: test ideas |
+    | [ideas/file_sharing.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/file_sharing.md) | File sharing: test ideas |
+    | [ideas/login.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/login.md) | Login: test ideas |
+    | [ideas/notifications.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/notifications.md) | Notifications: test ideas |
+    | [ideas/payments.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/payments.md) | Payments: test ideas |
+    | [ideas/roles_and_permissions.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/roles_and_permissions.md) | Roles and permissions: test ideas |
+    | [ideas/search.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/search.md) | Search: test ideas |
+    | [ideas/sign_up.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/test_idea_banks/templates/ideas/sign_up.md) | Sign-up: test ideas |
 
 <!-- END template index -->

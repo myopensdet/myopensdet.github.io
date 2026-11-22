@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # New team onboarding checklist for an SDET
 
 Team: <team name>

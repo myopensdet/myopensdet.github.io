@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The header is on every page, so it is a component that pages share, not a page."""
 
 from playwright.sync_api import Page

@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A small bookshop API: the app under test in the API + database lessons.
 
 It has two bugs planted on purpose, for the lessons to find. Don't copy it into real work.

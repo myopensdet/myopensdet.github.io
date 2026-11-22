@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A small database client for tests: one place for the connection, queries and logging."""
 
 import logging

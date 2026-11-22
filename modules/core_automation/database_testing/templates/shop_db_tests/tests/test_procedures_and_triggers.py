@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Stored functions and triggers: code that runs inside the database, tested from outside."""
 
 import pytest

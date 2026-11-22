@@ -8,7 +8,7 @@ tags:
 nav_title: "Cheat sheets"
 order: 10
 summary: "One-page reminders: SQL, pytest, HTTP, Git, Linux, Docker and more."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Cheat Sheets for Testers: SQL, HTTP, pytest, Playwright, Gherkin, Git, Linux and Docker
@@ -48,7 +48,7 @@ Each sheet is one page you can print. **Every example on them is tested**: the S
 
 ## Step 2: Get the kit
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/toolbox/cheat_sheets/templates). The SQL practice needs nothing else. The locator test needs `pip install pytest-playwright` and `playwright install chromium`.
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/toolbox/cheat_sheets/templates). The SQL practice needs nothing else. The locator test needs `pip install pytest-playwright` and `playwright install chromium`.
 
 ## Step 3: Try the SQL sheet on a practice shop
 
@@ -141,7 +141,7 @@ Open a sheet, then print from the browser (++ctrl+p++, or ++cmd+p++ on a Mac). C
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/toolbox/cheat_sheets/templates). The sheets themselves are on their own pages: open one from the table in [step 1](#step-1-pick-the-sheet-for-the-task).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/toolbox/cheat_sheets/templates). The sheets themselves are on their own pages: open one from the table in [step 1](#step-1-pick-the-sheet-for-the-task).
 
 === "try_sql.py"
 

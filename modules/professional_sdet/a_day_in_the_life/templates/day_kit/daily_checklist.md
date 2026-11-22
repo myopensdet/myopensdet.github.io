@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # My testing day
 
 ## First 30 minutes (before stand-up)

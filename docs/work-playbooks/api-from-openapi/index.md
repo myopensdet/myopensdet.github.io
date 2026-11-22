@@ -10,7 +10,7 @@ nav_title: "Test an API from its Swagger file"
 order: 20
 group: "API work"
 summary: "From a Swagger link to a plan, contract checks and a report."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # How to Plan and Test an API From Its Swagger (OpenAPI) File
@@ -272,7 +272,7 @@ Say clearly what the smoke test didn't touch: **POST, PUT and DELETE**. Those ch
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/api_from_openapi/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/api_from_openapi/templates).
 
 === "openapi_check.py"
 

@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Review comments guide
 
 How to write review comments people act on, for stories, documents and code.

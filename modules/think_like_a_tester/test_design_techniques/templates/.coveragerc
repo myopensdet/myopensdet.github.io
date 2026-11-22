@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 # Settings for coverage.py. Put this file in your project's main folder, then run:
 #   python -m coverage run -m pytest
 #   python -m coverage report

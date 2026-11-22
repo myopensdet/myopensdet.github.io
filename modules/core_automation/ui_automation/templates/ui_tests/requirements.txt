@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 # Then, once per computer: python -m playwright install chromium
 # (and firefox and webkit, for the other browsers)
 pytest==9.2.0

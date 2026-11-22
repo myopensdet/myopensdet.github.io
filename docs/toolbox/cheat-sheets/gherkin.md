@@ -8,7 +8,7 @@ tags:
 nav_title: "Gherkin"
 order: 50
 summary: "Every keyword of a feature file, with good and bad steps."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Gherkin Cheat Sheet: Feature Files for BDD
@@ -17,4 +17,4 @@ updated: "2026-11-19"
 
 ---
 
-Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/gherkin_cheat_sheet.md). The practice files are in [the kit](index.md#step-2-get-the-kit). [All cheat sheets](index.md).
+Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/gherkin_cheat_sheet.md). The practice files are in [the kit](index.md#step-2-get-the-kit). [All cheat sheets](index.md).

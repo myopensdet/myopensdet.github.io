@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A tiny bookshop with an API and a web page: the app under test in the BDD lessons.
 
 Replace it with your own app. It keeps carts in memory and has one bug planted on

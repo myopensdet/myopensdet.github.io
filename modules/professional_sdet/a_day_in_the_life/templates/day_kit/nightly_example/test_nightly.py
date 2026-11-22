@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A pretend nightly run with the kinds of failures a real morning has. It fails on
 purpose: run it to make a report for morning_triage.py to read."""
 

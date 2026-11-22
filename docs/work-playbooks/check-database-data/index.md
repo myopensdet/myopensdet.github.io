@@ -10,7 +10,7 @@ nav_title: "Check database data, step by step"
 order: 30
 group: "Database work"
 summary: "Safe access, read the tables, plan, copy the SQL checks, run, read the results."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # How to Test Data in a Database With SQL and pytest, Step by Step
@@ -26,7 +26,7 @@ You'll practise on a small **shop database** in PostgreSQL, started on your comp
 
 You need **Python 3.13**, **VS Code** and **Docker** (for the practice database). If you don't have them, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/check_database_data/templates). Then open the `db_checks` folder in VS Code (**File → Open Folder**).
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/check_database_data/templates). Then open the `db_checks` folder in VS Code (**File → Open Folder**).
 
 2. **Open a terminal** in VS Code (**Terminal → New Terminal**), make a virtual environment and install the packages. pytest runs the checks; psycopg talks to PostgreSQL.
 
@@ -351,7 +351,7 @@ Still stuck? Go deeper:
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/check_database_data/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/check_database_data/templates).
 
 === "test_plan.md"
 

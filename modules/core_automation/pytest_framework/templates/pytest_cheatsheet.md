@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # pytest commands you will use every day
 
 Run them from the folder that has `pytest.ini`. `python -m pytest` uses the pytest of the Python you're running.

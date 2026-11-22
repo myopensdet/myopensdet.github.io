@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Pairing session: tester and developer
 
 **Length:** 30 to 60 minutes. **Where:** one screen (shared, or side by side).

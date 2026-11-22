@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Drivers: how the steps reach the shop. The steps never know which one they use.
 
     ApiDriver  talks to the shop's API with requests

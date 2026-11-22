@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """POST: create something. The common checks: a valid body works, and each kind of bad
 body is refused with 400 (not saved, and never a 500 crash)."""
 

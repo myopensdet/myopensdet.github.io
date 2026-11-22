@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The code under test in this template: a shop's signup, price and shipping rules.
 
 Replace it with your own code. It has one bug planted on purpose, for the lessons to find.

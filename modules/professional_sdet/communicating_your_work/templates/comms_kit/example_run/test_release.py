@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A pretend release test run, to make a report for status_update.py. One test fails
 on purpose; leave it out with: -k "not order_history"."""
 

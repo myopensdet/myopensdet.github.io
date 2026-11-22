@@ -9,7 +9,7 @@ tags:
 nav_title: "The SDET role"
 order: 20
 summary: "What an SDET does, how to start the job well, and the templates for your first 90 days."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # The SDET Role: What the Job Is, and How to Start It Well
@@ -155,7 +155,7 @@ Pick one new skill per month from the [Skills Matrix](../../start-here/skills-ma
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/think_like_a_tester/the_sdet_role/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/think_like_a_tester/the_sdet_role/templates).
 
 Copy these into your own project and change the parts in `<angle brackets>`. Each file starts with a comment line that says where it came from.
 

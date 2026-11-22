@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The templates of "Test strategy and planning" work, and the lessons' outputs stay true."""
 
 import subprocess
@@ -10,7 +10,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 TEMPLATES = TOPIC / "templates"
 EXAMPLES = TOPIC / "examples"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 
 
 def run(script, *args, cwd=EXAMPLES):

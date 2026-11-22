@@ -51,7 +51,7 @@ Every file in a `templates/` folder starts with one comment line that says where
 it came from, so teammates who find a copied template can find the lesson too:
 
 ```python
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 ```
 
 Other file types use their own comment style (`//` in JavaScript, `--` in SQL,

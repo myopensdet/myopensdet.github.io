@@ -1,6 +1,6 @@
 # Security policy
 
-Zero to SDET is a public repository and a public website. This page explains
+myOpenSDET is a public repository and a public website. This page explains
 how to report a security problem, and the rules every file and commit follows.
 
 ## Report a security problem
@@ -41,7 +41,7 @@ Only the latest version of the `main` branch and the live website are supported.
 | --- | --- | --- |
 | Passwords, API keys, tokens | Database passwords, GitHub tokens, cloud keys | `.env` (git-ignored) + `.env.example` with fake values |
 | Personal details | Emails, phone numbers, addresses | GitHub's no-reply commit email; contact only through the About page links |
-| Computer details | Username and machine name in the terminal prompt, `/Users/<name>/...` paths, local IPs, Wi-Fi names | A neutral prompt (for example `$`) and generic paths like `~/projects/zero-to-sdet` |
+| Computer details | Username and machine name in the terminal prompt, `/Users/<name>/...` paths, local IPs, Wi-Fi names | A neutral prompt (for example `$`) and generic paths like `~/projects/myopensdet` |
 | Employer or client material | Company code, URLs, data, screenshots, ticket text | The site's own demo servers, `example.com` and public practice APIs |
 | Real people's data | Names, emails, any production data | Fake data from Faker |
 | Hidden image data | GPS and device info in photos | Strip metadata before adding images |

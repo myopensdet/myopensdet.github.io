@@ -1,5 +1,5 @@
 {
-  "$comment": "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/",
+  "$comment": "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "created_booking.json",
   "title": "Created booking",

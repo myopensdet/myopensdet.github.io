@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Mocking and stubbing: the kit's tests pass at all three levels (mock, stub, route),
 the stub explains its mistakes, and with ZTS_DOCKER=1 the same tests pass against WireMock
 reading the same mapping files."""
@@ -18,7 +18,7 @@ import requests
 TOPIC = Path(__file__).resolve().parents[1]
 ROOT = TOPIC.parents[1].parent
 KIT = TOPIC / "templates" / "mock_kit"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 FILES = sorted(
     p for p in TOPIC.rglob("*")
     if p.is_file() and not {"__pycache__", "test-results"} & set(p.parts)

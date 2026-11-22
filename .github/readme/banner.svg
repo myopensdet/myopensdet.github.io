@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="t d">
-  <title id="t">Zero to SDET</title>
+  <title id="t">myOpenSDET</title>
   <desc id="d">Everything you need to become a professional SDET. A terminal shows four passing tests.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -13,7 +13,7 @@
   <rect width="1280" height="400" rx="20" fill="url(#bg)"/>
   <rect width="1280" height="400" rx="20" fill="url(#grid)"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" fill="#ffffff">
-    <text x="72" y="168" font-size="76" font-weight="700" letter-spacing="-1">Zero to SDET</text>
+    <text x="72" y="168" font-size="76" font-weight="700" letter-spacing="-1">myOpenSDET</text>
     <text x="74" y="222" font-size="28" fill-opacity="0.92">Everything you need to become a professional SDET.</text>
     <text x="74" y="270" font-size="22" fill-opacity="0.75">Learn software testing and test automation, step by step.</text>
     <text x="74" y="302" font-size="22" fill-opacity="0.75">Hands-on with Python, real templates, free.</text>

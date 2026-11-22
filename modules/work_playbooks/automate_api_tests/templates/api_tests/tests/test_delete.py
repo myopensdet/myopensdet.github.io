@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """DELETE: remove something. The common checks: it's gone afterwards, a login is needed,
 and deleting it twice is handled."""
 

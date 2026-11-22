@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Check a user story before the sprint: find vague words in the acceptance criteria,
 and the areas the story never mentions. Prints the questions to ask at refinement.
 

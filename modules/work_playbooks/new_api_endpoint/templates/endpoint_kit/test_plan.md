@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Test plan: `POST /carts/add`
 
 Copy this file for each new endpoint. Fill in what you know, and turn every "?" into a

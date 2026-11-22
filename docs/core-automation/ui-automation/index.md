@@ -10,7 +10,7 @@ nav_title: "UI automation"
 order: 80
 group: "BDD and UI"
 summary: "Click, type and check web pages with Playwright and Page Objects."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # UI Automation in Python With Playwright and Page Objects
@@ -130,7 +130,7 @@ Show developers the locators: ask them to keep labels and roles stable, and to a
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/core_automation/ui_automation/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/core_automation/ui_automation/templates).
 
 Copy the whole `ui_tests` folder, or the parts you need. Each file starts with a line that says where it came from.
 

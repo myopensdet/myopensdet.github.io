@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Test plan: refund requests (release 2.4)
 
 Author: QA engineer · Reviewed by: lead, refund developer, product owner · Date: 2026-11-16

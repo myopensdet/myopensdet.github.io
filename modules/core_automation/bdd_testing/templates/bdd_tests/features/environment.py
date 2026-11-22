@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """behave hooks: start the shop once, give every scenario a fresh driver.
 
 Choose the target with -D target=api (the default) or -D target=ui.

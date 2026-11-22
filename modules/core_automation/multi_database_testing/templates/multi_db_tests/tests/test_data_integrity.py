@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Data integrity: the same checks, run on every database.
 
 The checks read normalized rows, so one test works on SQL and MongoDB alike.

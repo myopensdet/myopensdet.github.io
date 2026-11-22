@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Was it saved correctly? After your API or UI test creates something, check the rows.
 
 CHANGE: ORDER_NUMBER to what your test created, and the expected values to what it sent.

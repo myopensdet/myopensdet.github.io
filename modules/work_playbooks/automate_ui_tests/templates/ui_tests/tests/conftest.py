@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Shared setup for the UI tests. pytest-playwright gives every test a fresh `page`
 (a new, empty browser profile), so tests never share a login or a cart.
 

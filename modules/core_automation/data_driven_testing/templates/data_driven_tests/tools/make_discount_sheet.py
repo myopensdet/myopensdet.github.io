@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Make test_data/discount_rules.xlsx: the sheet the business team keeps their discount rules in.
 
 At work you get this file from them. This script only exists so the sample is easy to rebuild:
@@ -10,7 +10,7 @@ from pathlib import Path
 
 from openpyxl import Workbook
 
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 ROWS = [
     ("rule", "subtotal", "coupon", "member", "expected_total"),
     ("Plain order", 45.5, None, False, 45.5),
@@ -28,7 +28,7 @@ def main() -> None:
     sheet.title = "Discounts"
     for row in ROWS:
         sheet.append(row)
-    workbook.properties.creator = "Zero to SDET"
+    workbook.properties.creator = "myOpenSDET"
     workbook.properties.description = CREDIT
     workbook.properties.created = workbook.properties.modified = datetime(2026, 11, 1)
     path = Path(__file__).resolve().parents[1] / "test_data" / "discount_rules.xlsx"

@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Estimate test work as a range, not one number. For each task give three guesses in
 hours: best case, most likely, worst case. Uses the three-point (PERT) formula:
 (best + 4 x likely + worst) / 6, and shows a likely range.

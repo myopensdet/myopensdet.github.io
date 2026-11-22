@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Test strategy: <team or product>
 
 Owner: <who keeps this up to date> · Last reviewed: <YYYY-MM-DD> · Review again: <every 6 months, or after a big change>

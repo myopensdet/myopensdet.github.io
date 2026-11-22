@@ -1,5 +1,5 @@
 /*
- * Zero to SDET: "Copy link" and the phone "Share" button (share.js).
+ * myOpenSDET: "Copy link" and the phone "Share" button (share.js).
  * The LinkedIn, X and WhatsApp buttons are plain links and need no script.
  * Nothing here talks to any other website.
  */

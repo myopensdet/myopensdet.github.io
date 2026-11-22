@@ -9,7 +9,7 @@ tags:
 nav_title: "Playwright locators"
 order: 40
 summary: "get_by_role and friends, filters, actions and expect checks."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Playwright Locators Cheat Sheet (Python): Find, Act and Check
@@ -18,4 +18,4 @@ updated: "2026-11-19"
 
 ---
 
-Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/locators_cheat_sheet.md). The practice files are in [the kit](index.md#step-2-get-the-kit). [All cheat sheets](index.md).
+Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/locators_cheat_sheet.md). The practice files are in [the kit](index.md#step-2-get-the-kit). [All cheat sheets](index.md).

@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Docker cheat sheet for testers
 
 An **image** is the packed app. A **container** is one running copy of it. Testers mostly start what the team built, look inside when something fails, and clean up.

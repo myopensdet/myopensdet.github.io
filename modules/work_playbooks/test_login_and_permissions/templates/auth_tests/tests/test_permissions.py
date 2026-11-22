@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Permissions: each user sees only their own data; only admins open admin pages."""
 
 from tests.conftest import A_RECORD_PATH, ADMIN_PATH, B_RECORD_PATH, get

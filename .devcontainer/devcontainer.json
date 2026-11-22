@@ -2,7 +2,7 @@
 // in the cloud, with nothing to install. Open it with the "Open in GitHub Codespaces"
 // button in the README. Ports stay private (only you can open them): never make one public.
 {
-  "name": "Zero to SDET",
+  "name": "myOpenSDET",
   // Python 3.13 on Debian, pinned by digest so it never changes by surprise.
   "image": "mcr.microsoft.com/devcontainers/python:1-3.13-bookworm@sha256:0aa711e570b306c02946cdda67587ce8c65978dbb65691341cbcfd4854dfcfff",
   "features": {

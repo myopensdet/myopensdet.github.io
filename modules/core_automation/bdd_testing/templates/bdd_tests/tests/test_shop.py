@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """pytest-bdd steps for the same feature files behave uses. Every scenario becomes a test."""
 
 from decimal import Decimal

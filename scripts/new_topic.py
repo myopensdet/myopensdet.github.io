@@ -89,7 +89,7 @@ def pick_order(topics: list[build_nav.Page], after: str | None) -> int:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Add a new topic to Zero to SDET.")
+    parser = argparse.ArgumentParser(description="Add a new topic to myOpenSDET.")
     parser.add_argument("--section", required=True, help="section folder, e.g. core-automation")
     parser.add_argument("--slug", required=True, help="topic folder name, e.g. api-testing")
     parser.add_argument("--title", required=True, help='menu and page title, e.g. "API testing"')

@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Robot Framework keywords for the shop rules. Each method is a keyword:
 order_total_should_be becomes "Order Total Should Be". Run from the template folder:
 

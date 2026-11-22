@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Load test cases from CSV, JSON, YAML or Excel files, and turn them into pytest cases.
 
     @pytest.mark.parametrize("row", cases("signup_cases.csv"))

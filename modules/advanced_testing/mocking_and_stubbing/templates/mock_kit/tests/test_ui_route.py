@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Level 3, in the browser: Playwright answers the page's API calls itself (page.route).
 
 Shows every message the page can show, without a backend that can fail on demand.

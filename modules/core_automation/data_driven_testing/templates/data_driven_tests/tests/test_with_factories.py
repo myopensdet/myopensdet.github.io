@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Tests that build their data with factories: valid by default, one change per test."""
 
 from app.shop_rules import check_signup, order_total

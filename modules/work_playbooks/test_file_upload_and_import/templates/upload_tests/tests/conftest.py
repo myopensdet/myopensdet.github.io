@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Shared setup for upload and import tests. Test files are made here, in code,
 so you never need a folder of sample files. Change the parts marked CHANGE."""
 

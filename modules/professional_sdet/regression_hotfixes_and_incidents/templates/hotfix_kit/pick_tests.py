@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Pick the tests to run for a change: read the changed files, match them to areas in
 test_map.ini, and print the pytest command. Smoke tests always run. Unknown code means
 "run everything", because guessing is how hotfixes break things.

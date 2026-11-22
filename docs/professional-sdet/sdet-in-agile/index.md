@@ -10,7 +10,7 @@ nav_title: "SDET in Agile"
 order: 30
 group: "Working in a team"
 summary: "Check stories before the sprint, Three Amigos, shift-left, Definition of Done."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # SDET in Agile: Test Inside the Sprint, Not After It, Step by Step
@@ -58,7 +58,7 @@ The rest of this page uses Scrum words. Everything works in Kanban too: refineme
 
 ## Step 3: Get the kit
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/professional_sdet/sdet_in_agile/templates). The script uses only Python's standard library.
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/sdet_in_agile/templates). The script uses only Python's standard library.
 
 ## Step 4: Check stories before the sprint
 
@@ -200,7 +200,7 @@ Propose it at a retrospective, with the numbers from the last sprints: "four sto
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/professional_sdet/sdet_in_agile/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/sdet_in_agile/templates).
 
 === "Acceptance criteria template"
 

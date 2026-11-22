@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Plan and smoke-test an API from its OpenAPI (Swagger) file.
 
     python openapi_check.py inventory openapi.json --plan endpoint_plan.md
@@ -162,7 +162,7 @@ def cmd_inventory(args) -> int:
 def write_plan(spec: dict, ops: list[Operation], path: Path) -> None:
     info = spec.get("info", {})
     lines = [
-        "<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->",
+        "<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->",
         f"# Test plan: {info.get('title', 'API')} {info.get('version', '')}",
         "",
         "Priority: 1 = money, security or data loss; 2 = main user flows; 3 = the rest.",

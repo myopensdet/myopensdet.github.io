@@ -10,7 +10,7 @@ nav_title: "Communicating your work"
 order: 70
 group: "Working in a team"
 summary: "Clear GREEN/AMBER/RED status, risk in plain words, honest estimates."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Communicating Your Work as an SDET: Status, Risk and Estimates, Step by Step
@@ -47,7 +47,7 @@ The verdict uses three colours everyone understands:
 
 ## Step 2: Get the kit
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/professional_sdet/communicating_your_work/templates). The scripts use only Python's standard library.
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/communicating_your_work/templates). The scripts use only Python's standard library.
 
 ## Step 3: Write your notes
 
@@ -197,7 +197,7 @@ Show **results** (bugs caught, time saved), not effort (tests written).
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/professional_sdet/communicating_your_work/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/communicating_your_work/templates).
 
 === "status_update.py"
 

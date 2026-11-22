@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Linux and shell: the practice logs are the same on every computer, and the summary
 script prints what the page shows. Needs bash (macOS, Linux, WSL or Git Bash)."""
 
@@ -11,7 +11,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "shell_kit"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 FILES = sorted(
     p
     for p in TOPIC.rglob("*")

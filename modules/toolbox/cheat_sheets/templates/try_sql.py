@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Try any query from the SQL cheat sheet on a tiny practice shop, with nothing to install.
 
 Loads practice_shop.sql into a database in memory (SQLite, part of Python), runs your

@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Login and permissions guide: the template finds exactly the three planted bugs in the
 practice API, passes on the fixed API, skips without users, and never prints a token or
 a password. All offline: the practice API runs on a free local port."""
@@ -16,7 +16,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "auth_tests"
 ROOT = TOPIC.parents[2]
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 PASSWORD = "local_only_password"  # noqa: S105  (the practice API's fake password)
 USERS = {
     "USER_A": f"arshad.test@example.com:{PASSWORD}",

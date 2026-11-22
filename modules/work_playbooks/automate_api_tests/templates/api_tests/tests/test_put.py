@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """PUT: replace something. The common checks: it changes, the change is saved, a login is
 needed, and a missing id or an incomplete body is refused."""
 

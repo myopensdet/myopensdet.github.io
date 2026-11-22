@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Test idea banks: every bank has the same five areas, and idea_checklist.py lists,
 combines, filters and exports them as the page shows."""
 
@@ -14,7 +14,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates"
 BANKS = sorted((KIT / "ideas").glob("*.md"))
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 AREAS = [
     "Works as it should",
     "Refuses bad input",

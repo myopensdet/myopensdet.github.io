@@ -10,7 +10,7 @@ nav_title: "Debugging toolkit"
 order: 30
 group: "Your toolkit"
 summary: "Read the failure, run it alone, logs, the debugger, curl -v and DevTools."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # Debugging Toolkit for Testers: Find the Real Cause of a Failure, Step by Step
@@ -24,7 +24,7 @@ A red test is a question, not an answer. "Test failed" helps nobody; "the cart k
 
 You need **Python 3.13**. If you don't have it, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/infrastructure/debugging_toolkit/templates). Then open the `debug_practice` folder in VS Code.
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/debugging_toolkit/templates). Then open the `debug_practice` folder in VS Code.
 2. In the VS Code terminal, make a virtual environment and install pytest:
 
     === "macOS / Linux"
@@ -282,7 +282,7 @@ Server-side, follow the request in the logs: see [Linux and shell, step 6](../li
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/infrastructure/debugging_toolkit/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/debugging_toolkit/templates).
 
 === "shop/cart.py"
 

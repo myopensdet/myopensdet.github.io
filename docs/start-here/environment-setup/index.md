@@ -9,7 +9,7 @@ tags:
 nav_title: "Environment setup"
 order: 20
 summary: "Install Python, VS Code and Docker, and run your first tests."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Environment Setup: Python, VS Code and Docker for Test Automation
@@ -175,11 +175,11 @@ Every topic page has a **Templates** section. Each file is in its own tab, and e
 - **A bigger project?** Get the whole site's code once, with Git. Every topic's files are then in the `modules/` folder:
 
     ```bash
-    git clone https://github.com/arshaduzzaman-sm/zero-to-sdet.git
-    cd zero-to-sdet/modules/core_automation/pytest_framework/templates
+    git clone https://github.com/arshaduzzaman-sm/myopensdet.git
+    cd myopensdet/modules/core_automation/pytest_framework/templates
     ```
 
-    No Git? On the [project's GitHub page](https://github.com/arshaduzzaman-sm/zero-to-sdet), click **Code**, then **Download ZIP**.
+    No Git? On the [project's GitHub page](https://github.com/arshaduzzaman-sm/myopensdet), click **Code**, then **Download ZIP**.
 
 ### 7. Run your first tests
 
@@ -188,7 +188,7 @@ This is the routine for every project, on this site and at work.
 1. **Go into the project folder.** `cd` means "change directory". Drag the folder onto the terminal window to paste its path, or type it:
 
     ```bash
-    cd zero-to-sdet/modules/core_automation/pytest_framework/templates/pytest_skeleton
+    cd myopensdet/modules/core_automation/pytest_framework/templates/pytest_skeleton
     ```
 
 2. **Make a virtual environment with Python 3.13, and turn it on:**
@@ -255,7 +255,7 @@ It downloads about 600 MB, so do it when a topic asks for it, not now.
 
 ### 9. Nothing can be installed? Use Codespaces
 
-If you can't install programs, for example on a locked work laptop, use **GitHub Codespaces**: a computer in the cloud that opens in your browser, with Python 3.13, VS Code, Docker and the Practice App already set up. You need a free GitHub account. Open the [project on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet), click **Code**, then **Codespaces**, then **Create codespace on main**.
+If you can't install programs, for example on a locked work laptop, use **GitHub Codespaces**: a computer in the cloud that opens in your browser, with Python 3.13, VS Code, Docker and the Practice App already set up. You need a free GitHub account. Open the [project on GitHub](https://github.com/arshaduzzaman-sm/myopensdet), click **Code**, then **Codespaces**, then **Create codespace on main**.
 
 GitHub gives free accounts a monthly allowance of Codespaces hours. Stop the codespace when you're done, so it doesn't use them up.
 
@@ -295,7 +295,7 @@ Run the [data-driven testing](../../core-automation/data-driven-testing/index.md
 
 ??? success "Solution"
     ```bash
-    cd zero-to-sdet/modules/core_automation/data_driven_testing/templates/data_driven_tests
+    cd myopensdet/modules/core_automation/data_driven_testing/templates/data_driven_tests
     python3.13 -m venv .venv
     source .venv/bin/activate         # Windows: .venv\Scripts\Activate.ps1
     python -m pip install -r requirements.txt

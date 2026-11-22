@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A small practice API with login, tokens, orders and an admin page. Only for practice.
 
     python practice_api.py            # http://127.0.0.1:8765, with planted bugs

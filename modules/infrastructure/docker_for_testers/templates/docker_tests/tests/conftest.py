@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Where the app and the database are. The same tests run inside a container and on your
 computer: only these two addresses change, and they come from the environment."""
 

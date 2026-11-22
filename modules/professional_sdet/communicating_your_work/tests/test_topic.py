@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Communicating your work: status_update.py gives RED with a failing test, AMBER with a
 known risk, GREEN without, and estimate.py gives the range shown on the page."""
 
@@ -11,7 +11,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "comms_kit"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 FILES = sorted(
     p
     for p in TOPIC.rglob("*")

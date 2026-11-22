@@ -10,7 +10,7 @@ nav_title: "Linux and shell"
 order: 10
 group: "Your toolkit"
 summary: "Read logs, search with grep, count with pipes, find ports, a ready log script."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # Linux and Shell for Testers: Read Logs and Find Problems, Step by Step
@@ -30,7 +30,7 @@ A **shell** is the text window where you type commands. Servers use **bash**; ma
 | **Linux** | Terminal |
 | **Windows** | **Git Bash** (comes with [Git for Windows](https://git-scm.com/downloads/win)), or WSL. Not PowerShell: its commands are different |
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/infrastructure/linux_and_shell/templates). Then open a terminal in the `shell_kit` folder.
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/linux_and_shell/templates). Then open a terminal in the `shell_kit` folder.
 2. **Make the practice logs**: one hour of a small web shop's logs, the same on every computer:
 
     ```bash
@@ -273,7 +273,7 @@ errors found
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/infrastructure/linux_and_shell/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/linux_and_shell/templates).
 
 === "Cheat sheet"
 

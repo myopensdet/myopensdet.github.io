@@ -1,5 +1,5 @@
 /*
-  Zero to SDET: draw diagrams with our own copy of Mermaid, never a CDN.
+  myOpenSDET: draw diagrams with our own copy of Mermaid, never a CDN.
 
   Without this file, the theme downloads Mermaid from unpkg.com on pages with
   diagrams, at whatever 12.x version is newest that day, and every reader's

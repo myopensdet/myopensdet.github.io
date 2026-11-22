@@ -1,4 +1,4 @@
--- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 -- The test tables, in SQLite. It has no date or money types. Times are text, money is NUMERIC.
 DROP TABLE IF EXISTS orders;
 DROP TABLE IF EXISTS customers;

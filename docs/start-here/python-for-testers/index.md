@@ -9,7 +9,7 @@ tags:
 nav_title: "Python for testers"
 order: 30
 summary: "Just enough Python to write real tests: data, loops, functions, classes and files."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Python for Testers: Just Enough Python to Write Real Tests and Tools
@@ -143,7 +143,7 @@ Next, go to the [pytest framework](../../core-automation/pytest-framework/index.
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/start_here/python_for_testers/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/start_here/python_for_testers/templates).
 
 Copy these into your own project. Each file starts with a line that says where it came from.
 

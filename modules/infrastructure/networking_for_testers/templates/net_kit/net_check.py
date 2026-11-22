@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Check one address step by step and say where it breaks: the name, the connection,
 the HTTPS certificate, or the answer. Also shows cookie flags and CORS. Python only.
 

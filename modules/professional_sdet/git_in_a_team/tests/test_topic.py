@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Git in a team: git_practice.sh builds the practice server and copies, and the page's
 flow (branch, push, colleague's change, rebase conflict, resolve, force-with-lease)
 behaves exactly as shown."""
@@ -11,7 +11,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "git_kit"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 BASH = shutil.which("bash") or "bash"
 GIT = shutil.which("git") or "git"
 FILES = sorted(

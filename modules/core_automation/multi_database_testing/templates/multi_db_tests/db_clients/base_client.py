@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """What every database client can do, whatever the database underneath.
 
 Tests talk only to DbClient. Each database gets a small class that fills in

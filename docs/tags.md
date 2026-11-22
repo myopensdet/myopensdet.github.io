@@ -1,9 +1,9 @@
 ---
 title: "Browse SDET Lessons by Tag"
-description: "Find every Zero to SDET lesson by tag: API, database, BDD, debugging, performance and more."
+description: "Find every myOpenSDET lesson by tag: API, database, BDD, debugging, performance and more."
 tags:
   - Quick reference
-updated: "2026-11-19"
+updated: "2026-11-22"
 nav_title: "Tags"
 order: 50
 nav_section: "toolbox"

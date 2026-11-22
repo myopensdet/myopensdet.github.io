@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Speed check guide: the script and the pytest template find both planted problems in
 the practice API and pass on the fixed API. Short runs, all offline on a free local port."""
 
@@ -15,7 +15,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "speed_check"
 ROOT = TOPIC.parents[2]
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 
 SKIP_FOLDERS = {"__pycache__", ".pytest_cache"}
 FILES = sorted(

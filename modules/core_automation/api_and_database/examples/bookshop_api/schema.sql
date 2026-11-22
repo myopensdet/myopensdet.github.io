@@ -1,4 +1,4 @@
--- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 -- The bookshop API's tables. The app runs this when it starts, so it's safe to run again.
 
 CREATE TABLE IF NOT EXISTS customers (

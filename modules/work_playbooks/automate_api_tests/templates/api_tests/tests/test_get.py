@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """GET: read something. The common checks: it's there, it's not there, the id is wrong."""
 
 from conftest import BASE_URL

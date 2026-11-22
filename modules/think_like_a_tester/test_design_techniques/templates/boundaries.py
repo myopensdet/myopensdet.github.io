@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """List the values to test at the edges of a range, so you don't have to work them out by hand.
 
     python boundaries.py 18 120          # the two values on each side of each edge

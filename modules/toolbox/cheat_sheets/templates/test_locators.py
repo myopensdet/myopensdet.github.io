@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Every line of the locators cheat sheet, run on locator_practice.html.
 
 Needs: pip install pytest-playwright, then: playwright install chromium

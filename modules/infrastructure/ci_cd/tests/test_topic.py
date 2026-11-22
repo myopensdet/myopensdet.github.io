@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """CI/CD: the workflow template is safe and complete, the kit's tests run like the
 pipeline runs them, and ci_summary.py reports passes and failures. With ZTS_DOCKER=1,
 actionlint checks the workflow too."""
@@ -21,7 +21,7 @@ KIT = TOPIC / "templates" / "ci_kit"
 WORKFLOW = KIT / "github_workflows" / "tests.yml"
 REPORT = "reports/junit.xml"
 DOCKER = shutil.which("docker") or "docker"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 SUFFIXES = {".py", ".md", ".txt", ".yml", ".ini"}
 FILES = sorted(
     p

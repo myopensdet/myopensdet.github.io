@@ -10,7 +10,7 @@ nav_title: "Your first weeks in a new job"
 order: 20
 group: "Working in a team"
 summary: "Map a framework you didn't write, make a first useful change, earn trust."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # Your First Weeks in a New SDET Job: Learn the Framework and Earn Trust, Step by Step
@@ -40,7 +40,7 @@ The order matters: **understand, then change.** Rewriting things in week 1 is th
 
 ## Step 2: Week 1: access, people and questions
 
-You need **Python 3.13** for the scripts. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/professional_sdet/your_first_weeks/templates). The scripts use only Python's standard library.
+You need **Python 3.13** for the scripts. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/your_first_weeks/templates). The scripts use only Python's standard library.
 
 Day 1 to 5 is about **access and people**. Missing access blocks you for days, so start the requests on day one. The onboarding checklist from [the SDET role](../../think-like-a-tester/the-sdet-role/index.md) covers it:
 
@@ -234,7 +234,7 @@ At the end of the month, write the 30-60-90 plan and agree it with your lead. Ev
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/professional_sdet/your_first_weeks/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/your_first_weeks/templates).
 
 === "map_test_suite.py"
 

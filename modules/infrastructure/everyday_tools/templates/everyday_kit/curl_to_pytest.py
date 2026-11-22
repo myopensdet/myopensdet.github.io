@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Turn a curl command (from "Copy as cURL" in the browser, Postman or Bruno) into a
 pytest test that uses requests. Login headers and cookies are never written into the
 test: it reads them from environment variables instead.
@@ -81,7 +81,7 @@ def to_pytest(request: dict) -> str:
         except ValueError:
             body_line = f"        data={request['body']!r},\n"
     lines = [
-        "# Made by curl_to_pytest.py from Zero to SDET. Check it, then change the checks.",
+        "# Made by curl_to_pytest.py from myOpenSDET. Check it, then change the checks.",
         "import os",
         "",
         "import requests",

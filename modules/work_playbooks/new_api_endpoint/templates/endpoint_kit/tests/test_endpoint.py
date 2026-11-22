@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Checks for one endpoint, written from the agreed rules, not from what it does today.
 
 Change ENDPOINT, VALID and the REFUSED table for your endpoint. Each row of REFUSED is one

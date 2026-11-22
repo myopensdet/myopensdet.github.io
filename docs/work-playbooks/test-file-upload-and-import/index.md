@@ -10,7 +10,7 @@ nav_title: "Test file upload and import, step by step"
 order: 45
 group: "Files and data"
 summary: "Get the rules, try by hand, plan, copy upload and import tests, run, read."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # How to Test File Uploads and CSV Imports, Step by Step
@@ -26,7 +26,7 @@ You'll practise on a **small practice API** that runs on your own computer. It h
 
 You need **Python 3.13** and **VS Code**. If you don't have them, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/test_file_upload_and_import/templates). Then open the `upload_tests` folder in VS Code (**File → Open Folder**).
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/test_file_upload_and_import/templates). Then open the `upload_tests` folder in VS Code (**File → Open Folder**).
 
 2. **Open a terminal** in VS Code (**Terminal → New Terminal**), make a virtual environment and install pytest and requests:
 
@@ -275,7 +275,7 @@ Still stuck? Go deeper:
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/test_file_upload_and_import/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/test_file_upload_and_import/templates).
 
 === "test_plan.md"
 

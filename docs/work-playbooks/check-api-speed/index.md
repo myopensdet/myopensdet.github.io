@@ -10,7 +10,7 @@ nav_title: "Check API speed, step by step"
 order: 50
 group: "Speed"
 summary: "Targets, one user, many users, read p95 and errors, speed tests in pytest."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # How to Check API Speed Under Load, Step by Step
@@ -29,7 +29,7 @@ You'll practise on a **small practice API** that runs on your own computer, with
 
 You need **Python 3.13** and **VS Code**. If you don't have them, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/check_api_speed/templates). Then open the `speed_check` folder in VS Code (**File → Open Folder**).
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/check_api_speed/templates). Then open the `speed_check` folder in VS Code (**File → Open Folder**).
 
 2. **Open a terminal** in VS Code (**Terminal → New Terminal**), make a virtual environment and install pytest and requests:
 
@@ -273,7 +273,7 @@ Still stuck? Go deeper:
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/check_api_speed/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/check_api_speed/templates).
 
 === "test_plan.md"
 

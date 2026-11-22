@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The templates of "Test cases" work, and the lessons' outputs stay true."""
 
 import csv
@@ -12,7 +12,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 TEMPLATES = TOPIC / "templates"
 EXAMPLES = TOPIC / "examples"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 ALL_REF = "REF-1,REF-2,REF-3,REF-4,REF-5,REF-6,REF-7"
 
 

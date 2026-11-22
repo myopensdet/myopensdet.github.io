@@ -10,7 +10,7 @@ nav_title: "Multi-database testing"
 order: 40
 group: "API and databases"
 summary: "Run one test on MySQL, PostgreSQL, SQLite and MongoDB."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Multi-Database Testing With Python: PostgreSQL, MySQL, SQLite and MongoDB
@@ -129,7 +129,7 @@ Next, [API + database](../api-and-database/index.md) checks that an API call sav
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/core_automation/multi_database_testing/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/core_automation/multi_database_testing/templates).
 
 Copy the whole `multi_db_tests` folder, or the parts you need. Each file starts with a line that says where it came from.
 

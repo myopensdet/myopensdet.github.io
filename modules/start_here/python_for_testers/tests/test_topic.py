@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Python for testers: examples print what the pages say, exercises and starters work."""
 
 import shutil
@@ -13,7 +13,7 @@ ROOT = TOPIC.parents[2]
 DOCS = ROOT / "docs" / "start-here" / "python-for-testers"
 TEMPLATES = TOPIC / "templates"
 EXAMPLES = TOPIC / "examples"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 
 # Each example script, and the page that shows its output.
 PAGES = {

@@ -6,14 +6,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping make Zero to SDET better. Please do not paste
+        Thanks for helping make myOpenSDET better. Please do not paste
         passwords, tokens, real emails or company information.
   - type: input
     id: page
     attributes:
       label: Page address
       description: Copy it from your browser's address bar.
-      placeholder: https://arshaduzzaman-sm.github.io/zero-to-sdet/...
+      placeholder: https://arshaduzzaman-sm.github.io/myopensdet/...
     validations:
       required: true
   - type: dropdown

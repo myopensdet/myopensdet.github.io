@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Regression, hotfixes and incidents: pick_tests.py maps changed files to the right
 pytest command, and that command really selects the expected tests in the sample suite."""
 
@@ -10,7 +10,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "hotfix_kit"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 FILES = sorted(
     p
     for p in TOPIC.rglob("*")

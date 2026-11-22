@@ -10,7 +10,7 @@ nav_title: "Database testing"
 order: 30
 group: "API and databases"
 summary: "Write SQL to prove the right data was saved, and test schemas and rules."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Database Testing for Beginners: A Practical Guide With SQL and pytest
@@ -158,7 +158,7 @@ Next, [multi-database testing](../multi-database-testing/index.md) runs the same
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/core_automation/database_testing/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/core_automation/database_testing/templates).
 
 Copy the whole `shop_db_tests` folder, or the parts you need. Each file starts with a line that says where it came from.
 

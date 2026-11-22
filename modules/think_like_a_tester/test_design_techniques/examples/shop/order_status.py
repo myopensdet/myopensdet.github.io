@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The life of an order: which actions are allowed in which status."""
 
 STATUSES = ["placed", "paid", "shipped", "delivered", "cancelled", "refunded"]

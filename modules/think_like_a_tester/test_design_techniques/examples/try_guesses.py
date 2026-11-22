@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Try a list of tricky usernames on the sign-up rules, and print what happens.
 
 A quick probe like this comes before writing tests: it shows you which

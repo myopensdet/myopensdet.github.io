@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Playwright locators cheat sheet (Python)
 
 Every line here runs in `test_locators.py`, on `locator_practice.html`. Pick from the top of the first table down: the higher, the closer to what a user sees, and the less it breaks.

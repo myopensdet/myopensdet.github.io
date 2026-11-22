@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A tiny stub server that answers like a real service, from files you write.
 
 It reads WireMock's mapping format (a small part of it), so the same files work in

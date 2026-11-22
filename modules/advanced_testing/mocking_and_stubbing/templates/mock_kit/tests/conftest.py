@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Start the stub server once for the test run, on a free port, and give tests its address.
 
 To use WireMock instead (Docker): docker compose up -d, then

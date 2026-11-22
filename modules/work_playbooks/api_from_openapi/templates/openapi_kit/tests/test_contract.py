@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """One check per GET endpoint in the spec: the status is listed, the format and the schema
 match, and endpoints that need a login refuse a call without one. New endpoints in the
 spec get a check without any change here."""

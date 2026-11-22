@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Check a bug report (Markdown, using the bug report template) before you send it.
 
     python bug_report_check.py my_bug.md

@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 curl 'https://dummyjson.com/products/add' \
   -H 'accept: application/json' \
   -H 'accept-language: en-US,en;q=0.9' \

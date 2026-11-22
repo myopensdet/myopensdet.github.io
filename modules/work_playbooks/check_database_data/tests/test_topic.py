@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Database guide: offline checks of the kit's safety rules always run. With ZTS_DOCKER=1 and
 Docker running, the practice database is started under its own name and port, the checks find
 exactly the six planted problems, every query in sql/data_checks.sql runs, and the tests can't
@@ -15,7 +15,7 @@ import yaml
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "db_checks"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 COMPOSE = yaml.safe_load((KIT / "docker-compose.yml").read_text(encoding="utf-8"))
 PASSWORD = "local_only_password"  # noqa: S105 (throwaway local practice database)
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 # A safe place to practise team Git: a pretend server and two copies of a small test
 # project, "me" and "colleague", all inside one new folder. Nothing else is touched.
 #

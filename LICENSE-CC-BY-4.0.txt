@@ -1,4 +1,4 @@
-Zero to SDET uses two licenses:
+myOpenSDET uses two licenses:
 
 - Code and templates (everything under modules/, practice-app/, scripts/,
   overrides/, and code blocks taken from those files) are under the MIT
@@ -7,8 +7,8 @@ Zero to SDET uses two licenses:
   which keeps its own SIL Open Font License) are under the Creative Commons
   Attribution 4.0 International License, printed below.
 
-Credit for the text: "Zero to SDET by Arshaduzzaman SM,
-https://arshaduzzaman-sm.github.io/zero-to-sdet/, CC BY 4.0".
+Credit for the text: "myOpenSDET by Arshaduzzaman SM,
+https://arshaduzzaman-sm.github.io/myopensdet/, CC BY 4.0".
 
 -----------------------------------------------------------------------
 

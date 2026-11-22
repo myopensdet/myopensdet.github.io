@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The database connection for every test. Set the address in the terminal, never in a file:
 
     macOS / Linux:  export DATABASE_URL=postgresql://user:password@host:port/database

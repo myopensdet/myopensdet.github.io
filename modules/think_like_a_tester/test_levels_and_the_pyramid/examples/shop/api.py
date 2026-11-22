@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A small web API around the cart, so it can be tested the way other programs use it."""
 
 from fastapi import FastAPI, HTTPException

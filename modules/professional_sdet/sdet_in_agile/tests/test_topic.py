@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """SDET in Agile: story_check.py finds the vague words and missing areas in the
 sample story, and passes the refined one, exactly as the page shows."""
 
@@ -10,7 +10,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "agile_kit"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 FILES = sorted(
     p
     for p in TOPIC.rglob("*")

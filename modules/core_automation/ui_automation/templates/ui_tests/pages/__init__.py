@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Page objects: one class per page, so tests talk about the shop, not about HTML."""
 
 from pages.books_page import BooksPage

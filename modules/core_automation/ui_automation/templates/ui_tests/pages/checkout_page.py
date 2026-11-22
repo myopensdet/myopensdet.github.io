@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Checkout: a form, a card field inside an iframe, and a terms link that opens a new tab."""
 
 from playwright.sync_api import Page

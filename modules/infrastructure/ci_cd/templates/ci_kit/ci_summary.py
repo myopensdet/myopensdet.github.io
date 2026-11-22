@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Read pytest's JUnit XML report and write a short summary: the totals, then every
 failed test with the first line of its error. In GitHub Actions it also goes on the
 run's summary page.

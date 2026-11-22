@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Mark every test with its level, from the folder it lives in.
 
 Put this file in your tests/ folder. Then sort tests into folders:

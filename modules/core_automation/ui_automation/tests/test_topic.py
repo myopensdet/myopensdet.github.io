@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """UI automation: the Page Object Model template passes on each installed browser, the planted
 bug still fails for the right reason, and a failure leaves a screenshot and a trace.
 All offline: the template starts its own shop. Needs Playwright's browsers."""
@@ -13,7 +13,7 @@ import pytest
 
 TOPIC = Path(__file__).resolve().parents[1]
 PROJECT = TOPIC / "templates" / "ui_tests"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 PYTEST = [sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider"]
 
 SKIP_FOLDERS = {"__pycache__", ".pytest_cache", "reports"}

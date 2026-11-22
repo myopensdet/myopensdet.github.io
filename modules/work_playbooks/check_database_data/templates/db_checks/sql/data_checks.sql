@@ -1,4 +1,4 @@
--- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 -- Ready data checks. Each query returns the rows that BREAK a rule: no rows = all good.
 -- Paste them into DBeaver, pgAdmin, psql or any SQL tool. Change the table and column
 -- names to yours. Written for PostgreSQL; notes show what to change for MySQL.

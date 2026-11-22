@@ -8,7 +8,7 @@ tags:
 nav_title: "HTTP and curl"
 order: 20
 summary: "Methods, status codes, headers and curl commands."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # HTTP Cheat Sheet for Testers: Methods, Status Codes, Headers and curl
@@ -17,4 +17,4 @@ updated: "2026-11-19"
 
 ---
 
-Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/http_cheat_sheet.md). [All cheat sheets](index.md).
+Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/http_cheat_sheet.md). [All cheat sheets](index.md).

@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The templates of "Test levels and the pyramid" work on the example shop, as the lessons show."""
 
 import re
@@ -11,7 +11,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 TEMPLATES = TOPIC / "templates"
 EXAMPLES = TOPIC / "examples"
-CREDIT = "# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 
 
 def run(*args, cwd=EXAMPLES):
@@ -90,7 +90,7 @@ def test_pyramid_report_warns_about_an_ice_cream_cone(tmp_path):
 
 def test_decision_chart_has_every_section():
     text = (TEMPLATES / "test_level_decision_chart.md").read_text(encoding="utf-8")
-    assert text.splitlines()[0].startswith("<!-- Template from Zero to SDET:")
+    assert text.splitlines()[0].startswith("<!-- Template from myOpenSDET:")
     assert re.findall(r"^## (.+)$", text, flags=re.MULTILINE) == [
         "The questions",
         "Also ask",

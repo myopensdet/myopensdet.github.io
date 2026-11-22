@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Test data factories: a valid, typical object by default. A test changes only what it is about.
 
 make_signup()            # a fine signup with fake details

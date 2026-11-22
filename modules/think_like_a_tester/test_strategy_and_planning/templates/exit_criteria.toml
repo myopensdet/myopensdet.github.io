@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 # Exit criteria: testing is done when every number is at or below its limit.
 # Agree these numbers with your team before testing starts, not at the end.
 [exit]

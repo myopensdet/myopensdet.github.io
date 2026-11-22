@@ -8,7 +8,7 @@ tags:
 nav_title: "SQL"
 order: 10
 summary: "SELECT, JOIN, GROUP BY and the data checks testers run every week."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # SQL Cheat Sheet for Testers: Queries and Data Checks
@@ -17,4 +17,4 @@ updated: "2026-11-19"
 
 ---
 
-Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/toolbox/cheat_sheets/templates/sql_cheat_sheet.md). The practice files are in [the kit](index.md#step-2-get-the-kit). [All cheat sheets](index.md).
+Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/toolbox/cheat_sheets/templates/sql_cheat_sheet.md). The practice files are in [the kit](index.md#step-2-get-the-kit). [All cheat sheets](index.md).

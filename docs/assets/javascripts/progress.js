@@ -1,5 +1,5 @@
 /*
- * Zero to SDET: progress tracker.
+ * myOpenSDET: progress tracker.
  *
  * Saved ONLY in this browser (localStorage). Nothing is sent anywhere, there is
  * no account, and clearing the browser's site data removes it.
@@ -249,7 +249,7 @@
 
   // ------------------------------------------- section overview: share it
 
-  var REPO = "https://github.com/arshaduzzaman-sm/zero-to-sdet";
+  var REPO = "https://github.com/arshaduzzaman-sm/myopensdet";
 
   function setupSection(data) {
     var cards = document.querySelectorAll(".zts-topics > ul > li > p:first-child a[href]");
@@ -277,7 +277,7 @@
         cards.length + "</strong> topics in " + escapeHtml(section) + ".</p>";
     } else {
       box.className = "zts-section-progress zts-section-progress--complete";
-      var message = "I just finished the " + section + " section of Zero to SDET, " +
+      var message = "I just finished the " + section + " section of myOpenSDET, " +
         "a free course for becoming an SDET. " + url;
       box.innerHTML =
         "<p><strong>You finished every topic in " + escapeHtml(section) + ". Well done!</strong></p>" +

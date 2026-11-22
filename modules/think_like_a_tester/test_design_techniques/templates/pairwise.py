@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Pick a small set of test combinations that still covers every pair of values.
 
     python pairwise.py Browser=Chrome,Firefox,Safari Device=Desktop,Phone Payment=Card,PayPal

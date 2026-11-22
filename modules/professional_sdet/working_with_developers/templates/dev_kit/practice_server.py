@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A tiny API with a bug that "works on my machine": every third request for order 7
 fails with a 500. Run it, then point evidence.py at it.
 

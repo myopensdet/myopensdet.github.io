@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A small piece of a real shop: what an order pays for shipping.
 
 The rule from the user story: "Orders of $50.00 or more ship free.

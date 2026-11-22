@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A first, tiny performance check: how fast does one endpoint answer, again and again?
 
 This is not a load test (that comes later, with Locust or k6). It answers a

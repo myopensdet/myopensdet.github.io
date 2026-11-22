@@ -9,7 +9,7 @@ nav_title: "CI/CD for testers"
 order: 50
 group: "Pipelines and environments"
 summary: "Design a test pipeline: when it runs, secrets, reports, a ready workflow."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # CI/CD for Testers: Run Your Tests on Every Change, Step by Step
@@ -61,7 +61,7 @@ Other CI tools (GitLab CI, Jenkins, Azure Pipelines) use different file formats 
 
 A pipeline runs exactly the commands you give it. If they don't pass on your computer in a fresh folder, they won't pass on the runner. So run them locally first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/infrastructure/ci_cd/templates). Open the `ci_kit` folder in a terminal.
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/ci_cd/templates). Open the `ci_kit` folder in a terminal.
 2. Make a fresh virtual environment, like the runner does, and install:
 
     ```bash
@@ -205,7 +205,7 @@ Then use the [pipeline checklist](#templates) with your team: who owns the night
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/infrastructure/ci_cd/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/ci_cd/templates).
 
 === "Pipeline checklist"
 

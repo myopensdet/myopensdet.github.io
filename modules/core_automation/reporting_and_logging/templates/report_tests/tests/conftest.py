@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Fixtures and report hooks: an API client that logs, a browser page, and evidence in the report.
 
 python -m pytest                 # writes reports/report.html, junit.xml and tests.log

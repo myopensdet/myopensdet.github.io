@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Browser fixtures for the UI tests: one browser per run, a fresh context for every test.
 
     python -m pytest                       # Chromium, no window

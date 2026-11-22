@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Database testing: offline checks always run. With ZTS_DATABASE_URL set to a
 throwaway PostgreSQL database, the template project and the examples run against it."""
 
@@ -13,7 +13,7 @@ import pytest
 TOPIC = Path(__file__).resolve().parents[1]
 EXAMPLES = TOPIC / "examples"
 PROJECT = TOPIC / "templates" / "shop_db_tests"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 
 sys.path.insert(0, str(PROJECT))
 from db.client import database_url  # noqa: E402

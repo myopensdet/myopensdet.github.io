@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # SHOP-420: Discount code at checkout (after refinement)
 
 As a signed-in shopper, I want to use a discount code at checkout, so that I pay less.

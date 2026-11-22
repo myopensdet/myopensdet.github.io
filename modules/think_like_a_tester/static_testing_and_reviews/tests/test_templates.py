@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The templates of "Static testing and reviews" work, and the lessons' outputs stay true."""
 
 import shutil
@@ -13,7 +13,7 @@ TOPIC = Path(__file__).resolve().parents[1]
 TEMPLATES = TOPIC / "templates"
 EXAMPLES = TOPIC / "examples"
 STATIC = EXAMPLES / "static_analysis"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 RUFF = Path(sys.executable).with_name("ruff")
 
 

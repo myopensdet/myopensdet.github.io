@@ -1,13 +1,13 @@
 ---
 title: "How to Use This Site: Paths, Pages, Downloads and Help"
-description: "How Zero to SDET works: pick a learning path or jump to today's task, how topic pages and lessons are built, how to read the boxes and tabs, where to download each topic's files, how to track your progress, and where to get help."
+description: "How myOpenSDET works: pick a learning path or jump to today's task, how topic pages and lessons are built, how to read the boxes and tabs, where to download each topic's files, how to track your progress, and where to get help."
 level: Beginner
 tags:
   - Getting started
 nav_title: "How to use this site"
 order: 10
 summary: "Pick a path, read a page, copy the files, track your progress, ask for help."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # How to Use This Site: Paths, Pages, Downloads and Help

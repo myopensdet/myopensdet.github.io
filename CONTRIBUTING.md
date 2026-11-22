@@ -1,4 +1,4 @@
-# Contributing to Zero to SDET
+# Contributing to myOpenSDET
 
 Thank you for helping. Every fix, however small, makes the site better for the
 next learner.
@@ -20,8 +20,8 @@ By taking part you agree to the [Code of Conduct](.github/CODE_OF_CONDUCT.md).
 You need [uv](https://docs.astral.sh/uv/) (it installs the right Python for you) and git.
 
 ```bash
-git clone https://github.com/arshaduzzaman-sm/zero-to-sdet.git
-cd zero-to-sdet
+git clone https://github.com/arshaduzzaman-sm/myopensdet.git
+cd myopensdet
 
 uv python install 3.13
 uv venv --python 3.13
@@ -30,7 +30,7 @@ uv pip sync --require-hashes requirements-docs.txt requirements.txt practice-app
 uv tool install pre-commit
 pre-commit install            # runs gitleaks and the other checks before every commit
 
-.venv/bin/zensical serve      # then open http://127.0.0.1:8001/zero-to-sdet/
+.venv/bin/zensical serve      # then open http://127.0.0.1:8001/myopensdet/
 ```
 
 `--require-hashes` makes sure every package is exactly the one that was reviewed.
@@ -181,7 +181,7 @@ Questions are welcome. Nobody is expected to know everything.
 ## Publishing the website
 
 This part is for the maintainer. The website is published with GitHub Pages at
-<https://arshaduzzaman-sm.github.io/zero-to-sdet/>. The workflow
+<https://arshaduzzaman-sm.github.io/myopensdet/>. The workflow
 `.github/workflows/pages.yml` builds and publishes the site on every push to
 `main`. After a push, open the **Actions** tab and check that "Publish website"
 turns green.
@@ -189,7 +189,7 @@ turns green.
 ### What is already checked
 
 - `bash scripts/check.sh` builds the site with `--strict`, so any warning fails.
-- `scripts/check_built_site.py` serves the built `site/` folder at `/zero-to-sdet/`, the same path GitHub Pages uses, and opens every page and file. It fails on a broken link, a link that leaves the site's path, or a page that loads a script, style or image from another server.
+- `scripts/check_built_site.py` serves the built `site/` folder at `/myopensdet/`, the same path GitHub Pages uses, and opens every page and file. It fails on a broken link, a link that leaves the site's path, or a page that loads a script, style or image from another server.
 - Diagrams use our own pinned copy of Mermaid, never `unpkg.com`. On its own, the theme would load Mermaid from `unpkg.com` (at whatever 12.x is newest) and every reader's browser would contact that server. `docs/assets/javascripts/mermaid-loader.js` stops that, and the browser checks the file's SHA-384 hash before running it. The big file loads only on pages that draw a diagram. The built-site check fails if any page lacks the loader or the hash doesn't match. Tested in Chrome with `unpkg.com` blocked: diagrams draw, pages without diagrams don't fetch the file, and a changed file is refused.
 - Site address, repo link and "edit this page" link are set in `zensical.toml`.
 - A 404 page is built. No file in the site starts with `_`, so nothing is hidden by GitHub.

@@ -1,4 +1,4 @@
--- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 -- A tiny shop database to try every query on the SQL cheat sheet. Fake data only.
 -- It has planted problems on purpose: a duplicate email, an order with no customer,
 -- a customer with no email, and an order whose total doesn't match its lines.

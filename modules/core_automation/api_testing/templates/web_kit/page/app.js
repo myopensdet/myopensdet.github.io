@@ -1,4 +1,4 @@
-// Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+// Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 // The JavaScript in the browser. It calls the API in the background (AJAX, with fetch)
 // and puts the answer on the page, without loading a new page.
 

@@ -10,7 +10,7 @@ nav_title: "Mocking and stubbing"
 order: 10
 group: "Services and integrations"
 summary: "Replace slow or unreliable parts with fakes you control."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Mocking and Stubbing for Testers: unittest.mock, Stub Servers, WireMock and page.route
@@ -54,7 +54,7 @@ Two rules before you start:
 
 ## Step 2: Get the kit
 
-You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/advanced_testing/mocking_and_stubbing/templates). Then:
+You need **Python 3.13**. Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/advanced_testing/mocking_and_stubbing/templates). Then:
 
 ```bash
 python -m venv .venv
@@ -223,7 +223,7 @@ The same 5 tests, the same 4 mapping files, now answered by WireMock. `STUB_URL`
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/advanced_testing/mocking_and_stubbing/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/advanced_testing/mocking_and_stubbing/templates).
 
 === "stub_server.py"
 

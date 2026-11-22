@@ -1,7 +1,7 @@
 ---
 title: "Start Here: How to Begin Your SDET Journey"
 description: "Start here if you are new: set up your computer and learn just enough Python for testing."
-updated: "2026-11-19"
+updated: "2026-11-20"
 nav_title: "Start Here"
 order: 10
 ---

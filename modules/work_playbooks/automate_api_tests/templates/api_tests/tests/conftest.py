@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Shared set-up for every test file: where the API is, how to log in, and test data.
 
 Change the three settings below for your own API. Passwords never go in this file:

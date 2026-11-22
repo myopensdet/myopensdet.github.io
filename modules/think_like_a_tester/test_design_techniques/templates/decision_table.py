@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Print every combination of yes/no conditions, as a decision table ready to fill in.
 
     python decision_table.py 'Member' 'Order $50 or more' 'Express'

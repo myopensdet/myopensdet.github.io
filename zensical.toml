@@ -1,20 +1,20 @@
-# Zero to SDET: site configuration for Zensical.
+# myOpenSDET: site configuration for Zensical.
 # Docs: https://zensical.org/docs/setup/basics/
-# Preview locally:  .venv/bin/zensical serve   (then open http://127.0.0.1:8001/zero-to-sdet/)
+# Preview locally:  .venv/bin/zensical serve   (then open http://127.0.0.1:8001/myopensdet/)
 # Port 8001, so it never clashes with other projects on 8000. 127.0.0.1 = this computer only.
 # The site URL lives only here, so moving to a custom domain later is one edit.
 
 [project]
-site_name = "Zero to SDET"
-site_url = "https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+site_name = "myOpenSDET"
+site_url = "https://arshaduzzaman-sm.github.io/myopensdet/"
 site_description = "Everything you need to test software well, in one place. Learn software testing and test automation, step by step. Real templates and code you can use at work. Free."
 site_author = "Arshaduzzaman SM"
 copyright = "&copy; 2026 Arshaduzzaman SM. Code under MIT, text under CC BY 4.0."
 docs_dir = "docs"
 dev_addr = "127.0.0.1:8001"
 
-repo_url = "https://github.com/arshaduzzaman-sm/zero-to-sdet"
-repo_name = "arshaduzzaman-sm/zero-to-sdet"
+repo_url = "https://github.com/arshaduzzaman-sm/myopensdet"
+repo_name = "arshaduzzaman-sm/myopensdet"
 edit_uri = "edit/main/docs/"
 
 # Working files that live in docs/ but are not pages for readers.
@@ -396,8 +396,8 @@ nav_groups = ["API work", "Database work", "Login and access", "UI work", "Files
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/arshaduzzaman-sm/zero-to-sdet"
-name = "Zero to SDET on GitHub"
+link = "https://github.com/arshaduzzaman-sm/myopensdet"
+name = "myOpenSDET on GitHub"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/linkedin"
@@ -420,19 +420,19 @@ title = "Was this page helpful?"
 icon = "lucide/thumbs-up"
 name = "Yes, this page helped me"
 data = 1
-note = "Thanks! Glad it helped. A star on <a href=\"https://github.com/arshaduzzaman-sm/zero-to-sdet\" target=\"_blank\" rel=\"noopener\">GitHub</a> helps other testers find this site."
+note = "Thanks! Glad it helped. A star on <a href=\"https://github.com/arshaduzzaman-sm/myopensdet\" target=\"_blank\" rel=\"noopener\">GitHub</a> helps other testers find this site."
 
 [[project.extra.analytics.feedback.ratings]]
 icon = "lucide/thumbs-down"
 name = "No, this page needs work"
 data = 0
-note = "Thanks for telling us. <a href=\"https://github.com/arshaduzzaman-sm/zero-to-sdet/issues/new?template=content-error.yml&title=Content%3A%20{title}&page=https%3A%2F%2Farshaduzzaman-sm.github.io%2Fzero-to-sdet{url}\" target=\"_blank\" rel=\"noopener\">Tell us what was unclear</a> and we will fix it."
+note = "Thanks for telling us. <a href=\"https://github.com/arshaduzzaman-sm/myopensdet/issues/new?template=content-error.yml&title=Content%3A%20{title}&page=https%3A%2F%2Farshaduzzaman-sm.github.io%2Fmyopensdet{url}\" target=\"_blank\" rel=\"noopener\">Tell us what was unclear</a> and we will fix it."
 
 # Comments under each lesson (Giscus = GitHub Discussions). OFF until Phase 9:
 # it needs a public repo. Fill repo_id and category_id from https://giscus.app.
 [project.extra.giscus]
 enabled = false
-repo = "arshaduzzaman-sm/zero-to-sdet"
+repo = "arshaduzzaman-sm/myopensdet"
 repo_id = ""
 category = "Lessons"
 category_id = ""

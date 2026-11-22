@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Send many variations of one request and see every answer in one table.
 
 Use it in your first hour with a new endpoint, before you write any test:

@@ -8,7 +8,7 @@ tags:
 nav_title: "Git"
 order: 60
 summary: "Branches, pull requests, staying up to date, undoing mistakes."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Git Cheat Sheet for Testers Working in a Team
@@ -17,4 +17,4 @@ updated: "2026-11-19"
 
 ---
 
-Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_team_cheat_sheet.md). [All cheat sheets](index.md).
+Copy this sheet as a Markdown file [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/modules/professional_sdet/git_in_a_team/templates/git_kit/git_team_cheat_sheet.md). [All cheat sheets](index.md).

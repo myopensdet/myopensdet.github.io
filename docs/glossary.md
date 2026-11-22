@@ -1,9 +1,9 @@
 ---
 title: "Software Testing Glossary: Every SDET Term in Plain English"
-description: "Plain-English meanings of every testing and automation term used on Zero to SDET, each linked to the lesson that teaches it."
+description: "Plain-English meanings of every testing and automation term used on myOpenSDET, each linked to the lesson that teaches it."
 tags:
   - Quick reference
-updated: "2026-11-19"
+updated: "2026-11-22"
 nav_title: "Glossary"
 order: 40
 nav_section: "toolbox"
@@ -958,5 +958,5 @@ that teaches it.
 
 <!-- END glossary -->
 
-Missing a word? [Tell us which one](https://github.com/arshaduzzaman-sm/zero-to-sdet/issues/new?template=content-error.yml&title=Glossary%3A%20add%20a%20word)
+Missing a word? [Tell us which one](https://github.com/arshaduzzaman-sm/myopensdet/issues/new?template=content-error.yml&title=Glossary%3A%20add%20a%20word)
 and we will add it.

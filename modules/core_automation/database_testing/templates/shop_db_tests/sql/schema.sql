@@ -1,4 +1,4 @@
--- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 -- A small bookshop: customers, books, orders and the books in each order.
 -- In a real project these tables come from your app's migrations, not from here.
 

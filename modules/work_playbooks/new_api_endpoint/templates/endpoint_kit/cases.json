@@ -1,5 +1,5 @@
 {
-  "$comment": "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ One case per line: a name, and the body to send.",
+  "$comment": "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ One case per line: a name, and the body to send.",
   "cases": [
     {"name": "valid: one product", "body": {"userId": 1, "products": [{"id": 144, "quantity": 4}]}},
     {"name": "missing userId", "body": {"products": [{"id": 144, "quantity": 4}]}},

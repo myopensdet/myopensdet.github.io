@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 ID,Title,Covers,Type,Priority,Preconditions,Steps,Expected result,Automated
 TC-01,Refund within 30 days is allowed,REF-1,positive,high,Customer with an item delivered 15 days ago,1. Open My orders; 2. Choose Refund on the item; 3. Pick a reason; 4. Send,"Request is saved, status ""Requested""",test_tc01_refund_is_allowed_within_30_days
 TC-02,Refund on day 30 is allowed,REF-1,positive,high,Item delivered exactly 30 days ago,Same as TC-01,"Request is saved, status ""Requested""",test_tc02_refund_is_allowed_on_day_30

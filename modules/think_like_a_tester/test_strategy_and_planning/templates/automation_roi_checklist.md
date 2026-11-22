@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Should we automate this check?
 
 Answer each question for one check, like "refund on day 31 is refused". Mostly "yes" means automate it. Any "no" in part A means wait or keep it manual.

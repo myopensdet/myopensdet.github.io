@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Which spec, which API, which values. Point it at your own API with environment variables:
 
     OPENAPI_SPEC=https://staging.example.com/openapi.json \

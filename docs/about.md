@@ -1,12 +1,12 @@
 ---
-title: "About Zero to SDET"
-description: "Who writes Zero to SDET, why it exists, how it is licensed, and how you can help make it better."
-updated: "2026-11-19"
+title: "About myOpenSDET"
+description: "Who writes myOpenSDET, why it exists, how it is licensed, and how you can help make it better."
+updated: "2026-11-22"
 ---
 
-# About Zero to SDET
+# About myOpenSDET
 
-Zero to SDET is a free learning site about software testing and test automation, for everyone: someone who has never tested, an engineer stuck on a task today, and an experienced engineer looking for a template to adapt. (SDET means Software Development Engineer in Test: a tester who writes code to test software.)
+myOpenSDET is a free learning site about software testing and test automation, for everyone: someone who has never tested, an engineer stuck on a task today, and an experienced engineer looking for a template to adapt. (SDET means Software Development Engineer in Test: a tester who writes code to test software.)
 
 ## Who writes it
 
@@ -43,7 +43,7 @@ Arshaduzzaman SM
 
 Many testers are told at work, "test the database" or "set up BDD", with no one to show them how. Good material exists, but it is spread across many places, often assumes you can already code, and rarely shows how to plan the work, or what to do when you are stuck.
 
-Zero to SDET puts that road in one place:
+myOpenSDET puts that road in one place:
 
 - **Every page stands on its own.** If you land here from a search, the page tells you what you need to know first and links to it.
 - **Real templates.** The scripts, code snippets, checklists and plans people use at work, ready to copy and adapt. Every code template is tested.
@@ -56,7 +56,7 @@ Zero to SDET puts that road in one place:
 | What | License | What it means for you |
 | --- | --- | --- |
 | Code and templates | [MIT](https://opensource.org/license/mit) | Use them anywhere, including at work. Keep the credit line at the top of each file. |
-| Lessons and text | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Share and adapt them, as long as you credit Zero to SDET. |
+| Lessons and text | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Share and adapt them, as long as you credit myOpenSDET. |
 
 ## Your privacy
 
@@ -67,11 +67,11 @@ If visitor counting is added later, it will be a privacy-friendly counter that s
 
 ## Help make it better
 
-Zero to SDET is open source, and suggestions are welcome. Here is how a change gets in:
+myOpenSDET is open source, and suggestions are welcome. Here is how a change gets in:
 
 1. **Anyone can suggest a change.** The "Edit this page" pencil at the top of a page opens a copy on GitHub. What you change there becomes a **suggestion** (a pull request), not a live edit.
 2. **Nothing goes live without review.** The maintainer reads every suggestion, runs the checks, and approves it, asks for changes, or explains why not.
-3. **Bigger ideas start as an issue.** For a new topic or a rewrite, open an issue on [GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet) first, so no one spends a weekend on something that won't fit.
+3. **Bigger ideas start as an issue.** For a new topic or a rewrite, open an issue on [GitHub](https://github.com/arshaduzzaman-sm/myopensdet) first, so no one spends a weekend on something that won't fit.
 
 The rules for every suggestion are short:
 
@@ -81,6 +81,6 @@ The rules for every suggestion are short:
 - No ads, affiliate links or tracking.
 - One fix or one topic per suggestion.
 
-The full rules are in [CONTRIBUTING.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/CONTRIBUTING.md). Security problems go privately, as [SECURITY.md](https://github.com/arshaduzzaman-sm/zero-to-sdet/blob/main/.github/SECURITY.md) explains, never in a public issue.
+The full rules are in [CONTRIBUTING.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/CONTRIBUTING.md). Security problems go privately, as [SECURITY.md](https://github.com/arshaduzzaman-sm/myopensdet/blob/main/.github/SECURITY.md) explains, never in a public issue.
 
 See the [Changelog](changelog.md) for what is new.

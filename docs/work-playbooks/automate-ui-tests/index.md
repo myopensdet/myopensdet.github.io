@@ -10,7 +10,7 @@ nav_title: "Automate UI tests, step by step"
 order: 40
 group: "UI work"
 summary: "Install, pick the flows, plan, copy ready tests, run, read screenshots and traces."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # How to Automate UI Tests With Playwright and pytest, Step by Step
@@ -26,7 +26,7 @@ You'll practise on **Sauce Demo** (`https://www.saucedemo.com`), a free practice
 
 You need **Python 3.13** and **VS Code**. If you don't have them, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/automate_ui_tests/templates). Then open the `ui_tests` folder in VS Code (**File → Open Folder**).
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/automate_ui_tests/templates). Then open the `ui_tests` folder in VS Code (**File → Open Folder**).
 
 2. **Open a terminal** in VS Code (**Terminal → New Terminal**), make a virtual environment and install the packages. **pytest** runs the tests; **Playwright** drives the browser; **pytest-playwright** joins the two.
 
@@ -344,7 +344,7 @@ Still stuck? Go deeper:
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/work_playbooks/automate_ui_tests/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/work_playbooks/automate_ui_tests/templates).
 
 === "test_plan.md"
 

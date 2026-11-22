@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """OpenAPI playbook: the inventory finds gaps in a spec, and the smoke test and the pytest
 template pass on a local API that follows its spec and catch each kind of break.
 All offline. With ZTS_ONLINE=1, the Petstore findings shown on the page are checked too."""
@@ -16,7 +16,7 @@ import yaml
 
 TOPIC = Path(__file__).resolve().parents[1]
 KIT = TOPIC / "templates" / "openapi_kit"
-CREDIT = "Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/"
+CREDIT = "Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/"
 
 ORDER = {
     "type": "object",

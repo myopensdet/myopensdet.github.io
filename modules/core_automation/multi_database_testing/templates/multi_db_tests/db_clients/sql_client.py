@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """What PostgreSQL, MySQL and SQLite share: Python's database API (PEP 249).
 
 The three drivers differ in how they connect and in the placeholder they use

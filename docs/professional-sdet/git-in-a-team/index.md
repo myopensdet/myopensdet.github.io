@@ -10,7 +10,7 @@ nav_title: "Git in a team"
 order: 40
 group: "Working in a team"
 summary: "Branches, pull requests, a real merge conflict, and pushing safely."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Git in a Team for Testers: Branches, Pull Requests and Conflicts, Step by Step
@@ -44,7 +44,7 @@ Teams call this **trunk-based development** or **GitHub flow**. Some teams use l
 
 ## Step 2: Get the kit and make a practice copy
 
-You need **Git** ([install it](https://git-scm.com/downloads)) and **bash** (Git Bash on Windows). Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/professional_sdet/git_in_a_team/templates).
+You need **Git** ([install it](https://git-scm.com/downloads)) and **bash** (Git Bash on Windows). Get the files from [Templates](#templates) below, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/git_in_a_team/templates).
 
 `git_practice.sh` makes a safe place to practise: a pretend server (`server.git`), **your** copy (`me`), and a **colleague's** copy, all inside one new folder. It doesn't touch any other project or your Git settings.
 
@@ -310,7 +310,7 @@ When **you** review test code, use the review checklist from [a day in the life]
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/professional_sdet/git_in_a_team/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/professional_sdet/git_in_a_team/templates).
 
 === "Cheat sheet"
 

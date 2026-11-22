@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """The cart page: a table with a Remove button on every row, and a confirm dialog."""
 
 from playwright.sync_api import Locator, Page

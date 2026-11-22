@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 REF-1: Refund each item up to 30 days after delivery, from "My orders"
 REF-2: Each item can be refunded once
 REF-3: Approved or refused within 2 working days, with an email either way

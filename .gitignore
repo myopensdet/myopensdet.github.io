@@ -1,4 +1,4 @@
-# Zero to SDET: files that must never be committed.
+# myOpenSDET: files that must never be committed.
 # See .github/SECURITY.md for why.
 
 # ===== Secrets and personal config =====

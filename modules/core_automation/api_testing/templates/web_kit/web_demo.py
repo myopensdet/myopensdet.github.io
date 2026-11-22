@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """A tiny web app to see how the web works: a server, an HTML page, JavaScript that calls
 a REST API in the background (AJAX), and JSON answers. Standard library only.
 

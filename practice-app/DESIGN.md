@@ -1,7 +1,7 @@
 # Practice App: design
 
 The Practice App is **Bookshelf**, a small online shop that sells books and a few
-study gadgets. Every lesson on Zero to SDET tests this same app, so the lessons
+study gadgets. Every lesson on myOpenSDET tests this same app, so the lessons
 connect: the API lesson creates an order, the database lesson checks it was saved,
 the BDD lesson describes checkout in Gherkin, the performance lesson puts it under
 load.

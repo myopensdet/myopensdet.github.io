@@ -9,7 +9,7 @@ tags:
 nav_title: "Test cases"
 order: 60
 summary: "Write clear test cases, positive and negative, linked to what they check."
-updated: "2026-11-19"
+updated: "2026-11-22"
 ---
 
 # Test Cases: Write Clear Checks Anyone Can Run, and Link Them to the Rules
@@ -135,7 +135,7 @@ Next, read [Bug reports](../bug-reports/index.md): when a test case fails, the b
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/think_like_a_tester/test_cases/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/think_like_a_tester/test_cases/templates).
 
 Copy these into your own project. Each file starts with a line that says where it came from.
 

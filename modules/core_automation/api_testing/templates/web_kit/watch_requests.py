@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Open a page in a real browser and list every request it makes, like the Network tab.
 
 Shows which API calls happen behind a page (AJAX), and what JSON came back, so you

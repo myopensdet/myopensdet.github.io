@@ -1,4 +1,4 @@
--- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 -- The test tables, in MySQL's types. Text needs a length, and DATETIME has no time zone.
 DROP TABLE IF EXISTS orders;
 DROP TABLE IF EXISTS customers;

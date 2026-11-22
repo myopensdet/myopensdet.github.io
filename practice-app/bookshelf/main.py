@@ -32,7 +32,7 @@ CSP = (
 )
 
 DESCRIPTION = """
-**Bookshelf** is the Practice App for [Zero to SDET](https://arshaduzzaman-sm.github.io/zero-to-sdet/):
+**Bookshelf** is the Practice App for [myOpenSDET](https://arshaduzzaman-sm.github.io/myopensdet/):
 a small online shop for books and study gadgets.
 
 > For practice on your own computer only. Never deploy it to the internet.

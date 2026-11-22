@@ -1,4 +1,4 @@
-<!-- Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/ -->
+<!-- Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/ -->
 # Test plan: <feature> (<release>)
 
 Author: <your name> · Reviewed by: <lead, developer, product owner> · Date: <YYYY-MM-DD>

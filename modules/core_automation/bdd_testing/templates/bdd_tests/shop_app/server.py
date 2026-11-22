@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Start the practice shop in the background, on a free port of this computer only.
 
 Set SHOP_URL to test a shop that is already running somewhere else instead.

@@ -1,5 +1,5 @@
 ---
-title: "Zero to SDET: Learn Software Testing and Test Automation, Step by Step"
+title: "myOpenSDET: Learn Software Testing and Test Automation, Step by Step"
 description: "Free, step-by-step SDET course with Python. Learn API, database, UI, BDD and performance testing with real templates you can copy."
 hide:
   - navigation
@@ -8,14 +8,14 @@ hide:
   - author
   - feedback
   - path
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 <div class="zts-hero" markdown>
 
 <div markdown>
 
-# Zero to SDET
+# myOpenSDET
 
 <p class="zts-hero__lead">Everything you need to test software well, in one place.</p>
 

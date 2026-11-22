@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Turn the test idea banks into one checklist for the feature you're testing.
 
 Each file in ideas/ is one kind of feature (login.md, payments.md ...). Pick the ones

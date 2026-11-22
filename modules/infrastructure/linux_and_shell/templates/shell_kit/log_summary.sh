@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 # Summarise a log file: lines per level, the most common errors, the slowest requests.
 #
 #   ./log_summary.sh logs/app.log

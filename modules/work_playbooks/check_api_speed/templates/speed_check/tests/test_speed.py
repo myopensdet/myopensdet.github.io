@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Speed targets as tests: each page must answer fast enough, without errors,
 while several users use it at once. Run them on a test environment, never production."""
 

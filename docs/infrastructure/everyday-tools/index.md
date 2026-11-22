@@ -10,7 +10,7 @@ nav_title: "Everyday tools"
 order: 40
 group: "Your toolkit"
 summary: "Copy a request as curl, turn it into a pytest test, debug it in VS Code."
-updated: "2026-11-18"
+updated: "2026-11-22"
 ---
 
 # Everyday Tools for Testers: From a Copied Request to a Test, Step by Step
@@ -24,7 +24,7 @@ Most API tests start the same way: someone clicks through the app, finds the one
 
 You need **Python 3.13** and an editor. [VS Code](https://code.visualstudio.com/) is free and used here. If you don't have Python, follow [environment setup](../../start-here/environment-setup/index.md) first.
 
-1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/infrastructure/everyday_tools/templates). Then open the `everyday_kit` folder in VS Code (**File → Open Folder**).
+1. **Get the files**: copy them from [Templates](#templates) below into a new folder, or take the whole folder [from GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/everyday_tools/templates). Then open the `everyday_kit` folder in VS Code (**File → Open Folder**).
 2. Open the terminal in VS Code (**Terminal → New Terminal**) and install the two packages:
 
     ```bash
@@ -91,7 +91,7 @@ Moved out of the test: authorization. Set them as environment variables before r
 The script keeps the address, the body and the useful headers. It drops the browser noise (`user-agent`, `accept-language`, `origin`...). It moves the token out of the code. `tests/test_from_curl.py` now has:
 
 ```python
-# Made by curl_to_pytest.py from Zero to SDET. Check it, then change the checks.
+# Made by curl_to_pytest.py from myOpenSDET. Check it, then change the checks.
 import os
 
 import requests
@@ -216,7 +216,7 @@ For reading the code you're debugging, see the [debugging toolkit](../debugging-
 
 ## Templates
 
-**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/zero-to-sdet/tree/main/modules/infrastructure/everyday_tools/templates).
+**Every file is below, ready to copy.** The whole folder is also [on GitHub](https://github.com/arshaduzzaman-sm/myopensdet/tree/main/modules/infrastructure/everyday_tools/templates).
 
 === "curl_to_pytest.py"
 

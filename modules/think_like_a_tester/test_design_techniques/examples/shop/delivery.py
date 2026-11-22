@@ -1,4 +1,4 @@
-# Template from Zero to SDET: https://arshaduzzaman-sm.github.io/zero-to-sdet/
+# Template from myOpenSDET: https://arshaduzzaman-sm.github.io/myopensdet/
 """Delivery fees. Money is in cents, so 5000 means $50.00.
 
 The rules, as the product owner wrote them:
