@@ -60,6 +60,7 @@ run "Hidden page dates up to date" warn "$PY" scripts/update_page_dates.py --che
 run "Website builds with no warnings" must .venv/bin/zensical build --strict
 run "Share images for every page" must "$PY" scripts/build_share_images.py
 run "Old addresses forward to new pages" must "$PY" scripts/build_redirects.py
+run "Security policy (CSP) on every page" must "$PY" scripts/build_csp.py
 run "Built site works at / like on GitHub Pages" must "$PY" scripts/check_built_site.py
 run "Links" must "$PY" scripts/check_links.py $EXTERNAL
 run "Tests (pytest)" must .venv/bin/pytest -q

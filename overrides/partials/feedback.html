@@ -4,7 +4,7 @@
   - not shown on draft ("Coming soon") pages, or with `hide: [feedback]`
   - the thank-you note is announced to screen readers (role="status")
   Settings live in zensical.toml under [project.extra.analytics.feedback].
-  Clicks are handled by partials/integrations/analytics/goatcounter.html.
+  Clicks are handled by docs/assets/javascripts/feedback.js (nothing is sent anywhere).
 -#}
 {% if config.extra.analytics %}
   {% set feedback = config.extra.analytics.feedback %}

@@ -132,11 +132,12 @@
         return Boolean(data.lessons[sitePath(a.getAttribute("href"))]);
       }).length;
       note.hidden = false;
-      note.innerHTML =
-        '<span class="zts-meter" aria-hidden="true"><span style="inline-size:' +
-        Math.round((finished / Math.max(1, lessons.length)) * 100) +
-        '%"></span></span> Your progress: <strong>' +
-        finished + " of " + lessons.length + "</strong> lessons done";
+      note.replaceChildren(
+        meterEl(finished, lessons.length),
+        " Your progress: ",
+        el("strong", null, [finished + " of " + lessons.length]),
+        " lessons done"
+      );
     });
   }
 
@@ -215,36 +216,55 @@
       }).length;
       total += level.items.length;
       ticked += done;
-      var percent = Math.round((done / Math.max(1, level.items.length)) * 100);
       var short = level.name.replace(/\s*\(.*\)$/, "");
-      level.meter.innerHTML =
-        '<span class="zts-meter" aria-hidden="true"><span style="inline-size:' + percent +
-        '%"></span></span> ' + done + " of " + level.items.length + " skills";
-      rows.push(
-        '<li><a href="#' + level.heading.id + '">' + short + "</a>" +
-        '<span class="zts-meter" aria-hidden="true"><span style="inline-size:' + percent +
-        '%"></span></span><span class="zts-matrix__count">' + done + " of " +
-        level.items.length + "</span></li>"
+      level.meter.replaceChildren(
+        meterEl(done, level.items.length),
+        " " + done + " of " + level.items.length + " skills"
       );
+      rows.push(el("li", null, [
+        el("a", { href: "#" + level.heading.id }, [short]),
+        meterEl(done, level.items.length),
+        el("span", { class: "zts-matrix__count" }, [done + " of " + level.items.length])
+      ]));
     });
-    panel.querySelector("[data-zts-levels]").innerHTML = rows.join("");
+    panel.querySelector("[data-zts-levels]").replaceChildren.apply(
+      panel.querySelector("[data-zts-levels]"), rows
+    );
     panel.querySelector("[data-zts-total]").textContent = ticked + " of " + total;
     var nextBox = panel.querySelector("[data-zts-next]");
     if (next) {
       var link = next.querySelector("a[href]");
-      nextBox.innerHTML =
-        "<strong>Your next skill:</strong> " + escapeHtml(skillText(next)) +
-        (link ? ' <a href="' + link.getAttribute("href") + '">Learn it: ' +
-          escapeHtml(link.textContent) + "</a>" : "");
+      nextBox.replaceChildren(el("strong", null, ["Your next skill:"]), " " + skillText(next));
+      if (link) {
+        nextBox.append(" ", el("a", { href: link.getAttribute("href") }, ["Learn it: " + link.textContent]));
+      }
     } else {
-      nextBox.innerHTML = "<strong>Every box is ticked.</strong> You have the full SDET skill set!";
+      nextBox.replaceChildren(
+        el("strong", null, ["Every box is ticked."]),
+        " You have the full SDET skill set!"
+      );
     }
   }
 
-  function escapeHtml(text) {
-    var div = document.createElement("div");
-    div.textContent = text;
-    return div.innerHTML;
+  // Build page parts with createElement and text nodes only (never innerHTML),
+  // so text from the page can never turn into HTML.
+  function el(tag, attrs, children) {
+    var node = document.createElement(tag);
+    Object.keys(attrs || {}).forEach(function (name) {
+      node.setAttribute(name, attrs[name]);
+    });
+    (children || []).forEach(function (child) {
+      node.append(child);
+    });
+    return node;
+  }
+
+  // A small progress bar. The width is set through the style object, which a
+  // Content-Security-Policy allows (a style="" attribute in HTML it would not).
+  function meterEl(done, total) {
+    var fill = el("span");
+    fill.style.inlineSize = Math.round((done / Math.max(1, total)) * 100) + "%";
+    return el("span", { class: "zts-meter", "aria-hidden": "true" }, [fill]);
   }
 
   // ------------------------------------------- section overview: share it
@@ -267,31 +287,38 @@
     var url = canonical ? canonical.href : window.location.href;
     var box = document.createElement("div");
     box.setAttribute("data-zts-section-progress", "");
-    var meter =
-      '<span class="zts-meter" aria-hidden="true"><span style="inline-size:' +
-      Math.round((done / cards.length) * 100) + '%"></span></span>';
-
     if (done < cards.length) {
       box.className = "zts-section-progress";
-      box.innerHTML = "<p>" + meter + " You have finished <strong>" + done + " of " +
-        cards.length + "</strong> topics in " + escapeHtml(section) + ".</p>";
+      box.append(el("p", null, [
+        meterEl(done, cards.length),
+        " You have finished ",
+        el("strong", null, [done + " of " + cards.length]),
+        " topics in " + section + "."
+      ]));
     } else {
       box.className = "zts-section-progress zts-section-progress--complete";
       var message = "I just finished the " + section + " section of myOpenSDET, " +
         "a free course for becoming an SDET. " + url;
-      box.innerHTML =
-        "<p><strong>You finished every topic in " + escapeHtml(section) + ". Well done!</strong></p>" +
-        '<label for="zts-share-message">Want to share it? Change the message if you like:</label>' +
-        '<textarea id="zts-share-message" rows="3"></textarea>' +
-        '<p class="zts-section-progress__actions">' +
-        '<button type="button" class="md-button" data-act="copy">Copy message</button>' +
-        '<a class="md-button" data-act="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>' +
-        '<a class="md-button" data-act="x" target="_blank" rel="noopener noreferrer">X</a>' +
-        '<a class="md-button" data-act="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>' +
-        "</p>" +
-        '<p class="zts-section-progress__star">If this site helped you, a star on ' +
-        '<a href="' + REPO + '" target="_blank" rel="noopener">GitHub</a> helps other testers find it.</p>' +
-        '<p class="md-visually-hidden" role="status" data-zts-live></p>';
+      var outside = function (act, label) {
+        return el("a", { class: "md-button", "data-act": act, target: "_blank", rel: "noopener noreferrer" }, [label]);
+      };
+      box.append(
+        el("p", null, [el("strong", null, ["You finished every topic in " + section + ". Well done!"])]),
+        el("label", { for: "zts-share-message" }, ["Want to share it? Change the message if you like:"]),
+        el("textarea", { id: "zts-share-message", rows: "3" }),
+        el("p", { class: "zts-section-progress__actions" }, [
+          el("button", { type: "button", class: "md-button", "data-act": "copy" }, ["Copy message"]),
+          " ", outside("linkedin", "LinkedIn"),
+          " ", outside("x", "X"),
+          " ", outside("whatsapp", "WhatsApp")
+        ]),
+        el("p", { class: "zts-section-progress__star" }, [
+          "If this site helped you, a star on ",
+          el("a", { href: REPO, target: "_blank", rel: "noopener" }, ["GitHub"]),
+          " helps other testers find it."
+        ]),
+        el("p", { class: "md-visually-hidden", role: "status", "data-zts-live": "" })
+      );
       var text = box.querySelector("textarea");
       text.value = message;
       var links = function () {
