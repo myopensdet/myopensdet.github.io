@@ -59,7 +59,7 @@ Pick a category, or follow a learning path below. Categories marked *Planned* ar
 Python for real test work: test data, results, files, errors and classes.
 
 - [Variables and data types](programming-for-testers/variables-and-data-types.md)
-- [Strings, lists and dictionaries](programming-for-testers/lists-tuples-sets-and-dictionaries.md)
+- [Lists, tuples, sets and dictionaries](programming-for-testers/lists-tuples-sets-and-dictionaries.md)
 - [Conditions and loops](programming-for-testers/conditions-and-loops.md)
 - [Functions](programming-for-testers/functions.md)
 

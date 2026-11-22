@@ -100,7 +100,7 @@ topic you need today. Click a category to open it.
 [Open the Programming for Testers overview](https://myopensdet.github.io/programming-for-testers/)
 
 - [Variables and data types](https://myopensdet.github.io/programming-for-testers/variables-and-data-types/): Store an API check in variables, and pick the right type for each value.
-- [Strings, lists and dictionaries](https://myopensdet.github.io/programming-for-testers/lists-tuples-sets-and-dictionaries/): Text, lists and dictionaries: the three shapes most test data comes in.
+- [Lists, tuples, sets and dictionaries](https://myopensdet.github.io/programming-for-testers/lists-tuples-sets-and-dictionaries/): Results in a list, fixed rules in a tuple, missing items with a set, API data in a dictionary.
 - [Conditions and loops](https://myopensdet.github.io/programming-for-testers/conditions-and-loops/): Make decisions, do the same check many times, and retry with a limit.
 - [Functions](https://myopensdet.github.io/programming-for-testers/functions/): Name a piece of work, so you can test it and use it again.
 - [Modules and imports](https://myopensdet.github.io/programming-for-testers/modules-and-imports/): Use dates, paths and JSON from the standard library, and your own files.

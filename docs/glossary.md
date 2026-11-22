@@ -229,7 +229,7 @@ that teaches it.
 [](){ #dictionary }**Dictionary**
 :   In Python, a set of named values, like a product with a name and a price. API responses become dictionaries.
 
-    Learn more: [Strings, lists and dictionaries](programming-for-testers/lists-tuples-sets-and-dictionaries.md)
+    Learn more: [Lists, tuples, sets and dictionaries](programming-for-testers/lists-tuples-sets-and-dictionaries.md)
 
 [](){ #docker }**Docker**
 :   The most common tool for building and running containers.

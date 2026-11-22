@@ -195,9 +195,9 @@ Copy these into your own project. Each file starts with a line that says where i
 
     <span class="zts-chip">Beginner</span>
 
-2.  [**Strings, lists and dictionaries**](lists-tuples-sets-and-dictionaries.md)
+2.  [**Lists, tuples, sets and dictionaries**](lists-tuples-sets-and-dictionaries.md)
 
-    Text, lists and dictionaries: the three shapes most test data comes in.
+    Results in a list, fixed rules in a tuple, missing items with a set, API data in a dictionary.
 
     <span class="zts-chip">Beginner</span>
 

@@ -1,17 +1,22 @@
 # Template from myOpenSDET: https://myopensdet.github.io/
-"""Exercise 2: strings, lists and dictionaries."""
+"""Exercise 2: lists, tuples, sets and dictionaries. Replace each raise line."""
 
 
-def clean_username(text: str) -> str:
-    """Remove spaces at both ends, and make it lower case: "  Admin " -> "admin"."""
+def clean_message(text: str) -> str:
+    """Remove spaces at both ends, and make it lower case: "  Saved! " -> "saved!"."""
     raise NotImplementedError("Write your code here")
 
 
-def first_and_last(items: list) -> tuple:
-    """Return the first and the last item of a list, as a pair."""
+def missing_devices(expected: list, reported: list) -> list:
+    """Device IDs that are expected but were not reported, sorted A to Z."""
     raise NotImplementedError("Write your code here")
 
 
-def price_of(product: dict) -> float:
-    """Return the product's "price", or 0 if it has none."""
+def missing_fields(response: dict, required: list) -> list:
+    """Required keys that the API response does not have, sorted A to Z."""
+    raise NotImplementedError("Write your code here")
+
+
+def status_of(response: dict) -> str:
+    """The response's "status", or "unknown" when the API did not send one."""
     raise NotImplementedError("Write your code here")

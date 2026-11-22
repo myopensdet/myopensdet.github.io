@@ -38,7 +38,7 @@ nav = [
   { "Programming for Testers" = [
     "programming-for-testers/index.md",
     { "Variables and data types" = "programming-for-testers/variables-and-data-types.md" },
-    { "Strings, lists and dictionaries" = "programming-for-testers/lists-tuples-sets-and-dictionaries.md" },
+    { "Lists, tuples, sets and dictionaries" = "programming-for-testers/lists-tuples-sets-and-dictionaries.md" },
     { "Conditions and loops" = "programming-for-testers/conditions-and-loops.md" },
     { "Functions" = "programming-for-testers/functions.md" },
     { "Modules and imports" = "programming-for-testers/modules-and-imports.md" },
