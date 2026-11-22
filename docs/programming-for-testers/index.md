@@ -215,7 +215,7 @@ Copy these into your own project. Each file starts with a line that says where i
 
 5.  [**Modules and imports**](modules-and-imports.md)
 
-    Use dates, paths and JSON from the standard library, and your own files.
+    Keep shared checks in one file, and use dates, paths and random data from Python itself.
 
     <span class="zts-chip">Beginner</span>
 

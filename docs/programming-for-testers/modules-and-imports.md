@@ -1,124 +1,195 @@
 ---
-title: "Modules and Imports: Use Dates, Paths and JSON From the Standard Library"
-description: "How Python imports work: import and from-import, the standard library modules testers use most (datetime, pathlib, json, random), importing your own files, if __name__ == \"__main__\", and fixing ModuleNotFoundError."
+title: "Modules and Imports: Share Checks Between Files, and Use the Standard Library"
+description: "Python modules for testers: put shared checks in your own module and import them, use datetime to find a device that went quiet, pathlib for report paths, random with a seed for test data, and if __name__ == \"__main__\"."
 level: Beginner
 tags:
   - Python
   - Tools
 nav_title: "Modules and imports"
 order: 50
-summary: "Use dates, paths and JSON from the standard library, and your own files."
+summary: "Keep shared checks in one file, and use dates, paths and random data from Python itself."
 updated: "2026-11-22"
 ---
 
-# Modules and Imports: Use Dates, Paths and JSON From the Standard Library
+# Modules and Imports: Share Checks Between Files, and Use the Standard Library
 
-A **module** is a Python file you can use from another file. Python comes with hundreds of them, called the **standard library**: dates, file paths, JSON, CSV, random numbers. `import` brings one in. Your own files are modules too, which is how tests use the code they test. This lesson covers the modules testers use every week, and the error everyone meets: `ModuleNotFoundError`.
+A **module** is a Python file you can use from another file. You write a check once in `device_checks.py`, and every test file gets it with one `import` line. Python also comes with a big set of ready modules, the **standard library**. It handles dates, file paths, JSON and random test data, so you don't write those yourself.
 
 !!! note "Before you start"
-    Read [Functions](functions.md) first.
+    You need Python 3.13 and the lesson on [functions](functions.md). The example files are `examples/device_checks.py` and `examples/modules_demo.py`. Keep them in the same folder.
 
-## What you will learn
+## Why testers need this
 
-- The two ways to import: `import json` and `from datetime import date`
-- Four standard library modules testers use often
-- How to import your own file, and what `if __name__ == "__main__":` is for
-- How to fix `ModuleNotFoundError`
+A test project grows fast. After a month you have twenty test files, and many of them need the same checks: "is this reading valid?", "has this device gone quiet?". If each file has its own copy, the copies drift apart. With modules:
 
-## Why this matters at work
+- shared checks live in one file, and tests import them,
+- times from the API are compared with real date maths, not by hand,
+- report files go to paths that work on Windows, macOS and Linux,
+- random test data can be repeated exactly when a test fails.
 
-Date limits ("refund within 30 days"), file paths for test data, JSON responses and repeatable random data are in almost every test suite. Knowing that Python already has a tool for each saves you from writing your own, slower and buggier.
+## How it works
 
-## The idea in plain words
+`modules_demo.py` gets code from two places: your own module, and Python's standard library. An `import` line runs the other file once and makes its names usable.
 
-!!! info "In plain words"
-    The standard library is a toolbox that comes with Python. `import` is taking a tool out of the box.
-    You don't build a screwdriver every time you need one.
+```mermaid
+flowchart LR
+    subgraph own["Your module"]
+        DC["device_checks.py<br/>is_valid_reading()<br/>is_stale()"]
+    end
+    subgraph std["Standard library"]
+        DT["datetime"]
+        PL["pathlib"]
+        RD["random"]
+    end
+    DC --> M["modules_demo.py"]
+    DT --> M
+    PL --> M
+    RD --> M
+```
 
-## Step by step
+*Arrows show what `modules_demo.py` imports. Your own module and the standard library are imported the same way.*
 
-1. **Run the example.**
+## The code
 
-    ```python
-    --8<-- "modules/start_here/python_for_testers/examples/modules_demo.py"
-    ```
+The shared checks:
 
-    ```bash
-    python modules_demo.py
-    ```
+```python title="examples/device_checks.py"
+--8<-- "modules/start_here/python_for_testers/examples/device_checks.py"
+```
 
-    ```text
-    2026-11-15
-    31
-    .json nightly.json
-    {"ok": true}
-    18 73
-    ```
+The file that uses them:
 
-2. **Two ways to import.** `import json` brings in the whole module, and you write `json.dumps(...)`. `from datetime import date, timedelta` brings in just those names, and you write `date(...)`. Both are fine. Pick the one that reads more clearly.
+```python title="examples/modules_demo.py"
+--8<-- "modules/start_here/python_for_testers/examples/modules_demo.py"
+```
 
-3. **Dates.** `date(2026, 10, 16) + timedelta(days=30)` is the last day of a 30-day refund window: 15 November. Subtracting two dates gives the days between them: 31. Never count days by hand in a test. Months have different lengths, and leap years exist.
+From the `examples` folder, run:
 
-4. **Paths.** `Path` from `pathlib` understands file paths on every system. `.suffix` is the extension, `.name` the file name. You'll use `Path` in the [files lesson](file-handling.md).
+```bash
+python modules_demo.py
+```
 
-5. **Repeatable random data.** `random.seed(1)` makes the "random" numbers the same on every run. Random test data is useful, but a failure you can't repeat is hard to fix. Seed it, and print the seed when a test fails. For passwords and tokens, use the `secrets` module instead: `random` isn't safe for those.
+```text
+True False device_checks
+0:18:00 True
+reports/devices/2026-11-22.json 2026-11-22.json .json
+[41, 19, 50]
+__main__
+```
 
-6. **Import your own file.** If `shop.py` has a function `delivery_fee`, then `from shop import delivery_fee` works from any file in the same folder. Code at the bottom of `shop.py` that should run only when you start it directly goes under `if __name__ == "__main__":`. Then a test can import the file without running that code. Every [starter script](index.md#templates) in this topic ends that way.
+## Line by line
 
-    !!! success "Check: you should now be able to"
-        Import from the standard library both ways, work with dates and paths, and import a function from your own file.
+**The imports at the top.**
 
-## When it goes wrong
+- `import random` loads a whole module. You use its parts with a dot: `random.seed(7)`.
+- `from datetime import UTC, datetime` loads only the names you list. Then you write `datetime(...)`, without `datetime.` in front.
+- `import device_checks` and `from device_checks import is_stale, is_valid_reading` load **your own file**. Python finds `device_checks.py` because it sits in the same folder as the script you run.
+- The imports are in three groups: standard library, then (later) installed packages, then your own files. That is the usual order, and tools like `ruff` keep it for you.
 
-- **`ModuleNotFoundError: No module named 'shop'`.** Python can't find the file. Run Python from the folder that has `shop.py` in it, and use `python -m pytest`, which adds the current folder to the places Python looks.
-- **`ModuleNotFoundError: No module named 'requests'`.** It's not in the standard library. Install it in your virtual environment: see [Virtual environments and pip](virtual-environments-and-pip.md).
-- **`ImportError: cannot import name 'delivery_fees' from 'shop'`.** The file is found, but that name isn't in it. Check the spelling against the `def` line.
-- **Your file is called `json.py` or `random.py`, and imports break.** Your file hides the standard one. Rename your file to something like `json_checks.py`.
+**Part 1: your own module.**
 
-## Common mistakes
+- `is_valid_reading(21.5)` works exactly as in the [functions lesson](functions.md), but the code now lives in `device_checks.py`.
+- `device_checks.__name__` is `device_checks`. Every module knows its own name.
 
-!!! warning "Common mistakes"
-    - **Naming your file like a standard module.** `test.py`, `json.py`, `csv.py` cause strange errors.
-    - **Counting days by hand.** Use `datetime`.
-    - **Unseeded random data in tests.** Seed it, so failures can be repeated.
+**Part 2: dates and times.**
 
-!!! failure "If you see this error"
-    **`AttributeError: module 'datetime' has no attribute 'fromisoformat'`**
-    You wrote `import datetime`, so `datetime` is the module, not the class. Either write `datetime.date.fromisoformat(...)`, or import the class: `from datetime import date`, then `date.fromisoformat(...)`.
+- `datetime.fromisoformat("2026-11-22T09:12:00+00:00")` turns the text an API sends into a real date and time. The `+00:00` part is the time zone (UTC).
+- `now - last_seen` gives a **timedelta**: a length of time. It prints as `0:18:00`, which means 18 minutes.
+- `is_stale()` compares that with 10 minutes. The device has been quiet for 18, so it is stale: `True`.
+- The script fixes `now` to one moment instead of asking the clock. Then the output is the same on every run, and so is a test that uses it. Real tests often do this.
 
-## Try it yourself
+**Part 3: file paths.**
 
-Open `exercises/ex05_modules.py`. Write `days_between("2026-10-16", "2026-11-16")`, which returns `31`. `date.fromisoformat()` turns text like `"2026-10-16"` into a date. Run `python -m pytest tests/test_ex05_modules.py`.
+- `Path("reports") / "devices" / "2026-11-22.json"` joins parts with `/`. pathlib puts the right separator for each computer: `/` on macOS and Linux, `\` on Windows.
+- `.as_posix()` prints it with `/` everywhere, so this page shows the same output for everyone. `.name` is the file name and `.suffix` is the ending.
+
+**Part 4: random test data.**
+
+- `random.randint(0, 100)` picks a whole number from 0 to 100, like a battery level.
+- `random.seed(7)` makes the "random" numbers the same on every run. When a test with random data fails, you can run it again and get the exact same data.
+- `random` is fine for test data, but never for passwords or tokens. Use the `secrets` module for those. The `# noqa: S311` comment tells the linter this use is on purpose.
+
+**`__name__` and `if __name__ == "__main__":`.**
+
+- When you run a file directly, its `__name__` is `"__main__"`. That is the last line of the output.
+- When the file is imported, its `__name__` is its own name, so the block under `if __name__ == "__main__":` in `device_checks.py` does not run. Run `python device_checks.py` and you see `device_checks.py was run directly`.
+- Use this block for code that should run only when you start the file yourself, not when a test imports it.
+
+## How it is used in a real QA project
+
+- **A helpers or utils module.** Test projects keep shared checks, builders and API clients in their own files, for example `checks.py` or `clients/devices.py`. See [project layout](../automation-testing/pytest/project-layout.md).
+- **conftest.py.** pytest imports `conftest.py` by itself, so its [fixtures](../automation-testing/pytest/fixtures-and-conftest.md) work in every test without an import line.
+- **Installed packages.** `import requests` or `import pytest` work the same way, once the package is installed. [Virtual environments and pip](virtual-environments-and-pip.md) shows how to install them.
+- **Time checks.** "Last seen within 10 minutes", "token expires in 1 hour", "report dated today" all use `datetime` and `timedelta`.
+- **Reports and screenshots** are saved with `pathlib`, so the same test code runs on a Windows laptop and a Linux CI server.
+
+## Your task
+
+Open `exercises/ex05_modules.py`. The imports are already there. Replace each `raise` line:
+
+1. `days_between(start, end)`: days between two dates written like `"2026-10-16"`. Use `date.fromisoformat()`.
+2. `minutes_quiet(last_seen, now)`: whole minutes between two ISO times.
+3. `is_stale(last_seen, now, max_minutes=10)`: `True` when the gap is longer than `max_minutes`.
+
+From the `exercises` folder:
+
+```bash
+python -m pytest tests/test_ex05_modules.py
+```
+
+All 6 tests pass when your answers are right.
 
 ??? success "Solution"
     ```python
     --8<-- "modules/start_here/python_for_testers/solutions/ex05_modules.py"
     ```
 
-    One of the tests crosses 29 February 2028. Code that counts days by hand usually gets that wrong.
+    - Taking one `date` from another gives a timedelta. `.days` is its number of days.
+    - `.total_seconds() // 60` turns the gap into whole minutes. `//` divides and drops the part after the decimal point.
+    - Comparing two timedeltas with `>` works like comparing numbers. Exactly 10 minutes is not "longer than 10", so it is not stale.
 
-## Quick check
+## When it goes wrong
 
-1. What is the standard library?
+These are real messages from Python 3.13.
 
-    ??? question "Answer"
-        The modules that come with Python, like `json`, `datetime`, `pathlib`, `csv` and `random`.
+**Python can't find the module.**
 
-2. Why seed random test data?
+```text
+ModuleNotFoundError: No module named 'device_cheks'
+```
 
-    ??? question "Answer"
-        So the same data comes out every run, and a failure can be repeated.
+Either the name is misspelled, or you ran the script from another folder. Python looks for your own modules next to the script you run. For packages like `requests`, the same message means the package is not installed in the environment you are using.
 
-3. What is `if __name__ == "__main__":` for?
+**The module has no such name.**
 
-    ??? question "Answer"
-        Code under it runs only when you start the file directly, not when another file imports it.
+```text
+ImportError: cannot import name 'is_old' from 'device_checks' (.../examples/device_checks.py)
+```
+
+The file was found, but it has no function called `is_old`. The path at the end (shortened here) shows which file Python used. Check the spelling, or check that it is the file you meant.
+
+**The date text is in another format.**
+
+```text
+ValueError: Invalid isoformat string: '22/11/2026'
+```
+
+`fromisoformat()` wants `2026-11-22`. For other formats, use `datetime.strptime(text, "%d/%m/%Y")`. If an API sends dates in a format its docs don't promise, report it.
+
+**One time has a time zone and the other does not.**
+
+```text
+TypeError: can't subtract offset-naive and offset-aware datetimes
+```
+
+`datetime.now(UTC)` has a time zone, `datetime(2026, 11, 22)` does not. Give both the same zone, for example `datetime(2026, 11, 22, tzinfo=UTC)`.
 
 ## References
 
-- [Python Tutorial: Modules](https://docs.python.org/3/tutorial/modules.html)
-- [Python: datetime](https://docs.python.org/3/library/datetime.html)
-- [Python: pathlib](https://docs.python.org/3/library/pathlib.html)
-- [Python: random](https://docs.python.org/3/library/random.html) and [secrets](https://docs.python.org/3/library/secrets.html)
+- [Python tutorial: modules](https://docs.python.org/3/tutorial/modules.html)
+- [Python docs: datetime](https://docs.python.org/3/library/datetime.html)
+- [Python docs: pathlib](https://docs.python.org/3/library/pathlib.html)
+- [Python docs: random](https://docs.python.org/3/library/random.html) and [secrets](https://docs.python.org/3/library/secrets.html)
+- [Python docs: \_\_main\_\_](https://docs.python.org/3/library/__main__.html)
 
 Written for Python 3.13. Links checked: November 2026.

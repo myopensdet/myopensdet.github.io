@@ -103,7 +103,7 @@ topic you need today. Click a category to open it.
 - [Lists, tuples, sets and dictionaries](https://myopensdet.github.io/programming-for-testers/lists-tuples-sets-and-dictionaries/): Results in a list, fixed rules in a tuple, missing items with a set, API data in a dictionary.
 - [Conditions and loops](https://myopensdet.github.io/programming-for-testers/conditions-and-loops/): Judge a result with if, check every reading with for, and retry with a limit.
 - [Functions](https://myopensdet.github.io/programming-for-testers/functions/): Give a check a name, so you can test it and use it in every test.
-- [Modules and imports](https://myopensdet.github.io/programming-for-testers/modules-and-imports/): Use dates, paths and JSON from the standard library, and your own files.
+- [Modules and imports](https://myopensdet.github.io/programming-for-testers/modules-and-imports/): Keep shared checks in one file, and use dates, paths and random data from Python itself.
 - [Object-oriented programming](https://myopensdet.github.io/programming-for-testers/object-oriented-programming/): Bundle data and actions together: the idea behind page objects and API clients.
 - [Exception handling](https://myopensdet.github.io/programming-for-testers/exception-handling/): Read a traceback fast, and handle what can go wrong.
 - [File handling](https://myopensdet.github.io/programming-for-testers/file-handling/): Read test data and CSV files, write reports, and keep Bengali text safe.
