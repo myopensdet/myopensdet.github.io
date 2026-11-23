@@ -23,5 +23,5 @@ print(
     "File received:",
     len(received.splitlines()),
     "lines, the same as sent:",
-    received == report.read_text(),
+    received == report.read_text(encoding="utf-8"),
 )
