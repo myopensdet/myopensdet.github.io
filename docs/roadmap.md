@@ -7,7 +7,7 @@ nav_section: getting-started
 nav_title: "Roadmap"
 order: 90
 summary: "Topics being written now, grouped by category."
-updated: "2026-11-22"
+updated: "2026-11-24"
 ---
 
 # Roadmap
@@ -19,7 +19,6 @@ These topics are planned or being written now. They appear in the menu as soon a
 ## API Testing
 
 - [Contract testing](api-testing/contract-testing/index.md): Catch breaking API changes between teams before release, with Pact.
-- [GraphQL testing](api-testing/graphql/index.md): Test GraphQL queries, mutations, schemas and errors.
 - [gRPC and WebSocket testing](api-testing/grpc-and-websocket/index.md): Test streams and live messages that are not REST.
 - [Testing microservices](api-testing/microservices/index.md): Test one service alone, then the conversations between services.
 

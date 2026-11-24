@@ -129,7 +129,7 @@ topic you need today. Click a category to open it.
 </details>
 
 <details>
-<summary><b>API Testing</b> (12 topics)</summary>
+<summary><b>API Testing</b> (13 topics)</summary>
 
 [Open the API Testing overview](https://myopensdet.github.io/api-testing/)
 
@@ -145,6 +145,7 @@ topic you need today. Click a category to open it.
 - [File upload](https://myopensdet.github.io/api-testing/file-upload/): Send a file and form fields, check it arrived the same, and what to test.
 - [An API client class](https://myopensdet.github.io/api-testing/api-client-class/): One class for the base URL, headers, timeout and logging, and clear failures.
 - [Mocking and stubbing](https://myopensdet.github.io/api-testing/mocking-and-stubbing/): Replace slow or unreliable parts with fakes you control.
+- [GraphQL testing](https://myopensdet.github.io/api-testing/graphql/): Test GraphQL queries, mutations, errors and the schema, with a small Python kit.
 
 </details>
 

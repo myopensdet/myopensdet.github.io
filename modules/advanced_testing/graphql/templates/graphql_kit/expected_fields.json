@@ -1,0 +1,6 @@
+{
+  "Post": {"id": "ID", "title": "String", "body": "String", "user": "User"},
+  "User": {"id": "ID", "name": "String", "email": "String"},
+  "Query": {"post": "Post", "posts": "PostsPage"},
+  "Mutation": {"createPost": "Post", "updatePost": "Post", "deletePost": "Boolean"}
+}

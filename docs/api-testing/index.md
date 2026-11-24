@@ -9,7 +9,7 @@ tags:
 nav_title: "API Testing"
 order: 40
 summary: "Send requests from Python and check status codes, JSON, headers and auth."
-updated: "2026-11-22"
+updated: "2026-11-24"
 code: "core_automation/api_testing"
 kind: "category"
 icon: "lucide/arrow-left-right"
@@ -324,6 +324,12 @@ Copy the whole `booker_api_tests` folder, or the parts you need. Each file start
 12.  [**Mocking and stubbing**](mocking-and-stubbing/index.md)
 
     Replace slow or unreliable parts with fakes you control.
+
+    <span class="zts-chip">Advanced</span>
+
+13.  [**GraphQL testing**](graphql/index.md)
+
+    Test GraphQL queries, mutations, errors and the schema, with a small Python kit.
 
     <span class="zts-chip">Advanced</span>
 

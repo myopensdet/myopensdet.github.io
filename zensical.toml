@@ -122,6 +122,7 @@ nav = [
     { "File upload" = "api-testing/file-upload.md" },
     { "An API client class" = "api-testing/api-client-class.md" },
     { "Mocking and stubbing" = "api-testing/mocking-and-stubbing/index.md" },
+    { "GraphQL testing" = "api-testing/graphql/index.md" },
   ] },
   { "Database and SQL Testing" = [
     "database-testing/index.md",

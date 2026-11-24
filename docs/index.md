@@ -8,7 +8,7 @@ hide:
   - author
   - feedback
   - path
-updated: "2026-11-22"
+updated: "2026-11-24"
 ---
 
 <div class="zts-hero" markdown>
@@ -93,7 +93,7 @@ HTTP, REST and JSON, then automated API tests with Python, pytest and mocks.
 - [GET, POST, PUT, PATCH, DELETE](api-testing/http-methods.md)
 - [Status codes](api-testing/status-codes.md)
 
-<p class="zts-cat__foot">12 lessons</p>
+<p class="zts-cat__foot">13 lessons</p>
 
 </article>
 

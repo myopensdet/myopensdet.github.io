@@ -3,7 +3,7 @@ title: "Browse SDET Lessons by Tag"
 description: "Find every myOpenSDET lesson by tag: API, database, BDD, debugging, performance and more."
 tags:
   - Quick reference
-updated: "2026-11-22"
+updated: "2026-11-24"
 nav_title: "Tags"
 order: 50
 nav_section: "toolbox"
@@ -44,8 +44,8 @@ every page about that subject, across all sections.
 <a class="zts-tag" href="#tag:observability" title="Logs, metrics and traces that show what an app is doing.">Observability <span class="zts-tag__count">1</span></a>
 <a class="zts-tag" href="#tag:performance" title="Checking that the app stays fast when many people use it.">Performance <span class="zts-tag__count">3</span></a>
 <a class="zts-tag" href="#tag:playwright" title="Automating web pages with Playwright.">Playwright <span class="zts-tag__count">14</span></a>
-<a class="zts-tag" href="#tag:pytest" title="The Python test tool used across this site.">pytest <span class="zts-tag__count">57</span></a>
-<a class="zts-tag" href="#tag:python" title="The programming language used for every example on this site.">Python <span class="zts-tag__count">38</span></a>
+<a class="zts-tag" href="#tag:pytest" title="The Python test tool used across this site.">pytest <span class="zts-tag__count">58</span></a>
+<a class="zts-tag" href="#tag:python" title="The programming language used for every example on this site.">Python <span class="zts-tag__count">39</span></a>
 <a class="zts-tag" href="#tag:quality-metrics" title="Numbers that show how good the product and the testing are.">Quality metrics <span class="zts-tag__count">2</span></a>
 <a class="zts-tag" href="#tag:quick-reference" title="Short pages to look things up fast.">Quick reference <span class="zts-tag__count">12</span></a>
 <a class="zts-tag" href="#tag:releases" title="Getting a new version out safely, and handling problems after it ships.">Releases <span class="zts-tag__count">4</span></a>
