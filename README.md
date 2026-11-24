@@ -129,7 +129,7 @@ topic you need today. Click a category to open it.
 </details>
 
 <details>
-<summary><b>API Testing</b> (14 topics)</summary>
+<summary><b>API Testing</b> (15 topics)</summary>
 
 [Open the API Testing overview](https://myopensdet.github.io/api-testing/)
 
@@ -145,6 +145,7 @@ topic you need today. Click a category to open it.
 - [File upload](https://myopensdet.github.io/api-testing/file-upload/): Send a file and form fields, check it arrived the same, and what to test.
 - [An API client class](https://myopensdet.github.io/api-testing/api-client-class/): One class for the base URL, headers, timeout and logging, and clear failures.
 - [Mocking and stubbing](https://myopensdet.github.io/api-testing/mocking-and-stubbing/): Replace slow or unreliable parts with fakes you control.
+- [Contract testing](https://myopensdet.github.io/api-testing/contract-testing/): Catch breaking API changes between teams before release, with Pact.
 - [GraphQL testing](https://myopensdet.github.io/api-testing/graphql/): Test GraphQL queries, mutations, errors and the schema, with a small Python kit.
 - [Testing microservices](https://myopensdet.github.io/api-testing/microservices/): Test one service alone, then the conversations between services, and follow one request through all of them.
 

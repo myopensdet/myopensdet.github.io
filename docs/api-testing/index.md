@@ -327,13 +327,19 @@ Copy the whole `booker_api_tests` folder, or the parts you need. Each file start
 
     <span class="zts-chip">Advanced</span>
 
-13.  [**GraphQL testing**](graphql/index.md)
+13.  [**Contract testing**](contract-testing/index.md)
+
+    Catch breaking API changes between teams before release, with Pact.
+
+    <span class="zts-chip">Advanced</span>
+
+14.  [**GraphQL testing**](graphql/index.md)
 
     Test GraphQL queries, mutations, errors and the schema, with a small Python kit.
 
     <span class="zts-chip">Advanced</span>
 
-14.  [**Testing microservices**](microservices/index.md)
+15.  [**Testing microservices**](microservices/index.md)
 
     Test one service alone, then the conversations between services, and follow one request through all of them.
 

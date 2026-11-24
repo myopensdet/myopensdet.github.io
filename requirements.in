@@ -15,6 +15,7 @@ pytest-bdd   # BDD with the same feature files, run by pytest (BDD testing)
 playwright   # browser automation (BDD for UI, UI automation)
 pytest-html  # one-file HTML test report (Reporting and logging)
 allure-pytest  # Allure test results for the Allure report (Reporting and logging)
+pact-python  # consumer-driven contract tests (API testing: contract testing)
 pytest-playwright  # page fixture, --headed, --browser, screenshots and traces (Work Playbooks: UI tests)
 # Release-age caps: these newer releases were under two weeks old on 2026-11-16.
 # Remove a cap once that release is two weeks old.
@@ -24,3 +25,5 @@ cucumber-expressions<20.2
 cucumber-tag-expressions<11.1
 # Under two weeks old on 2026-11-17 (pulled in by pytest-playwright).
 python-slugify<9.2
+# Under two weeks old on 2026-11-24 (pulled in by pact-python).
+pact-python-ffi<0.5.13

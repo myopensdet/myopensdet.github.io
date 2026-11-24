@@ -18,7 +18,6 @@ These topics are planned or being written now. They appear in the menu as soon a
 
 ## API Testing
 
-- [Contract testing](api-testing/contract-testing/index.md): Catch breaking API changes between teams before release, with Pact.
 - [gRPC and WebSocket testing](api-testing/grpc-and-websocket/index.md): Test streams and live messages that are not REST.
 
 ## Database and SQL Testing
