@@ -1,0 +1,46 @@
+# Template from myOpenSDET: https://myopensdet.github.io/
+# The three practice services, each in its own container, like a real test environment.
+#   docker compose up -d --wait
+#   ORDERS_URL=http://127.0.0.1:8811 python -m pytest tests/test_across_services.py
+#   docker compose down
+# Services find each other by name (http://stock:8812): Docker gives each one a hostname.
+
+name: zts-services
+
+x-service: &service
+  image: python:3.13-slim-bookworm
+  working_dir: /app
+  volumes:
+    - ./services:/app:ro
+  environment: &env
+    PYTHONUNBUFFERED: "1"
+    STOCK_URL: http://stock:8812
+    PAYMENTS_URL: http://payments:8813
+
+services:
+  stock:
+    <<: *service
+    command: python stock.py
+    environment: { <<: *env, PORT: "8812" }
+    ports: ["127.0.0.1:8812:8812"]
+    healthcheck: &health
+      test: ["CMD", "python", "-c", "import os, urllib.request; urllib.request.urlopen('http://127.0.0.1:' + os.environ['PORT'] + '/health')"]
+      interval: 2s
+      retries: 15
+
+  payments:
+    <<: *service
+    command: python payments.py
+    environment: { <<: *env, PORT: "8813" }
+    ports: ["127.0.0.1:8813:8813"]
+    healthcheck: *health
+
+  orders:
+    <<: *service
+    command: python orders.py
+    environment: { <<: *env, PORT: "8811", ORDERS_BUG: "${ORDERS_BUG:-}" }
+    ports: ["127.0.0.1:8811:8811"]
+    healthcheck: *health
+    depends_on:
+      stock: { condition: service_healthy }
+      payments: { condition: service_healthy }

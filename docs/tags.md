@@ -29,7 +29,7 @@ every page about that subject, across all sections.
 <a class="zts-tag" href="#tag:cloud" title="Testing apps that run on cloud servers and Kubernetes.">Cloud <span class="zts-tag__count">1</span></a>
 <a class="zts-tag" href="#tag:database" title="Checking that the right data is saved, changed and deleted.">Database <span class="zts-tag__count">27</span></a>
 <a class="zts-tag" href="#tag:debugging" title="Finding out why something failed, step by step.">Debugging <span class="zts-tag__count">11</span></a>
-<a class="zts-tag" href="#tag:docker" title="Running apps and tests in containers, the same way on every computer.">Docker <span class="zts-tag__count">8</span></a>
+<a class="zts-tag" href="#tag:docker" title="Running apps and tests in containers, the same way on every computer.">Docker <span class="zts-tag__count">9</span></a>
 <a class="zts-tag" href="#tag:flaky-tests" title="Tests that pass one day and fail the next, and how to fix them.">Flaky tests <span class="zts-tag__count">1</span></a>
 <a class="zts-tag" href="#tag:getting-started" title="The first pages to read if you are new.">Getting started <span class="zts-tag__count">10</span></a>
 <a class="zts-tag" href="#tag:git" title="Saving and sharing code changes with your team.">Git <span class="zts-tag__count">2</span></a>

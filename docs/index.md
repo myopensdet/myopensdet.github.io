@@ -93,7 +93,7 @@ HTTP, REST and JSON, then automated API tests with Python, pytest and mocks.
 - [GET, POST, PUT, PATCH, DELETE](api-testing/http-methods.md)
 - [Status codes](api-testing/status-codes.md)
 
-<p class="zts-cat__foot">13 lessons</p>
+<p class="zts-cat__foot">14 lessons</p>
 
 </article>
 

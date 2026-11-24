@@ -333,6 +333,12 @@ Copy the whole `booker_api_tests` folder, or the parts you need. Each file start
 
     <span class="zts-chip">Advanced</span>
 
+14.  [**Testing microservices**](microservices/index.md)
+
+    Test one service alone, then the conversations between services, and follow one request through all of them.
+
+    <span class="zts-chip">Advanced</span>
+
 </div>
 
 <!-- END topics -->
